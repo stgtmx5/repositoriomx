@@ -38,10 +38,8 @@ var habilitar_bascula_aut = false;	//true=habilita la lectura autom?tica
 var bascula_intervalo = 1000;		//Tiempo de sondeo de la b?scula (Milisegundos)
 
 function evAlIniciar() {
-		loadScript("modulo_recargas","(Subprograma de recargas)");
+	loadScript("modulo_recargas","(Subprograma de recargas)");
 	//	loadScript("modulo_guarderia", "(Subprograma de guarderia de equipaje)");
-	//Se ejecuta al iniciar la aplicaci?n, puede contener secuencias de inicializaci?n para este script
-	//eBasic.eMsgbox("Hola mundo");
 
 	//Ejemplo de inicializaci?n de control ActiveX acoplado
 	//if (!MainForm.CreateAX("HPOSExample.Simulador", "NombreCualquiera", "", "")) eBasic.eMsgbox("Error al crear ActiveX");
@@ -59,15 +57,13 @@ function evAlIniciar() {
 	//loadScript("Requisicion","(Subprograma Funciones de Soporte)");
 	//loadScript("tiempo","(Subprograma De Configuracion de Alertas de Productos debajo del minimo)");
 	loadScript("saldoCaja", "(Subprograma funciones al cerrar el corte)");
-	/*loadScript("pos_tae","(Subprograma Venta de Recargas TAE)");
-	loadScript("pos_guarderias","(Subprograma de guarderia de equipaje)");
-	loadScript("pos_estacionamiento","(Subprograma para el cobro del servicio de estacionamiento.)"):*/
 
+/*
 	if (habilitar_bascula_aut) {
 		MainForm.customTimer.Interval = bascula_intervalo;
 		MainForm.customTimer.Enabled = true;
 	}
-
+*/
 	try {
 		if (LBEfectivo.CurrentPKMovCajaXFondoInicial > 0) {
 			Ingreso(LBEfectivo.CurrentPKMovCajaXFondoInicial);
@@ -221,9 +217,9 @@ function AddPosCommand() {
 
 		//Comandos m?s utilizados
 		Application.MainForm.AddSysCommand("F6", "Venta de contado (Cobrar)", "Despliega la ventana de cobro para cerrar la transacci?n actual", true, 0xC000);
-		Application.MainForm.AddSysCommand("F7", "Venta a cr?dito", "Cierra la venta a cr?dito siempre que no exceda el l?mite definido al cliente");
+		Application.MainForm.AddSysCommand("F7", "Venta a crédito", "Cierra la venta a cr?dito siempre que no exceda el l?mite definido al cliente");
 		Application.MainForm.AddSysCommand("F8", "Facturar la venta actual", "Genera una factura a partir de la venta actual, puede agregar un cliente o elegir alguno de los disponibles en la base de datos");
-		Application.MainForm.AddSysCommand("F9", "Cancelaci?n o devoluci?n", "Permite efectuar una cancelaci?n o devoluci?n parcial o total");
+		Application.MainForm.AddSysCommand("F9", "Cancelación o devolución", "Permite efectuar una cancelaci?n o devoluci?n parcial o total");
 
 		//Comandos del usuario
 		AddUserCommands();
@@ -405,15 +401,15 @@ function evInicioSesion(Usuario, PKCaja, PKCajero) {
 
 	//Al iniciar sesion
 
-	var sql;
-	try {
+//	var sql;
+//	try {
 		/*sql = "DELETE FROM ut_cnn_tuser WHERE CnnID = @@SPID AND Host=HOST_NAME()";
 		Application.ADOCnn.Execute(sql);
 		sql = "INSERT INTO ut_cnn_tuser (Sys_DTCreated, Sys_GUID, CnnID, Host, IUser) VALUES (GETDATE(), REPLACE(NEWID(),'-',''), @@SPID, HOST_NAME(),"+ Application.UIUsers.CurrentUser.Sys_PK+")";
 		Application.ADOCnn.Execute(sql);*/
-	} catch (e) {
+//	} catch (e) {
 
-	}
+//	}
 }
 
 //nuevos eventos abril-2011
@@ -447,12 +443,13 @@ function evAlRealizarCorte(PKCorte) {
 	var caja;
 	sql = "Select Icaja As PKCaja From Corte Where Sys_PK=" + PKCorte;
 	R = ThisCnn.execute(sql);
+	//eBasic.eMsgbox("Ingresando al cierre de caja " + PKCorte);
 	if (R == null) {
 
 		return 0;
 	}
 	if (R.EOF && R.BOF) {
-		eBasic.eMsgbox("No se encontr? Nada que cancelar");
+		eBasic.eMsgbox("No se encontró Nada que cancelar");
 		return saldoCaja.corteCajaTerminal();
 	}
 	caja = R("PKCaja").Value;
