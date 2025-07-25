@@ -6,7 +6,6 @@ function ImprimirVale(PK,Titulo,ErrDesc){
 	var Entero;
 	var CodDivisa;
 	var Letras;
-	var sql;
 	
 //	sql = "SELECT MovCaja.Cheques, MovCaja.Depositos, MovCaja.Efectivo, MovCaja.Fecha, MovCaja.Hora, MovCaja.Notas,";
 //	sql = sql + " MovCaja.Referencia, MovCaja.Tarjetas, MovCaja.Vales, Divisa.Codigo AS CodigoDivisa,";
