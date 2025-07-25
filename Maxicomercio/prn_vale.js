@@ -8,19 +8,50 @@ function ImprimirVale(PK,Titulo,ErrDesc){
 	var Letras;
 	var sql;
 	
-	sql = "SELECT MovCaja.Cheques, MovCaja.Depositos, MovCaja.Efectivo, MovCaja.Fecha, MovCaja.Hora, MovCaja.Notas,";
-	sql = sql + " MovCaja.Referencia, MovCaja.Tarjetas, MovCaja.Vales, Divisa.Codigo AS CodigoDivisa,";
-	sql	= sql + " Divisa.Descripcion AS DescDivisa, Categoria.Descripcion AS DescCategoria FROM "; 
-	sql = sql + " Categoria INNER JOIN (Divisa INNER JOIN MovCaja ON Divisa.Sys_PK = MovCaja.IDivisa)";
-	sql = sql + " ON Categoria.Sys_PK = MovCaja.ICategoria WHERE MovCaja.Sys_PK=" + PK;
+//	sql = "SELECT MovCaja.Cheques, MovCaja.Depositos, MovCaja.Efectivo, MovCaja.Fecha, MovCaja.Hora, MovCaja.Notas,";
+//	sql = sql + " MovCaja.Referencia, MovCaja.Tarjetas, MovCaja.Vales, Divisa.Codigo AS CodigoDivisa,";
+//	sql	= sql + " Divisa.Descripcion AS DescDivisa, Categoria.Descripcion AS DescCategoria FROM "; 
+//	sql = sql + " Categoria INNER JOIN (Divisa INNER JOIN MovCaja ON Divisa.Sys_PK = MovCaja.IDivisa)";
+//	sql = sql + " ON Categoria.Sys_PK = MovCaja.ICategoria WHERE MovCaja.Sys_PK=" + PK;
+
+	var sql = "SELECT MovCaja.Cheques, MovCaja.Depositos, MovCaja.Efectivo, MovCaja.Fecha, " +
+          "MovCaja.Hora, MovCaja.Notas, MovCaja.Referencia, MovCaja.Tarjetas, MovCaja.Vales, " +
+          "Divisa.Codigo AS CodigoDivisa, Divisa.Descripcion AS DescDivisa, " +
+          "Categoria.Descripcion AS DescCategoria, Categoria.Sys_PK as pkCategoria " +
+          "FROM Categoria INNER JOIN (Divisa INNER JOIN MovCaja ON Divisa.Sys_PK = MovCaja.IDivisa) " +
+          "ON Categoria.Sys_PK = MovCaja.ICategoria " +
+          "WHERE MovCaja.Sys_PK=" + PK;
+
 	
 	R = pos_support.OpenRecordset(sql,Application.ADOCnn);
+	//R = pos_support.OpenRecordset(sql,Application.ADOCnn);
 	
 	if(R==null)
 	{
 		eBasic.eMsgbox(ErrDesc + "(Sin acceso a base de datos)");
 		return 0;
 	}
+	if(R.EOF && R.BOF){
+		eBasic.eMsgbox(ErrDesc + "(No se encontró el elemento con clave primaria= "+PK+")");
+		return 0;
+	}
+	Categoria = R("Notas").Value
+	// eBasic.eMsgbox( "Que catogoria  " + R("Notas").Value , 4);
+	if (Categoria == "Fondo inicial")
+	{
+			icategoria = R("pkCategoria").Value
+			RCategoria = NodeVars.EGetSetting("Maxicomercio", "Config", "lvar_catIngresXFondoInicial", 0);
+			if (Categoria != RCategoria)
+			{
+				var consulta = "update MovCaja set ICategoria =  " + RCategoria + " where sys_pk = " + PK;
+				 Application.ADOCnn.Execute(consulta);
+				//var actualizacion = pos_support.OpenRecordset(consulta,Application.ADOCnn);
+				R = pos_support.OpenRecordset(sql,Application.ADOCnn);
+				//eBasic.eMsgbox( "Se actualizo categoria de Fondoinicial ", 4);
+			}
+			
+	}
+
 	
 	pos_support.ConfigImpresora();
 	

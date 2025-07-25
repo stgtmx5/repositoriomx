@@ -234,7 +234,7 @@ function corteCajaTerminal(){
 			return -2;
 		}
 		//Egreso del total en tarjetas de la caja
-		if (importeTarjetas > 0 )
+		if (montoTarjetas > 0 )
 		{
 		movCaja = LBEfectivo.Vale_Egreso(corte, gFunciones.ReferenciaAleatoria(), "Cierre de caja en tarjetas", 0, cajaTarjetas + importeTarjetas, catEgresoCorte, true, true, false, 2);
 		if(movCaja==null){

@@ -17,20 +17,20 @@ var cNoSales=true; // y N?mero de operaciones
 
 function arqueo(PKCorte)
 {
-	var qname="";
-	if (Application.AppInfo.Name=="MaxiComercio")
-	qname=Application.CurrCnnInfo.Name+"@MaxiComercio.R5";
-	else if (Application.AppInfo.Name=="Deminus")
-	qname=Application.CurrCnnInfo.Name+"@Deminus.R5";
-	else if (Application.AppInfo.Name=="ContaBlink")
-	qname=Application.CurrCnnInfo.Name+"@ContaBlink.R5";
-	else
-	qname=Application.CurrCnnInfo.Name+"@MaxiComercio.R5";	
-	var appExeConfig = "Devkron.exe \"her_config_mail.dkl\" qname:" + qname;
-	eBasic.eShell(appExeConfig,0);
+	//var qname="";
+	//if (Application.AppInfo.Name=="MaxiComercio")
+	//qname=Application.CurrCnnInfo.Name+"@MaxiComercio.R5";
+	//else if (Application.AppInfo.Name=="Deminus")
+	//qname=Application.CurrCnnInfo.Name+"@Deminus.R5";
+	//else if (Application.AppInfo.Name=="ContaBlink")
+	//qname=Application.CurrCnnInfo.Name+"@ContaBlink.R5";
+	//else
+	//qname=Application.CurrCnnInfo.Name+"@MaxiComercio.R5";	
+	//var appExeConfig = "Devkron.exe \"her_config_mail.dkl\" qname:" + qname;
+	//eBasic.eShell(appExeConfig,0);
 
-	var appExe = "Devkron.exe \"sendmail.dkl\" qname:" + qname + " pk_corte:"+ PKCorte;
-	eBasic.eShell(appExe,0);
+	//var appExe = "Devkron.exe \"sendmail.dkl\" qname:" + qname + " pk_corte:"+ PKCorte;
+	//eBasic.eShell(appExe,0);
 		
 	var ErrDesc="Error al imprimir arqueo";
 	var R;
@@ -669,45 +669,52 @@ function SaldoInicial(PKCorte,PKCaja,Divisa,ErrDesc)
 	var S;
 	var sImporte;
 	var Saldo=0;
-	var sql;
+	var sql="";
 	if(ErrDesc==null)
 		ErrDesc="";
-	/* sql = "SELECT SUM(MovCaja.Cheques+MovCaja.Depositos+MovCaja.Efectivo+MovCaja.Tarjetas+MovCaja.Vales) AS Saldo ";
-	sql = sql + " FROM Corte INNER JOIN MovCaja ON Corte.Sys_PK = MovCaja.ICorte WHERE MovCaja.ICorte<" +PKCorte ; 
-	sql = sql + " AND Corte.ICaja=" + PKCaja + " AND MovCaja.IDivisa=" + Divisa + ";";
+	
+	sql="SELECT SUM(MovCaja.Cheques+MovCaja.Depositos+MovCaja.Efectivo+MovCaja.Tarjetas+MovCaja.Vales) AS Saldo FROM Corte INNER JOIN MovCaja ON Corte.Sys_PK = MovCaja.ICorte WHERE MovCaja.ICorte<"+PKCorte+" AND Corte.ICaja="+PKCaja+" AND MovCaja.IDivisa="+Divisa+";";
 	
 	R=pos_support.OpenRecordset(sql,Application.AdoCnn);
 	
-	if(R==null)
-	{
+	if(R==null){
 		eBasic.eMsgbox(ErrDesc + "(Error al obtener saldo inicial del corte)");
 		return 0;
 	}
 	
-	Saldo=0;
-					
-	S=Impresora.AligTextInStr(" SALDO INICIAL",16,0," ");
-	if(R("Saldo").Value==null)
-	{
-		sImporte=Impresora.FormatoDinero(0);
-	}else
-	{
-		Saldo=Impresora.Redondear(R("Saldo").Value);
-		sImporte=Impresora.FormatoDinero(Saldo);
+	if(!(R.EOF && R.BOF)){			
+		S=Impresora.AligTextInStr(" SALDO INICIAL",16,0," ");
+		if(R("Saldo").Value==null){
+			sImporte=Impresora.FormatoDinero(0);
+		}else{
+			Saldo=Impresora.Redondear(R("Saldo").Value);
+			sImporte=Impresora.FormatoDinero(Saldo);
+		}
+		sImporte=Impresora.AligTextInStr(sImporte,14,1," ");		
+		Impresora.Texto(S+sImporte);		
 	}
-	
-	sImporte=Impresora.AligTextInStr(sImporte,14,1," ");		
-	Impresora.Texto(S+sImporte);		
-	
-	R.Close(); */
-	
+	R.Close();
 	return Saldo;
-	
 }
 
 function ImprimirIngresosXCategoria(PKCorte,PKCaja,Divisa,TCambio,DivisaPred,ErrDesc){
 	var SQL;
-	SQL="SELECT Categoria.Descripcion AS MovCategoria, SUM(MovCaja.Cheques+MovCaja.Depositos+MovCaja.Efectivo+ MovCaja.Tarjetas + MovCaja.Vales) AS Total FROM Categoria INNER JOIN MovCaja ON Categoria.Sys_PK = MovCaja.ICategoria WHERE MovCaja.ICorte=" + PKCorte + " AND MovCaja.IDivisa=" + Divisa + " AND (MovCaja.Cheques>=0 AND MovCaja.Depositos>=0 AND MovCaja.Efectivo>=0 AND MovCaja.Tarjetas>=0 AND MovCaja.Vales>=0) AND MovCaja.ICategoria != (SELECT Categoria.Sys_PK FROM Categoria WHERE Categoria.Descripcion LIKE '%sobrante%' LIMIT 1) GROUP BY Categoria.Descripcion UNION SELECT MovCaja.Notas AS MovCategoria, IF(MovCaja.Efectivo = 0, MovCaja.Tarjetas, MovCaja.Efectivo) AS Total FROM MovCaja WHERE MovCaja.ICorte=" + PKCorte + " AND MovCaja.ICategoria = (SELECT Categoria.Sys_PK FROM Categoria WHERE Categoria.Descripcion LIKE '%sobrante%' LIMIT 1)"
+//	SQL="SELECT Categoria.Descripcion AS MovCategoria, SUM(MovCaja.Cheques+MovCaja.Depositos+MovCaja.Efectivo+ MovCaja.Tarjetas + MovCaja.Vales) AS Total FROM Categoria INNER JOIN MovCaja ON Categoria.Sys_PK = MovCaja.ICategoria WHERE MovCaja.ICorte=" + PKCorte + " AND MovCaja.IDivisa=" + Divisa + " AND (MovCaja.Cheques>=0 AND MovCaja.Depositos>=0 AND MovCaja.Efectivo>=0 AND MovCaja.Tarjetas>=0 AND MovCaja.Vales>=0) AND MovCaja.ICategoria != (SELECT Categoria.Sys_PK FROM Categoria WHERE Categoria.Descripcion LIKE '%sobrante%' LIMIT 1) GROUP BY Categoria.Descripcion UNION SELECT MovCaja.Notas AS MovCategoria, IF(MovCaja.Efectivo = 0, MovCaja.Tarjetas, MovCaja.Efectivo) AS Total FROM MovCaja WHERE MovCaja.ICorte=" + PKCorte + " AND MovCaja.ICategoria = (SELECT Categoria.Sys_PK FROM Categoria WHERE Categoria.Descripcion LIKE '%sobrante%' LIMIT 1)"
+//	SQL="SELECT Categoria.Descripcion AS MovCategoria, SUM(MovCaja.Cheques+MovCaja.Depositos+MovCaja.Efectivo+ MovCaja.Tarjetas + MovCaja.Vales) AS Total FROM Categoria INNER JOIN MovCaja ON Categoria.Sys_PK = MovCaja.ICategoria WHERE MovCaja.ICorte=" + PKCorte + " AND MovCaja.IDivisa=" + Divisa + " AND (MovCaja.Cheques>=0 AND  MovCaja.Depositos>=0 AND MovCaja.Efectivo>=0 AND MovCaja.Tarjetas>=0 AND MovCaja.Vales>=0) GROUP BY Categoria.Descripcion;";
+	SQL =  "SELECT " +
+  "CASE WHEN Categoria.Descripcion = 'Sobrante en corte' THEN MovCaja.Notas ELSE Categoria.Descripcion END AS MovCategoria, " +
+  "SUM(MovCaja.Cheques + MovCaja.Depositos + MovCaja.Efectivo + MovCaja.Tarjetas + MovCaja.Vales) AS Total " +
+  "FROM Categoria " +
+  "INNER JOIN MovCaja ON Categoria.Sys_PK = MovCaja.ICategoria " +
+  "WHERE MovCaja.ICorte = " + PKCorte + " " +
+  "AND MovCaja.IDivisa = " + Divisa + " " +
+  "AND MovCaja.Cheques >= 0 " +
+  "AND MovCaja.Depositos >= 0 " +
+  "AND MovCaja.Efectivo >= 0 " +
+  "AND MovCaja.Tarjetas >= 0 " +
+  "AND MovCaja.Vales >= 0 " +
+  "GROUP BY CASE WHEN Categoria.Descripcion = 'Sobrante en corte' THEN MovCaja.Notas ELSE Categoria.Descripcion END";
+
 	return IngresosEgresosXCartegoria(SQL,PKCorte,PKCaja,Divisa,TCambio,DivisaPred,ErrDesc+"(Error al obtener ingresos del corte)"); 
 }
 
@@ -778,7 +785,21 @@ function IngresosEgresosXCartegoria(SQL,PKCorte,PKCaja,Divisa,TCambio,DivisaPred
 function ImprimirEgresosXCategoria(PKCorte,PKCaja,Divisa,TCambio,DivisaPred,ErrDesc){
 	var SQL;
 
-	SQL ="SELECT Categoria.Descripcion AS MovCategoria, SUM(MovCaja.Cheques+MovCaja.Depositos+MovCaja.Efectivo+ MovCaja.Tarjetas + MovCaja.Vales) AS Total FROM Categoria INNER JOIN MovCaja ON Categoria.Sys_PK = MovCaja.ICategoria WHERE MovCaja.ICorte=" + PKCorte + " AND MovCaja.IDivisa=" + Divisa + " AND (MovCaja.Cheques<=0 AND  MovCaja.Depositos<=0 AND MovCaja.Efectivo<=0 AND MovCaja.Tarjetas<=0 AND MovCaja.Vales<=0) AND MovCaja.ICategoria != (SELECT Categoria.Sys_PK FROM Categoria WHERE Categoria.Descripcion LIKE '%faltante%' LIMIT 1) GROUP BY Categoria.Descripcion UNION SELECT MovCaja.Notas AS MovCategoria, IF(MovCaja.Efectivo = 0, MovCaja.Tarjetas, MovCaja.Efectivo) AS Total FROM MovCaja WHERE MovCaja.ICorte=" + PKCorte + " AND MovCaja.ICategoria = (SELECT Categoria.Sys_PK FROM Categoria WHERE Categoria.Descripcion LIKE '%faltante%' LIMIT 1)";
+//	SQL ="SELECT Categoria.Descripcion AS MovCategoria, SUM(MovCaja.Cheques+MovCaja.Depositos+MovCaja.Efectivo+ MovCaja.Tarjetas + MovCaja.Vales) AS Total FROM Categoria INNER JOIN MovCaja ON Categoria.Sys_PK = MovCaja.ICategoria WHERE MovCaja.ICorte=" + PKCorte + " AND MovCaja.IDivisa=" + Divisa + " AND (MovCaja.Cheques<=0 AND  MovCaja.Depositos<=0 AND MovCaja.Efectivo<=0 AND MovCaja.Tarjetas<=0 AND MovCaja.Vales<=0) AND MovCaja.ICategoria != (SELECT Categoria.Sys_PK FROM Categoria WHERE Categoria.Descripcion LIKE '%faltante%' LIMIT 1) GROUP BY Categoria.Descripcion UNION SELECT MovCaja.Notas AS MovCategoria, IF(MovCaja.Efectivo = 0, MovCaja.Tarjetas, MovCaja.Efectivo) AS Total FROM MovCaja WHERE MovCaja.ICorte=" + PKCorte + " AND MovCaja.ICategoria = (SELECT Categoria.Sys_PK FROM Categoria WHERE Categoria.Descripcion LIKE '%faltante%' LIMIT 1)";
+//	SQL ="SELECT Categoria.Descripcion AS MovCategoria, SUM(MovCaja.Cheques+MovCaja.Depositos+MovCaja.Efectivo+ MovCaja.Tarjetas + MovCaja.Vales) AS Total FROM Categoria INNER JOIN MovCaja ON Categoria.Sys_PK = MovCaja.ICategoria WHERE MovCaja.ICorte=" + PKCorte + " AND MovCaja.IDivisa=" + Divisa + " AND (MovCaja.Cheques<=0 AND  MovCaja.Depositos<=0 AND MovCaja.Efectivo<=0 AND MovCaja.Tarjetas<=0 AND MovCaja.Vales<=0) GROUP BY Categoria.Descripcion;";
+	SQL =  "SELECT " +
+  "CASE WHEN Categoria.Descripcion = 'Faltante en corte' THEN MovCaja.Notas ELSE Categoria.Descripcion END AS MovCategoria, " +
+  "SUM(MovCaja.Cheques + MovCaja.Depositos + MovCaja.Efectivo + MovCaja.Tarjetas + MovCaja.Vales) AS Total " +
+  "FROM Categoria " +
+  "INNER JOIN MovCaja ON Categoria.Sys_PK = MovCaja.ICategoria " +
+  "WHERE MovCaja.ICorte = " + PKCorte + " " +
+  "AND MovCaja.IDivisa = " + Divisa + " " +
+  "AND MovCaja.Cheques <= 0 " +
+  "AND MovCaja.Depositos <= 0 " +
+  "AND MovCaja.Efectivo <= 0 " +
+  "AND MovCaja.Tarjetas <= 0 " +
+  "AND MovCaja.Vales <= 0 " +
+  "GROUP BY CASE WHEN Categoria.Descripcion = 'Faltante en corte' THEN MovCaja.Notas ELSE Categoria.Descripcion END";
 
 	return IngresosEgresosXCartegoria(SQL,PKCorte,PKCaja,Divisa,TCambio,DivisaPred,ErrDesc+"(Error al obtener egresos del corte)");
 }
