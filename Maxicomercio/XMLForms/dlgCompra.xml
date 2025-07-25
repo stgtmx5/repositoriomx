@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eForm Caption="Compras" Name="dlgCompra" state ="2" DataClassName="Compra" Heigth="3810" Width="10695" Style="1" LockHeight="0" LockWidth="0">
+	<eCtrl Name="ctrlTipo" ClassID="GexecomCtrls.eOptionLstField" External="False" Visible="True" NameValue="Value" Heigth="510" Width="2700">
+		<DataLink ClassField="Documento" ClassType="2" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Tipo de Documento:"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleStyle" Value="0"/>
+			<Property Name="TitleAligment" Value="0"/>
+			<Property Name="ForeColor" Value="16711680"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;-1;0;0;0"/>
+	</eCtrl>
+
+	<eCtrl Name="ca2" ClassID="VB.Label" External="True" Visible="True" NameValue="" Heigth="150" Width="150">
+		<DataLink ClassField="" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlFecha" ClassID="GexecomCtrls.eDateField" External="False" Visible="True" NameValue="Value" Heigth="510" Width="2250">
+		<DataLink ClassField="Fecha" ClassType="4" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Fecha:"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleAligment" Value="0"/>
+			<Property Name="TitleStyle" Value="0"/>
+			<Property Name="TitleWidthP" Value="25"/>
+	</eCtrl>
+
+	<eCtrl Name="ca3" ClassID="VB.Label" External="True" Visible="True" NameValue="" Heigth="300" Width="150">
+		<DataLink ClassField="" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlReferencia" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="510" Width="2250">
+		<DataLink ClassField="Referencia" ClassType="1" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Referencia:"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleAligment" Value="0"/>
+			<Property Name="ForeColor" Value="16711680"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;-1;0;0;0"/>
+	</eCtrl>
+
+	<eCtrl Name="cb1" ClassID="VB.Label" External="True" Visible="True" NameValue="" Heigth="45" Width="7500">
+		<DataLink ClassField="" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value=""/>
+			<Property Name="BackColor" Value="52479"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlIProveedor" ClassID="GexecomCtrls.eFKField" External="False" Visible="True" NameValue="Value" Heigth="520" Width="5100">
+		<DataLink ClassField="IProveedor" ClassType="6" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Proveedor:"/>
+			<Property Name="TitleAligment" Value="0"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleStyle" Value="0"/>
+			<Property Name="TitleWidthP" Value="25"/>
+			<Property Name="ForeColor" Value="16711680"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;-1;0;0;0"/>
+	</eCtrl>
+
+	<eCtrl Name="ca1" ClassID="VB.Label" External="True" Visible="True" NameValue="" Heigth="300" Width="150">
+		<DataLink ClassField="" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlVencimiento" ClassID="GexecomCtrls.eDateField" External="False" Visible="True" NameValue="Value" Heigth="525" Width="2250">
+		<DataLink ClassField="Vencimiento" ClassType="4" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Fecha de vencimiento:"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleAligment" Value="0"/>
+			<Property Name="TitleStyle" Value="0"/>
+			<Property Name="TitleWidthP" Value="45"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlIDivisa" ClassID="GexecomCtrls.eFKField" External="False" Visible="True" NameValue="Value" Heigth="520" Width="5100">
+		<DataLink ClassField="IDivisa" ClassType="6" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Divisa:"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleAligment" Value="0"/>
+			<Property Name="TitleStyle" Value="0"/>
+			<Property Name="TitleWidthP" Value="20"/>
+			<Property Name="ForeColor" Value="16711680"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;-1;0;0;0"/>
+	</eCtrl>
+
+	<eCtrl Name="cb2" ClassID="VB.Label" External="True" Visible="True" NameValue="" Heigth="300" Width="150">
+		<DataLink ClassField="" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlFEntrega" ClassID="GexecomCtrls.eDateField" External="False" Visible="True" NameValue="Value" Heigth="525" Width="2250">
+		<DataLink ClassField="FEntrega" ClassType="4" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Fecha de entrega:"/>
+			<Property Name="TitleStyle" Value="0"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleAligment" Value="0"/>
+			<Property Name="TitleWidthP" Value="45"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlIAlmacen" ClassID="GexecomCtrls.eFKField" External="False" Visible="True" NameValue="Value" Heigth="520" Width="5100">
+		<DataLink ClassField="IAlmacen" ClassType="6" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Almac&#233;n:"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleAligment" Value="0"/>
+			<Property Name="TitleStyle" Value="0"/>
+			<Property Name="TitleWidthP" Value="20"/>
+			<Property Name="ForeColor" Value="16711680"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;-1;0;0;0"/>
+	</eCtrl>
+
+	<eCtrl Name="cb4" ClassID="VB.Label" External="True" Visible="True" NameValue="" Heigth="300" Width="150">
+		<DataLink ClassField="" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlIndirectos" ClassID="GexecomCtrls.eNumberField" External="False" Visible="True" NameValue="Value" Heigth="525" Width="2250">
+		<DataLink ClassField="Indirectos" ClassType="2" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Costos indirectos"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleAligment" Value="0"/>
+			<Property Name="TitleStyle" Value="0"/>
+			<Property Name="TitleWidthP" Value="45"/>
+	</eCtrl>
+
+	<eTab Name="Tab1" Caption="M&#225;s datos"/>
+
+	<eCtrl Name="ctrlFEmbarque" ClassID="GexecomCtrls.eDateField" External="False" Visible="True" NameValue="Value" Heigth="525" Width="1800">
+		<DataLink ClassField="FEmbarque" ClassType="4" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Fecha de embarque:"/>
+			<Property Name="TitleWidthP" Value="45"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleAligment" Value="0"/>
+			<Property Name="TitleStyle" Value="0"/>
+	</eCtrl>
+
+	<eCtrl Name="cb3" ClassID="VB.Label" External="True" Visible="True" NameValue="" Heigth="525" Width="5700">
+		<DataLink ClassField="" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlNotas" ClassID="GexecomCtrls.eMemoField" External="False" Visible="True" NameValue="Value" Heigth="1650" Width="7500">
+		<DataLink ClassField="Notas" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Notas"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eTab Name="Tab2" Caption="Informaci&#243;n aduanera"/>
+
+	<eCtrl Name="cUF_Importado1" ClassID="VB.CheckBox" External="True" Visible="True" NameValue="Value" Heigth="300" Width="2025">
+		<DataLink ClassField="UF_Importado" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Importado"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="cBoton1" ClassID="VB.CommandButton" External="True" Visible="True" NameValue="" Heigth="300" Width="2025">
+		<DataLink ClassField="" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Actualizar lista de aduanas"/>
+	</eCtrl>
+
+	<eCtrl Name="cEtiqueta1" ClassID="VB.Label" External="True" Visible="True" NameValue="" Heigth="300" Width="3750">
+		<DataLink ClassField="" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value=""/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="cUF_IAduana1" ClassID="GexecomCtrls.eOptionLstField" External="True" Visible="True" NameValue="Value" Heigth="525" Width="4050">
+		<DataLink ClassField="UF_IAduana" ClassType="3" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Aduana:"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="cEtiqueta2" ClassID="VB.Label" External="True" Visible="True" NameValue="" Heigth="525" Width="3750">
+		<DataLink ClassField="" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value=""/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="cUF_NumDocAduanero1" ClassID="GexecomCtrls.eTextField" External="True" Visible="True" NameValue="Value" Heigth="525" Width="2700">
+		<DataLink ClassField="UF_NumDocAduanero" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="N&#250;mero del documento aduanero:"/>
+			<Property Name="FieldSize" Value="200"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleStyle" Value="0"/>
+			<Property Name="TitleWidthP" Value="30"/>
+	</eCtrl>
+
+	<eCtrl Name="cEtiqueta3" ClassID="VB.Label" External="True" Visible="True" NameValue="" Heigth="525" Width="225">
+		<DataLink ClassField="" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value=""/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="cUF_FechaDocAduanero1" ClassID="GexecomCtrls.eDateField" External="True" Visible="True" NameValue="Value" Heigth="525" Width="2250">
+		<DataLink ClassField="UF_FechaDocAduanero" ClassType="4" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Fecha de expedici&#243;n:"/>
+			<Property Name="TitleWidthP" Value="30"/>
+			<Property Name="TitleStyle" Value="0"/>
+			<Property Name="TitleAligment" Value="0"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlFLiquidacion" ClassID="GexecomCtrls.eDateField" External="False" Visible="False" NameValue="Value" Heigth="520" Width="3750">
+		<DataLink ClassField="FLiquidacion" ClassType="4" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Fecha de liquidaci&#243;n:"/>
+			<Property Name="ForeColor" Value="0"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleAligment" Value="0"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="TitleWidthP" Value="45"/>
+	</eCtrl>
+
+</eForm>

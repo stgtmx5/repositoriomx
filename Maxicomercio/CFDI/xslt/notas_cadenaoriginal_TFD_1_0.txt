@@ -1,0 +1,2 @@
+07/01/2011 xslt original modificado para acceder al tfd.
+Se agregó cfdi:Comprobante para que se puede acceder al tfd ya que se usa con el xml completo asi que debe acceder a traves de la ruta completa.

@@ -1,0 +1,62 @@
+function CanAdd(){
+
+	
+var obj_CTR_PrimaryKey = ThisForm.ControlObject("CTR_PrimaryKey");
+
+	if (obj_CTR_PrimaryKey .Value>0) return true;
+		
+	return false;
+}
+
+
+function Dlg_AddNew(FK)
+{
+	var forms;
+	
+	if (!CanAdd()){
+		eBasic.eMsgbox ("Necesita guardar el componente antes de proceder...");
+		 return 0;
+		}
+	
+	forms=eBasic.eCreateObject("geSDK_DB.DBForms");
+	
+	if (forms==null)
+	{
+		eBasic.eMsgbox("No se pudo crear el objeto, puede que no se encuentre instalado el componente.");
+		return 0;
+	}
+	Application.Eval("@Parent_FK="+FK.toString());
+	return forms.AddNew(ADOCnn, TableName, FormName, Configuracion.RutaXML,Application);
+}
+
+function Dlg_Edit(Sys_PK)
+{
+	var forms;
+	
+	if (Sys_PK<=0) return 0;
+	forms=eBasic.eCreateObject("geSDK_DB.DBForms");
+	
+	if (forms==null)
+	{
+		eBasic.eMsgbox("No se pudo crear el objeto, puede que no se encuentre instalado el componente.");
+		return 0;
+	}
+	Application.Eval("@Parent_FK="+Sys_PK);
+	return forms.Edit(ADOCnn, TableName, FormName, Configuracion.RutaXML,Sys_PK, Application);
+}
+
+function Delete(Sys_PK)
+{
+	if (eBasic.eMsgbox("¿Seguro desea eliminar este registro?",4)!=6) return false;
+	try
+	{
+		ADOCnn.Execute("DELETE FROM " + TableName + " WHERE Sys_PK="+Sys_PK);
+	}
+	catch(e)
+	{	
+		eBasic.eMsgbox("Ha ocurrido un error");
+		return false;
+	}
+	
+	return true;
+}

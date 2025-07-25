@@ -1,0 +1,50 @@
+<xml xmlns:s='uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882'
+	xmlns:dt='uuid:C2F41010-65B3-11d1-A29F-00AA00C14882'
+	xmlns:rs='urn:schemas-microsoft-com:rowset'
+	xmlns:z='#RowsetSchema'>
+<s:Schema id='RowsetSchema'>
+	<s:ElementType name='row' content='eltOnly'>
+		<s:AttributeType name='Sys_PK' rs:number='1' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='10' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_TimeStamp' rs:number='2' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='dateTime' rs:dbtype='variantdate' dt:maxLength='16' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_GUID' rs:number='3' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='32'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_DTCreated' rs:number='4' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='dateTime' rs:dbtype='variantdate' dt:maxLength='16' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_User' rs:number='5' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='5'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_LastUser' rs:number='6' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='5'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_Exported' rs:number='7' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='boolean' dt:maxLength='2' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_DTExported' rs:number='8' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='dateTime' rs:dbtype='variantdate' dt:maxLength='16' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_Info' rs:number='9' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='32'/>
+		</s:AttributeType>
+		<s:AttributeType name='Codigo' rs:number='10' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='15'/>
+		</s:AttributeType>
+		<s:AttributeType name='Descripcion' rs:number='11' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='50'/>
+		</s:AttributeType>
+		<s:AttributeType name='Notas' rs:number='12' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='536870910' rs:long='true'/>
+		</s:AttributeType>
+		<s:extends type='rs:rowbase'/>
+	</s:ElementType>
+</s:Schema>
+<rs:data>
+	<z:row Sys_PK='1' Sys_TimeStamp='2008-04-01T23:47:50' Sys_GUID='61A9A134A18446888BBAF297748E526F' Sys_DTCreated='2008-04-01T23:47:47'
+		 Sys_Exported='False' Sys_DTExported='2008-04-01T23:47:47' Codigo='0001' Descripcion='Tipo de proveedor predeterminado'/>
+</rs:data>
+</xml>

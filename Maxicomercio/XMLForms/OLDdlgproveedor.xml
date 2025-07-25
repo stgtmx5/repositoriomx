@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eForm Caption="Proveedor" Name="dlgProveedor" state ="2" DataClassName="Proveedor" Heigth="8250" Width="8880" Style="1" LockHeight="450" LockWidth="1650">
+	<eCtrl Name="ctrlCodigo" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3000">
+		<DataLink ClassField="Codigo" ClassType="1" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="C&#243;digo:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="ForeColor" Value="16711680"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;-1;0;0;0"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="TitleWidthP" Value="30"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlNombre" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="6150">
+		<DataLink ClassField="Nombre" ClassType="1" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Nombre:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;-1;0;0;0"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="ForeColor" Value="16711680"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="TitleWidthP" Value="15"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlTipo" ClassID="GexecomCtrls.eFKField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="6150">
+		<DataLink ClassField="Tipo" ClassType="6" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Tipo:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleWidthP" Value="15"/>
+			<Property Name="ForeColor" Value="16711680"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;-1;0;0;0"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlRFC" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3075">
+		<DataLink ClassField="RFC" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="RFC:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="TitleAligment" Value="0"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;0;0;0;0"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlCURP" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3075">
+		<DataLink ClassField="CURP" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="CURP:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleWidthP" Value="18"/>
+			<Property Name="TitleAligment" Value="2"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlDomicilio1" ClassID="ctrlDireccion.eDir" External="False" Visible="True" NameValue="Value" Heigth="2700" Width="6150">
+		<DataLink ClassField="Domicilio1" ClassType="6" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Direcci&#243;n:"/>
+			<Property Name="HideNotes" Value="True"/>
+			<Property Name="HidePhone" Value="False"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="CanAddCountry" Value="True"/>
+			<Property Name="CanAddState" Value="True"/>
+			<Property Name="CanAddCity" Value="True"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlTelefonos" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3075">
+		<DataLink ClassField="Telefonos" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Tel&#233;fonos:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleWidthP" Value="25"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlFax" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3075">
+		<DataLink ClassField="Fax" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Fax:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleAligment" Value="2"/>
+			<Property Name="TitleWidthP" Value="25"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrleMail" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3075">
+		<DataLink ClassField="eMail" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="E-Mail:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleWidthP" Value="25"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlWebSite" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3075">
+		<DataLink ClassField="WebSite" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Sitio Web:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleWidthP" Value="25"/>
+			<Property Name="TitleAligment" Value="2"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlContacto1" ClassID="GexecomCtrls.eFKField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="6150">
+		<DataLink ClassField="Contacto1" ClassType="6" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Contacto:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleWidthP" Value="13"/>
+	</eCtrl>
+
+	<eTab Name="Tab1" Caption="Administraci&#243;n"/>
+
+	<eCtrl Name="ctrlIDivisa" ClassID="GexecomCtrls.eFKField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="6150">
+		<DataLink ClassField="IDivisa" ClassType="6" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Divisa:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleWidthP" Value="15"/>
+			<Property Name="ForeColor" Value="16711680"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;-1;0;0;0"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlLimiteCredito" ClassID="GexecomCtrls.eChkbox" External="False" Visible="True" NameValue="Value" Heigth="600" Width="3150">
+		<DataLink ClassField="LimiteCredito" ClassType="2" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Limite de Cr&#233;dito"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="cSpace1" ClassID="VB.Label" External="True" Visible="True" NameValue="" Heigth="300" Width="450">
+		<DataLink ClassField="" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlDiasCredito" ClassID="GexecomCtrls.eNumberField" External="False" Visible="True" NameValue="Value" Heigth="525" Width="2550">
+		<DataLink ClassField="DiasCredito" ClassType="3" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="D&#237;as de Cr&#233;dito"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="TitleStyle" Value="0"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleWidthP" Value="35"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlCodCuenta" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="6150">
+		<DataLink ClassField="CodCuenta" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="C&#243;digo de cuenta:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleWidthP" Value="22"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlIZona" ClassID="GexecomCtrls.eOptionLstField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="6150">
+		<DataLink ClassField="IZona" ClassType="6" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Zona:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleWidthP" Value="22"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlStatus" ClassID="GExecomCtrls.eOptionLstField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="6150">
+		<DataLink ClassField="Status" ClassType="6" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Status:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleWidthP" Value="22"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlTasaIVA" ClassID="GExecomCtrls.eOptionLstField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="6150">
+		<DataLink ClassField="TasaIVA" ClassType="6" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Tasa IVA:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleWidthP" Value="22"/>
+			<Property Name="ForeColor" Value="16711680"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;-1;0;0;0"/>
+	</eCtrl>
+
+	<eCtrl Name="clinea2" ClassID="VB.Label" External="True" Visible="True" NameValue="" Heigth="150" Width="6150">
+		<DataLink ClassField="" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="BackColor" Value="39423"/>
+	</eCtrl>
+
+	<eCtrl Name="cespacio1" ClassID="VB.Label" External="True" Visible="True" NameValue="" Heigth="300" Width="2250">
+		<DataLink ClassField="" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlDiasEntrega" ClassID="GexecomCtrls.eNumberField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="2700">
+		<DataLink ClassField="DiasEntrega" ClassType="3" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="D&#237;as de entrega:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleWidthP" Value="65"/>
+	</eCtrl>
+
+	<eCtrl Name="cEtiqueta1" ClassID="VB.Label" External="True" Visible="True" NameValue="" Heigth="300" Width="2250">
+		<DataLink ClassField="" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value=""/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="cUF_vueltaviajero1" ClassID="GexecomCtrls.eNumberField" External="True" Visible="True" NameValue="Value" Heigth="375" Width="2700">
+		<DataLink ClassField="UF_vueltaviajero" ClassType="2" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Vuelta de viajero (d&#237;as):"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="TitleWidthP" Value="65"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="clinea1" ClassID="VB.Label" External="True" Visible="True" NameValue="" Heigth="150" Width="6150">
+		<DataLink ClassField="" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="BackColor" Value="39423"/>
+	</eCtrl>
+
+	<eCtrl Name="cEspacio21" ClassID="VB.Label" External="True" Visible="True" NameValue="" Heigth="300" Width="1950">
+		<DataLink ClassField="" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlSaldo" ClassID="GexecomCtrls.eNumberField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3000">
+		<DataLink ClassField="Saldo" ClassType="2" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Saldo:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eTab Name="Tab2" Caption="Datos Adicionales"/>
+
+	<eCtrl Name="ctrlContacto2" ClassID="GexecomCtrls.eFKField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="6150">
+		<DataLink ClassField="Contacto2" ClassType="6" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Contacto 2:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleWidthP" Value="15"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlContacto3" ClassID="GexecomCtrls.eFKField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="6150">
+		<DataLink ClassField="Contacto3" ClassType="6" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Contacto 3:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleWidthP" Value="15"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlDomicilio2" ClassID="ctrlDireccion.eDir" External="False" Visible="True" NameValue="Value" Heigth="2550" Width="6150">
+		<DataLink ClassField="Domicilio2" ClassType="6" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Direcci&#243;n 2 (alterno)"/>
+			<Property Name="HidePhone" Value="True"/>
+			<Property Name="HideNotes" Value="True"/>
+			<Property Name="FullWidth" Value="False"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlDomicilio3" ClassID="ctrlDireccion.eDir" External="False" Visible="True" NameValue="Value" Heigth="2550" Width="6150">
+		<DataLink ClassField="Domicilio3" ClassType="6" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Direcci&#243;n 3 (alterno)"/>
+			<Property Name="HidePhone" Value="True"/>
+			<Property Name="HideNotes" Value="True"/>
+			<Property Name="FullWidth" Value="False"/>
+	</eCtrl>
+
+	<eTab Name="sTbNotas" Caption="Notas"/>
+
+	<eCtrl Name="ctrlNotas" ClassID="GexecomCtrls.eMemoField" External="False" Visible="True" NameValue="Value" Heigth="5700" Width="6150">
+		<DataLink ClassField="Notas" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Notas"/>
+			<Property Name="ForeColor" Value="0"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;0;0;0;0"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+</eForm>

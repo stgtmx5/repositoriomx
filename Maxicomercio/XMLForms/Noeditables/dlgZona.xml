@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eForm Caption="dlgZona" Name="dlgZona" state ="2" DataClassName="" Heigth="5475" Width="4395" Style="1" LockHeight="450" LockWidth="0">
+	<eCtrl Name="ctrlNombre" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3750">
+		<DataLink ClassField="Nombre" ClassType="1" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Nombre:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;0;0;0;0"/>
+			<Property Name="TitleWidthP" Value="20"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlNotas" ClassID="GexecomCtrls.eMemoField" External="False" Visible="True" NameValue="Value" Heigth="2700" Width="3750">
+		<DataLink ClassField="Notas" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Notas"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+</eForm>

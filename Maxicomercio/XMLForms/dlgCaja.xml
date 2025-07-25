@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eForm Caption="Caja" Name="dlgCaja" state ="2" DataClassName="Caja" Heigth="5505" Width="5265" Style="1" LockHeight="450" LockWidth="0">
+	<eCtrl Name="ctrlCodigo" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3000">
+		<DataLink ClassField="Codigo" ClassType="1" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Codigo:"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;-1;0;0;0"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="ForeColor" Value="16711680"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="TitleWidthP" Value="53"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlDescripcion" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="4500">
+		<DataLink ClassField="Descripcion" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Descripcion:"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;0;0;0;0"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="ForeColor" Value="0"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="TitleWidthP" Value="35"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlCentroConsumo" ClassID="GexecomCtrls.eFKField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="4500">
+		<DataLink ClassField="CentroConsumo" ClassType="6" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Centro de Consumo:"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;-1;0;0;0"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleWidthP" Value="35"/>
+			<Property Name="ForeColor" Value="16711680"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlCodCuenta" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="4500">
+		<DataLink ClassField="CodCuenta" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Codigo de Cuenta"/>
+			<Property Name="HideBtn" Value="True"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleWidthP" Value="35"/>
+	</eCtrl>
+
+	<eTab Name="Tab2" Caption="Efectivo"/>
+
+	<eCtrl Name="cEtiqueta2" ClassID="VB.Label" External="True" Visible="True" NameValue="" Heigth="300" Width="4500">
+		<DataLink ClassField="" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="L&#237;mites de efectivo"/>
+			<Property Name="BackColor" Value="3381759"/>
+	</eCtrl>
+
+	<eCtrl Name="cUF_limefectivo1" ClassID="GexecomCtrls.eNumberField" External="True" Visible="True" NameValue="Value" Heigth="375" Width="3750">
+		<DataLink ClassField="UF_limefectivo" ClassType="2" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="L&#237;mite de efectivo:"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="TitleAligment" Value="0"/>
+			<Property Name="TitleWidthP" Value="70"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="cUF_lime_vntadic1" ClassID="GexecomCtrls.eNumberField" External="True" Visible="True" NameValue="Value" Heigth="375" Width="3750">
+		<DataLink ClassField="UF_lime_vntadic" ClassType="2" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Ventas adicionales permitidas:"/>
+			<Property Name="TitleWidthP" Value="70"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="cUF_lime_aviso1" ClassID="GexecomCtrls.eNumberField" External="True" Visible="True" NameValue="Value" Heigth="375" Width="3750">
+		<DataLink ClassField="UF_lime_aviso" ClassType="2" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="L&#237;mite para mostrar aviso:"/>
+			<Property Name="TitleWidthP" Value="70"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="cuf_lime_alerta1" ClassID="GexecomCtrls.eMemoField" External="True" Visible="True" NameValue="Value" Heigth="1200" Width="4500">
+		<DataLink ClassField="uf_lime_alerta" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Mensaje de alerta:"/>
+			<Property Name="FieldSize" Value="500"/>
+	</eCtrl>
+
+	<eTab Name="Tab1" Caption="Cortes"/>
+
+	<eCtrl Name="cEtiqueta1" ClassID="VB.Label" External="True" Visible="True" NameValue="" Heigth="300" Width="4500">
+		<DataLink ClassField="" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Cortes"/>
+			<Property Name="BackColor" Value="3381759"/>
+	</eCtrl>
+
+	<eCtrl Name="cUF_corte_req1" ClassID="VB.CheckBox" External="True" Visible="True" NameValue="Value" Heigth="300" Width="4500">
+		<DataLink ClassField="UF_corte_req" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Corte requerido"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="cUF_horacorte11" ClassID="GexecomCtrls.eTimeField" External="True" Visible="True" NameValue="Value" Heigth="300" Width="2400">
+		<DataLink ClassField="UF_horacorte1" ClassType="4" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Hora corte 1:"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="TitleWidthP" Value="45"/>
+	</eCtrl>
+
+	<eCtrl Name="cUF_horacorte12" ClassID="GexecomCtrls.eTimeField" External="True" Visible="True" NameValue="Value" Heigth="300" Width="2400">
+		<DataLink ClassField="UF_horacorte2" ClassType="4" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Hora corte 2:"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="TitleWidthP" Value="45"/>
+	</eCtrl>
+
+	<eCtrl Name="cUF_horacorte13" ClassID="GexecomCtrls.eTimeField" External="True" Visible="True" NameValue="Value" Heigth="300" Width="2400">
+		<DataLink ClassField="UF_horacorte3" ClassType="4" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Hora corte 3:"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="TitleWidthP" Value="45"/>
+	</eCtrl>
+
+	<eCtrl Name="cUF_horacorte14" ClassID="GexecomCtrls.eTimeField" External="True" Visible="True" NameValue="Value" Heigth="300" Width="2400">
+		<DataLink ClassField="UF_horacorte4" ClassType="4" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Hora corte 4:"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="TitleWidthP" Value="45"/>
+	</eCtrl>
+
+	<eCtrl Name="cUF_horacorte15" ClassID="GexecomCtrls.eTimeField" External="True" Visible="True" NameValue="Value" Heigth="300" Width="2400">
+		<DataLink ClassField="UF_horacorte5" ClassType="4" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Hora corte 5:"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="TitleWidthP" Value="45"/>
+	</eCtrl>
+
+	<eCtrl Name="cUF_cortereq_vntadic1" ClassID="GexecomCtrls.eNumberField" External="True" Visible="True" NameValue="Value" Heigth="375" Width="3150">
+		<DataLink ClassField="UF_cortereq_vntadic" ClassType="2" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Ventas adicionales permitidas:"/>
+			<Property Name="TitleWidthP" Value="70"/>
+			<Property Name="TitleStyle" Value="2"/>
+	</eCtrl>
+
+	<eCtrl Name="cUF_lim_vntliber1" ClassID="GexecomCtrls.eNumberField" External="True" Visible="True" NameValue="Value" Heigth="375" Width="3150">
+		<DataLink ClassField="UF_lim_vntliber" ClassType="2" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="L&#237;mite de tickets liberados:"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="TitleWidthP" Value="70"/>
+	</eCtrl>
+
+	<eTab Name="Tab3" Caption="Notas"/>
+
+	<eCtrl Name="ctrlNotas" ClassID="GexecomCtrls.eMemoField" External="False" Visible="True" NameValue="Value" Heigth="2025" Width="4500">
+		<DataLink ClassField="Notas" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Notas"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+</eForm>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eForm Caption="Organizacion" Name="dlgOrganizacion" state ="2" DataClassName="Organizacion" Heigth="7530" Width="7800" Style="1" LockHeight="600" LockWidth="0">
+	<eCtrl Name="ctrlNombre" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="520" Width="3375">
+		<DataLink ClassField="Nombre" ClassType="1" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Nombre:"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlNomComercial" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="520" Width="3375">
+		<DataLink ClassField="NomComercial" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Nombre comercial:"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlICiudad" ClassID="eCtrLocations.eCtrCiudad" External="False" Visible="True" NameValue="Value" Heigth="1200" Width="6750">
+		<DataLink ClassField="ICiudad" ClassType="6" DefaultVal="" NoNull="False"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlTel1" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="520" Width="2250">
+		<DataLink ClassField="Tel1" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Tel&#233;fono 1:"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlTel2" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="520" Width="2250">
+		<DataLink ClassField="Tel2" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Tel&#233;fono 2:"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlTel3" ClassID="GexecomCtrls.eTextField" External="False" Visible="False" NameValue="Value" Heigth="520" Width="2250">
+		<DataLink ClassField="Tel3" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Tel&#233;fono 3:"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlFax" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="520" Width="2250">
+		<DataLink ClassField="Fax" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Fax:"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlEMail" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="520" Width="3375">
+		<DataLink ClassField="EMail" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Correo electr&#243;nico:"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlWebSite" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="520" Width="3375">
+		<DataLink ClassField="WebSite" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Sitio Web:"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlDomicilio" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="520" Width="3300">
+		<DataLink ClassField="Domicilio" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Direcci&#243;n:"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlColonia" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="520" Width="2250">
+		<DataLink ClassField="Colonia" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Colonia:"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlCodPostal" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="520" Width="1200">
+		<DataLink ClassField="CodPostal" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="C&#243;digo postal:"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlICategoria" ClassID="GexecomCtrls.eOptionLstField" External="False" Visible="True" NameValue="Value" Heigth="520" Width="6750">
+		<DataLink ClassField="ICategoria" ClassType="6" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Clasificaci&#243;n:"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlIEjecutivo" ClassID="GexecomCtrls.eOptionLstField" External="False" Visible="True" NameValue="Value" Heigth="520" Width="6750">
+		<DataLink ClassField="IEjecutivo" ClassType="6" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Agente:"/>
+	</eCtrl>
+
+	<eTab Name="sTbsp1" Caption="M&#225;s datos"/>
+
+	<eCtrl Name="ctrlNacionalidad" ClassID="GexecomCtrls.eOptionLstField" External="False" Visible="True" NameValue="Value" Heigth="520" Width="4500">
+		<DataLink ClassField="Nacionalidad" ClassType="6" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Nacionalidad:"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlCodigo" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="520" Width="2250">
+		<DataLink ClassField="Codigo" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="NIC:"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="cUF_Sector1" ClassID="GexecomCtrls.eOptionLstField" External="True" Visible="True" NameValue="Value" Heigth="525" Width="1800">
+		<DataLink ClassField="UF_Sector" ClassType="3" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Sector:"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="cUF_PProductos1" ClassID="GexecomCtrls.eTextField" External="True" Visible="True" NameValue="Value" Heigth="525" Width="4800">
+		<DataLink ClassField="UF_PProductos" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Principales productos:"/>
+			<Property Name="FieldSize" Value="50"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="cEtiqueta1" ClassID="VB.Label" External="True" Visible="True" NameValue="" Heigth="300" Width="6750">
+		<DataLink ClassField="" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Modelo de negocio"/>
+			<Property Name="ForeColor" Value="16711680"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="cUF_Minorista1" ClassID="VB.CheckBox" External="True" Visible="True" NameValue="Value" Heigth="300" Width="2250">
+		<DataLink ClassField="UF_Minorista" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Minorista/Ventas al p&#250;blico"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="cUF_Mayoreo1" ClassID="VB.CheckBox" External="True" Visible="True" NameValue="Value" Heigth="300" Width="1500">
+		<DataLink ClassField="UF_Mayoreo" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Mayoreo"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="cUF_Multinivel1" ClassID="VB.CheckBox" External="True" Visible="True" NameValue="Value" Heigth="300" Width="1500">
+		<DataLink ClassField="UF_Multinivel" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Multinivel"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="cUF_TeleMarketing1" ClassID="VB.CheckBox" External="True" Visible="True" NameValue="Value" Heigth="300" Width="1500">
+		<DataLink ClassField="UF_TeleMarketing" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Telemarketing"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="cUF_Parcialidades1" ClassID="VB.CheckBox" External="True" Visible="True" NameValue="Value" Heigth="300" Width="2250">
+		<DataLink ClassField="UF_Parcialidades" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Ventas en parcialidades"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="cUF_Franquicia1" ClassID="VB.CheckBox" External="True" Visible="True" NameValue="Value" Heigth="300" Width="1500">
+		<DataLink ClassField="UF_Franquicia" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Franquicia"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="cEtiqueta2" ClassID="VB.Label" External="True" Visible="True" NameValue="" Heigth="300" Width="6750">
+		<DataLink ClassField="" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Alcance"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="cUF_ALocal1" ClassID="VB.CheckBox" External="True" Visible="True" NameValue="Value" Heigth="300" Width="1500">
+		<DataLink ClassField="UF_ALocal" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Local"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="cUF_ARegional1" ClassID="VB.CheckBox" External="True" Visible="True" NameValue="Value" Heigth="300" Width="1500">
+		<DataLink ClassField="UF_ARegional" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Regional"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="cUF_ANacional1" ClassID="VB.CheckBox" External="True" Visible="True" NameValue="Value" Heigth="300" Width="1500">
+		<DataLink ClassField="UF_ANacional" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Nacional"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="cUF_AInternacional1" ClassID="VB.CheckBox" External="True" Visible="True" NameValue="Value" Heigth="300" Width="1500">
+		<DataLink ClassField="UF_AInternacional" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Internacional"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="cUF_Tamano1" ClassID="GexecomCtrls.eOptionLstField" External="True" Visible="True" NameValue="Value" Heigth="525" Width="1500">
+		<DataLink ClassField="UF_Tamano" ClassType="3" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Tama&#241;o:"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="cUF_Sucursales1" ClassID="GexecomCtrls.eOptionLstField" External="True" Visible="True" NameValue="Value" Heigth="525" Width="2250">
+		<DataLink ClassField="UF_Sucursales" ClassType="3" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Sucursales:"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="cUF_Empleados1" ClassID="GexecomCtrls.eOptionLstField" External="True" Visible="True" NameValue="Value" Heigth="525" Width="1500">
+		<DataLink ClassField="UF_Empleados" ClassType="3" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Empleados:"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlNotas" ClassID="GexecomCtrls.eMemoField" External="False" Visible="True" NameValue="Value" Heigth="1500" Width="6750">
+		<DataLink ClassField="Notas" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Notas:"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+</eForm>

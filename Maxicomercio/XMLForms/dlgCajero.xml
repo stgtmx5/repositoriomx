@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eForm Caption="Cajero" Name="dlgCajero" state ="2" DataClassName="Cajero" Heigth="7110" Width="6000" Style="1" LockHeight="450" LockWidth="0">
+	<eCtrl Name="ctrlCodigo" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3000">
+		<DataLink ClassField="Codigo" ClassType="1" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Codigo:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="ForeColor" Value="16711680"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;-1;0;0;0"/>
+			<Property Name="TitleStyle" Value="2"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlContrasena" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3000">
+		<DataLink ClassField="Contrasena" ClassType="1" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Contrase&#241;a:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="ForeColor" Value="16711680"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;-1;0;0;0"/>
+			<Property Name="TitleStyle" Value="2"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlNombre" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="5250">
+		<DataLink ClassField="Nombre" ClassType="1" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Nombre:"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="ForeColor" Value="16711680"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;-1;0;0;0"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="TitleWidthP" Value="17"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlDomicilio1" ClassID="ctrlDireccion.eDir" External="False" Visible="True" NameValue="Value" Heigth="2700" Width="5250">
+		<DataLink ClassField="Domicilio1" ClassType="6" DefaultVal="" NoNull="False"/>
+			<Property Name="HidePhone" Value="False"/>
+			<Property Name="Caption" Value="Direccion"/>
+			<Property Name="HideNotes" Value="True"/>
+			<Property Name="FullWidth" Value="True"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlTelefono" ClassID="GexecomCtrls.eTextField" External="False" Visible="False" NameValue="Value" Heigth="375" Width="3000">
+		<DataLink ClassField="Telefono" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Telefono:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;0;0;0;0"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleWidthP" Value="45"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrleMail" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3000">
+		<DataLink ClassField="eMail" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="eMail:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;0;0;0;0"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="TitleWidthP" Value="45"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlCodNomina" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3000">
+		<DataLink ClassField="CodNomina" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Codigo de Nomina:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;0;0;0;0"/>
+			<Property Name="TitleWidthP" Value="45"/>
+	</eCtrl>
+
+	<eTab Name="Tab1" Caption="Notas"/>
+
+	<eCtrl Name="ctrlNotas" ClassID="GexecomCtrls.eMemoField" External="False" Visible="True" NameValue="Value" Heigth="2250" Width="4800">
+		<DataLink ClassField="Notas" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Notas:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+</eForm>

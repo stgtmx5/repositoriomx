@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eForm Caption="Banco" Name="dlgBanco" state ="2" DataClassName="Banco" Heigth="4530" Width="5265" Style="1" LockHeight="450" LockWidth="0">
+	<eCtrl Name="ctrlNombre" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="4500">
+		<DataLink ClassField="Nombre" ClassType="1" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Nombre:"/>
+			<Property Name="TitleWidthP" Value="25"/>
+			<Property Name="TitleAligment" Value="0"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="ForeColor" Value="16711680"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;-1;0;0;0"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlContacto" ClassID="GexecomCtrls.eFKField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="4500">
+		<DataLink ClassField="Contacto" ClassType="6" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Contacto:"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;0;0;0;0"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="ForeColor" Value="0"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleWidthP" Value="25"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlWebSite" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="4500">
+		<DataLink ClassField="WebSite" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="WebSite:"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;0;0;0;0"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="ForeColor" Value="0"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleWidthP" Value="25"/>
+	</eCtrl>
+
+	<eTab Name="Tab1" Caption="Notas"/>
+
+	<eCtrl Name="ctrlNotas" ClassID="GexecomCtrls.eMemoField" External="False" Visible="True" NameValue="Value" Heigth="2250" Width="4500">
+		<DataLink ClassField="Notas" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Notas"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;0;0;0;0"/>
+			<Property Name="TitleStyle" Value="0"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+</eForm>

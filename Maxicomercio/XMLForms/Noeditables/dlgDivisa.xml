@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eForm Caption="Divisa" Name="dlgDivisa" state ="2" DataClassName="" Heigth="3990" Width="4605" Style="1" LockHeight="450" LockWidth="0">
+	<eCtrl Name="ctrlCodigo" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3750">
+		<DataLink ClassField="Codigo" ClassType="1" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Codigo:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="ForeColor" Value="0"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;0;0;0;0"/>
+			<Property Name="TitleStyle" Value="2"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlDescripcion" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3750">
+		<DataLink ClassField="Descripcion" ClassType="1" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Descripcion:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="ForeColor" Value="0"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;0;0;0;0"/>
+			<Property Name="TitleStyle" Value="2"/>
+	</eCtrl>
+
+	<eCtrl Name="ca1" ClassID="VB.Label" External="True" Visible="True" NameValue="" Heigth="150" Width="3750">
+		<DataLink ClassField="" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlTCambio" ClassID="GexecomCtrls.eNumberField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3750">
+		<DataLink ClassField="TCambio" ClassType="2" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Tipo de Cambio:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="ForeColor" Value="0"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;0;0;0;0"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="TitleWidthP" Value="35"/>
+	</eCtrl>
+
+</eForm>

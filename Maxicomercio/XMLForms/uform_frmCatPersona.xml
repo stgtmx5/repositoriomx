@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eForm Caption="Categor&#237;as de contactos (personas)" Name="uform_frmCatPersona" state ="2" DataClassName="ctpersona" Heigth="3675" Width="5115" Style="0" LockHeight="525" LockWidth="0">
+	<eCtrl Name="cDescripcion1" ClassID="GexecomCtrls.eTextField" External="True" Visible="True" NameValue="Value" Heigth="675" Width="4500">
+		<DataLink ClassField="Descripcion" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Descripci&#243;n:"/>
+			<Property Name="FieldSize" Value="50"/>
+			<Property Name="TitleStyle" Value="0"/>
+			<Property Name="TitleAligment" Value="0"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+</eForm>

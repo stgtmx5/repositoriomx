@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eForm Caption="Origen del contacto" Name="uform_OrigenContacto" state ="2" DataClassName="ut_origencontacto" Heigth="5415" Width="5505" Style="0" LockHeight="525" LockWidth="0">
+	<eCtrl Name="cuf_Origen1" ClassID="GexecomCtrls.eTextField" External="True" Visible="True" NameValue="Value" Heigth="300" Width="900">
+		<DataLink ClassField="uf_Origen" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Origen:"/>
+			<Property Name="FieldSize" Value="255"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="TitleAligment" Value="0"/>
+			<Property Name="TitleWidthP" Value="20"/>
+			<Property Name="FullWidth" Value="True"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="cuf_Descripcion1" ClassID="GexecomCtrls.eMemoField" External="True" Visible="True" NameValue="Value" Heigth="3000" Width="900">
+		<DataLink ClassField="uf_Descripcion" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Descripci&#243;n:"/>
+			<Property Name="FieldSize" Value="2048"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+</eForm>

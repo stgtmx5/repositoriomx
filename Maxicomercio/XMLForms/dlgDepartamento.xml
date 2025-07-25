@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eForm Caption="Departamento" Name="dlgDepartamento1" state ="2" DataClassName="Departamento" Heigth="5925" Width="4845" Style="1" LockHeight="450" LockWidth="0">
+	<eCtrl Name="ctrlCodigo" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3750">
+		<DataLink ClassField="Codigo" ClassType="1" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Codigo:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="ForeColor" Value="16711680"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;-1;0;0;0"/>
+			<Property Name="TitleStyle" Value="2"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlDescripcion" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3750">
+		<DataLink ClassField="Descripcion" ClassType="1" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Descripcion:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="ForeColor" Value="16711680"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;-1;0;0;0"/>
+			<Property Name="TitleStyle" Value="2"/>
+	</eCtrl>
+
+	<eCtrl Name="ca1" ClassID="VB.Label" External="True" Visible="True" NameValue="" Heigth="375" Width="4200">
+		<DataLink ClassField="" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlComision1" ClassID="GexecomCtrls.eNumberField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3750">
+		<DataLink ClassField="Comision1" ClassType="2" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Comision 1:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;0;0;0;0"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlComision2" ClassID="GexecomCtrls.eNumberField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3750">
+		<DataLink ClassField="Comision2" ClassType="2" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Comision 2:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlComision3" ClassID="GexecomCtrls.eNumberField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3750">
+		<DataLink ClassField="Comision3" ClassType="2" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Comision 3:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlComision4" ClassID="GexecomCtrls.eNumberField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3750">
+		<DataLink ClassField="Comision4" ClassType="2" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Comision 4:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlComision5" ClassID="GexecomCtrls.eNumberField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3750">
+		<DataLink ClassField="Comision5" ClassType="2" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Comision 5:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+</eForm>

@@ -1,0 +1,107 @@
+<xml xmlns:s='uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882'
+	xmlns:dt='uuid:C2F41010-65B3-11d1-A29F-00AA00C14882'
+	xmlns:rs='urn:schemas-microsoft-com:rowset'
+	xmlns:z='#RowsetSchema'>
+<s:Schema id='RowsetSchema'>
+	<s:ElementType name='row' content='eltOnly'>
+		<s:AttributeType name='Sys_PK' rs:number='1' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='10' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_TimeStamp' rs:number='2' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='dateTime' rs:dbtype='variantdate' dt:maxLength='16' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_GUID' rs:number='3' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='32'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_DTCreated' rs:number='4' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='dateTime' rs:dbtype='variantdate' dt:maxLength='16' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_User' rs:number='5' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='5'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_LastUser' rs:number='6' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='5'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_Exported' rs:number='7' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='boolean' dt:maxLength='2' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_DTExported' rs:number='8' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='dateTime' rs:dbtype='variantdate' dt:maxLength='16' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_Info' rs:number='9' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='32'/>
+		</s:AttributeType>
+		<s:AttributeType name='Codigo' rs:number='10' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='10'/>
+		</s:AttributeType>
+		<s:AttributeType name='Color' rs:number='11' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='10' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Descripcion' rs:number='12' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='100'/>
+		</s:AttributeType>
+		<s:AttributeType name='Notas' rs:number='13' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='536870910' rs:long='true'/>
+		</s:AttributeType>
+		<s:extends type='rs:rowbase'/>
+	</s:ElementType>
+</s:Schema>
+<rs:data>
+	<z:row Sys_PK='18' Sys_TimeStamp='2008-03-24T17:04:31' Sys_GUID='BE8A18EDFD4E45FA986C8EB729EE5720' Sys_DTCreated='2008-02-05T09:30:29'
+		 Sys_Exported='False' Sys_DTExported='2008-02-05T09:30:29' Codigo='RACI' Color='0' Descripcion='Activo Circulante'/>
+	<z:row Sys_PK='19' Sys_TimeStamp='2008-03-24T17:04:41' Sys_GUID='3FE9626FB05B495684EDC8D1477F3E7E' Sys_DTCreated='2008-02-05T09:31:53'
+		 Sys_Exported='False' Sys_DTExported='2008-02-05T09:31:53' Codigo='RANC' Color='0' Descripcion='Activo No Circulante'/>
+	<z:row Sys_PK='20' Sys_TimeStamp='2008-03-24T17:04:52' Sys_GUID='F5967BD4F9BC482B801003486E6FE198' Sys_DTCreated='2008-02-05T09:32:05'
+		 Sys_Exported='False' Sys_DTExported='2008-02-05T09:32:05' Codigo='RPCP' Color='0' Descripcion='Pasivo A Corto Plazo'/>
+	<z:row Sys_PK='21' Sys_TimeStamp='2008-03-24T17:04:59' Sys_GUID='5C1C0880F6254B3B89AA70206EE621B5' Sys_DTCreated='2008-02-05T09:34:35'
+		 Sys_Exported='False' Sys_DTExported='2008-02-05T09:34:35' Codigo='RPLP' Color='0' Descripcion='Pasivo a Largo Plazo'/>
+	<z:row Sys_PK='22' Sys_TimeStamp='2008-03-24T17:05:09' Sys_GUID='43EE2973B00945FFA804E21702C3629F' Sys_DTCreated='2008-02-05T09:34:49'
+		 Sys_Exported='False' Sys_DTExported='2008-02-05T09:34:49' Codigo='RCAP' Color='0' Descripcion='Capital'/>
+	<z:row Sys_PK='25' Sys_TimeStamp='2008-03-24T17:03:27' Sys_GUID='8306EDC468F144F3A7A806EC2EBCD19E' Sys_DTCreated='2008-02-05T09:35:22'
+		 Sys_Exported='False' Sys_DTExported='2008-02-05T09:35:22' Codigo='RGOP' Color='0' Descripcion='Gastos de Operacion'/>
+	<z:row Sys_PK='26' Sys_TimeStamp='2008-03-29T12:17:16' Sys_GUID='9A937FEC79D24BD4A67DDAAC89E4DB09' Sys_DTCreated='2008-02-05T09:38:33'
+		 Sys_Exported='False' Sys_DTExported='2008-02-05T09:38:33' Codigo='ROGA' Color='0' Descripcion='Otros Gastos'/>
+	<z:row Sys_PK='27' Sys_TimeStamp='2008-03-29T12:11:51' Sys_GUID='AEE7686A202444E0847B62CA3383C11C' Sys_DTCreated='2008-02-05T09:56:25'
+		 Sys_Exported='False' Sys_DTExported='2008-02-05T09:56:25' Codigo='RIYP' Color='0' Descripcion='ISR y PTU'/>
+	<z:row Sys_PK='28' Sys_TimeStamp='2008-02-05T09:57:24' Sys_GUID='306574402687458F925389543DD2493D' Sys_DTCreated='2008-02-05T09:57:11'
+		 Sys_Exported='False' Sys_DTExported='2008-02-05T09:57:11' Codigo='0011' Color='0' Descripcion='Caja, Bancos e Inversiones'/>
+	<z:row Sys_PK='29' Sys_TimeStamp='2008-02-05T09:57:36' Sys_GUID='6C7E07182B9C4C318185009C70FFBDEA' Sys_DTCreated='2008-02-05T09:57:25'
+		 Sys_Exported='False' Sys_DTExported='2008-02-05T09:57:25' Codigo='0012' Color='0' Descripcion='Cuentas por Cobrar'/>
+	<z:row Sys_PK='30' Sys_TimeStamp='2008-02-05T09:57:45' Sys_GUID='1A0BE4D6D23442D49079A373164DEAD5' Sys_DTCreated='2008-02-05T09:57:37'
+		 Sys_Exported='False' Sys_DTExported='2008-02-05T09:57:37' Codigo='0013' Color='0' Descripcion='Inventarios'/>
+	<z:row Sys_PK='31' Sys_TimeStamp='2008-02-05T09:58:28' Sys_GUID='9D8D9BE672464F7B80C0D5300082E776' Sys_DTCreated='2008-02-05T09:57:46'
+		 Sys_Exported='False' Sys_DTExported='2008-02-05T09:57:46' Codigo='0014' Color='0' Descripcion='IVA Acreditable'/>
+	<z:row Sys_PK='32' Sys_TimeStamp='2008-02-05T09:58:41' Sys_GUID='BB2D4200533442D6B3D43C4C216145C3' Sys_DTCreated='2008-02-05T09:58:29'
+		 Sys_Exported='False' Sys_DTExported='2008-02-05T09:58:29' Codigo='0015' Color='0' Descripcion='Otros Activos Circulantes'/>
+	<z:row Sys_PK='33' Sys_TimeStamp='2008-02-05T09:58:56' Sys_GUID='DD281E032AA74983A36D69EAF1F12DD5' Sys_DTCreated='2008-02-05T09:58:42'
+		 Sys_Exported='False' Sys_DTExported='2008-02-05T09:58:42' Codigo='0016' Color='0' Descripcion='Proveedores'/>
+	<z:row Sys_PK='34' Sys_TimeStamp='2008-03-29T11:25:43' Sys_GUID='1BD7580A40634B7CA6846D8BF0E083EC' Sys_DTCreated='2008-02-05T09:58:58'
+		 Sys_Exported='False' Sys_DTExported='2008-02-05T09:58:58' Codigo='0017' Color='0' Descripcion='IVA Repercutido'/>
+	<z:row Sys_PK='37' Sys_TimeStamp='2008-02-05T10:01:38' Sys_GUID='075D0AC1103B4A08844DD3E99201E527' Sys_DTCreated='2008-02-05T09:59:46'
+		 Sys_Exported='False' Sys_DTExported='2008-02-05T09:59:46' Codigo='0020' Color='0' Descripcion='Cuentas por Pagar'/>
+	<z:row Sys_PK='56' Sys_TimeStamp='2008-03-29T12:11:45' Sys_GUID='64A34762AB524C72AB057994F43D87A5' Sys_DTCreated='2008-03-29T11:48:31'
+		 Sys_Exported='False' Sys_DTExported='2008-03-29T11:48:31' Codigo='ROIN' Color='0' Descripcion='Otros Ingresos'/>
+	<z:row Sys_PK='38' Sys_TimeStamp='2008-02-05T10:02:13' Sys_GUID='71DBF03FB52F46479825CDB39F7D07C8' Sys_DTCreated='2008-02-05T10:01:39'
+		 Sys_Exported='False' Sys_DTExported='2008-02-05T10:01:39' Codigo='0021' Color='0' Descripcion='Otros Pasivos Circulantes'/>
+	<z:row Sys_PK='39' Sys_TimeStamp='2008-03-29T10:51:31' Sys_GUID='AFE6161FE1494D719D6B6F9C433E92C4' Sys_DTCreated='2008-02-05T10:02:14'
+		 Sys_Exported='False' Sys_DTExported='2008-02-05T10:02:14' Codigo='0022' Color='0' Descripcion='Activo'/>
+	<z:row Sys_PK='40' Sys_TimeStamp='2008-03-29T10:51:40' Sys_GUID='493A5ECB42F846099D92647CAB21B0CD' Sys_DTCreated='2008-02-05T10:03:50'
+		 Sys_Exported='False' Sys_DTExported='2008-02-05T10:03:50' Codigo='0023' Color='0' Descripcion='Pasivo'/>
+	<z:row Sys_PK='42' Sys_TimeStamp='2008-02-05T10:04:34' Sys_GUID='5739225F77834B6DA4A2619FD2ACBC42' Sys_DTCreated='2008-02-05T10:04:21'
+		 Sys_Exported='False' Sys_DTExported='2008-02-05T10:04:21' Codigo='0025' Color='0' Descripcion='Capital Social'/>
+	<z:row Sys_PK='43' Sys_TimeStamp='2008-02-05T10:04:43' Sys_GUID='1EDD966CD84A4B87A0423F025139C33E' Sys_DTCreated='2008-02-05T10:04:35'
+		 Sys_Exported='False' Sys_DTExported='2008-02-05T10:04:35' Codigo='0026' Color='0' Descripcion='Depreciacion'/>
+	<z:row Sys_PK='44' Sys_TimeStamp='2008-02-05T10:04:51' Sys_GUID='2E5B6E6A22C441EC9B98376CFF506184' Sys_DTCreated='2008-02-05T10:04:44'
+		 Sys_Exported='False' Sys_DTExported='2008-02-05T10:04:44' Codigo='0027' Color='0' Descripcion='Amortizacion'/>
+	<z:row Sys_PK='51' Sys_TimeStamp='2008-03-29T12:34:58' Sys_GUID='93D90DC25927484992D4FD1478E21CED' Sys_DTCreated='2008-03-24T17:01:33'
+		 Sys_Exported='False' Sys_DTExported='2008-03-24T17:01:33' Codigo='RLMY' Color='0' Descripcion='Libro Mayor'/>
+	<z:row Sys_PK='52' Sys_TimeStamp='2008-03-24T17:03:53' Sys_GUID='A0A3714C578140439700D438E7A200F7' Sys_DTCreated='2008-03-24T17:03:43'
+		 Sys_Exported='False' Sys_DTExported='2008-03-24T17:03:43' Codigo='RCOS' Color='0' Descripcion='Costos'/>
+	<z:row Sys_PK='53' Sys_TimeStamp='2008-03-29T11:06:31' Sys_GUID='0100A66F8759449EA0621E48F4BB40DA' Sys_DTCreated='2008-03-24T17:03:59'
+		 Sys_Exported='False' Sys_DTExported='2008-03-24T17:03:59' Codigo='RBGL' Color='0' Descripcion='Balance General'/>
+	<z:row Sys_PK='54' Sys_TimeStamp='2008-03-24T17:10:12' Sys_GUID='313AB7E8907D4D19869CAF6E6286701D' Sys_DTCreated='2008-03-24T17:10:02'
+		 Sys_Exported='False' Sys_DTExported='2008-03-24T17:10:02' Codigo='RING' Color='0' Descripcion='Ingresos'/>
+	<z:row Sys_PK='55' Sys_TimeStamp='2008-03-24T17:48:55' Sys_GUID='792E319CB38C4BBDA3A791AAE04006EA' Sys_DTCreated='2008-03-24T17:17:08'
+		 Sys_Exported='False' Sys_DTExported='2008-03-24T17:17:08' Codigo='REGR' Color='0' Descripcion='Egresos'/>
+</rs:data>
+</xml>

@@ -1,0 +1,86 @@
+<xml xmlns:s='uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882'
+	xmlns:dt='uuid:C2F41010-65B3-11d1-A29F-00AA00C14882'
+	xmlns:rs='urn:schemas-microsoft-com:rowset'
+	xmlns:z='#RowsetSchema'>
+<s:Schema id='RowsetSchema'>
+	<s:ElementType name='row' content='eltOnly'>
+		<s:AttributeType name='Sys_PK' rs:number='1' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='10' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_TimeStamp' rs:number='2' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='dateTime' rs:dbtype='variantdate' dt:maxLength='16' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_GUID' rs:number='3' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='32'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_DTCreated' rs:number='4' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='dateTime' rs:dbtype='variantdate' dt:maxLength='16' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_User' rs:number='5' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='5'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_LastUser' rs:number='6' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='5'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_Exported' rs:number='7' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='boolean' dt:maxLength='2' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_DTExported' rs:number='8' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='dateTime' rs:dbtype='variantdate' dt:maxLength='16' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_Info' rs:number='9' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='32'/>
+		</s:AttributeType>
+		<s:AttributeType name='CodCuenta' rs:number='10' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='50'/>
+		</s:AttributeType>
+		<s:AttributeType name='Codigo' rs:number='11' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='5'/>
+		</s:AttributeType>
+		<s:AttributeType name='Descripcion' rs:number='12' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='50'/>
+		</s:AttributeType>
+		<s:AttributeType name='PMensual' rs:number='13' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Tipo' rs:number='14' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='10' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Padre' rs:number='15' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='10' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:extends type='rs:rowbase'/>
+	</s:ElementType>
+</s:Schema>
+<rs:data>
+	<z:row Sys_PK='1' Sys_TimeStamp='2008-04-01T23:53:55' Sys_GUID='1D2106651C7C47888C2C6BF80017DF05' Sys_DTCreated='2007-10-24T10:53:31'
+		 Sys_Exported='False' Sys_DTExported='2007-10-24T10:53:31' Codigo='&#x3c;AEI&#x3e;' Descripcion='Actualización de existencias en inventario'
+		 PMensual='0' Tipo='3'/>
+	<z:row Sys_PK='2' Sys_TimeStamp='2008-04-01T23:53:55' Sys_GUID='E57D09BDF08140F4B389EB14D90357EA' Sys_DTCreated='2007-10-24T11:02:57'
+		 Sys_Exported='False' Sys_DTExported='2007-10-24T11:02:57' Codigo='&#x3c;CFI&#x3e;' Descripcion='Conteo físico de inventarios'
+		 PMensual='0' Tipo='3'/>
+	<z:row Sys_PK='3' Sys_TimeStamp='2008-04-01T23:53:55' Sys_GUID='6E4FA3F7D11D40A18500D963687C0498' Sys_DTCreated='2007-10-24T11:03:24'
+		 Sys_Exported='False' Sys_DTExported='2007-10-24T11:03:24' Codigo='&#x3c;PRO&#x3e;' Descripcion='Promociones'
+		 PMensual='0' Tipo='3'/>
+	<z:row Sys_PK='4' Sys_TimeStamp='2008-04-01T23:53:55' Sys_GUID='4617A56F39A24DACA3C95EE5BC66585B' Sys_DTCreated='2008-01-28T13:41:09'
+		 Sys_Exported='False' Sys_DTExported='2008-01-28T13:41:09' Codigo='0001' Descripcion='Movimientos extraordinarios'
+		 PMensual='0' Tipo='3'/>
+	<z:row Sys_PK='5' Sys_TimeStamp='2008-04-01T23:53:55' Sys_GUID='81794BBED501478EBDEB00E5EB5E607B' Sys_DTCreated='2008-01-28T13:41:34'
+		 Sys_Exported='False' Sys_DTExported='2008-01-28T13:41:34' Codigo='0002' Descripcion='Cobros' PMensual='0' Tipo='1'/>
+	<z:row Sys_PK='6' Sys_TimeStamp='2008-04-01T23:53:55' Sys_GUID='AB346C78C6F945B98727D2A81003C449' Sys_DTCreated='2008-01-28T13:42:11'
+		 Sys_Exported='False' Sys_DTExported='2008-01-28T13:42:11' Codigo='0003' Descripcion='Otros egresos' PMensual='0'
+		 Tipo='2'/>
+	<z:row Sys_PK='7' Sys_TimeStamp='2008-04-01T23:53:55' Sys_GUID='DD4646A65A00492989C6009E55F28E26' Sys_DTCreated='2008-01-30T09:50:54'
+		 Sys_Exported='False' Sys_DTExported='2008-01-30T09:50:54' Codigo='0004' Descripcion='Entradas de inventario por compras'
+		 PMensual='0' Tipo='3'/>
+	<z:row Sys_PK='8' Sys_TimeStamp='2008-04-01T23:53:55' Sys_GUID='BDF07256E984446C9669228CE854C4D3' Sys_DTCreated='2008-01-30T09:51:29'
+		 Sys_Exported='False' Sys_DTExported='2008-01-30T09:51:29' Codigo='0005' Descripcion='Salidas de inventario por ventas'
+		 PMensual='0' Tipo='3'/>
+	<z:row Sys_PK='9' Sys_TimeStamp='2008-04-23T16:59:03' Sys_GUID='8A06CA4D28744024A055D27299C4A0FE' Sys_DTCreated='2008-04-23T16:56:55'
+		 Sys_Exported='False' Sys_DTExported='2008-04-23T16:56:55' Codigo='&#x3c;EVA&#x3e;' Descripcion='Existencias versión anterior.'
+		 PMensual='0' Tipo='3'/>
+	<z:row Sys_PK='10' Sys_TimeStamp='2008-04-23T16:59:03' Sys_GUID='7EC30A28A6DF4578BB77A6336E26FF83' Sys_DTCreated='2008-04-23T16:56:55'
+		 Sys_Exported='False' Sys_DTExported='2008-04-23T16:56:55' Codigo='&#x3c;DEV&#x3e;' Descripcion='Devoluciones'
+		 PMensual='0' Tipo='2'/>
+</rs:data>
+</xml>

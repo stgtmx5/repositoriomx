@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eForm Caption="Meta" Name="uform_frmMeta" state ="2" DataClassName="meta" Heigth="3675" Width="4515" Style="0" LockHeight="525" LockWidth="0">
+	<eCtrl Name="cDescripcion1" ClassID="GexecomCtrls.eTextField" External="True" Visible="True" NameValue="Value" Heigth="525" Width="3750">
+		<DataLink ClassField="Descripcion" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Descripci&#243;n:"/>
+			<Property Name="FieldSize" Value="50"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+</eForm>

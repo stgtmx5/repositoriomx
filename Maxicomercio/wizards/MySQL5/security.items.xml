@@ -1,0 +1,1477 @@
+<xml xmlns:s='uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882'
+	xmlns:dt='uuid:C2F41010-65B3-11d1-A29F-00AA00C14882'
+	xmlns:rs='urn:schemas-microsoft-com:rowset'
+	xmlns:z='#RowsetSchema'>
+<s:Schema id='RowsetSchema'>
+	<s:ElementType name='row' content='eltOnly'>
+		<s:AttributeType name='Sys_PK' rs:number='1' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='10' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_TimeStamp' rs:number='2' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='dateTime' rs:dbtype='variantdate' dt:maxLength='16' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_GUID' rs:number='3' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='32'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_DTCreated' rs:number='4' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='dateTime' rs:dbtype='variantdate' dt:maxLength='16' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_User' rs:number='5' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='5'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_LastUser' rs:number='6' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='5'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_Exported' rs:number='7' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='boolean' dt:maxLength='2' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_DTExported' rs:number='8' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='dateTime' rs:dbtype='variantdate' dt:maxLength='16' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_Info' rs:number='9' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='32'/>
+		</s:AttributeType>
+		<s:AttributeType name='Description' rs:number='10' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='250'/>
+		</s:AttributeType>
+		<s:AttributeType name='ItemID' rs:number='11' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='32'/>
+		</s:AttributeType>
+		<s:AttributeType name='ItemParent' rs:number='12' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='32'/>
+		</s:AttributeType>
+		<s:extends type='rs:rowbase'/>
+	</s:ElementType>
+</s:Schema>
+<rs:data>
+	<z:row Sys_PK='20' Sys_TimeStamp='2007-05-05T13:22:50' Sys_GUID='D3823CDD641F4FBB9EA042BD70FBD17F' Sys_DTCreated='2007-05-05T13:21:14'
+		 Sys_Exported='False' Sys_DTExported='2007-05-05T13:21:14' Description='Operaciones ERP'
+		 ItemID='FX1-00-00-000'/>
+	<z:row Sys_PK='21' Sys_TimeStamp='2007-05-05T13:23:53' Sys_GUID='B4EA1E705634418CAFA38884FA9FDCFF' Sys_DTCreated='2007-05-05T13:22:59'
+		 Sys_Exported='False' Sys_DTExported='2007-05-05T13:22:59' Description='Catálogos' ItemID='FX1-10-00-000' ItemParent='D3823CDD641F4FBB9EA042BD70FBD17F'/>
+	<z:row Sys_PK='22' Sys_TimeStamp='2007-05-05T13:24:35' Sys_GUID='8EE4C7570EA84719A68DC4955A1B5C80' Sys_DTCreated='2007-05-05T13:24:07'
+		 Sys_Exported='False' Sys_DTExported='2007-05-05T13:24:07' Description='Transacciones' ItemID='FX1-20-00-000'
+		 ItemParent='D3823CDD641F4FBB9EA042BD70FBD17F'/>
+	<z:row Sys_PK='449' Sys_TimeStamp='2008-03-15T12:11:20' Sys_GUID='F6E1922767BB40EB849E1844725FC591' Sys_DTCreated='2008-03-15T12:06:20'
+		 Sys_Exported='False' Sys_DTExported='2008-03-15T12:06:20' Description='Aplicación' ItemID='FX1-30-00-000' ItemParent='D3823CDD641F4FBB9EA042BD70FBD17F'/>
+	<z:row Sys_PK='290' Sys_TimeStamp='2007-10-15T17:13:23' Sys_GUID='BB289C41F0D04377AA7868C179354541' Sys_DTCreated='2007-10-15T16:52:20'
+		 Sys_Exported='False' Sys_DTExported='2007-10-15T16:52:20' Description='Inventario' ItemID='FX1-40-00-000' ItemParent='D3823CDD641F4FBB9EA042BD70FBD17F'/>
+	<z:row Sys_PK='311' Sys_TimeStamp='2007-10-15T17:28:02' Sys_GUID='771A008D16B644B4A9197429CB4C2E00' Sys_DTCreated='2007-10-15T17:27:34'
+		 Sys_Exported='False' Sys_DTExported='2007-10-15T17:27:34' Description='Clientes y Cuentas por cobrar' ItemID='FX1-50-00-000'
+		 ItemParent='D3823CDD641F4FBB9EA042BD70FBD17F'/>
+	<z:row Sys_PK='324' Sys_TimeStamp='2007-10-15T17:59:08' Sys_GUID='F9BE14AB23354318A68DCDE459979788' Sys_DTCreated='2007-10-15T17:58:34'
+		 Sys_Exported='False' Sys_DTExported='2007-10-15T17:58:34' Description='Proveedores y Cuentas por pagar' ItemID='FX1-60-00-000'
+		 ItemParent='D3823CDD641F4FBB9EA042BD70FBD17F'/>
+	<z:row Sys_PK='336' Sys_TimeStamp='2007-10-16T10:07:54' Sys_GUID='58121F7D1A3E4B3ABA2D4DB66E72098C' Sys_DTCreated='2007-10-16T09:25:33'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T09:25:33' Description='Contabilidad y finanzas' ItemID='FX1-70-00-000'
+		 ItemParent='D3823CDD641F4FBB9EA042BD70FBD17F'/>
+	<z:row Sys_PK='415' Sys_TimeStamp='2008-03-10T15:23:34' Sys_GUID='FB8D95F4EBB84467A644B3E7DC1F7BC5' Sys_DTCreated='2008-03-10T15:23:21'
+		 Sys_Exported='False' Sys_DTExported='2008-03-10T15:23:21' Description='Herramientas' ItemID='FX1-80-00-000' ItemParent='D3823CDD641F4FBB9EA042BD70FBD17F'/>
+	<z:row Sys_PK='29' Sys_TimeStamp='2007-05-10T13:26:36' Sys_GUID='A94E8FA8E11A4A95AE7C001D26887D9F' Sys_DTCreated='2007-05-10T13:25:35'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T13:25:35' Description='Agente' ItemID='FX1-10-10-000' ItemParent='B4EA1E705634418CAFA38884FA9FDCFF'/>
+	<z:row Sys_PK='79' Sys_TimeStamp='2007-05-10T14:59:22' Sys_GUID='5EDA50191AB64116A0DCC143C086F72B' Sys_DTCreated='2007-10-05T14:15:05'
+		 Sys_Exported='False' Sys_DTExported='2007-10-05T14:15:05' Description='Cliente' ItemID='FX1-10-100-000' ItemParent='B4EA1E705634418CAFA38884FA9FDCFF'/>
+	<z:row Sys_PK='85' Sys_TimeStamp='2007-05-10T14:59:29' Sys_GUID='BE736253A45B4ADB9424B9005400A869' Sys_DTCreated='2007-10-05T14:18:20'
+		 Sys_Exported='False' Sys_DTExported='2007-10-05T14:18:20' Description='Contacto' ItemID='FX1-10-110-000' ItemParent='B4EA1E705634418CAFA38884FA9FDCFF'/>
+	<z:row Sys_PK='90' Sys_TimeStamp='2007-05-10T15:16:10' Sys_GUID='0E7F7AE32E96C444085CCB176BC617BA' Sys_DTCreated='2007-05-10T14:47:25'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T14:47:25' Description='Centros de Produccion' ItemID='FX1-10-120-000'
+		 ItemParent='B4EA1E705634418CAFA38884FA9FDCFF'/>
+	<z:row Sys_PK='95' Sys_TimeStamp='2007-05-10T15:14:17' Sys_GUID='A362DA13953543DC8E4CCFB3697B0066' Sys_DTCreated='2007-05-10T14:50:19'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T14:50:19' Description='Departamentos' ItemID='FX1-10-130-000'
+		 ItemParent='B4EA1E705634418CAFA38884FA9FDCFF'/>
+	<z:row Sys_PK='101' Sys_TimeStamp='2007-05-10T14:59:54' Sys_GUID='F1ACF44CA0974FBAB36B1600BF44242C' Sys_DTCreated='2007-10-05T14:52:40'
+		 Sys_Exported='False' Sys_DTExported='2007-10-05T14:52:40' Description='Divisa' ItemID='FX1-10-140-000' ItemParent='B4EA1E705634418CAFA38884FA9FDCFF'/>
+	<z:row Sys_PK='113' Sys_TimeStamp='2007-05-10T15:16:31' Sys_GUID='787F72F03D3C4C2D99CB54864624EE8E' Sys_DTCreated='2007-10-05T15:06:47'
+		 Sys_Exported='False' Sys_DTExported='2007-10-05T15:06:47' Description='Grupo de Clientes' ItemID='FX1-10-160-000'
+		 ItemParent='B4EA1E705634418CAFA38884FA9FDCFF'/>
+	<z:row Sys_PK='118' Sys_TimeStamp='2007-05-10T15:17:54' Sys_GUID='B141BE735DAF44C69511BCEFB0D68D89' Sys_DTCreated='2007-05-10T15:13:11'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:13:11' Description='Grupo de Productos' ItemID='FX1-10-170-000'
+		 ItemParent='B4EA1E705634418CAFA38884FA9FDCFF'/>
+	<z:row Sys_PK='123' Sys_TimeStamp='2007-05-10T15:19:42' Sys_GUID='AED7B2A613894147BCDEAD92F7FE0420' Sys_DTCreated='2007-05-10T15:19:15'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:19:15' Description='Grupo de Proveedores' ItemID='FX1-10-180-000'
+		 ItemParent='B4EA1E705634418CAFA38884FA9FDCFF'/>
+	<z:row Sys_PK='34' Sys_TimeStamp='2007-05-10T13:34:36' Sys_GUID='03618D9CC5214BFA8141E1CE33BFEBDF' Sys_DTCreated='2007-10-05T13:33:56'
+		 Sys_Exported='False' Sys_DTExported='2007-10-05T13:33:56' Description='Almacen' ItemID='FX1-10-20-000' ItemParent='B4EA1E705634418CAFA38884FA9FDCFF'/>
+	<z:row Sys_PK='133' Sys_TimeStamp='2007-05-10T15:23:30' Sys_GUID='ABC85455FD934019B7443BA8A5F1F9ED' Sys_DTCreated='2007-05-10T15:23:16'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:23:16' Description='Lineas' ItemID='FX1-10-200-000' ItemParent='B4EA1E705634418CAFA38884FA9FDCFF'/>
+	<z:row Sys_PK='138' Sys_TimeStamp='2007-05-10T15:25:12' Sys_GUID='5A120449F79F401DA65E00FC73C80310' Sys_DTCreated='2007-05-10T15:24:59'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:24:59' Description='Marcas' ItemID='FX1-10-210-000' ItemParent='B4EA1E705634418CAFA38884FA9FDCFF'/>
+	<z:row Sys_PK='143' Sys_TimeStamp='2007-05-10T15:27:03' Sys_GUID='B277AA8F6E054100A2DFFD91C343AAB5' Sys_DTCreated='2007-05-10T15:26:40'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:26:40' Description='Porteador' ItemID='FX1-10-220-000' ItemParent='B4EA1E705634418CAFA38884FA9FDCFF'/>
+	<z:row Sys_PK='148' Sys_TimeStamp='2007-05-10T15:29:03' Sys_GUID='2C1CC828FD564CE2BC84A00041528BE8' Sys_DTCreated='2007-05-10T15:28:49'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:28:49' Description='Precio de venta' ItemID='FX1-10-230-000'
+		 ItemParent='B4EA1E705634418CAFA38884FA9FDCFF'/>
+	<z:row Sys_PK='153' Sys_TimeStamp='2007-05-10T15:30:55' Sys_GUID='4B9A32C7FDF04F00B14085EACCA19BF2' Sys_DTCreated='2007-05-10T15:30:35'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:30:35' Description='Productos' ItemID='FX1-10-240-000' ItemParent='B4EA1E705634418CAFA38884FA9FDCFF'/>
+	<z:row Sys_PK='158' Sys_TimeStamp='2007-05-10T15:32:23' Sys_GUID='856F5F9EDCC5423E921D102E5F27F905' Sys_DTCreated='2007-05-10T15:32:07'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:32:07' Description='Promociones' ItemID='FX1-10-250-000' ItemParent='B4EA1E705634418CAFA38884FA9FDCFF'/>
+	<z:row Sys_PK='163' Sys_TimeStamp='2007-05-10T15:33:51' Sys_GUID='FCA791B18EFC4E560038A8042F3700DC' Sys_DTCreated='2007-05-10T15:33:39'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:33:39' Description='Proveedores' ItemID='FX1-10-260-000' ItemParent='B4EA1E705634418CAFA38884FA9FDCFF'/>
+	<z:row Sys_PK='168' Sys_TimeStamp='2007-05-10T15:38:36' Sys_GUID='000E39016F92D4E30A3449C65EB776D9' Sys_DTCreated='2007-05-10T15:38:22'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:38:22' Description='Repartidor' ItemID='FX1-10-270-000' ItemParent='B4EA1E705634418CAFA38884FA9FDCFF'/>
+	<z:row Sys_PK='174' Sys_TimeStamp='2007-05-10T15:40:26' Sys_GUID='952050CB7B01419A919103098D296C68' Sys_DTCreated='2007-05-10T15:40:12'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:40:12' Description='Tablas' ItemID='FX1-10-280-000' ItemParent='B4EA1E705634418CAFA38884FA9FDCFF'/>
+	<z:row Sys_PK='179' Sys_TimeStamp='2007-05-10T15:42:06' Sys_GUID='F3FB3CCC1F4045A7A0F1C36DB052092C' Sys_DTCreated='2007-05-10T15:41:45'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:41:45' Description='Tarjetas de Credito' ItemID='FX1-10-290-000'
+		 ItemParent='B4EA1E705634418CAFA38884FA9FDCFF'/>
+	<z:row Sys_PK='39' Sys_TimeStamp='2007-05-10T13:42:39' Sys_GUID='DD774930BA2C412FA200167237B7B027' Sys_DTCreated='2007-05-10T13:42:13'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T13:42:13' Description='Banco' ItemID='FX1-10-30-000' ItemParent='B4EA1E705634418CAFA38884FA9FDCFF'/>
+	<z:row Sys_PK='184' Sys_TimeStamp='2007-05-10T15:44:02' Sys_GUID='1C4C719F1FFE41B500575276848775F3' Sys_DTCreated='2007-05-10T15:43:45'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:43:45' Description='Tasa Fija' ItemID='FX1-10-300-000' ItemParent='B4EA1E705634418CAFA38884FA9FDCFF'/>
+	<z:row Sys_PK='189' Sys_TimeStamp='2007-05-10T15:45:38' Sys_GUID='87767CF5C2D64BF1A0481FD2BFDCCEE3' Sys_DTCreated='2007-05-10T15:45:27'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:45:27' Description='Tasa Variable' ItemID='FX1-10-310-000'
+		 ItemParent='B4EA1E705634418CAFA38884FA9FDCFF'/>
+	<z:row Sys_PK='194' Sys_TimeStamp='2007-05-10T15:47:58' Sys_GUID='380ACE2E992845D689CB0053FB9160A2' Sys_DTCreated='2007-05-10T15:47:41'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:47:41' Description='Tipos de clientes' ItemID='FX1-10-320-000'
+		 ItemParent='B4EA1E705634418CAFA38884FA9FDCFF'/>
+	<z:row Sys_PK='199' Sys_TimeStamp='2007-05-10T15:52:57' Sys_GUID='499546694FA040F9BC00C9606765AE69' Sys_DTCreated='2007-05-10T15:52:41'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:52:41' Description='Tipos de Cupon' ItemID='FX1-10-330-000'
+		 ItemParent='B4EA1E705634418CAFA38884FA9FDCFF'/>
+	<z:row Sys_PK='204' Sys_TimeStamp='2007-05-10T15:55:12' Sys_GUID='A6EAFF7D0C544EB880BCFBFBB665AC7B' Sys_DTCreated='2007-05-10T15:54:48'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:54:48' Description='Tipos de Proveedor' ItemID='FX1-10-340-000'
+		 ItemParent='B4EA1E705634418CAFA38884FA9FDCFF'/>
+	<z:row Sys_PK='209' Sys_TimeStamp='2007-05-10T15:56:48' Sys_GUID='7A1AB014E0FB406A89E0861558B509AC' Sys_DTCreated='2007-05-10T15:56:38'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:56:38' Description='Zonas' ItemID='FX1-10-350-000' ItemParent='B4EA1E705634418CAFA38884FA9FDCFF'/>
+	<z:row Sys_PK='44' Sys_TimeStamp='2007-05-10T13:51:48' Sys_GUID='7D6B7B4A5219417F9DEB2EE227006DC0' Sys_DTCreated='2007-05-10T13:51:21'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T13:51:21' Description='Caja' ItemID='FX1-10-40-000' ItemParent='B4EA1E705634418CAFA38884FA9FDCFF'/>
+	<z:row Sys_PK='49' Sys_TimeStamp='2007-05-10T13:55:16' Sys_GUID='F287B6D587A14D37826E7C482F80A536' Sys_DTCreated='2007-05-10T13:54:58'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T13:54:58' Description='Cajero' ItemID='FX1-10-50-000' ItemParent='B4EA1E705634418CAFA38884FA9FDCFF'/>
+	<z:row Sys_PK='54' Sys_TimeStamp='2007-05-10T13:57:04' Sys_GUID='4D4BBBEC73FC40A4B988182B18C36559' Sys_DTCreated='2007-05-10T13:56:43'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T13:56:43' Description='Categoria' ItemID='FX1-10-60-000' ItemParent='B4EA1E705634418CAFA38884FA9FDCFF'/>
+	<z:row Sys_PK='59' Sys_TimeStamp='2007-05-10T15:15:43' Sys_GUID='CA05FDE6AA68434AA2BF6B55D7ED6420' Sys_DTCreated='2007-10-05T13:58:35'
+		 Sys_Exported='False' Sys_DTExported='2007-10-05T13:58:35' Description='Centros de Consumo' ItemID='FX1-10-70-000'
+		 ItemParent='B4EA1E705634418CAFA38884FA9FDCFF'/>
+	<z:row Sys_PK='64' Sys_TimeStamp='2007-05-10T15:14:33' Sys_GUID='91FB7CF525DD4348AA02C3B661DE5E46' Sys_DTCreated='2007-10-05T14:01:21'
+		 Sys_Exported='False' Sys_DTExported='2007-10-05T14:01:21' Description='Configuracion de Impuestos' ItemID='FX1-10-80-000'
+		 ItemParent='B4EA1E705634418CAFA38884FA9FDCFF'/>
+	<z:row Sys_PK='69' Sys_TimeStamp='2007-05-10T14:10:30' Sys_GUID='A30E930707D4423C004C14507529B37B' Sys_DTCreated='2007-05-10T14:10:03'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T14:10:03' Description='Chequera' ItemID='FX1-10-90-000' ItemParent='B4EA1E705634418CAFA38884FA9FDCFF'/>
+	<z:row Sys_PK='30' Sys_TimeStamp='2007-05-10T13:28:32' Sys_GUID='BEB32E8096BB433091628BB099B9755C' Sys_DTCreated='2007-05-10T13:27:42'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T13:27:42' Description='Solo lectura' ItemID='FX1-10-10-001' ItemParent='A94E8FA8E11A4A95AE7C001D26887D9F'/>
+	<z:row Sys_PK='31' Sys_TimeStamp='2007-05-10T13:31:39' Sys_GUID='46E8ED4632F34439BF78E09BAD1591CB' Sys_DTCreated='2007-05-10T13:28:38'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T13:28:38' Description='Permitir agregar Agente' ItemID='FX1-10-10-002'
+		 ItemParent='A94E8FA8E11A4A95AE7C001D26887D9F'/>
+	<z:row Sys_PK='32' Sys_TimeStamp='2007-05-10T13:31:22' Sys_GUID='553C8BFA5FE44C44B0FF115ED600C18E' Sys_DTCreated='2007-10-05T13:29:12'
+		 Sys_Exported='False' Sys_DTExported='2007-10-05T13:29:12' Description='Permitir modificar Agente' ItemID='FX1-10-10-003'
+		 ItemParent='A94E8FA8E11A4A95AE7C001D26887D9F'/>
+	<z:row Sys_PK='33' Sys_TimeStamp='2007-05-10T13:31:12' Sys_GUID='E31B5BAFD3F3440D9C87B06DDE93F500' Sys_DTCreated='2007-05-10T13:30:42'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T13:30:42' Description='Permitir Eliminar Agente' ItemID='FX1-10-10-004'
+		 ItemParent='A94E8FA8E11A4A95AE7C001D26887D9F'/>
+	<z:row Sys_PK='80' Sys_TimeStamp='2007-05-10T15:01:33' Sys_GUID='20C33FF22CDC4A1D91B456D564CE4D81' Sys_DTCreated='2007-10-05T14:16:28'
+		 Sys_Exported='False' Sys_DTExported='2007-10-05T14:16:28' Description='Solo lectura' ItemID='FX1-10-100-001'
+		 ItemParent='5EDA50191AB64116A0DCC143C086F72B'/>
+	<z:row Sys_PK='82' Sys_TimeStamp='2007-05-10T15:01:52' Sys_GUID='EDD4A3AB77984FEF9974169CD6D2F0E5' Sys_DTCreated='2007-10-05T14:17:02'
+		 Sys_Exported='False' Sys_DTExported='2007-10-05T14:17:02' Description='Permitir Agregar Cliente' ItemID='FX1-10-100-002'
+		 ItemParent='5EDA50191AB64116A0DCC143C086F72B'/>
+	<z:row Sys_PK='83' Sys_TimeStamp='2007-05-10T15:02:03' Sys_GUID='E3A777DA6FAD49AA9600F8B2DB60FCAA' Sys_DTCreated='2007-10-05T14:17:36'
+		 Sys_Exported='False' Sys_DTExported='2007-10-05T14:17:36' Description='Permitir Modificar Cliente' ItemID='FX1-10-100-003'
+		 ItemParent='5EDA50191AB64116A0DCC143C086F72B'/>
+	<z:row Sys_PK='84' Sys_TimeStamp='2007-05-10T15:01:43' Sys_GUID='1C43AC3F9323419D95D238EE2CBD4DA4' Sys_DTCreated='2007-10-05T14:17:55'
+		 Sys_Exported='False' Sys_DTExported='2007-10-05T14:17:55' Description='Permitir Eliminar Cliente' ItemID='FX1-10-100-004'
+		 ItemParent='5EDA50191AB64116A0DCC143C086F72B'/>
+	<z:row Sys_PK='383' Sys_TimeStamp='2007-11-26T14:00:41' Sys_GUID='EB11BC2B19E0435DA45BFE704607A7A9' Sys_DTCreated='2007-11-26T13:58:18'
+		 Sys_Exported='False' Sys_DTExported='2007-11-26T13:58:18' Description='Expediente' ItemID='FX1-10-100-005' ItemParent='5EDA50191AB64116A0DCC143C086F72B'/>
+	<z:row Sys_PK='384' Sys_TimeStamp='2007-11-26T14:02:19' Sys_GUID='4A61ED6CFE824F87B36EDC066595A74C' Sys_DTCreated='2007-11-26T14:01:30'
+		 Sys_Exported='False' Sys_DTExported='2007-11-26T14:01:30' Description='Permitir agregar documento' ItemID='FX1-10-100-005-A'
+		 ItemParent='EB11BC2B19E0435DA45BFE704607A7A9'/>
+	<z:row Sys_PK='385' Sys_TimeStamp='2007-11-26T14:02:56' Sys_GUID='3318D199C17B42859E92C4C1943DDD59' Sys_DTCreated='2007-11-26T14:02:35'
+		 Sys_Exported='False' Sys_DTExported='2007-11-26T14:02:35' Description='Permitir vincular documento' ItemID='FX1-10-100-005-B'
+		 ItemParent='EB11BC2B19E0435DA45BFE704607A7A9'/>
+	<z:row Sys_PK='386' Sys_TimeStamp='2007-11-26T14:04:53' Sys_GUID='D7F15DD6CD9045B98FB0C6E012A1E94E' Sys_DTCreated='2007-11-26T14:04:24'
+		 Sys_Exported='False' Sys_DTExported='2007-11-26T14:04:24' Description='Permitir modificar vinculos' ItemID='FX1-10-100-005-C'
+		 ItemParent='EB11BC2B19E0435DA45BFE704607A7A9'/>
+	<z:row Sys_PK='387' Sys_TimeStamp='2007-11-26T14:07:15' Sys_GUID='CFAA736933F9433787BA147EF4FDB4DC' Sys_DTCreated='2007-11-26T14:05:59'
+		 Sys_Exported='False' Sys_DTExported='2007-11-26T14:05:59' Description='Pemitir eliminar vinculos' ItemID='FX1-10-100-005-D'
+		 ItemParent='EB11BC2B19E0435DA45BFE704607A7A9'/>
+	<z:row Sys_PK='388' Sys_TimeStamp='2007-11-26T14:12:11' Sys_GUID='2F40630D2CDF44AC9B05093070F43F4D' Sys_DTCreated='2007-11-26T14:11:53'
+		 Sys_Exported='False' Sys_DTExported='2007-11-26T14:11:53' Description='Permitir eliminar documentos' ItemID='FX1-10-100-005-E'
+		 ItemParent='EB11BC2B19E0435DA45BFE704607A7A9'/>
+	<z:row Sys_PK='86' Sys_TimeStamp='2007-05-10T15:02:47' Sys_GUID='42CD35E0C0004CDA8C56823EBE63E5B1' Sys_DTCreated='2007-10-05T14:45:44'
+		 Sys_Exported='False' Sys_DTExported='2007-10-05T14:45:44' Description='Solo lectura' ItemID='FX1-10-110-001'
+		 ItemParent='BE736253A45B4ADB9424B9005400A869'/>
+	<z:row Sys_PK='87' Sys_TimeStamp='2007-05-10T15:02:15' Sys_GUID='82FC4E4B0B6C448BAA2637C048031DAF' Sys_DTCreated='2007-10-05T14:46:16'
+		 Sys_Exported='False' Sys_DTExported='2007-10-05T14:46:16' Description='Permitir Agregar Contacto' ItemID='FX1-10-110-002'
+		 ItemParent='BE736253A45B4ADB9424B9005400A869'/>
+	<z:row Sys_PK='88' Sys_TimeStamp='2007-05-10T15:02:37' Sys_GUID='02DFA67F1859F4F15A42340DD5183A87' Sys_DTCreated='2007-10-05T14:46:40'
+		 Sys_Exported='False' Sys_DTExported='2007-10-05T14:46:40' Description='Permitir Modificar Contacto' ItemID='FX1-10-110-003'
+		 ItemParent='BE736253A45B4ADB9424B9005400A869'/>
+	<z:row Sys_PK='89' Sys_TimeStamp='2007-05-10T15:02:27' Sys_GUID='A9C7A05FA8934428A3A8624E1900BD90' Sys_DTCreated='2007-10-05T14:47:01'
+		 Sys_Exported='False' Sys_DTExported='2007-10-05T14:47:01' Description='Permitir Eliminar Contacto' ItemID='FX1-10-110-004'
+		 ItemParent='BE736253A45B4ADB9424B9005400A869'/>
+	<z:row Sys_PK='91' Sys_TimeStamp='2007-05-10T15:03:26' Sys_GUID='0F297B42A2A5A45C1BE683B678000BDB' Sys_DTCreated='2007-10-05T14:47:47'
+		 Sys_Exported='False' Sys_DTExported='2007-10-05T14:47:47' Description='Solo lectura' ItemID='FX1-10-120-001'
+		 ItemParent='0E7F7AE32E96C444085CCB176BC617BA'/>
+	<z:row Sys_PK='92' Sys_TimeStamp='2007-05-10T15:02:56' Sys_GUID='005CE6F7DDBD7143609ED8B7F6800ECB' Sys_DTCreated='2007-05-10T14:48:16'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T14:48:16' Description='Permitir Agregar Centro de Produccion'
+		 ItemID='FX1-10-120-002' ItemParent='0E7F7AE32E96C444085CCB176BC617BA'/>
+	<z:row Sys_PK='93' Sys_TimeStamp='2007-05-10T15:03:16' Sys_GUID='0E76D4C2574F477A9B008DEB91F35851' Sys_DTCreated='2007-10-05T14:48:41'
+		 Sys_Exported='False' Sys_DTExported='2007-10-05T14:48:41' Description='Permitir Modificar Centro de Produccion'
+		 ItemID='FX1-10-120-003' ItemParent='0E7F7AE32E96C444085CCB176BC617BA'/>
+	<z:row Sys_PK='94' Sys_TimeStamp='2007-05-10T15:03:07' Sys_GUID='07AEA2C7BA5774552925CBF8EC78F983' Sys_DTCreated='2007-10-05T14:49:58'
+		 Sys_Exported='False' Sys_DTExported='2007-10-05T14:49:58' Description='Permitir Eliminar Centro de Produccion'
+		 ItemID='FX1-10-120-004' ItemParent='0E7F7AE32E96C444085CCB176BC617BA'/>
+	<z:row Sys_PK='96' Sys_TimeStamp='2007-05-10T15:03:42' Sys_GUID='0C98C8FD32054EA193DD240058A43C7D' Sys_DTCreated='2007-10-05T14:50:39'
+		 Sys_Exported='False' Sys_DTExported='2007-10-05T14:50:39' Description='Solo lectura' ItemID='FX1-10-130-001'
+		 ItemParent='A362DA13953543DC8E4CCFB3697B0066'/>
+	<z:row Sys_PK='98' Sys_TimeStamp='2007-05-10T15:04:12' Sys_GUID='A18A7FF6849749C9B8B970F839E263DC' Sys_DTCreated='2007-10-05T14:51:02'
+		 Sys_Exported='False' Sys_DTExported='2007-10-05T14:51:02' Description='Permitir Agregar Departamento' ItemID='FX1-10-130-002'
+		 ItemParent='A362DA13953543DC8E4CCFB3697B0066'/>
+	<z:row Sys_PK='99' Sys_TimeStamp='2007-05-10T15:03:52' Sys_GUID='E2DDDED540824DB0BA9DF813F695E8C7' Sys_DTCreated='2007-10-05T14:51:23'
+		 Sys_Exported='False' Sys_DTExported='2007-10-05T14:51:23' Description='Permitir Modificar Departamento' ItemID='FX1-10-130-003'
+		 ItemParent='A362DA13953543DC8E4CCFB3697B0066'/>
+	<z:row Sys_PK='100' Sys_TimeStamp='2007-05-10T15:04:03' Sys_GUID='5D39BFB6381D4EFE8CDB00DF32D919EC' Sys_DTCreated='2007-10-05T14:51:42'
+		 Sys_Exported='False' Sys_DTExported='2007-10-05T14:51:42' Description='Permitir Eliminar Departamento' ItemID='FX1-10-130-004'
+		 ItemParent='A362DA13953543DC8E4CCFB3697B0066'/>
+	<z:row Sys_PK='102' Sys_TimeStamp='2007-05-10T15:05:01' Sys_GUID='43BA991CC4404AD1852F7228D617F5E5' Sys_DTCreated='2007-10-05T14:52:56'
+		 Sys_Exported='False' Sys_DTExported='2007-10-05T14:52:56' Description='Solo lectura' ItemID='FX1-10-140-001'
+		 ItemParent='F1ACF44CA0974FBAB36B1600BF44242C'/>
+	<z:row Sys_PK='103' Sys_TimeStamp='2007-05-10T15:04:30' Sys_GUID='CD15BA8C21B4460A9407CEAAEDCA3141' Sys_DTCreated='2007-10-05T14:53:25'
+		 Sys_Exported='False' Sys_DTExported='2007-10-05T14:53:25' Description='Permitir Agregar Divisa' ItemID='FX1-10-140-002'
+		 ItemParent='F1ACF44CA0974FBAB36B1600BF44242C'/>
+	<z:row Sys_PK='104' Sys_TimeStamp='2007-05-10T15:04:51' Sys_GUID='02527726E84044DF6BB7639E4DEC6D47' Sys_DTCreated='2007-10-05T14:53:48'
+		 Sys_Exported='False' Sys_DTExported='2007-10-05T14:53:48' Description='Permitir Modificar Divisa' ItemID='FX1-10-140-003'
+		 ItemParent='F1ACF44CA0974FBAB36B1600BF44242C'/>
+	<z:row Sys_PK='105' Sys_TimeStamp='2007-05-10T15:04:42' Sys_GUID='872A960E6F054500A5E88B66012BF8D1' Sys_DTCreated='2007-10-05T14:54:07'
+		 Sys_Exported='False' Sys_DTExported='2007-10-05T14:54:07' Description='Permitir Eliminar Divisa' ItemID='FX1-10-140-004'
+		 ItemParent='F1ACF44CA0974FBAB36B1600BF44242C'/>
+	<z:row Sys_PK='114' Sys_TimeStamp='2007-05-10T15:07:31' Sys_GUID='005C5C0CBA508B4D6DA578F8DE8D892F' Sys_DTCreated='2007-05-10T15:07:06'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:07:06' Description='Solo lectura' ItemID='FX1-10-160-001'
+		 ItemParent='787F72F03D3C4C2D99CB54864624EE8E'/>
+	<z:row Sys_PK='115' Sys_TimeStamp='2007-05-10T15:07:59' Sys_GUID='D090EF4BBC684D01A24C091B2678A9DA' Sys_DTCreated='2007-05-10T15:07:38'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:07:38' Description='Permitir Agregar Grupo de Clientes' ItemID='FX1-10-160-002'
+		 ItemParent='787F72F03D3C4C2D99CB54864624EE8E'/>
+	<z:row Sys_PK='116' Sys_TimeStamp='2007-05-10T15:11:17' Sys_GUID='4D1D840AB4754BAB8D6F78ADD2D10231' Sys_DTCreated='2007-05-10T15:08:06'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:08:06' Description='Permitir Modificar Grupo de Clientes'
+		 ItemID='FX1-10-160-003' ItemParent='787F72F03D3C4C2D99CB54864624EE8E'/>
+	<z:row Sys_PK='117' Sys_TimeStamp='2007-05-10T15:11:45' Sys_GUID='BCADAC35EE0944EAB1D430BDBDAD6400' Sys_DTCreated='2007-05-10T15:11:31'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:11:31' Description='Permitir Eliminar Grupo de Clientes' ItemID='FX1-10-160-004'
+		 ItemParent='787F72F03D3C4C2D99CB54864624EE8E'/>
+	<z:row Sys_PK='119' Sys_TimeStamp='2007-05-10T15:17:48' Sys_GUID='086B4AC5B32448A395016FC39146E4D4' Sys_DTCreated='2007-05-10T15:17:21'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:17:21' Description='Solo lectura' ItemID='FX1-10-170-001'
+		 ItemParent='B141BE735DAF44C69511BCEFB0D68D89'/>
+	<z:row Sys_PK='120' Sys_TimeStamp='2007-05-10T15:18:23' Sys_GUID='5EF524F5108D4A8ABE466DD5D22FF322' Sys_DTCreated='2007-05-10T15:18:08'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:18:08' Description='Permitir Agregar Grupo de Productos' ItemID='FX1-10-170-002'
+		 ItemParent='B141BE735DAF44C69511BCEFB0D68D89'/>
+	<z:row Sys_PK='121' Sys_TimeStamp='2007-05-10T15:18:50' Sys_GUID='C6FB8B32399447368877093769205277' Sys_DTCreated='2007-05-10T15:18:34'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:18:34' Description='Permitir Modificar Grupo de Productos'
+		 ItemID='FX1-10-170-003' ItemParent='B141BE735DAF44C69511BCEFB0D68D89'/>
+	<z:row Sys_PK='122' Sys_TimeStamp='2007-05-10T15:19:06' Sys_GUID='5417E4535EAC4E9398D90850B06B00C6' Sys_DTCreated='2007-05-10T15:18:55'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:18:55' Description='Permitir Eliminar Grupo de Productos'
+		 ItemID='FX1-10-170-004' ItemParent='B141BE735DAF44C69511BCEFB0D68D89'/>
+	<z:row Sys_PK='124' Sys_TimeStamp='2007-05-10T15:19:59' Sys_GUID='4A63BB75C60A4488B622514B9CE0BBFD' Sys_DTCreated='2007-05-10T15:19:47'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:19:47' Description='Solo lectura' ItemID='FX1-10-180-001'
+		 ItemParent='AED7B2A613894147BCDEAD92F7FE0420'/>
+	<z:row Sys_PK='125' Sys_TimeStamp='2007-05-10T15:20:20' Sys_GUID='6C529880F86F4912AA09791C049BAFF1' Sys_DTCreated='2007-05-10T15:20:06'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:20:06' Description='Permitir Agregar Grupo de Proveedores'
+		 ItemID='FX1-10-180-002' ItemParent='AED7B2A613894147BCDEAD92F7FE0420'/>
+	<z:row Sys_PK='126' Sys_TimeStamp='2007-05-10T15:20:40' Sys_GUID='8D67CFE5DCBF4CC200C6624EEC6B5E01' Sys_DTCreated='2007-05-10T15:20:26'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:20:26' Description='Permitir Modificar Grupo de Proveedores'
+		 ItemID='FX1-10-180-003' ItemParent='AED7B2A613894147BCDEAD92F7FE0420'/>
+	<z:row Sys_PK='127' Sys_TimeStamp='2007-05-10T15:21:03' Sys_GUID='59B22B9F6BAA4602A425E0D8F5FA62EC' Sys_DTCreated='2007-05-10T15:20:47'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:20:47' Description='Permitir Eliminar Grupo de Proveedores'
+		 ItemID='FX1-10-180-004' ItemParent='AED7B2A613894147BCDEAD92F7FE0420'/>
+	<z:row Sys_PK='35' Sys_TimeStamp='2007-05-10T13:36:08' Sys_GUID='06C5F7627B3E14404A39B8191B5CCFD8' Sys_DTCreated='2007-05-10T13:35:34'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T13:35:34' Description='Solo lectura' ItemID='FX1-10-20-001' ItemParent='03618D9CC5214BFA8141E1CE33BFEBDF'/>
+	<z:row Sys_PK='36' Sys_TimeStamp='2007-05-10T13:36:45' Sys_GUID='238ED2A3D1284A5EA307E35B2FF6AB82' Sys_DTCreated='2007-05-10T13:36:14'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T13:36:14' Description='Permitir Agregar Almacen' ItemID='FX1-10-20-002'
+		 ItemParent='03618D9CC5214BFA8141E1CE33BFEBDF'/>
+	<z:row Sys_PK='37' Sys_TimeStamp='2007-05-10T13:37:08' Sys_GUID='1451028EE6BA4A3F85EB83C397A609F2' Sys_DTCreated='2007-05-10T13:36:50'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T13:36:50' Description='Permitir Modificar Almacen' ItemID='FX1-10-20-003'
+		 ItemParent='03618D9CC5214BFA8141E1CE33BFEBDF'/>
+	<z:row Sys_PK='38' Sys_TimeStamp='2007-05-10T13:42:01' Sys_GUID='37926B0B487A489184912944F2A241F9' Sys_DTCreated='2007-05-10T13:41:34'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T13:41:34' Description='Permitir Eliminar almacen' ItemID='FX1-10-20-004'
+		 ItemParent='03618D9CC5214BFA8141E1CE33BFEBDF'/>
+	<z:row Sys_PK='134' Sys_TimeStamp='2007-05-10T15:23:49' Sys_GUID='0D615797C1ED748B5BE5FA9C78914D50' Sys_DTCreated='2007-05-10T15:23:35'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:23:35' Description='Solo lectura' ItemID='FX1-10-200-001'
+		 ItemParent='ABC85455FD934019B7443BA8A5F1F9ED'/>
+	<z:row Sys_PK='135' Sys_TimeStamp='2007-05-10T15:24:08' Sys_GUID='02D735E50ED9E454294D7EF9F1B0E157' Sys_DTCreated='2007-05-10T15:23:56'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:23:56' Description='Permitir Agregar Lineas' ItemID='FX1-10-200-002'
+		 ItemParent='ABC85455FD934019B7443BA8A5F1F9ED'/>
+	<z:row Sys_PK='136' Sys_TimeStamp='2007-05-10T15:24:27' Sys_GUID='7560DAB48352418800F3EB183BCE9537' Sys_DTCreated='2007-05-10T15:24:14'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:24:14' Description='Permitir Modificar Lineas' ItemID='FX1-10-200-003'
+		 ItemParent='ABC85455FD934019B7443BA8A5F1F9ED'/>
+	<z:row Sys_PK='137' Sys_TimeStamp='2007-05-10T15:24:52' Sys_GUID='B0CB116A91684971B252AFC59128BB6D' Sys_DTCreated='2007-05-10T15:24:43'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:24:43' Description='Permitir Eliminar Lineas' ItemID='FX1-10-200-004'
+		 ItemParent='ABC85455FD934019B7443BA8A5F1F9ED'/>
+	<z:row Sys_PK='139' Sys_TimeStamp='2007-05-10T15:25:33' Sys_GUID='3B18E5A9EEDB4235AABBAC6D47E571C5' Sys_DTCreated='2007-05-10T15:25:16'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:25:16' Description='Solo lectura' ItemID='FX1-10-210-001'
+		 ItemParent='5A120449F79F401DA65E00FC73C80310'/>
+	<z:row Sys_PK='140' Sys_TimeStamp='2007-05-10T15:25:55' Sys_GUID='99B178814D9C45B7836984EBCEDA96AD' Sys_DTCreated='2007-05-10T15:25:40'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:25:40' Description='Permitir Agregar Marcas' ItemID='FX1-10-210-002'
+		 ItemParent='5A120449F79F401DA65E00FC73C80310'/>
+	<z:row Sys_PK='141' Sys_TimeStamp='2007-05-10T15:26:11' Sys_GUID='0E8E96A26820B4B3C91D569D11C388F9' Sys_DTCreated='2007-05-10T15:26:02'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:26:02' Description='Permitir Modificar MArcas' ItemID='FX1-10-210-003'
+		 ItemParent='5A120449F79F401DA65E00FC73C80310'/>
+	<z:row Sys_PK='142' Sys_TimeStamp='2007-05-10T15:26:35' Sys_GUID='F8E9162288F649FFA748FACEB15EDD56' Sys_DTCreated='2007-05-10T15:26:21'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:26:21' Description='Permitir Eliminar Marcas' ItemID='FX1-10-210-004'
+		 ItemParent='5A120449F79F401DA65E00FC73C80310'/>
+	<z:row Sys_PK='144' Sys_TimeStamp='2007-05-10T15:27:37' Sys_GUID='C2CD0E5394A14F7A81C8AAD94E2784A1' Sys_DTCreated='2007-05-10T15:27:08'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:27:08' Description='Solo lectura' ItemID='FX1-10-220-001'
+		 ItemParent='B277AA8F6E054100A2DFFD91C343AAB5'/>
+	<z:row Sys_PK='145' Sys_TimeStamp='2007-05-10T15:28:01' Sys_GUID='F8619A4CF9DE4F128CDE46673F6328FD' Sys_DTCreated='2007-05-10T15:27:42'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:27:42' Description='Permitir Agregar Porteador' ItemID='FX1-10-220-002'
+		 ItemParent='B277AA8F6E054100A2DFFD91C343AAB5'/>
+	<z:row Sys_PK='146' Sys_TimeStamp='2007-05-10T15:28:22' Sys_GUID='4C69C0538D8D423B83CE87096BC2716D' Sys_DTCreated='2007-05-10T15:28:10'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:28:10' Description='Permitir Modificar Porteador' ItemID='FX1-10-220-003'
+		 ItemParent='B277AA8F6E054100A2DFFD91C343AAB5'/>
+	<z:row Sys_PK='147' Sys_TimeStamp='2007-05-10T15:28:41' Sys_GUID='FBE3D798BBD94622A1824122B8967117' Sys_DTCreated='2007-05-10T15:28:31'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:28:31' Description='Permitir Eliminar Porteador' ItemID='FX1-10-220-004'
+		 ItemParent='B277AA8F6E054100A2DFFD91C343AAB5'/>
+	<z:row Sys_PK='149' Sys_TimeStamp='2007-05-10T15:29:21' Sys_GUID='C31E035A404D4881B470AF160124BB83' Sys_DTCreated='2007-05-10T15:29:07'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:29:07' Description='Solo lectura' ItemID='FX1-10-230-001'
+		 ItemParent='2C1CC828FD564CE2BC84A00041528BE8'/>
+	<z:row Sys_PK='150' Sys_TimeStamp='2007-05-10T15:29:42' Sys_GUID='B0EE7F73802A430FB5F86CD2DBA1D21C' Sys_DTCreated='2007-05-10T15:29:29'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:29:29' Description='Permitir Agregar Precios de Venta' ItemID='FX1-10-230-002'
+		 ItemParent='2C1CC828FD564CE2BC84A00041528BE8'/>
+	<z:row Sys_PK='151' Sys_TimeStamp='2007-05-10T15:30:04' Sys_GUID='C5E897C768DD45598FCB53D62DBD9655' Sys_DTCreated='2007-05-10T15:29:49'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:29:49' Description='Permitir Modificar Precios de Venta' ItemID='FX1-10-230-003'
+		 ItemParent='2C1CC828FD564CE2BC84A00041528BE8'/>
+	<z:row Sys_PK='152' Sys_TimeStamp='2007-05-10T15:30:28' Sys_GUID='A43F2BD837474B8FBDFFDE705166CA00' Sys_DTCreated='2007-05-10T15:30:11'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:30:11' Description='Permitir Eliminar Precios de Venta' ItemID='FX1-10-230-004'
+		 ItemParent='2C1CC828FD564CE2BC84A00041528BE8'/>
+	<z:row Sys_PK='154' Sys_TimeStamp='2007-05-10T15:31:08' Sys_GUID='80997C6C085049F7A7385000025F1C42' Sys_DTCreated='2007-05-10T15:30:59'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:30:59' Description='Solo lectura' ItemID='FX1-10-240-001'
+		 ItemParent='4B9A32C7FDF04F00B14085EACCA19BF2'/>
+	<z:row Sys_PK='155' Sys_TimeStamp='2007-05-10T15:31:26' Sys_GUID='7DC7228FFDE0431C9C7E004F1E5D0061' Sys_DTCreated='2007-05-10T15:31:13'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:31:13' Description='Permitir Agregar Productos' ItemID='FX1-10-240-002'
+		 ItemParent='4B9A32C7FDF04F00B14085EACCA19BF2'/>
+	<z:row Sys_PK='156' Sys_TimeStamp='2007-05-10T15:31:42' Sys_GUID='339EAED87FDD42E38444284DA46D7938' Sys_DTCreated='2007-05-10T15:31:31'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:31:31' Description='Permitir Modificar Productos' ItemID='FX1-10-240-003'
+		 ItemParent='4B9A32C7FDF04F00B14085EACCA19BF2'/>
+	<z:row Sys_PK='157' Sys_TimeStamp='2007-05-10T15:31:59' Sys_GUID='DC2E002041484B35AE69E3796C3CF204' Sys_DTCreated='2007-05-10T15:31:50'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:31:50' Description='Permitir Eliminar Productos' ItemID='FX1-10-240-004'
+		 ItemParent='4B9A32C7FDF04F00B14085EACCA19BF2'/>
+	<z:row Sys_PK='159' Sys_TimeStamp='2007-05-10T15:32:37' Sys_GUID='8604F6665CA34F95ABA39BF958C04156' Sys_DTCreated='2007-05-10T15:32:27'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:32:27' Description='Solo lectura' ItemID='FX1-10-250-001'
+		 ItemParent='856F5F9EDCC5423E921D102E5F27F905'/>
+	<z:row Sys_PK='160' Sys_TimeStamp='2007-05-10T15:32:55' Sys_GUID='F5ED19CFFCE14EF0B4248DA923E91456' Sys_DTCreated='2007-05-10T15:32:42'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:32:42' Description='Permitir Agregar Promocion' ItemID='FX1-10-250-002'
+		 ItemParent='856F5F9EDCC5423E921D102E5F27F905'/>
+	<z:row Sys_PK='161' Sys_TimeStamp='2007-05-10T15:33:10' Sys_GUID='71AEFCE0AA2048098B64A96FE5716F2B' Sys_DTCreated='2007-05-10T15:33:01'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:33:01' Description='Permitir Modificar Promocion' ItemID='FX1-10-250-003'
+		 ItemParent='856F5F9EDCC5423E921D102E5F27F905'/>
+	<z:row Sys_PK='162' Sys_TimeStamp='2007-05-10T15:33:27' Sys_GUID='231E772823724285003399E4B835DB32' Sys_DTCreated='2007-05-10T15:33:17'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:33:17' Description='Permitir Eliminar Promocion' ItemID='FX1-10-250-004'
+		 ItemParent='856F5F9EDCC5423E921D102E5F27F905'/>
+	<z:row Sys_PK='164' Sys_TimeStamp='2007-05-10T15:34:38' Sys_GUID='ED77617AE0254499AB40BCEE7E70614B' Sys_DTCreated='2007-05-10T15:33:57'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:33:57' Description='Solo lectura' ItemID='FX1-10-260-001'
+		 ItemParent='FCA791B18EFC4E560038A8042F3700DC'/>
+	<z:row Sys_PK='165' Sys_TimeStamp='2007-05-10T15:36:41' Sys_GUID='31A89A59D6E84861BD039D1527CF9EA7' Sys_DTCreated='2007-05-10T15:34:46'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:34:46' Description='Permitir Agregar Proveedor' ItemID='FX1-10-260-002'
+		 ItemParent='FCA791B18EFC4E560038A8042F3700DC'/>
+	<z:row Sys_PK='166' Sys_TimeStamp='2007-05-10T15:37:04' Sys_GUID='07CDA1BE9D6045889182B0D04800C1D2' Sys_DTCreated='2007-05-10T15:36:51'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:36:51' Description='Permitir Modificar Proveedor' ItemID='FX1-10-260-003'
+		 ItemParent='FCA791B18EFC4E560038A8042F3700DC'/>
+	<z:row Sys_PK='167' Sys_TimeStamp='2007-05-10T15:38:13' Sys_GUID='FAC5FD4B69D7485F94678BED13F471CE' Sys_DTCreated='2007-05-10T15:37:58'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:37:58' Description='Permitir Eliminar Proveedor' ItemID='FX1-10-260-004'
+		 ItemParent='FCA791B18EFC4E560038A8042F3700DC'/>
+	<z:row Sys_PK='389' Sys_TimeStamp='2007-11-26T14:18:04' Sys_GUID='F691843072F14B44B9ACC400F6EA57A7' Sys_DTCreated='2007-11-26T14:17:54'
+		 Sys_Exported='False' Sys_DTExported='2007-11-26T14:17:54' Description='Expediente' ItemID='FX1-10-260-005' ItemParent='FCA791B18EFC4E560038A8042F3700DC'/>
+	<z:row Sys_PK='390' Sys_TimeStamp='2007-11-26T14:18:40' Sys_GUID='E68083F5D5FE4055960036720003D827' Sys_DTCreated='2007-11-26T14:18:23'
+		 Sys_Exported='False' Sys_DTExported='2007-11-26T14:18:23' Description='Permitir agregar documento' ItemID='FX1-10-260-005-A'
+		 ItemParent='F691843072F14B44B9ACC400F6EA57A7'/>
+	<z:row Sys_PK='391' Sys_TimeStamp='2007-11-26T14:19:21' Sys_GUID='D65C9AEECE3C4FA390C34FD7636F9036' Sys_DTCreated='2007-11-26T14:19:01'
+		 Sys_Exported='False' Sys_DTExported='2007-11-26T14:19:01' Description='Permitir vincular documento' ItemID='FX1-10-260-005-B'
+		 ItemParent='F691843072F14B44B9ACC400F6EA57A7'/>
+	<z:row Sys_PK='392' Sys_TimeStamp='2007-11-26T14:20:27' Sys_GUID='0DE9670E4B04430E00AC230856A9187C' Sys_DTCreated='2007-11-26T14:19:59'
+		 Sys_Exported='False' Sys_DTExported='2007-11-26T14:19:59' Description='Permitir modificar vinculos' ItemID='FX1-10-260-005-C'
+		 ItemParent='F691843072F14B44B9ACC400F6EA57A7'/>
+	<z:row Sys_PK='393' Sys_TimeStamp='2007-11-26T14:21:42' Sys_GUID='E0A193E328FC44F48169B7F41BD599E7' Sys_DTCreated='2007-11-26T14:21:13'
+		 Sys_Exported='False' Sys_DTExported='2007-11-26T14:21:13' Description='Pemitir eliminar vinculos' ItemID='FX1-10-260-005-D'
+		 ItemParent='F691843072F14B44B9ACC400F6EA57A7'/>
+	<z:row Sys_PK='394' Sys_TimeStamp='2007-11-26T14:22:44' Sys_GUID='8CC34FD376C04FC9A22B7F1EEFAA6C76' Sys_DTCreated='2007-11-26T14:22:23'
+		 Sys_Exported='False' Sys_DTExported='2007-11-26T14:22:23' Description='Permitir eliminar documentos' ItemID='FX1-10-260-005-E'
+		 ItemParent='F691843072F14B44B9ACC400F6EA57A7'/>
+	<z:row Sys_PK='169' Sys_TimeStamp='2007-05-10T15:38:55' Sys_GUID='EE6B4AB6F40D4B4C822901957737A4FD' Sys_DTCreated='2007-05-10T15:38:44'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:38:44' Description='Solo lectura' ItemID='FX1-10-270-001'
+		 ItemParent='000E39016F92D4E30A3449C65EB776D9'/>
+	<z:row Sys_PK='170' Sys_TimeStamp='2007-05-10T15:39:15' Sys_GUID='8B112D514178475B99AEE5EFA192442F' Sys_DTCreated='2007-05-10T15:39:04'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:39:04' Description='Permitir Agregar Repartidor' ItemID='FX1-10-270-002'
+		 ItemParent='000E39016F92D4E30A3449C65EB776D9'/>
+	<z:row Sys_PK='172' Sys_TimeStamp='2007-05-10T15:39:52' Sys_GUID='B5E3B4BF5D294D489C3CB27B341E4158' Sys_DTCreated='2007-05-10T15:39:21'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:39:21' Description='Permitir Modificar Repartidor' ItemID='FX1-10-270-003'
+		 ItemParent='000E39016F92D4E30A3449C65EB776D9'/>
+	<z:row Sys_PK='173' Sys_TimeStamp='2007-05-10T15:40:08' Sys_GUID='5BC24DDC4CB94C4DB091E81EAD186474' Sys_DTCreated='2007-05-10T15:39:58'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:39:58' Description='Permitir Eliminar Repartidor' ItemID='FX1-10-270-004'
+		 ItemParent='000E39016F92D4E30A3449C65EB776D9'/>
+	<z:row Sys_PK='175' Sys_TimeStamp='2007-05-10T15:40:44' Sys_GUID='03870960E869D447E9509348FBE881DC' Sys_DTCreated='2007-05-10T15:40:32'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:40:32' Description='Solo lectura' ItemID='FX1-10-280-001'
+		 ItemParent='952050CB7B01419A919103098D296C68'/>
+	<z:row Sys_PK='176' Sys_TimeStamp='2007-05-10T15:41:02' Sys_GUID='0AC41DBD10AF48ABBD3BEE4B031600C4' Sys_DTCreated='2007-05-10T15:40:50'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:40:50' Description='Permitir Agregar Tablas' ItemID='FX1-10-280-002'
+		 ItemParent='952050CB7B01419A919103098D296C68'/>
+	<z:row Sys_PK='177' Sys_TimeStamp='2007-05-10T15:41:21' Sys_GUID='B6DA891CCD3A4CCA8FED006969CDA650' Sys_DTCreated='2007-05-10T15:41:08'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:41:08' Description='Permitir Modificar Tablas' ItemID='FX1-10-280-003'
+		 ItemParent='952050CB7B01419A919103098D296C68'/>
+	<z:row Sys_PK='178' Sys_TimeStamp='2007-05-10T15:41:40' Sys_GUID='22C100A7FF9E42219FB373261F7C5C63' Sys_DTCreated='2007-05-10T15:41:30'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:41:30' Description='Permitir Eliminar Tablas' ItemID='FX1-10-280-004'
+		 ItemParent='952050CB7B01419A919103098D296C68'/>
+	<z:row Sys_PK='180' Sys_TimeStamp='2007-05-10T15:42:21' Sys_GUID='0D41BAD942D724722A0DC2DE7B80B0F1' Sys_DTCreated='2007-05-10T15:42:11'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:42:11' Description='Solo lectura' ItemID='FX1-10-290-001'
+		 ItemParent='F3FB3CCC1F4045A7A0F1C36DB052092C'/>
+	<z:row Sys_PK='181' Sys_TimeStamp='2007-05-10T15:42:40' Sys_GUID='547BE7BB03D54EE0B18BA0DBB664C9AB' Sys_DTCreated='2007-05-10T15:42:27'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:42:27' Description='Permitir Agregar Tarjetas de Credito'
+		 ItemID='FX1-10-290-002' ItemParent='F3FB3CCC1F4045A7A0F1C36DB052092C'/>
+	<z:row Sys_PK='182' Sys_TimeStamp='2007-05-10T15:43:12' Sys_GUID='E6AA1620456C468EA3BC6250C08EF329' Sys_DTCreated='2007-05-10T15:42:59'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:42:59' Description='Permitir Modificar Tarjetas de Credito'
+		 ItemID='FX1-10-290-003' ItemParent='F3FB3CCC1F4045A7A0F1C36DB052092C'/>
+	<z:row Sys_PK='183' Sys_TimeStamp='2007-05-10T15:43:31' Sys_GUID='C194A275806940D28C304BA642F8809B' Sys_DTCreated='2007-05-10T15:43:17'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:43:17' Description='Permitir Eliminar Tarjetas de Credito'
+		 ItemID='FX1-10-290-004' ItemParent='F3FB3CCC1F4045A7A0F1C36DB052092C'/>
+	<z:row Sys_PK='40' Sys_TimeStamp='2007-05-10T13:54:04' Sys_GUID='122AB4B0E3BD4F62B4DEA950BA6C05E3' Sys_DTCreated='2007-10-05T13:42:42'
+		 Sys_Exported='False' Sys_DTExported='2007-10-05T13:42:42' Description='Solo lectura' ItemID='FX1-10-30-001' ItemParent='DD774930BA2C412FA200167237B7B027'/>
+	<z:row Sys_PK='41' Sys_TimeStamp='2007-05-10T13:54:21' Sys_GUID='B97BE3CEA14B4E02993C4E6CC46FFD12' Sys_DTCreated='2007-10-05T13:48:17'
+		 Sys_Exported='False' Sys_DTExported='2007-10-05T13:48:17' Description='Permitir Agregar Banco' ItemID='FX1-10-30-002'
+		 ItemParent='DD774930BA2C412FA200167237B7B027'/>
+	<z:row Sys_PK='42' Sys_TimeStamp='2007-05-10T13:53:52' Sys_GUID='3F8C68C944B24B7997EFAE07E22411BC' Sys_DTCreated='2007-10-05T13:48:47'
+		 Sys_Exported='False' Sys_DTExported='2007-10-05T13:48:47' Description='Permitir Modificar Banco' ItemID='FX1-10-30-003'
+		 ItemParent='DD774930BA2C412FA200167237B7B027'/>
+	<z:row Sys_PK='43' Sys_TimeStamp='2007-05-10T13:53:35' Sys_GUID='DCA08BF4001A45F3BF083F23266FE747' Sys_DTCreated='2007-10-05T13:49:54'
+		 Sys_Exported='False' Sys_DTExported='2007-10-05T13:49:54' Description='Permitir Eliminar Banco' ItemID='FX1-10-30-004'
+		 ItemParent='DD774930BA2C412FA200167237B7B027'/>
+	<z:row Sys_PK='185' Sys_TimeStamp='2007-05-10T15:44:28' Sys_GUID='B44B0EDB500D43A1AC6174D653AB592B' Sys_DTCreated='2007-05-10T15:44:15'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:44:15' Description='Solo lectura' ItemID='FX1-10-300-001'
+		 ItemParent='1C4C719F1FFE41B500575276848775F3'/>
+	<z:row Sys_PK='186' Sys_TimeStamp='2007-05-10T15:44:46' Sys_GUID='64B73E89AF2B4674ABC3409B8EB225A4' Sys_DTCreated='2007-05-10T15:44:34'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:44:34' Description='Permitir Agregar Tasa Fija' ItemID='FX1-10-300-002'
+		 ItemParent='1C4C719F1FFE41B500575276848775F3'/>
+	<z:row Sys_PK='187' Sys_TimeStamp='2007-05-10T15:45:06' Sys_GUID='D1E1AD7AF59845B0ABABA3944EB02131' Sys_DTCreated='2007-05-10T15:44:56'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:44:56' Description='Permitir Modificar Tasa Fija' ItemID='FX1-10-300-003'
+		 ItemParent='1C4C719F1FFE41B500575276848775F3'/>
+	<z:row Sys_PK='188' Sys_TimeStamp='2007-05-10T15:45:21' Sys_GUID='A1842F8DD7AF45129F7F40AB1903F1DA' Sys_DTCreated='2007-05-10T15:45:11'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:45:11' Description='Permitir Eliminar Tasa Fija' ItemID='FX1-10-300-004'
+		 ItemParent='1C4C719F1FFE41B500575276848775F3'/>
+	<z:row Sys_PK='190' Sys_TimeStamp='2007-05-10T15:46:11' Sys_GUID='30997C2657F647DBB7C3F4B9C876B947' Sys_DTCreated='2007-05-10T15:45:47'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:45:47' Description='Solo lectura' ItemID='FX1-10-310-001'
+		 ItemParent='87767CF5C2D64BF1A0481FD2BFDCCEE3'/>
+	<z:row Sys_PK='191' Sys_TimeStamp='2007-05-10T15:46:30' Sys_GUID='F17F01F73DF74089A371743DF0789DF7' Sys_DTCreated='2007-05-10T15:46:18'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:46:18' Description='Permitir Agregar Tasa Variable' ItemID='FX1-10-310-002'
+		 ItemParent='87767CF5C2D64BF1A0481FD2BFDCCEE3'/>
+	<z:row Sys_PK='192' Sys_TimeStamp='2007-05-10T15:46:46' Sys_GUID='CE06FE8672C349E885B500C733C0F861' Sys_DTCreated='2007-05-10T15:46:36'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:46:36' Description='Permitir Modificar Tasa Variable' ItemID='FX1-10-310-003'
+		 ItemParent='87767CF5C2D64BF1A0481FD2BFDCCEE3'/>
+	<z:row Sys_PK='193' Sys_TimeStamp='2007-05-10T15:47:23' Sys_GUID='3C10F43A2EA74F4DBDC362C11494BC00' Sys_DTCreated='2007-05-10T15:46:54'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:46:54' Description='Permitir Eliminar Tasa Variable' ItemID='FX1-10-310-004'
+		 ItemParent='87767CF5C2D64BF1A0481FD2BFDCCEE3'/>
+	<z:row Sys_PK='195' Sys_TimeStamp='2007-05-10T15:48:15' Sys_GUID='0A918133C3B734FF986C1DCDE0001035' Sys_DTCreated='2007-05-10T15:48:04'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:48:04' Description='Solo lectura' ItemID='FX1-10-320-001'
+		 ItemParent='380ACE2E992845D689CB0053FB9160A2'/>
+	<z:row Sys_PK='196' Sys_TimeStamp='2007-05-10T15:48:34' Sys_GUID='E9D8F4C608B349CCAC1DFA839F7BBB1B' Sys_DTCreated='2007-05-10T15:48:21'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:48:21' Description='Permitir Agregar Tipos de Clientes' ItemID='FX1-10-320-002'
+		 ItemParent='380ACE2E992845D689CB0053FB9160A2'/>
+	<z:row Sys_PK='197' Sys_TimeStamp='2007-05-10T15:51:46' Sys_GUID='D361A0BFF1FA4996B7859C16EF49C0F4' Sys_DTCreated='2007-05-10T15:48:56'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:48:56' Description='Permitir Modificar Tipos de Clientes'
+		 ItemID='FX1-10-320-003' ItemParent='380ACE2E992845D689CB0053FB9160A2'/>
+	<z:row Sys_PK='198' Sys_TimeStamp='2007-05-10T15:52:31' Sys_GUID='883B3A8AC90A46D09F9DE35295005577' Sys_DTCreated='2007-05-10T15:51:53'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:51:53' Description='Permitir  Eliminar Tipos de Clientes'
+		 ItemID='FX1-10-320-004' ItemParent='380ACE2E992845D689CB0053FB9160A2'/>
+	<z:row Sys_PK='200' Sys_TimeStamp='2007-05-10T15:53:36' Sys_GUID='AEDBA71D50F24715ABEC24D8D3DC45D2' Sys_DTCreated='2007-05-10T15:53:00'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:53:00' Description='Solo lectura' ItemID='FX1-10-330-001'
+		 ItemParent='499546694FA040F9BC00C9606765AE69'/>
+	<z:row Sys_PK='201' Sys_TimeStamp='2007-05-10T15:53:56' Sys_GUID='366289BC46DA49989254E0E092B9F132' Sys_DTCreated='2007-05-10T15:53:42'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:53:42' Description='Permitir Agregar Tipos de Cupon' ItemID='FX1-10-330-002'
+		 ItemParent='499546694FA040F9BC00C9606765AE69'/>
+	<z:row Sys_PK='202' Sys_TimeStamp='2007-05-10T15:54:22' Sys_GUID='0CE7583EEDD1F4BA0A224B87367F006F' Sys_DTCreated='2007-05-10T15:54:02'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:54:02' Description='Permitir Modificar Tipos de Cupon' ItemID='FX1-10-330-003'
+		 ItemParent='499546694FA040F9BC00C9606765AE69'/>
+	<z:row Sys_PK='203' Sys_TimeStamp='2007-05-10T15:54:41' Sys_GUID='727D1A85A2E1473BB57000C734313000' Sys_DTCreated='2007-05-10T15:54:27'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:54:27' Description='Permitir Eliminar Tipos de Cupon' ItemID='FX1-10-330-004'
+		 ItemParent='499546694FA040F9BC00C9606765AE69'/>
+	<z:row Sys_PK='205' Sys_TimeStamp='2007-05-10T15:55:29' Sys_GUID='0E8BBCFFE32B451ABC18881C0000596B' Sys_DTCreated='2007-05-10T15:55:18'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:55:18' Description='Solo lectura' ItemID='FX1-10-340-001'
+		 ItemParent='A6EAFF7D0C544EB880BCFBFBB665AC7B'/>
+	<z:row Sys_PK='206' Sys_TimeStamp='2007-05-10T15:55:44' Sys_GUID='51C86906E4354924AFD428D626CD6DEF' Sys_DTCreated='2007-05-10T15:55:33'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:55:33' Description='Permitir Agregar Tipos de Proveedor' ItemID='FX1-10-340-002'
+		 ItemParent='A6EAFF7D0C544EB880BCFBFBB665AC7B'/>
+	<z:row Sys_PK='207' Sys_TimeStamp='2007-05-10T15:56:06' Sys_GUID='02F77CEDC7234AD5852756CB006D9D60' Sys_DTCreated='2007-05-10T15:55:50'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:55:50' Description='Permitir Modificar Tipos de Proveedor'
+		 ItemID='FX1-10-340-003' ItemParent='A6EAFF7D0C544EB880BCFBFBB665AC7B'/>
+	<z:row Sys_PK='208' Sys_TimeStamp='2007-05-10T15:56:29' Sys_GUID='DEA32D3E0DEA4B3BBD0416EAD1A211E4' Sys_DTCreated='2007-05-10T15:56:13'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:56:13' Description='Permitir Eliminar Tipos de Proveedor'
+		 ItemID='FX1-10-340-004' ItemParent='A6EAFF7D0C544EB880BCFBFBB665AC7B'/>
+	<z:row Sys_PK='210' Sys_TimeStamp='2007-05-10T15:57:04' Sys_GUID='0CFE6B356919D4D24BAEF3BAF02B9541' Sys_DTCreated='2007-05-10T15:56:53'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:56:53' Description='Solo lectura' ItemID='FX1-10-350-001'
+		 ItemParent='7A1AB014E0FB406A89E0861558B509AC'/>
+	<z:row Sys_PK='211' Sys_TimeStamp='2007-05-10T15:57:20' Sys_GUID='917103CBC135425AA918804CADF43682' Sys_DTCreated='2007-05-10T15:57:10'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:57:10' Description='Permitir Agregar Zonas' ItemID='FX1-10-350-002'
+		 ItemParent='7A1AB014E0FB406A89E0861558B509AC'/>
+	<z:row Sys_PK='212' Sys_TimeStamp='2007-05-10T15:57:35' Sys_GUID='AAC94C9396EB4382914EB80664E69E23' Sys_DTCreated='2007-05-10T15:57:25'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:57:25' Description='Permitir Modificar Zonas' ItemID='FX1-10-350-003'
+		 ItemParent='7A1AB014E0FB406A89E0861558B509AC'/>
+	<z:row Sys_PK='213' Sys_TimeStamp='2007-05-10T15:57:52' Sys_GUID='FB0898B466434AA900585FD9D948C31C' Sys_DTCreated='2007-05-10T15:57:42'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T15:57:42' Description='Permitir Eliminar Zonas' ItemID='FX1-10-350-004'
+		 ItemParent='7A1AB014E0FB406A89E0861558B509AC'/>
+	<z:row Sys_PK='45' Sys_TimeStamp='2007-05-10T13:52:11' Sys_GUID='6E4765D354E84532B47C2F8EB6809689' Sys_DTCreated='2007-05-10T13:51:56'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T13:51:56' Description='Solo lectura' ItemID='FX1-10-40-001' ItemParent='7D6B7B4A5219417F9DEB2EE227006DC0'/>
+	<z:row Sys_PK='46' Sys_TimeStamp='2007-05-10T13:52:33' Sys_GUID='10FE0CE2975B4CFF8B437745B6ABD245' Sys_DTCreated='2007-05-10T13:52:15'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T13:52:15' Description='Permitir Agregar Caja' ItemID='FX1-10-40-002'
+		 ItemParent='7D6B7B4A5219417F9DEB2EE227006DC0'/>
+	<z:row Sys_PK='47' Sys_TimeStamp='2007-05-10T13:52:52' Sys_GUID='451D4B65435946FD823BD71B5C2C5429' Sys_DTCreated='2007-05-10T13:52:37'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T13:52:37' Description='Permitir Modificar Caja' ItemID='FX1-10-40-003'
+		 ItemParent='7D6B7B4A5219417F9DEB2EE227006DC0'/>
+	<z:row Sys_PK='48' Sys_TimeStamp='2007-05-10T13:54:49' Sys_GUID='8DD5A6CF86ED44E69E3DC157A6864482' Sys_DTCreated='2007-05-10T13:54:30'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T13:54:30' Description='Permitir Eliminar Caja' ItemID='FX1-10-40-004'
+		 ItemParent='7D6B7B4A5219417F9DEB2EE227006DC0'/>
+	<z:row Sys_PK='50' Sys_TimeStamp='2007-05-10T13:55:34' Sys_GUID='C46E4A68C1F8486FA8CEBEDB0006A1AD' Sys_DTCreated='2007-05-10T13:55:23'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T13:55:23' Description='Solo lectura' ItemID='FX1-10-50-001' ItemParent='F287B6D587A14D37826E7C482F80A536'/>
+	<z:row Sys_PK='51' Sys_TimeStamp='2007-05-10T13:55:54' Sys_GUID='1B9485B4D9F84A85AF17A98161269907' Sys_DTCreated='2007-05-10T13:55:40'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T13:55:40' Description='Permitir Agregar Cajero' ItemID='FX1-10-50-002'
+		 ItemParent='F287B6D587A14D37826E7C482F80A536'/>
+	<z:row Sys_PK='52' Sys_TimeStamp='2007-05-10T13:56:12' Sys_GUID='009FC581235FE4A2298E3D1F66A809F1' Sys_DTCreated='2007-05-10T13:55:59'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T13:55:59' Description='Permitir Modificar Cajero' ItemID='FX1-10-50-003'
+		 ItemParent='F287B6D587A14D37826E7C482F80A536'/>
+	<z:row Sys_PK='53' Sys_TimeStamp='2007-05-10T13:56:31' Sys_GUID='F70FA93AA02D40A7AAEE7C675C199861' Sys_DTCreated='2007-05-10T13:56:21'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T13:56:21' Description='Permitir Eliminar Cajero' ItemID='FX1-10-50-004'
+		 ItemParent='F287B6D587A14D37826E7C482F80A536'/>
+	<z:row Sys_PK='55' Sys_TimeStamp='2007-05-10T13:57:29' Sys_GUID='6130AFD780AF40D8B0A811A9D1FF6E9C' Sys_DTCreated='2007-05-10T13:57:07'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T13:57:07' Description='Solo lectura' ItemID='FX1-10-60-001' ItemParent='4D4BBBEC73FC40A4B988182B18C36559'/>
+	<z:row Sys_PK='56' Sys_TimeStamp='2007-05-10T13:57:45' Sys_GUID='491F1EBAB3764A239B3775E3E100DB39' Sys_DTCreated='2007-05-10T13:57:34'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T13:57:34' Description='Permitir Agregar Categoria' ItemID='FX1-10-60-002'
+		 ItemParent='4D4BBBEC73FC40A4B988182B18C36559'/>
+	<z:row Sys_PK='57' Sys_TimeStamp='2007-05-10T13:58:07' Sys_GUID='E00CD41B3846498EA6D4BBCEE4EFDCDA' Sys_DTCreated='2007-05-10T13:57:49'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T13:57:49' Description='Permitir Modificar Categoria' ItemID='FX1-10-60-003'
+		 ItemParent='4D4BBBEC73FC40A4B988182B18C36559'/>
+	<z:row Sys_PK='58' Sys_TimeStamp='2007-05-10T13:58:24' Sys_GUID='33B340D17F614764BE4201D1E5A1367D' Sys_DTCreated='2007-05-10T13:58:13'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T13:58:13' Description='Permitir Eliminar Categoria' ItemID='FX1-10-60-004'
+		 ItemParent='4D4BBBEC73FC40A4B988182B18C36559'/>
+	<z:row Sys_PK='60' Sys_TimeStamp='2007-05-10T14:00:03' Sys_GUID='793FB6B75AEA4514A7E68FB3EC4CBD07' Sys_DTCreated='2007-05-10T13:59:54'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T13:59:54' Description='Solo lectura' ItemID='FX1-10-70-001' ItemParent='CA05FDE6AA68434AA2BF6B55D7ED6420'/>
+	<z:row Sys_PK='61' Sys_TimeStamp='2007-05-10T14:49:28' Sys_GUID='0EB69F862C7D243EDA3B82CC2596D4CF' Sys_DTCreated='2007-10-05T14:00:07'
+		 Sys_Exported='False' Sys_DTExported='2007-10-05T14:00:07' Description='Permitir Agregar Centro de Consumo' ItemID='FX1-10-70-002'
+		 ItemParent='CA05FDE6AA68434AA2BF6B55D7ED6420'/>
+	<z:row Sys_PK='62' Sys_TimeStamp='2007-05-10T14:49:38' Sys_GUID='66B05F7DC1494A3B9EC79BFB155B9D89' Sys_DTCreated='2007-10-05T14:00:26'
+		 Sys_Exported='False' Sys_DTExported='2007-10-05T14:00:26' Description='Permitir Modificar Centro de Consumo'
+		 ItemID='FX1-10-70-003' ItemParent='CA05FDE6AA68434AA2BF6B55D7ED6420'/>
+	<z:row Sys_PK='63' Sys_TimeStamp='2007-05-10T14:49:48' Sys_GUID='D97F41EF070045BE9833D28074329C11' Sys_DTCreated='2007-10-05T14:00:42'
+		 Sys_Exported='False' Sys_DTExported='2007-10-05T14:00:42' Description='Permitir Eliminar Centro de Consumo' ItemID='FX1-10-70-004'
+		 ItemParent='CA05FDE6AA68434AA2BF6B55D7ED6420'/>
+	<z:row Sys_PK='65' Sys_TimeStamp='2007-05-10T14:07:59' Sys_GUID='A19C9FE4B8D640E5A0EC773EFDCAFC11' Sys_DTCreated='2007-05-10T14:07:43'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T14:07:43' Description='Solo lectura' ItemID='FX1-10-80-001' ItemParent='91FB7CF525DD4348AA02C3B661DE5E46'/>
+	<z:row Sys_PK='66' Sys_TimeStamp='2007-05-10T15:14:52' Sys_GUID='3C1C4C9F9ACF4C6086F01B28876FDBD5' Sys_DTCreated='2007-10-05T14:08:52'
+		 Sys_Exported='False' Sys_DTExported='2007-10-05T14:08:52' Description='Permitir Agregar Configuracion de Impuestos'
+		 ItemID='FX1-10-80-002' ItemParent='91FB7CF525DD4348AA02C3B661DE5E46'/>
+	<z:row Sys_PK='67' Sys_TimeStamp='2007-05-10T15:15:23' Sys_GUID='9E6B16F7865F4D12A099B920E78E4BCC' Sys_DTCreated='2007-10-05T14:09:13'
+		 Sys_Exported='False' Sys_DTExported='2007-10-05T14:09:13' Description='Permitir Modificar configuracion de Impuestos'
+		 ItemID='FX1-10-80-003' ItemParent='91FB7CF525DD4348AA02C3B661DE5E46'/>
+	<z:row Sys_PK='68' Sys_TimeStamp='2007-05-10T15:15:13' Sys_GUID='11E95F4D449548759719C7BC70A30093' Sys_DTCreated='2007-10-05T14:09:35'
+		 Sys_Exported='False' Sys_DTExported='2007-10-05T14:09:35' Description='Permitir Eliminar configuracion de Impuestos'
+		 ItemID='FX1-10-80-004' ItemParent='91FB7CF525DD4348AA02C3B661DE5E46'/>
+	<z:row Sys_PK='70' Sys_TimeStamp='2007-05-10T14:12:03' Sys_GUID='F2094C06F90341A0B047346F26F1C728' Sys_DTCreated='2007-10-05T14:10:34'
+		 Sys_Exported='False' Sys_DTExported='2007-10-05T14:10:34' Description='Solo lectura' ItemID='FX1-10-90-001' ItemParent='A30E930707D4423C004C14507529B37B'/>
+	<z:row Sys_PK='71' Sys_TimeStamp='2007-05-10T14:12:23' Sys_GUID='633B95612CE14FE480B00210707B0039' Sys_DTCreated='2007-05-10T14:12:10'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T14:12:10' Description='Permitir Agregar Chequera' ItemID='FX1-10-90-002'
+		 ItemParent='A30E930707D4423C004C14507529B37B'/>
+	<z:row Sys_PK='72' Sys_TimeStamp='2007-05-10T14:12:39' Sys_GUID='57A63B6142A04848BE7EE5F43068B370' Sys_DTCreated='2007-05-10T14:12:27'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T14:12:27' Description='Permitir Modificar Chequera' ItemID='FX1-10-90-003'
+		 ItemParent='A30E930707D4423C004C14507529B37B'/>
+	<z:row Sys_PK='73' Sys_TimeStamp='2007-05-10T14:12:55' Sys_GUID='48A82A2D750F420DA0744CF325A46353' Sys_DTCreated='2007-05-10T14:12:45'
+		 Sys_Exported='False' Sys_DTExported='2007-05-10T14:12:45' Description='Permitir Eliminar Chequera' ItemID='FX1-10-90-004'
+		 ItemParent='A30E930707D4423C004C14507529B37B'/>
+	<z:row Sys_PK='26' Sys_TimeStamp='2007-05-05T13:28:49' Sys_GUID='CEE1CF618D9343548BD04CD5BB94A355' Sys_DTCreated='2007-05-05T13:28:27'
+		 Sys_Exported='False' Sys_DTExported='2007-05-05T13:28:27' Description='Punto de venta' ItemID='FX1-20-10-000'
+		 ItemParent='8EE4C7570EA84719A68DC4955A1B5C80'/>
+	<z:row Sys_PK='25' Sys_TimeStamp='2007-05-05T13:27:55' Sys_GUID='56144919162B45C79788F62C38E23B32' Sys_DTCreated='2007-05-05T13:27:19'
+		 Sys_Exported='False' Sys_DTExported='2007-05-05T13:27:19' Description='Compras' ItemID='FX1-20-20-000' ItemParent='8EE4C7570EA84719A68DC4955A1B5C80'/>
+	<z:row Sys_PK='24' Sys_TimeStamp='2007-10-11T11:11:44' Sys_GUID='A43E1DF1A3CB414083B18274A1D4306E' Sys_DTCreated='2007-05-05T13:26:43'
+		 Sys_Exported='False' Sys_DTExported='2007-05-05T13:26:43' Description='Ventas y distribución' ItemID='FX1-20-30-000'
+		 ItemParent='8EE4C7570EA84719A68DC4955A1B5C80'/>
+	<z:row Sys_PK='395' Sys_TimeStamp='2008-02-05T11:26:00' Sys_GUID='DF432B34DE344B11BDA2AA16AB5E71D6' Sys_DTCreated='2008-02-05T11:22:15'
+		 Sys_Exported='False' Sys_DTExported='2008-02-05T11:22:15' Description='Autorizar venta de productos con lote y/o Serie'
+		 ItemID='FX1-20-10-001' ItemParent='CEE1CF618D9343548BD04CD5BB94A355'/>
+	<z:row Sys_PK='396' Sys_TimeStamp='2008-02-05T11:45:19' Sys_GUID='18E9707DE55A482A900063D29352D0A0' Sys_DTCreated='2008-02-05T11:43:40'
+		 Sys_Exported='False' Sys_DTExported='2008-02-05T11:43:40' Description='Permitir descuento global en venta' ItemID='FX1-20-10-002'
+		 ItemParent='CEE1CF618D9343548BD04CD5BB94A355'/>
+	<z:row Sys_PK='397' Sys_TimeStamp='2008-02-05T11:45:44' Sys_GUID='91F134EA55C6453E004379EDCAB4BF06' Sys_DTCreated='2008-02-05T11:45:31'
+		 Sys_Exported='False' Sys_DTExported='2008-02-05T11:45:31' Description='Permitir cambio de precio' ItemID='FX1-20-10-003'
+		 ItemParent='CEE1CF618D9343548BD04CD5BB94A355'/>
+	<z:row Sys_PK='398' Sys_TimeStamp='2008-02-05T11:48:12' Sys_GUID='6D13920291844B1F86E339F42B93DF8C' Sys_DTCreated='2008-02-05T11:48:02'
+		 Sys_Exported='False' Sys_DTExported='2008-02-05T11:48:02' Description='Permitir descuento a precio' ItemID='FX1-20-10-004'
+		 ItemParent='CEE1CF618D9343548BD04CD5BB94A355'/>
+	<z:row Sys_PK='399' Sys_TimeStamp='2008-02-05T11:49:02' Sys_GUID='CE6A4719E77F4164BD8C31A70057EFD5' Sys_DTCreated='2008-02-05T11:48:50'
+		 Sys_Exported='False' Sys_DTExported='2008-02-05T11:48:50' Description='Permitir introducir importe' ItemID='FX1-20-10-005'
+		 ItemParent='CEE1CF618D9343548BD04CD5BB94A355'/>
+	<z:row Sys_PK='400' Sys_TimeStamp='2008-02-05T12:32:41' Sys_GUID='7FFAD010C07B49B9AA8675BF763B1420' Sys_DTCreated='2008-02-05T11:49:09'
+		 Sys_Exported='False' Sys_DTExported='2008-02-05T11:49:09' Description='Permitir configurar punto de venta' ItemID='FX1-20-10-006'
+		 ItemParent='CEE1CF618D9343548BD04CD5BB94A355'/>
+	<z:row Sys_PK='401' Sys_TimeStamp='2008-02-05T12:39:31' Sys_GUID='D7CC0AAEBAA94BE5B54C0864A5710059' Sys_DTCreated='2008-02-05T12:39:18'
+		 Sys_Exported='False' Sys_DTExported='2008-02-05T12:39:18' Description='Permitir Ingresos' ItemID='FX1-20-10-007'
+		 ItemParent='CEE1CF618D9343548BD04CD5BB94A355'/>
+	<z:row Sys_PK='402' Sys_TimeStamp='2008-02-05T12:40:35' Sys_GUID='B933A2F55D1148689127E858F56600B8' Sys_DTCreated='2008-02-05T12:40:16'
+		 Sys_Exported='False' Sys_DTExported='2008-02-05T12:40:16' Description='Permitir Recepción de Cobros' ItemID='FX1-20-10-008'
+		 ItemParent='CEE1CF618D9343548BD04CD5BB94A355'/>
+	<z:row Sys_PK='403' Sys_TimeStamp='2008-02-05T12:43:10' Sys_GUID='9C7D9341ABFC410ABCE7FECF541C2275' Sys_DTCreated='2008-02-05T12:42:55'
+		 Sys_Exported='False' Sys_DTExported='2008-02-05T12:42:55' Description='Permitir Pagos' ItemID='FX1-20-10-009'
+		 ItemParent='CEE1CF618D9343548BD04CD5BB94A355'/>
+	<z:row Sys_PK='404' Sys_TimeStamp='2008-02-05T12:43:25' Sys_GUID='79EEC8F19F194B8DB7BEBA29A0004F5C' Sys_DTCreated='2008-02-05T12:43:15'
+		 Sys_Exported='False' Sys_DTExported='2008-02-05T12:43:15' Description='Permitir Retiros' ItemID='FX1-20-10-010'
+		 ItemParent='CEE1CF618D9343548BD04CD5BB94A355'/>
+	<z:row Sys_PK='405' Sys_TimeStamp='2008-02-05T12:43:44' Sys_GUID='AF5673194DC44F538745D4C572FAD116' Sys_DTCreated='2008-02-05T12:43:33'
+		 Sys_Exported='False' Sys_DTExported='2008-02-05T12:43:33' Description='Permitir Arqueo' ItemID='FX1-20-10-011'
+		 ItemParent='CEE1CF618D9343548BD04CD5BB94A355'/>
+	<z:row Sys_PK='406' Sys_TimeStamp='2008-02-05T12:44:02' Sys_GUID='F81BC53E3C1B4885AEB209FE9118A592' Sys_DTCreated='2008-02-05T12:43:51'
+		 Sys_Exported='False' Sys_DTExported='2008-02-05T12:43:51' Description='Permitir Corte de caja' ItemID='FX1-20-10-012'
+		 ItemParent='CEE1CF618D9343548BD04CD5BB94A355'/>
+	<z:row Sys_PK='407' Sys_TimeStamp='2008-02-05T12:45:23' Sys_GUID='7056085D5D26447E8C1BE8B60682AC11' Sys_DTCreated='2008-02-05T12:45:15'
+		 Sys_Exported='False' Sys_DTExported='2008-02-05T12:45:15' Description='Permitir abrir cajón sin cobrar' ItemID='FX1-20-10-013'
+		 ItemParent='CEE1CF618D9343548BD04CD5BB94A355'/>
+	<z:row Sys_PK='408' Sys_TimeStamp='2008-02-05T12:45:46' Sys_GUID='EB6B440C5C8F4CBEA357E9E0D4E6756F' Sys_DTCreated='2008-02-05T12:45:32'
+		 Sys_Exported='False' Sys_DTExported='2008-02-05T12:45:32' Description='Permitir quitar producto' ItemID='FX1-20-10-014'
+		 ItemParent='CEE1CF618D9343548BD04CD5BB94A355'/>
+	<z:row Sys_PK='409' Sys_TimeStamp='2008-02-05T12:46:06' Sys_GUID='47552338A9E541BA9823D3402221A513' Sys_DTCreated='2008-02-05T12:45:56'
+		 Sys_Exported='False' Sys_DTExported='2008-02-05T12:45:56' Description='Permitir Cancelar ticket' ItemID='FX1-20-10-015'
+		 ItemParent='CEE1CF618D9343548BD04CD5BB94A355'/>
+	<z:row Sys_PK='410' Sys_TimeStamp='2008-02-05T12:46:26' Sys_GUID='98CE5048A7344F2C8CD164170050993D' Sys_DTCreated='2008-02-05T12:46:14'
+		 Sys_Exported='False' Sys_DTExported='2008-02-05T12:46:14' Description='Permitir cambiar a cotización' ItemID='FX1-20-10-016'
+		 ItemParent='CEE1CF618D9343548BD04CD5BB94A355'/>
+	<z:row Sys_PK='457' Sys_TimeStamp='2008-05-26T11:39:55' Sys_GUID='480BDD3FB54C4983ACE360AF6220BD00' Sys_DTCreated='2008-05-26T11:38:30'
+		 Sys_Exported='False' Sys_DTExported='2008-05-26T11:38:30' Description='Habilitar Acceso' ItemID='FX1-20-20-001'
+		 ItemParent='56144919162B45C79788F62C38E23B32'/>
+	<z:row Sys_PK='214' Sys_TimeStamp='2007-10-10T16:44:55' Sys_GUID='CADCBB6510AF44BB9E698B778C6F1862' Sys_DTCreated='2007-10-10T16:43:51'
+		 Sys_Exported='False' Sys_DTExported='2007-10-10T16:43:51' Description='Pedidos' ItemID='FX1-20-20-100' ItemParent='56144919162B45C79788F62C38E23B32'/>
+	<z:row Sys_PK='222' Sys_TimeStamp='2007-10-11T10:39:52' Sys_GUID='E79B77D441AF4AA2BCF68067DF60E3C0' Sys_DTCreated='2007-10-11T10:02:44'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T10:02:44' Description='Remisiones' ItemID='FX1-20-20-200' ItemParent='56144919162B45C79788F62C38E23B32'/>
+	<z:row Sys_PK='229' Sys_TimeStamp='2007-10-11T10:39:36' Sys_GUID='BEAE99201D464E469EE8208B398E3C73' Sys_DTCreated='2007-10-11T10:39:23'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T10:39:23' Description='Facturas' ItemID='FX1-20-20-300' ItemParent='56144919162B45C79788F62C38E23B32'/>
+	<z:row Sys_PK='236' Sys_TimeStamp='2007-10-11T10:46:33' Sys_GUID='187B74BCDE3C4F67A3CA45A15DE52918' Sys_DTCreated='2007-10-11T10:46:22'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T10:46:22' Description='Notas de Credito' ItemID='FX1-20-20-400'
+		 ItemParent='56144919162B45C79788F62C38E23B32'/>
+	<z:row Sys_PK='240' Sys_TimeStamp='2007-10-11T10:56:03' Sys_GUID='80CACB1BD0054A528EF43B8971CB6C52' Sys_DTCreated='2007-10-11T10:54:55'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T10:54:55' Description='Pagos' ItemID='FX1-20-20-500' ItemParent='56144919162B45C79788F62C38E23B32'/>
+	<z:row Sys_PK='215' Sys_TimeStamp='2007-10-11T10:06:11' Sys_GUID='3DDB9C6E924A4BBC97A9E812DFBFD7E4' Sys_DTCreated='2007-10-10T16:47:26'
+		 Sys_Exported='False' Sys_DTExported='2007-10-10T16:47:26' Description='Sólo Lectura' ItemID='FX1-20-20-101'
+		 ItemParent='CADCBB6510AF44BB9E698B778C6F1862'/>
+	<z:row Sys_PK='216' Sys_TimeStamp='2007-10-10T16:52:00' Sys_GUID='8FCC31583E6C4088AB1089EDEEE88246' Sys_DTCreated='2007-10-10T16:49:34'
+		 Sys_Exported='False' Sys_DTExported='2007-10-10T16:49:34' Description='Permitir Realizar Pedido' ItemID='FX1-20-20-102'
+		 ItemParent='CADCBB6510AF44BB9E698B778C6F1862'/>
+	<z:row Sys_PK='217' Sys_TimeStamp='2007-10-10T16:55:08' Sys_GUID='70ABA613F28D456EAE4F783DFC319287' Sys_DTCreated='2007-10-10T16:50:15'
+		 Sys_Exported='False' Sys_DTExported='2007-10-10T16:50:15' Description='Permitir Modificar Pedido' ItemID='FX1-20-20-103'
+		 ItemParent='CADCBB6510AF44BB9E698B778C6F1862'/>
+	<z:row Sys_PK='221' Sys_TimeStamp='2007-10-11T09:59:54' Sys_GUID='568EAB447A564234B9F937915081A7F2' Sys_DTCreated='2007-10-11T09:59:10'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T09:59:10' Description='Permitir Cancelar Pedido' ItemID='FX1-20-20-104'
+		 ItemParent='CADCBB6510AF44BB9E698B778C6F1862'/>
+	<z:row Sys_PK='223' Sys_TimeStamp='2007-10-11T10:05:47' Sys_GUID='A24CFCF6F94D47CA89900068B13D8779' Sys_DTCreated='2007-10-11T10:04:06'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T10:04:06' Description='Sólo Lectura' ItemID='FX1-20-20-201'
+		 ItemParent='E79B77D441AF4AA2BCF68067DF60E3C0'/>
+	<z:row Sys_PK='224' Sys_TimeStamp='2007-10-11T10:06:52' Sys_GUID='8CAD23DA8B5B47CD93525B6F6BDB67D8' Sys_DTCreated='2007-10-11T10:06:18'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T10:06:18' Description='Permitir Realizar Remisión' ItemID='FX1-20-20-202'
+		 ItemParent='E79B77D441AF4AA2BCF68067DF60E3C0'/>
+	<z:row Sys_PK='227' Sys_TimeStamp='2007-10-11T10:14:46' Sys_GUID='827D7C94836B413AA854F1BB3974A3E3' Sys_DTCreated='2007-10-11T10:14:00'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T10:14:00' Description='Permitir Modificar Remisión' ItemID='FX1-20-20-203'
+		 ItemParent='E79B77D441AF4AA2BCF68067DF60E3C0'/>
+	<z:row Sys_PK='228' Sys_TimeStamp='2007-10-11T10:15:32' Sys_GUID='76FEABD1B65E4689821F89085C09F75B' Sys_DTCreated='2007-10-11T10:15:02'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T10:15:02' Description='Permitir Cancelar Remisión' ItemID='FX1-20-20-204'
+		 ItemParent='E79B77D441AF4AA2BCF68067DF60E3C0'/>
+	<z:row Sys_PK='246' Sys_TimeStamp='2007-10-11T11:07:54' Sys_GUID='B9CD7BF8135C41C090B300571275CDBB' Sys_DTCreated='2007-10-11T11:07:15'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T11:07:15' Description='Permitir Realizar Anticipos (Remisión en Credito Comercial)'
+		 ItemID='FX1-20-20-205' ItemParent='E79B77D441AF4AA2BCF68067DF60E3C0'/>
+	<z:row Sys_PK='248' Sys_TimeStamp='2007-10-11T11:10:32' Sys_GUID='2913D37124E54BB4A5DCA4ABC66BCC93' Sys_DTCreated='2007-10-11T11:08:19'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T11:08:19' Description='Permitir Bonificar Documento ( Remisión a Credito Comercial)'
+		 ItemID='FX1-20-20-206' ItemParent='E79B77D441AF4AA2BCF68067DF60E3C0'/>
+	<z:row Sys_PK='251' Sys_TimeStamp='2007-10-11T11:10:10' Sys_GUID='54533859B4D644B2A72DE6D5448D72F3' Sys_DTCreated='2007-10-11T11:09:33'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T11:09:33' Description='Permitir Liquidar Documento (Remisión a Credito Comercial)'
+		 ItemID='FX1-20-20-207' ItemParent='E79B77D441AF4AA2BCF68067DF60E3C0'/>
+	<z:row Sys_PK='230' Sys_TimeStamp='2007-10-11T10:44:15' Sys_GUID='6AA6F4D82B8D4C508DDAED523B8E042D' Sys_DTCreated='2007-10-11T10:40:35'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T10:40:35' Description='Sólo Lectura' ItemID='FX1-20-20-301'
+		 ItemParent='BEAE99201D464E469EE8208B398E3C73'/>
+	<z:row Sys_PK='231' Sys_TimeStamp='2007-10-11T10:45:00' Sys_GUID='F5791B9788544066AE53D9195896C3FC' Sys_DTCreated='2007-10-11T10:44:19'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T10:44:19' Description='Permitir Realizar Factura' ItemID='FX1-20-20-302'
+		 ItemParent='BEAE99201D464E469EE8208B398E3C73'/>
+	<z:row Sys_PK='234' Sys_TimeStamp='2007-10-11T10:45:32' Sys_GUID='0C40642DBFC543429F579D8675C33C4E' Sys_DTCreated='2007-10-11T10:45:04'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T10:45:04' Description='Permitir Modificar Factura' ItemID='FX1-20-20-303'
+		 ItemParent='BEAE99201D464E469EE8208B398E3C73'/>
+	<z:row Sys_PK='235' Sys_TimeStamp='2007-10-11T10:45:53' Sys_GUID='2052F416B492497381764EB6EA6E7FCB' Sys_DTCreated='2007-10-11T10:45:39'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T10:45:39' Description='Permitir Cancelar Pedido' ItemID='FX1-20-20-304'
+		 ItemParent='BEAE99201D464E469EE8208B398E3C73'/>
+	<z:row Sys_PK='237' Sys_TimeStamp='2007-10-11T10:47:38' Sys_GUID='AA62B042FBAB47BA808176772D0206BA' Sys_DTCreated='2007-10-11T10:47:10'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T10:47:10' Description='Sólo Lectura' ItemID='FX1-20-20-401'
+		 ItemParent='187B74BCDE3C4F67A3CA45A15DE52918'/>
+	<z:row Sys_PK='238' Sys_TimeStamp='2007-10-11T10:48:53' Sys_GUID='70519BE039894C7F892861B92665737B' Sys_DTCreated='2007-10-11T10:47:43'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T10:47:43' Description='Permitir Realizar Nota de Credito' ItemID='FX1-20-20-402'
+		 ItemParent='187B74BCDE3C4F67A3CA45A15DE52918'/>
+	<z:row Sys_PK='239' Sys_TimeStamp='2007-10-11T10:48:36' Sys_GUID='60665A8A1A424751A2A4B1BA69F1F9F4' Sys_DTCreated='2007-10-11T10:48:17'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T10:48:17' Description='Permitir Modificar Nota de Credito' ItemID='FX1-20-20-403'
+		 ItemParent='187B74BCDE3C4F67A3CA45A15DE52918'/>
+	<z:row Sys_PK='241' Sys_TimeStamp='2007-10-11T10:56:35' Sys_GUID='4F88C834CED54F19A89D838423B9497E' Sys_DTCreated='2007-10-11T10:56:07'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T10:56:07' Description='Permitir Pago de Contado' ItemID='FX1-20-20-501'
+		 ItemParent='80CACB1BD0054A528EF43B8971CB6C52'/>
+	<z:row Sys_PK='242' Sys_TimeStamp='2007-10-11T10:57:12' Sys_GUID='937C4DA82035421F883542E5CF29D4F4' Sys_DTCreated='2007-10-11T10:56:47'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T10:56:47' Description='Permitir Credito Comercial' ItemID='FX1-20-20-502'
+		 ItemParent='80CACB1BD0054A528EF43B8971CB6C52'/>
+	<z:row Sys_PK='244' Sys_TimeStamp='2007-10-11T11:06:28' Sys_GUID='D18F60B7E8DD4758972C524CCE8E4988' Sys_DTCreated='2007-10-11T11:05:22'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T11:05:22' Description='Permitir Consignación de Mercancía'
+		 ItemID='FX1-20-20-503' ItemParent='80CACB1BD0054A528EF43B8971CB6C52'/>
+	<z:row Sys_PK='245' Sys_TimeStamp='2007-10-11T11:06:58' Sys_GUID='450A850ADC4540949B5926096F00749D' Sys_DTCreated='2007-10-11T11:06:32'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T11:06:32' Description='Permitir Realizar Financiamiento' ItemID='FX1-20-20-504'
+		 ItemParent='80CACB1BD0054A528EF43B8971CB6C52'/>
+	<z:row Sys_PK='243' Sys_TimeStamp='2007-10-11T10:58:16' Sys_GUID='30365B9A4E4E4180954FD27D3E601800' Sys_DTCreated='2007-10-11T10:57:19'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T10:57:19' Description='Autorizar Limite de Credito Excedido'
+		 ItemID='FX1-20-20-502A' ItemParent='937C4DA82035421F883542E5CF29D4F4'/>
+	<z:row Sys_PK='460' Sys_TimeStamp='2008-05-26T11:46:57' Sys_GUID='2091AA60B3564DEAA87EFFD442B3CAE7' Sys_DTCreated='2008-05-26T11:46:17'
+		 Sys_Exported='False' Sys_DTExported='2008-05-26T11:46:17' Description='Habilitar Acceso' ItemID='FX1-20-30-001'
+		 ItemParent='A43E1DF1A3CB414083B18274A1D4306E'/>
+	<z:row Sys_PK='252' Sys_TimeStamp='2007-10-11T11:15:39' Sys_GUID='0FBE14F6E4DA4EDB00BACCEFA94F8500' Sys_DTCreated='2007-10-11T11:14:56'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T11:14:56' Description='Cotizaciones' ItemID='FX1-20-30-100' ItemParent='A43E1DF1A3CB414083B18274A1D4306E'/>
+	<z:row Sys_PK='253' Sys_TimeStamp='2007-10-11T11:15:55' Sys_GUID='D04C76D9DB4B44C2BA852D2B004100BC' Sys_DTCreated='2007-10-11T11:15:45'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T11:15:45' Description='Pedidos' ItemID='FX1-20-30-200' ItemParent='A43E1DF1A3CB414083B18274A1D4306E'/>
+	<z:row Sys_PK='254' Sys_TimeStamp='2007-10-11T11:22:42' Sys_GUID='72EF946021A64A1D8F8500AB3E187B8F' Sys_DTCreated='2007-10-11T11:22:24'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T11:22:24' Description='Remisiones' ItemID='FX1-20-30-300' ItemParent='A43E1DF1A3CB414083B18274A1D4306E'/>
+	<z:row Sys_PK='255' Sys_TimeStamp='2007-10-11T11:23:51' Sys_GUID='4C7FB0E4C0564AC5B2B81B9CFA00873D' Sys_DTCreated='2007-10-11T11:23:39'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T11:23:39' Description='Facturas' ItemID='FX1-20-30-400' ItemParent='A43E1DF1A3CB414083B18274A1D4306E'/>
+	<z:row Sys_PK='256' Sys_TimeStamp='2007-10-11T11:24:18' Sys_GUID='D2DBA9C1F0FF4C218936799248353BB4' Sys_DTCreated='2007-10-11T11:23:57'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T11:23:57' Description='Notas de Credito' ItemID='FX1-20-30-500'
+		 ItemParent='A43E1DF1A3CB414083B18274A1D4306E'/>
+	<z:row Sys_PK='257' Sys_TimeStamp='2007-10-11T11:24:41' Sys_GUID='AF6D91D4BAA64E35B16466747BE6A830' Sys_DTCreated='2007-10-11T11:24:28'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T11:24:28' Description='Cobros' ItemID='FX1-20-30-600' ItemParent='A43E1DF1A3CB414083B18274A1D4306E'/>
+	<z:row Sys_PK='382' Sys_TimeStamp='2007-11-26T13:56:44' Sys_GUID='6715AEE01677451B87F5AAFAC5874340' Sys_DTCreated='2007-11-26T13:56:11'
+		 Sys_Exported='False' Sys_DTExported='2007-11-26T13:56:11' Description='Permitir cambio de precio en documentos de venta'
+		 ItemID='FX1-20-30-700' ItemParent='A43E1DF1A3CB414083B18274A1D4306E'/>
+	<z:row Sys_PK='258' Sys_TimeStamp='2007-10-11T11:25:22' Sys_GUID='B377D192B76B4B56BDF6928D805EE8B7' Sys_DTCreated='2007-10-11T11:24:53'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T11:24:53' Description='Sólo Lectura' ItemID='FX1-20-30-101'
+		 ItemParent='0FBE14F6E4DA4EDB00BACCEFA94F8500'/>
+	<z:row Sys_PK='259' Sys_TimeStamp='2007-10-11T11:26:41' Sys_GUID='F138249216034D7EA575A637EEAE8535' Sys_DTCreated='2007-10-11T11:26:22'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T11:26:22' Description='Permitir Realizar Cotización' ItemID='FX1-20-30-102'
+		 ItemParent='0FBE14F6E4DA4EDB00BACCEFA94F8500'/>
+	<z:row Sys_PK='260' Sys_TimeStamp='2007-10-11T11:27:23' Sys_GUID='7A960371ABC24047ABFBF6F8FC86D85E' Sys_DTCreated='2007-10-11T11:27:00'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T11:27:00' Description='Permitir Modificar Cotización' ItemID='FX1-20-30-103'
+		 ItemParent='0FBE14F6E4DA4EDB00BACCEFA94F8500'/>
+	<z:row Sys_PK='261' Sys_TimeStamp='2007-10-11T11:38:58' Sys_GUID='55D6DB72641A4E1C99F077FBE0DBDF32' Sys_DTCreated='2007-10-11T11:38:26'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T11:38:26' Description='Permitir Cancelar Cotización' ItemID='FX1-20-30-104'
+		 ItemParent='0FBE14F6E4DA4EDB00BACCEFA94F8500'/>
+	<z:row Sys_PK='262' Sys_TimeStamp='2007-10-11T11:40:05' Sys_GUID='AF6A67989E39445FAB38BE81E1768F46' Sys_DTCreated='2007-10-11T11:39:27'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T11:39:27' Description='Sólo Lectura' ItemID='FX1-20-30-201'
+		 ItemParent='D04C76D9DB4B44C2BA852D2B004100BC'/>
+	<z:row Sys_PK='263' Sys_TimeStamp='2007-10-11T11:40:26' Sys_GUID='DB1833F1BBAD43F1A5ADDAF13437BF84' Sys_DTCreated='2007-10-11T11:40:11'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T11:40:11' Description='Permitir Realizar Pedido' ItemID='FX1-20-30-202'
+		 ItemParent='D04C76D9DB4B44C2BA852D2B004100BC'/>
+	<z:row Sys_PK='264' Sys_TimeStamp='2007-10-11T11:40:45' Sys_GUID='36DF8C51F39A4FFEA4CBC3071D005F35' Sys_DTCreated='2007-10-11T11:40:29'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T11:40:29' Description='Permitir Modificar Pedido' ItemID='FX1-20-30-203'
+		 ItemParent='D04C76D9DB4B44C2BA852D2B004100BC'/>
+	<z:row Sys_PK='268' Sys_TimeStamp='2007-10-11T11:41:10' Sys_GUID='C857C0BE3EEE4F0D88B84C4564A08582' Sys_DTCreated='2007-10-11T11:40:49'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T11:40:49' Description='Permitir Cancelar Pedido' ItemID='FX1-20-30-204'
+		 ItemParent='D04C76D9DB4B44C2BA852D2B004100BC'/>
+	<z:row Sys_PK='269' Sys_TimeStamp='2007-10-11T11:49:23' Sys_GUID='DFF8CBCCAF7743DF94CB00E19E6100BD' Sys_DTCreated='2007-10-11T11:49:05'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T11:49:05' Description='Sólo Lectura' ItemID='FX1-20-30-301'
+		 ItemParent='72EF946021A64A1D8F8500AB3E187B8F'/>
+	<z:row Sys_PK='272' Sys_TimeStamp='2007-10-11T12:14:21' Sys_GUID='FFB4C1FA9FA1415A91484BC890CEDB57' Sys_DTCreated='2007-10-11T12:14:01'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T12:14:01' Description='Permitir Realizar Remisión' ItemID='FX1-20-30-302'
+		 ItemParent='72EF946021A64A1D8F8500AB3E187B8F'/>
+	<z:row Sys_PK='270' Sys_TimeStamp='2007-10-11T12:13:00' Sys_GUID='512A93C61A3B4750921FDE2878EDFB21' Sys_DTCreated='2007-10-11T12:02:28'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T12:02:28' Description='Permitir Modificar Remisión' ItemID='FX1-20-30-303'
+		 ItemParent='72EF946021A64A1D8F8500AB3E187B8F'/>
+	<z:row Sys_PK='271' Sys_TimeStamp='2007-10-11T12:12:53' Sys_GUID='495C55B1FF884D5CBAD201E0FAF1EE96' Sys_DTCreated='2007-10-11T12:11:51'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T12:11:51' Description='Permitir Cancelar Remisión' ItemID='FX1-20-30-304'
+		 ItemParent='72EF946021A64A1D8F8500AB3E187B8F'/>
+	<z:row Sys_PK='287' Sys_TimeStamp='2007-10-11T14:34:16' Sys_GUID='5A09900CFD2A403E896CA531153BA45C' Sys_DTCreated='2007-10-11T14:33:40'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T14:33:40' Description='Permitir Realizar Anticipo (Remisión a Credito Comercial)'
+		 ItemID='FX1-20-30-305' ItemParent='72EF946021A64A1D8F8500AB3E187B8F'/>
+	<z:row Sys_PK='288' Sys_TimeStamp='2007-10-11T14:35:24' Sys_GUID='743FE748105C40A7A5F9863068FA7F2C' Sys_DTCreated='2007-10-11T14:34:56'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T14:34:56' Description='Permitir Bonificar Documento (Remisión a Credito Comercial)'
+		 ItemID='FX1-20-30-306' ItemParent='72EF946021A64A1D8F8500AB3E187B8F'/>
+	<z:row Sys_PK='289' Sys_TimeStamp='2007-10-11T14:37:11' Sys_GUID='BBC79A2289364A04A90093007CA2A23D' Sys_DTCreated='2007-10-11T14:35:30'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T14:35:30' Description='Permitir Liquidar Documento (Remisión a Credito Comercial)'
+		 ItemID='FX1-20-30-307' ItemParent='72EF946021A64A1D8F8500AB3E187B8F'/>
+	<z:row Sys_PK='273' Sys_TimeStamp='2007-10-11T12:15:35' Sys_GUID='13B4AE2BDAFB4C5386AA8E832ED7F2BD' Sys_DTCreated='2007-10-11T12:15:16'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T12:15:16' Description='Sólo Lectura' ItemID='FX1-20-30-401'
+		 ItemParent='4C7FB0E4C0564AC5B2B81B9CFA00873D'/>
+	<z:row Sys_PK='274' Sys_TimeStamp='2007-10-11T12:16:03' Sys_GUID='A57993EF9D134BC20057002F2121DED4' Sys_DTCreated='2007-10-11T12:15:39'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T12:15:39' Description='Permitir Realizar Factura' ItemID='FX1-20-30-402'
+		 ItemParent='4C7FB0E4C0564AC5B2B81B9CFA00873D'/>
+	<z:row Sys_PK='275' Sys_TimeStamp='2007-10-11T12:16:28' Sys_GUID='DD62D6753AEB4076BB237CCD2E5E2E55' Sys_DTCreated='2007-10-11T12:16:08'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T12:16:08' Description='Perimitir Modificar Factura' ItemID='FX1-20-30-403'
+		 ItemParent='4C7FB0E4C0564AC5B2B81B9CFA00873D'/>
+	<z:row Sys_PK='276' Sys_TimeStamp='2007-10-11T12:16:50' Sys_GUID='72D5838A899F479ABFA4BB30CF00C61E' Sys_DTCreated='2007-10-11T12:16:34'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T12:16:34' Description='Permitir Cancelar Factura' ItemID='FX1-20-30-404'
+		 ItemParent='4C7FB0E4C0564AC5B2B81B9CFA00873D'/>
+	<z:row Sys_PK='277' Sys_TimeStamp='2007-10-11T12:17:32' Sys_GUID='46E15D3842C14BC1A271568EBD777BBB' Sys_DTCreated='2007-10-11T12:17:05'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T12:17:05' Description='Sólo Lectura' ItemID='FX1-20-30-501'
+		 ItemParent='D2DBA9C1F0FF4C218936799248353BB4'/>
+	<z:row Sys_PK='278' Sys_TimeStamp='2007-10-11T12:17:56' Sys_GUID='6E48FF2F4D0340A5AC25067C0205D103' Sys_DTCreated='2007-10-11T12:17:35'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T12:17:35' Description='Pemitir Realizar Nota de Credito' ItemID='FX1-20-30-502'
+		 ItemParent='D2DBA9C1F0FF4C218936799248353BB4'/>
+	<z:row Sys_PK='279' Sys_TimeStamp='2007-10-11T12:18:25' Sys_GUID='3E6CCB6646CA4EC2A4FC58022CEC2FBE' Sys_DTCreated='2007-10-11T12:18:04'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T12:18:04' Description='Permitir Modificar Nota de Credito' ItemID='FX1-20-30-503'
+		 ItemParent='D2DBA9C1F0FF4C218936799248353BB4'/>
+	<z:row Sys_PK='280' Sys_TimeStamp='2007-10-11T12:22:12' Sys_GUID='E96C8BEF825F429CBD5EAF3994F19292' Sys_DTCreated='2007-10-11T12:20:57'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T12:20:57' Description='Permitir Cobro de  Contado' ItemID='FX1-20-30-601'
+		 ItemParent='AF6D91D4BAA64E35B16466747BE6A830'/>
+	<z:row Sys_PK='281' Sys_TimeStamp='2007-10-11T13:58:25' Sys_GUID='494A5CCDAE594C0A87BCA90822622B09' Sys_DTCreated='2007-10-11T13:58:08'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T13:58:08' Description='Permitir Credito Comercial' ItemID='FX1-20-30-602'
+		 ItemParent='AF6D91D4BAA64E35B16466747BE6A830'/>
+	<z:row Sys_PK='283' Sys_TimeStamp='2007-10-11T14:30:54' Sys_GUID='084644A273094790A631BAC4F5A37821' Sys_DTCreated='2007-10-11T14:30:31'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T14:30:31' Description='Permitir Consignación de Mercancías'
+		 ItemID='FX1-20-30-603' ItemParent='AF6D91D4BAA64E35B16466747BE6A830'/>
+	<z:row Sys_PK='284' Sys_TimeStamp='2007-10-11T14:32:02' Sys_GUID='46580870DA794FC7B1F1C4CC6C7858D1' Sys_DTCreated='2007-10-11T14:31:36'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T14:31:36' Description='Permitir Realizar Financiamiento' ItemID='FX1-20-30-604'
+		 ItemParent='AF6D91D4BAA64E35B16466747BE6A830'/>
+	<z:row Sys_PK='282' Sys_TimeStamp='2007-10-11T13:59:28' Sys_GUID='579A189566D846F09ECD115DA1F203A9' Sys_DTCreated='2007-10-11T13:59:09'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T13:59:09' Description='Autorizar Limite de Credito Excedido'
+		 ItemID='FX1-20-30-602A' ItemParent='494A5CCDAE594C0A87BCA90822622B09'/>
+	<z:row Sys_PK='23' Sys_TimeStamp='2008-03-15T12:11:41' Sys_GUID='534390432534466FACC7ECE234130005' Sys_DTCreated='2007-05-05T13:25:22'
+		 Sys_Exported='False' Sys_DTExported='2007-05-05T13:25:22' Description='Panel de Control' ItemID='FX1-30-01-000'
+		 ItemParent='F6E1922767BB40EB849E1844725FC591'/>
+	<z:row Sys_PK='450' Sys_TimeStamp='2008-03-15T12:13:56' Sys_GUID='6BE93F8E09F449D68210CE238CD3DAFA' Sys_DTCreated='2008-03-15T12:13:17'
+		 Sys_Exported='False' Sys_DTExported='2008-03-15T12:13:17' Description='Permitir Intercambiar datos(ejecución de subprogramas)'
+		 ItemID='FX1-30-02-000' ItemParent='F6E1922767BB40EB849E1844725FC591'/>
+	<z:row Sys_PK='451' Sys_TimeStamp='2008-03-15T12:15:23' Sys_GUID='727C5409C28E45CAA098E1DECADF9476' Sys_DTCreated='2008-03-15T12:14:59'
+		 Sys_Exported='False' Sys_DTExported='2008-03-15T12:14:59' Description='Permitir exportar' ItemID='FX1-30-03-000'
+		 ItemParent='F6E1922767BB40EB849E1844725FC591'/>
+	<z:row Sys_PK='452' Sys_TimeStamp='2008-03-15T12:15:43' Sys_GUID='EB8B535D6E434FE1B000133535BEC39C' Sys_DTCreated='2008-03-15T12:15:31'
+		 Sys_Exported='False' Sys_DTExported='2008-03-15T12:15:31' Description='Comandos SQL' ItemID='FX1-30-04-000' ItemParent='F6E1922767BB40EB849E1844725FC591'/>
+	<z:row Sys_PK='455' Sys_TimeStamp='2008-03-15T12:41:24' Sys_GUID='9DF8CA671F654875884BE67BC3DF24CD' Sys_DTCreated='2008-03-15T12:41:02'
+		 Sys_Exported='False' Sys_DTExported='2008-03-15T12:41:02' Description='Permitir Ejecutar reportes' ItemID='FX1-30-05-000'
+		 ItemParent='F6E1922767BB40EB849E1844725FC591'/>
+	<z:row Sys_PK='453' Sys_TimeStamp='2008-03-18T12:17:36' Sys_GUID='17FC8A4DA5244A04A872A71C86518757' Sys_DTCreated='2008-03-15T12:15:51'
+		 Sys_Exported='False' Sys_DTExported='2008-03-15T12:15:51' Description='Permitir Ejecutar consultas' ItemID='FX1-30-04-001'
+		 ItemParent='EB8B535D6E434FE1B000133535BEC39C'/>
+	<z:row Sys_PK='454' Sys_TimeStamp='2008-03-18T12:16:37' Sys_GUID='39E217C847F946709F005800431E60FF' Sys_DTCreated='2008-03-15T12:17:37'
+		 Sys_Exported='False' Sys_DTExported='2008-03-15T12:17:37' Description='Permitir comandos de actualización y eliminación'
+		 ItemID='FX1-30-04-002' ItemParent='EB8B535D6E434FE1B000133535BEC39C'/>
+	<z:row Sys_PK='458' Sys_TimeStamp='2008-05-26T11:43:02' Sys_GUID='4E4729DF83E745EE86BA2D219795EA75' Sys_DTCreated='2008-05-26T11:42:40'
+		 Sys_Exported='False' Sys_DTExported='2008-05-26T11:42:40' Description='Habilitar Acceso' ItemID='FX1-40-01-000'
+		 ItemParent='BB289C41F0D04377AA7868C179354541'/>
+	<z:row Sys_PK='470' Sys_TimeStamp='2008-05-26T16:52:44' Sys_GUID='4C98628F820E48C1949DCB486237B086' Sys_DTCreated='2008-05-26T16:51:21'
+		 Sys_Exported='False' Sys_DTExported='2008-05-26T16:51:21' Description='Permitir Abrir cardex de productos' ItemID='FX1-40-02-000'
+		 ItemParent='BB289C41F0D04377AA7868C179354541'/>
+	<z:row Sys_PK='291' Sys_TimeStamp='2007-10-15T17:20:13' Sys_GUID='44258B5087B348F2AD9F61A1835E1224' Sys_DTCreated='2007-10-15T16:53:46'
+		 Sys_Exported='False' Sys_DTExported='2007-10-15T16:53:46' Description='Permitir Ensamble de productos' ItemID='FX1-40-10-000'
+		 ItemParent='BB289C41F0D04377AA7868C179354541'/>
+	<z:row Sys_PK='307' Sys_TimeStamp='2007-10-15T17:20:33' Sys_GUID='F0B9FB0E998745CC8D00D359F5EA0044' Sys_DTCreated='2007-10-15T17:18:14'
+		 Sys_Exported='False' Sys_DTExported='2007-10-15T17:18:14' Description='Permitir Desensamble de productos' ItemID='FX1-40-20-000'
+		 ItemParent='BB289C41F0D04377AA7868C179354541'/>
+	<z:row Sys_PK='308' Sys_TimeStamp='2007-10-15T17:21:12' Sys_GUID='FEC19CED543744348600578C8C20DE50' Sys_DTCreated='2007-10-15T17:20:36'
+		 Sys_Exported='False' Sys_DTExported='2007-10-15T17:20:36' Description='Permitir Salidas de inventario' ItemID='FX1-40-30-000'
+		 ItemParent='BB289C41F0D04377AA7868C179354541'/>
+	<z:row Sys_PK='309' Sys_TimeStamp='2007-10-15T17:21:32' Sys_GUID='E0B011F2164243FFA569C241343F016C' Sys_DTCreated='2007-10-15T17:21:16'
+		 Sys_Exported='False' Sys_DTExported='2007-10-15T17:21:16' Description='Permitir Entradas de inventario' ItemID='FX1-40-40-000'
+		 ItemParent='BB289C41F0D04377AA7868C179354541'/>
+	<z:row Sys_PK='310' Sys_TimeStamp='2007-10-15T17:22:40' Sys_GUID='A998271936E7459BA84C9E8080B90064' Sys_DTCreated='2007-10-15T17:22:17'
+		 Sys_Exported='False' Sys_DTExported='2007-10-15T17:22:17' Description='Permitir Traspasos entre almacenes' ItemID='FX1-40-50-000'
+		 ItemParent='BB289C41F0D04377AA7868C179354541'/>
+	<z:row Sys_PK='459' Sys_TimeStamp='2008-05-26T11:45:07' Sys_GUID='C9967417F60D46159896933E3700D3BF' Sys_DTCreated='2008-05-26T11:44:21'
+		 Sys_Exported='False' Sys_DTExported='2008-05-26T11:44:21' Description='Habilitar Acceso' ItemID='FX1-50-01-000'
+		 ItemParent='771A008D16B644B4A9197429CB4C2E00'/>
+	<z:row Sys_PK='312' Sys_TimeStamp='2007-10-15T17:30:36' Sys_GUID='68241EF1657A48D6B1AEC5F4141CB572' Sys_DTCreated='2007-10-15T17:29:46'
+		 Sys_Exported='False' Sys_DTExported='2007-10-15T17:29:46' Description='Permitir Crear nueva cuenta por cobrar'
+		 ItemID='FX1-50-10-000' ItemParent='771A008D16B644B4A9197429CB4C2E00'/>
+	<z:row Sys_PK='313' Sys_TimeStamp='2007-10-15T17:31:15' Sys_GUID='1FB9C0F739A449B29B72A1D3A830E13C' Sys_DTCreated='2007-10-15T17:30:45'
+		 Sys_Exported='False' Sys_DTExported='2007-10-15T17:30:45' Description='Permitir Cobrar documento' ItemID='FX1-50-20-000'
+		 ItemParent='771A008D16B644B4A9197429CB4C2E00'/>
+	<z:row Sys_PK='314' Sys_TimeStamp='2007-10-15T17:32:02' Sys_GUID='C7472CDDE016455CB232F8854F3CE491' Sys_DTCreated='2007-10-15T17:31:28'
+		 Sys_Exported='False' Sys_DTExported='2007-10-15T17:31:28' Description='Permitir Bonificar documento' ItemID='FX1-50-30-000'
+		 ItemParent='771A008D16B644B4A9197429CB4C2E00'/>
+	<z:row Sys_PK='315' Sys_TimeStamp='2007-10-15T17:37:52' Sys_GUID='0974A11CB6314460AF28D0D80000DEDC' Sys_DTCreated='2007-10-15T17:32:12'
+		 Sys_Exported='False' Sys_DTExported='2007-10-15T17:32:12' Description='Permitir Aplicar abonos' ItemID='FX1-50-40-000'
+		 ItemParent='771A008D16B644B4A9197429CB4C2E00'/>
+	<z:row Sys_PK='316' Sys_TimeStamp='2007-10-15T17:38:20' Sys_GUID='F8DD9FB96C3647D2ACCDBB05F300F1CC' Sys_DTCreated='2007-10-15T17:38:07'
+		 Sys_Exported='False' Sys_DTExported='2007-10-15T17:38:07' Description='Permitir Crear recibo' ItemID='FX1-50-50-000'
+		 ItemParent='771A008D16B644B4A9197429CB4C2E00'/>
+	<z:row Sys_PK='323' Sys_TimeStamp='2007-10-15T17:53:37' Sys_GUID='81D372F616D44782B5F30822CF3049E3' Sys_DTCreated='2007-10-15T17:50:41'
+		 Sys_Exported='False' Sys_DTExported='2007-10-15T17:50:41' Description='Financiar' ItemID='FX1-50-60-000' ItemParent='771A008D16B644B4A9197429CB4C2E00'/>
+	<z:row Sys_PK='320' Sys_TimeStamp='2007-10-15T17:54:46' Sys_GUID='945F9BC0A2DB4F01B0AD16C23271E384' Sys_DTCreated='2007-10-15T17:40:50'
+		 Sys_Exported='False' Sys_DTExported='2007-10-15T17:40:50' Description='Permitir Crear nota de cargo' ItemID='FX1-50-70-000'
+		 ItemParent='771A008D16B644B4A9197429CB4C2E00'/>
+	<z:row Sys_PK='319' Sys_TimeStamp='2007-10-15T17:41:16' Sys_GUID='644E90573E3749E2B8168EBAD5925E93' Sys_DTCreated='2007-10-15T17:39:32'
+		 Sys_Exported='False' Sys_DTExported='2007-10-15T17:39:32' Description='Permitir Crear nota de crédito' ItemID='FX1-50-80-000'
+		 ItemParent='771A008D16B644B4A9197429CB4C2E00'/>
+	<z:row Sys_PK='322' Sys_TimeStamp='2007-10-16T09:21:49' Sys_GUID='6450E5BDD429465D931073F42FAED200' Sys_DTCreated='2007-10-15T17:44:52'
+		 Sys_Exported='False' Sys_DTExported='2007-10-15T17:44:52' Description='Permitir Generar intereses moratorios'
+		 ItemID='FX1-50-90-000' ItemParent='771A008D16B644B4A9197429CB4C2E00'/>
+	<z:row Sys_PK='317' Sys_TimeStamp='2007-10-15T17:53:58' Sys_GUID='217CAC6C643A433998A237C008E95F4C' Sys_DTCreated='2007-10-15T17:38:39'
+		 Sys_Exported='False' Sys_DTExported='2007-10-15T17:38:39' Description='Permitir Financiar documento' ItemID='FX1-50-60-001'
+		 ItemParent='81D372F616D44782B5F30822CF3049E3'/>
+	<z:row Sys_PK='318' Sys_TimeStamp='2007-10-15T17:54:12' Sys_GUID='321D5327E582416AAAF56D95D03B5D12' Sys_DTCreated='2007-10-15T17:39:14'
+		 Sys_Exported='False' Sys_DTExported='2007-10-15T17:39:14' Description='Permitir Financiar capital' ItemID='FX1-50-60-002'
+		 ItemParent='81D372F616D44782B5F30822CF3049E3'/>
+	<z:row Sys_PK='456' Sys_TimeStamp='2008-05-26T11:41:27' Sys_GUID='7434FF30E73C468193BCF39E5B5F9700' Sys_DTCreated='2008-05-26T11:35:24'
+		 Sys_Exported='False' Sys_DTExported='2008-05-26T11:35:24' Description='Habilitar Acceso' ItemID='FX1-60-01-000'
+		 ItemParent='F9BE14AB23354318A68DCDE459979788'/>
+	<z:row Sys_PK='325' Sys_TimeStamp='2007-10-15T18:05:16' Sys_GUID='EF175BACE3CC408A8940A7636E3076A6' Sys_DTCreated='2007-10-15T17:59:24'
+		 Sys_Exported='False' Sys_DTExported='2007-10-15T17:59:24' Description='Permitir Crear nueva cuenta por pagar'
+		 ItemID='FX1-60-10-000' ItemParent='F9BE14AB23354318A68DCDE459979788'/>
+	<z:row Sys_PK='326' Sys_TimeStamp='2007-10-15T18:05:42' Sys_GUID='82490DED59F04A749D5EC3E2003400F1' Sys_DTCreated='2007-10-15T18:05:27'
+		 Sys_Exported='False' Sys_DTExported='2007-10-15T18:05:27' Description='Permitir Pagar documento' ItemID='FX1-60-20-000'
+		 ItemParent='F9BE14AB23354318A68DCDE459979788'/>
+	<z:row Sys_PK='327' Sys_TimeStamp='2007-10-15T18:06:14' Sys_GUID='8E33C7EB15204F1BAEF9F900309462C8' Sys_DTCreated='2007-10-15T18:05:56'
+		 Sys_Exported='False' Sys_DTExported='2007-10-15T18:05:56' Description='Permitir Bonificar documento' ItemID='FX1-60-30-000'
+		 ItemParent='F9BE14AB23354318A68DCDE459979788'/>
+	<z:row Sys_PK='328' Sys_TimeStamp='2007-10-15T18:06:50' Sys_GUID='2605FDC590CD40E7907650765DE3CDF0' Sys_DTCreated='2007-10-15T18:06:30'
+		 Sys_Exported='False' Sys_DTExported='2007-10-15T18:06:30' Description='Permitir Aplicar abonos' ItemID='FX1-60-40-000'
+		 ItemParent='F9BE14AB23354318A68DCDE459979788'/>
+	<z:row Sys_PK='329' Sys_TimeStamp='2007-10-15T18:09:22' Sys_GUID='09DEFE61C90A49C5990081A6DB803782' Sys_DTCreated='2007-10-15T18:08:33'
+		 Sys_Exported='False' Sys_DTExported='2007-10-15T18:08:33' Description='Permitir Crear recibo' ItemID='FX1-60-50-000'
+		 ItemParent='F9BE14AB23354318A68DCDE459979788'/>
+	<z:row Sys_PK='330' Sys_TimeStamp='2007-10-15T18:09:55' Sys_GUID='98F3C9023FD7452CA089EF9BD7C4C500' Sys_DTCreated='2007-10-15T18:09:39'
+		 Sys_Exported='False' Sys_DTExported='2007-10-15T18:09:39' Description='Financiar' ItemID='FX1-60-60-000' ItemParent='F9BE14AB23354318A68DCDE459979788'/>
+	<z:row Sys_PK='333' Sys_TimeStamp='2007-10-15T18:12:12' Sys_GUID='389C62D9736F4767ACD5771E94DE267D' Sys_DTCreated='2007-10-15T18:11:50'
+		 Sys_Exported='False' Sys_DTExported='2007-10-15T18:11:50' Description='Permitir Crear nota de cargo' ItemID='FX1-60-70-000'
+		 ItemParent='F9BE14AB23354318A68DCDE459979788'/>
+	<z:row Sys_PK='334' Sys_TimeStamp='2007-10-15T18:12:53' Sys_GUID='AD33F312AF624D6CAF1B2007409B6D70' Sys_DTCreated='2007-10-15T18:12:21'
+		 Sys_Exported='False' Sys_DTExported='2007-10-15T18:12:21' Description='Permitir Crear nota de crédito' ItemID='FX1-60-80-000'
+		 ItemParent='F9BE14AB23354318A68DCDE459979788'/>
+	<z:row Sys_PK='335' Sys_TimeStamp='2007-10-15T18:13:24' Sys_GUID='365860EFA5514B9AA2074160DF295477' Sys_DTCreated='2007-10-15T18:13:07'
+		 Sys_Exported='False' Sys_DTExported='2007-10-15T18:13:07' Description='Permitir Generar intereses moratorios'
+		 ItemID='FX1-60-90-000' ItemParent='F9BE14AB23354318A68DCDE459979788'/>
+	<z:row Sys_PK='331' Sys_TimeStamp='2007-10-15T18:11:31' Sys_GUID='2F563B4EFC7042EA9C2E7BFEC629F1B9' Sys_DTCreated='2007-10-15T18:10:05'
+		 Sys_Exported='False' Sys_DTExported='2007-10-15T18:10:05' Description='Permitir Financiar documento' ItemID='FX1-60-60-001'
+		 ItemParent='98F3C9023FD7452CA089EF9BD7C4C500'/>
+	<z:row Sys_PK='332' Sys_TimeStamp='2007-10-15T18:11:02' Sys_GUID='66AA001079BA4FB586CC6B4D4B44941F' Sys_DTCreated='2007-10-15T18:10:29'
+		 Sys_Exported='False' Sys_DTExported='2007-10-15T18:10:29' Description='Permitir Financiar capital' ItemID='FX1-60-60-002'
+		 ItemParent='98F3C9023FD7452CA089EF9BD7C4C500'/>
+	<z:row Sys_PK='361' Sys_TimeStamp='2007-10-16T10:18:54' Sys_GUID='19A4F605A3D94625BF7400F0B6C09FC2' Sys_DTCreated='2007-10-16T10:10:31'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T10:10:31' Description='Contabilidad' ItemID='FX1-71-00-000' ItemParent='58121F7D1A3E4B3ABA2D4DB66E72098C'/>
+	<z:row Sys_PK='360' Sys_TimeStamp='2007-10-16T10:41:13' Sys_GUID='61EBCBA2095F4D18B0E26DB9CFF200D2' Sys_DTCreated='2007-10-16T10:06:21'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T10:06:21' Description='Cuentas de cheque' ItemID='FX1-72-00-000'
+		 ItemParent='58121F7D1A3E4B3ABA2D4DB66E72098C'/>
+	<z:row Sys_PK='362' Sys_TimeStamp='2007-10-16T10:50:21' Sys_GUID='05DCE4FACB7E4B9091EDB294AF002D27' Sys_DTCreated='2007-10-16T10:50:07'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T10:50:07' Description='Cajas de efectivo' ItemID='FX1-73-00-000'
+		 ItemParent='58121F7D1A3E4B3ABA2D4DB66E72098C'/>
+	<z:row Sys_PK='467' Sys_TimeStamp='2008-05-26T11:56:48' Sys_GUID='B7473FC3CC1E4D9EB6006BDCAC37ED98' Sys_DTCreated='2008-05-26T11:56:04'
+		 Sys_Exported='False' Sys_DTExported='2008-05-26T11:56:04' Description='Habilitar Acceso' ItemID='FX1-71-00-001'
+		 ItemParent='19A4F605A3D94625BF7400F0B6C09FC2'/>
+	<z:row Sys_PK='337' Sys_TimeStamp='2007-10-16T10:19:11' Sys_GUID='DE7ED5249B6D4EAF8450B8D65805F710' Sys_DTCreated='2007-10-16T09:26:21'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T09:26:21' Description='Concepto de poliza' ItemID='FX1-71-01-000'
+		 ItemParent='19A4F605A3D94625BF7400F0B6C09FC2'/>
+	<z:row Sys_PK='338' Sys_TimeStamp='2007-10-16T10:20:51' Sys_GUID='C65E63CA422D47BA93F6A96FAEDD7CE6' Sys_DTCreated='2007-10-16T09:27:38'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T09:27:38' Description='Departamento' ItemID='FX1-71-02-000' ItemParent='19A4F605A3D94625BF7400F0B6C09FC2'/>
+	<z:row Sys_PK='339' Sys_TimeStamp='2007-10-16T10:25:29' Sys_GUID='AE92DF1986554D8DB000033BE31DB1C9' Sys_DTCreated='2007-10-16T09:29:15'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T09:29:15' Description='Rubro' ItemID='FX1-71-03-000' ItemParent='19A4F605A3D94625BF7400F0B6C09FC2'/>
+	<z:row Sys_PK='340' Sys_TimeStamp='2007-10-16T10:25:37' Sys_GUID='FA2F5310ED7C4332827533D1B1ED1B9C' Sys_DTCreated='2007-10-16T09:29:53'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T09:29:53' Description='Cuenta' ItemID='FX1-71-04-000' ItemParent='19A4F605A3D94625BF7400F0B6C09FC2'/>
+	<z:row Sys_PK='355' Sys_TimeStamp='2007-10-16T10:25:59' Sys_GUID='857C94643A4A47ED9BADB812D2A22937' Sys_DTCreated='2007-10-16T09:44:06'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T09:44:06' Description='Póliza' ItemID='FX1-71-05-000' ItemParent='19A4F605A3D94625BF7400F0B6C09FC2'/>
+	<z:row Sys_PK='341' Sys_TimeStamp='2007-10-22T13:03:21' Sys_GUID='5878613E6AC04E45B72FBA186DA81C34' Sys_DTCreated='2007-10-16T09:30:39'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T09:30:39' Description='Permitir Agregar concepto de poliza' ItemID='FX1-71-01-001'
+		 ItemParent='DE7ED5249B6D4EAF8450B8D65805F710'/>
+	<z:row Sys_PK='342' Sys_TimeStamp='2007-10-16T10:20:18' Sys_GUID='3E9CDFA06EFC4DE38CEA98B0C2679782' Sys_DTCreated='2007-10-16T09:32:03'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T09:32:03' Description='Permitir Modificar concepto de poliza'
+		 ItemID='FX1-71-01-002' ItemParent='DE7ED5249B6D4EAF8450B8D65805F710'/>
+	<z:row Sys_PK='343' Sys_TimeStamp='2007-10-16T10:20:08' Sys_GUID='B87EC2672F29455E8CF04740195F82F6' Sys_DTCreated='2007-10-16T09:32:33'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T09:32:33' Description='Permitir Eliminar concepto de poliza'
+		 ItemID='FX1-71-01-003' ItemParent='DE7ED5249B6D4EAF8450B8D65805F710'/>
+	<z:row Sys_PK='344' Sys_TimeStamp='2007-10-16T10:21:59' Sys_GUID='0D9C6E66EA5A4717B792EA817636FC70' Sys_DTCreated='2007-10-16T09:33:11'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T09:33:11' Description='Permitir Agregar departamento' ItemID='FX1-71-02-001'
+		 ItemParent='C65E63CA422D47BA93F6A96FAEDD7CE6'/>
+	<z:row Sys_PK='345' Sys_TimeStamp='2007-10-16T10:22:22' Sys_GUID='9324A8EF83924503B4055295BF4B237C' Sys_DTCreated='2007-10-16T09:33:54'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T09:33:54' Description='Permitir Modificar departamento' ItemID='FX1-71-02-002'
+		 ItemParent='C65E63CA422D47BA93F6A96FAEDD7CE6'/>
+	<z:row Sys_PK='346' Sys_TimeStamp='2007-10-16T10:22:12' Sys_GUID='0D8983EA80CA42879BB5A822E856A3D2' Sys_DTCreated='2007-10-16T09:34:20'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T09:34:20' Description='Permitir Eliminar departamento' ItemID='FX1-71-02-003'
+		 ItemParent='C65E63CA422D47BA93F6A96FAEDD7CE6'/>
+	<z:row Sys_PK='347' Sys_TimeStamp='2007-10-16T10:23:25' Sys_GUID='0E6DA7C345DD4843BB2D98C85C417132' Sys_DTCreated='2007-10-16T09:35:05'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T09:35:05' Description='Permitir Agregar rubro' ItemID='FX1-71-03-001'
+		 ItemParent='AE92DF1986554D8DB000033BE31DB1C9'/>
+	<z:row Sys_PK='348' Sys_TimeStamp='2007-10-16T10:23:45' Sys_GUID='84A14E8102EF42FD93DA0862ECD93E3C' Sys_DTCreated='2007-10-16T09:35:45'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T09:35:45' Description='Permitir Modificar rubro' ItemID='FX1-71-03-002'
+		 ItemParent='AE92DF1986554D8DB000033BE31DB1C9'/>
+	<z:row Sys_PK='349' Sys_TimeStamp='2007-10-16T10:23:35' Sys_GUID='65D0D35AB0E44792B9941D00827D8CB9' Sys_DTCreated='2007-10-16T09:36:07'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T09:36:07' Description='Permitir Eliminar rubro' ItemID='FX1-71-03-003'
+		 ItemParent='AE92DF1986554D8DB000033BE31DB1C9'/>
+	<z:row Sys_PK='350' Sys_TimeStamp='2007-10-16T10:24:18' Sys_GUID='74BDAB4E035B4BC3B1DDCBE60018D352' Sys_DTCreated='2007-10-16T09:36:38'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T09:36:38' Description='Permitir Agregar cuenta' ItemID='FX1-71-04-001'
+		 ItemParent='FA2F5310ED7C4332827533D1B1ED1B9C'/>
+	<z:row Sys_PK='351' Sys_TimeStamp='2007-10-16T10:24:38' Sys_GUID='DCE1A47D86C54B529271AB5F3E31942E' Sys_DTCreated='2007-10-16T09:37:14'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T09:37:14' Description='Permitir Modificar cuenta' ItemID='FX1-71-04-002'
+		 ItemParent='FA2F5310ED7C4332827533D1B1ED1B9C'/>
+	<z:row Sys_PK='352' Sys_TimeStamp='2007-10-16T10:24:29' Sys_GUID='A4021ED8E23748B19BA37173BFFFE935' Sys_DTCreated='2007-10-16T09:37:44'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T09:37:44' Description='Permitir Eliminar cuenta' ItemID='FX1-71-04-003'
+		 ItemParent='FA2F5310ED7C4332827533D1B1ED1B9C'/>
+	<z:row Sys_PK='356' Sys_TimeStamp='2007-10-16T15:36:49' Sys_GUID='4C6A55D761D14EE1BEF2C0988E084DB6' Sys_DTCreated='2007-10-16T09:46:01'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T09:46:01' Description='Permitir Guardar póliza' ItemID='FX1-71-05-001'
+		 ItemParent='857C94643A4A47ED9BADB812D2A22937'/>
+	<z:row Sys_PK='353' Sys_TimeStamp='2007-10-16T10:26:30' Sys_GUID='EF337FBEECA847E48369FEFD143D813F' Sys_DTCreated='2007-10-16T09:38:50'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T09:38:50' Description='Permitir Aplicar póliza' ItemID='FX1-71-05-002'
+		 ItemParent='857C94643A4A47ED9BADB812D2A22937'/>
+	<z:row Sys_PK='354' Sys_TimeStamp='2007-10-16T10:26:18' Sys_GUID='C2D40C69A64E4B4E96005CCDB15DD17B' Sys_DTCreated='2007-10-16T09:39:40'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T09:39:40' Description='Permitir Desaplicar póliza' ItemID='FX1-71-05-003'
+		 ItemParent='857C94643A4A47ED9BADB812D2A22937'/>
+	<z:row Sys_PK='380' Sys_TimeStamp='2007-10-16T14:52:08' Sys_GUID='6A19F885BFB84E8F85898557B2003EE5' Sys_DTCreated='2007-10-16T14:51:49'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T14:51:49' Description='Permitir Eliminar póliza' ItemID='FX1-71-05-004'
+		 ItemParent='857C94643A4A47ED9BADB812D2A22937'/>
+	<z:row Sys_PK='381' Sys_TimeStamp='2007-10-16T15:13:10' Sys_GUID='4D88CF2EC9C34F22A399C02B5757B5A8' Sys_DTCreated='2007-10-16T15:12:55'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T15:12:55' Description='Permitir Auditar póliza' ItemID='FX1-71-05-005'
+		 ItemParent='857C94643A4A47ED9BADB812D2A22937'/>
+	<z:row Sys_PK='468' Sys_TimeStamp='2008-05-26T12:00:48' Sys_GUID='ED04FD2514454384B8E80014AACF90B8' Sys_DTCreated='2008-05-26T12:00:16'
+		 Sys_Exported='False' Sys_DTExported='2008-05-26T12:00:16' Description='Habilitar Acceso' ItemID='FX1-71-05-006'
+		 ItemParent='857C94643A4A47ED9BADB812D2A22937'/>
+	<z:row Sys_PK='466' Sys_TimeStamp='2008-05-26T11:54:03' Sys_GUID='436064E420E04F3E88523E8823B159C0' Sys_DTCreated='2008-05-26T11:53:40'
+		 Sys_Exported='False' Sys_DTExported='2008-05-26T11:53:40' Description='Habilitar Acceso' ItemID='FX1-72-00-001'
+		 ItemParent='61EBCBA2095F4D18B0E26DB9CFF200D2'/>
+	<z:row Sys_PK='368' Sys_TimeStamp='2007-10-16T11:12:31' Sys_GUID='6647E58E2A7E4833BFB3D300699C0368' Sys_DTCreated='2007-10-16T10:57:34'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T10:57:34' Description='Permitir Realizar Retiro' ItemID='FX1-72-01-000'
+		 ItemParent='61EBCBA2095F4D18B0E26DB9CFF200D2'/>
+	<z:row Sys_PK='370' Sys_TimeStamp='2007-10-16T11:06:55' Sys_GUID='22BE1A907D0E4CF0B1119513668EDAAC' Sys_DTCreated='2007-10-16T11:04:05'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T11:04:05' Description='Permitir Realizar Cheque' ItemID='FX1-72-02-000'
+		 ItemParent='61EBCBA2095F4D18B0E26DB9CFF200D2'/>
+	<z:row Sys_PK='371' Sys_TimeStamp='2007-10-16T11:14:40' Sys_GUID='9DE032047D4B4968B46CA58F394B73F4' Sys_DTCreated='2007-10-16T11:14:23'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T11:14:23' Description='Permitir Realizar Depósito' ItemID='FX1-72-03-000'
+		 ItemParent='61EBCBA2095F4D18B0E26DB9CFF200D2'/>
+	<z:row Sys_PK='372' Sys_TimeStamp='2007-10-16T11:15:08' Sys_GUID='1D9EA55E77F5459EB078FE1CE8A5F9E7' Sys_DTCreated='2007-10-16T11:14:53'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T11:14:53' Description='Permitir Realizar Transferencia' ItemID='FX1-72-04-000'
+		 ItemParent='61EBCBA2095F4D18B0E26DB9CFF200D2'/>
+	<z:row Sys_PK='373' Sys_TimeStamp='2007-10-16T11:27:04' Sys_GUID='48BAFA4383324A3C9BABCB6B77127E2F' Sys_DTCreated='2007-10-16T11:26:41'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T11:26:41' Description='Permitir Realizar Cobro' ItemID='FX1-72-05-000'
+		 ItemParent='61EBCBA2095F4D18B0E26DB9CFF200D2'/>
+	<z:row Sys_PK='374' Sys_TimeStamp='2007-10-16T11:27:24' Sys_GUID='C2F745EC50D54DE8A399BE92EA7E7F58' Sys_DTCreated='2007-10-16T11:27:11'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T11:27:11' Description='Permitir Realizar Recibo' ItemID='FX1-72-06-000'
+		 ItemParent='61EBCBA2095F4D18B0E26DB9CFF200D2'/>
+	<z:row Sys_PK='375' Sys_TimeStamp='2007-10-16T11:27:54' Sys_GUID='532AD412A4774AF5AE0037E319E21340' Sys_DTCreated='2007-10-16T11:27:39'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T11:27:39' Description='Permitir Realizar Vale de ingreso' ItemID='FX1-72-07-000'
+		 ItemParent='61EBCBA2095F4D18B0E26DB9CFF200D2'/>
+	<z:row Sys_PK='376' Sys_TimeStamp='2007-10-16T11:28:11' Sys_GUID='F5976F1CFB4A45DD8EEAD03938C029D2' Sys_DTCreated='2007-10-16T11:27:58'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T11:27:58' Description='Permitir Realizar Vale de egreso' ItemID='FX1-72-08-000'
+		 ItemParent='61EBCBA2095F4D18B0E26DB9CFF200D2'/>
+	<z:row Sys_PK='377' Sys_TimeStamp='2007-10-16T11:28:56' Sys_GUID='B23FB6A4EC3B43DFAA03229ED5443006' Sys_DTCreated='2007-10-16T11:28:38'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T11:28:38' Description='Permitir Realizar Pago' ItemID='FX1-72-09-000'
+		 ItemParent='61EBCBA2095F4D18B0E26DB9CFF200D2'/>
+	<z:row Sys_PK='378' Sys_TimeStamp='2007-10-16T11:29:41' Sys_GUID='2D0F076DC4074D6B87331C4D287C7EE2' Sys_DTCreated='2007-10-16T11:29:27'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T11:29:27' Description='Permitir Conciliar Movimiento de cuenta'
+		 ItemID='FX1-72-10-000' ItemParent='61EBCBA2095F4D18B0E26DB9CFF200D2'/>
+	<z:row Sys_PK='379' Sys_TimeStamp='2007-10-16T11:29:59' Sys_GUID='018AB80EEE9844CDBE817BE1D2564452' Sys_DTCreated='2007-10-16T11:29:45'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T11:29:45' Description='Permitir Cancelar Movimiento de cuenta'
+		 ItemID='FX1-72-11-000' ItemParent='61EBCBA2095F4D18B0E26DB9CFF200D2'/>
+	<z:row Sys_PK='469' Sys_TimeStamp='2008-05-26T16:48:24' Sys_GUID='E77E76C8CEF948A889855316DBB8A433' Sys_DTCreated='2008-05-26T16:47:08'
+		 Sys_Exported='False' Sys_DTExported='2008-05-26T16:47:08' Description='Habilitar Acceso a sesiones de caja' ItemID='FX1-73-00-001'
+		 ItemParent='05DCE4FACB7E4B9091EDB294AF002D27'/>
+	<z:row Sys_PK='363' Sys_TimeStamp='2007-10-16T10:55:59' Sys_GUID='26E053A353B14F3297D9003731E21048' Sys_DTCreated='2007-10-16T10:54:35'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T10:54:35' Description='Permitir Abrir sesión de caja' ItemID='FX1-73-01-000'
+		 ItemParent='05DCE4FACB7E4B9091EDB294AF002D27'/>
+	<z:row Sys_PK='364' Sys_TimeStamp='2007-10-16T10:56:28' Sys_GUID='31D1FBC7058F4169BA7300C98C802365' Sys_DTCreated='2007-10-16T10:56:10'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T10:56:10' Description='Permitir Cerrar corte' ItemID='FX1-73-02-000'
+		 ItemParent='05DCE4FACB7E4B9091EDB294AF002D27'/>
+	<z:row Sys_PK='365' Sys_TimeStamp='2007-10-16T10:56:54' Sys_GUID='972CA479209E4803B15C0097AD995599' Sys_DTCreated='2007-10-16T10:56:42'
+		 Sys_Exported='False' Sys_DTExported='2007-10-16T10:56:42' Description='Permitir Cancelar corte' ItemID='FX1-73-03-000'
+		 ItemParent='05DCE4FACB7E4B9091EDB294AF002D27'/>
+	<z:row Sys_PK='428' Sys_TimeStamp='2008-03-10T15:27:29' Sys_GUID='556AEBF1A15947659C91B1E9F1177626' Sys_DTCreated='2008-03-10T15:24:34'
+		 Sys_Exported='False' Sys_DTExported='2008-03-10T15:24:34' Description='Procesos contables' ItemID='FX1-80-01-000'
+		 ItemParent='FB8D95F4EBB84467A644B3E7DC1F7BC5'/>
+	<z:row Sys_PK='414' Sys_TimeStamp='2008-03-10T15:32:01' Sys_GUID='5008292769C54E6FAAC0AF73658FD071' Sys_DTCreated='2008-03-10T15:08:38'
+		 Sys_Exported='False' Sys_DTExported='2008-03-10T15:08:38' Description='Permitir Modificar el historial de tipos de cambio'
+		 ItemID='FX1-80-02-000' ItemParent='FB8D95F4EBB84467A644B3E7DC1F7BC5'/>
+	<z:row Sys_PK='429' Sys_TimeStamp='2008-03-10T15:31:04' Sys_GUID='52483183BAC24385BA070930BCB47C1E' Sys_DTCreated='2008-03-10T15:30:19'
+		 Sys_Exported='False' Sys_DTExported='2008-03-10T15:30:19' Description='Permitir Facturación global' ItemID='FX1-80-03-000'
+		 ItemParent='FB8D95F4EBB84467A644B3E7DC1F7BC5'/>
+	<z:row Sys_PK='430' Sys_TimeStamp='2008-03-10T15:31:52' Sys_GUID='D5A580602682448BB02918BED3E90429' Sys_DTCreated='2008-03-10T15:31:14'
+		 Sys_Exported='False' Sys_DTExported='2008-03-10T15:31:14' Description='Permitir Procesar ventas por salir' ItemID='FX1-80-04-000'
+		 ItemParent='FB8D95F4EBB84467A644B3E7DC1F7BC5'/>
+	<z:row Sys_PK='431' Sys_TimeStamp='2008-03-10T15:33:02' Sys_GUID='59AD4697C47D4707B38C615BE190CF45' Sys_DTCreated='2008-03-10T15:32:18'
+		 Sys_Exported='False' Sys_DTExported='2008-03-10T15:32:18' Description='Permitir Valuar salidas con números de serie'
+		 ItemID='FX1-80-05-000' ItemParent='FB8D95F4EBB84467A644B3E7DC1F7BC5'/>
+	<z:row Sys_PK='432' Sys_TimeStamp='2008-03-11T13:23:48' Sys_GUID='3BC0941F7765454A803FD1A5145750D0' Sys_DTCreated='2008-03-11T13:13:27'
+		 Sys_Exported='False' Sys_DTExported='2008-03-11T13:13:27' Description='Permitir Cambio masivo de precios' ItemID='FX1-80-06-000'
+		 ItemParent='FB8D95F4EBB84467A644B3E7DC1F7BC5'/>
+	<z:row Sys_PK='433' Sys_TimeStamp='2008-03-15T09:57:18' Sys_GUID='23D77F77A89743CCA46479ED71E6F02D' Sys_DTCreated='2008-03-15T09:57:05'
+		 Sys_Exported='False' Sys_DTExported='2008-03-15T09:57:05' Description='Organizar' ItemID='FX1-80-07-000' ItemParent='FB8D95F4EBB84467A644B3E7DC1F7BC5'/>
+	<z:row Sys_PK='439' Sys_TimeStamp='2008-03-15T10:08:35' Sys_GUID='AE364A071F8948A2B7A3225124654301' Sys_DTCreated='2008-03-15T10:08:18'
+		 Sys_Exported='False' Sys_DTExported='2008-03-15T10:08:18' Description='Promociones' ItemID='FX1-80-08-000' ItemParent='FB8D95F4EBB84467A644B3E7DC1F7BC5'/>
+	<z:row Sys_PK='442' Sys_TimeStamp='2008-03-15T10:10:20' Sys_GUID='C56D0A018EC14D0E98D2C9F968249047' Sys_DTCreated='2008-03-15T10:10:05'
+		 Sys_Exported='False' Sys_DTExported='2008-03-15T10:10:05' Description='Ajustar lotes' ItemID='FX1-80-09-000'
+		 ItemParent='FB8D95F4EBB84467A644B3E7DC1F7BC5'/>
+	<z:row Sys_PK='443' Sys_TimeStamp='2008-03-15T10:10:37' Sys_GUID='67BA74F317274B178E109288BAAEB7A4' Sys_DTCreated='2008-03-15T10:10:24'
+		 Sys_Exported='False' Sys_DTExported='2008-03-15T10:10:24' Description='Entrega de series' ItemID='FX1-80-10-000'
+		 ItemParent='FB8D95F4EBB84467A644B3E7DC1F7BC5'/>
+	<z:row Sys_PK='413' Sys_TimeStamp='2008-03-10T15:27:23' Sys_GUID='8D2589421EED485CA6DF968DDABF90F5' Sys_DTCreated='2008-03-10T12:14:25'
+		 Sys_Exported='False' Sys_DTExported='2008-03-10T12:14:25' Description='Permitir Archivar ejercicio' ItemID='FX1-80-01-001'
+		 ItemParent='556AEBF1A15947659C91B1E9F1177626'/>
+	<z:row Sys_PK='412' Sys_TimeStamp='2008-03-10T15:28:26' Sys_GUID='E0129E8862F64FB9BB4099C6EE00A27E' Sys_DTCreated='2008-03-10T12:13:04'
+		 Sys_Exported='False' Sys_DTExported='2008-03-10T12:13:04' Description='Permitir Crear póliza de cierre' ItemID='FX1-80-01-002'
+		 ItemParent='556AEBF1A15947659C91B1E9F1177626'/>
+	<z:row Sys_PK='411' Sys_TimeStamp='2008-03-10T15:29:04' Sys_GUID='2706579AEA6D4BA69C78C0659E707BD9' Sys_DTCreated='2008-03-10T12:11:16'
+		 Sys_Exported='False' Sys_DTExported='2008-03-10T12:11:16' Description='Permitir Crear póliza de ajuste cambiario'
+		 ItemID='FX1-80-01-003' ItemParent='556AEBF1A15947659C91B1E9F1177626'/>
+	<z:row Sys_PK='437' Sys_TimeStamp='2008-03-15T11:20:07' Sys_GUID='A7DDCFFE4978466DAC00CF539300454D' Sys_DTCreated='2008-03-15T10:02:20'
+		 Sys_Exported='False' Sys_DTExported='2008-03-15T10:02:20' Description='Productos por línea' ItemID='FX1-80-07-001'
+		 ItemParent='23D77F77A89743CCA46479ED71E6F02D'/>
+	<z:row Sys_PK='436' Sys_TimeStamp='2008-03-15T11:20:24' Sys_GUID='1BF5491E6F9A444FAF50E4DD71CF6D43' Sys_DTCreated='2008-03-15T10:01:46'
+		 Sys_Exported='False' Sys_DTExported='2008-03-15T10:01:46' Description='Productos por departamento' ItemID='FX1-80-07-002'
+		 ItemParent='23D77F77A89743CCA46479ED71E6F02D'/>
+	<z:row Sys_PK='444' Sys_TimeStamp='2008-03-15T11:20:49' Sys_GUID='6811F84FE3E147FEB810B4B314E0F0A9' Sys_DTCreated='2008-03-15T11:20:39'
+		 Sys_Exported='False' Sys_DTExported='2008-03-15T11:20:39' Description='Productos por marca' ItemID='FX1-80-07-003'
+		 ItemParent='23D77F77A89743CCA46479ED71E6F02D'/>
+	<z:row Sys_PK='438' Sys_TimeStamp='2008-03-15T11:21:00' Sys_GUID='77844A09F142494300033400BABDF29E' Sys_DTCreated='2008-03-15T10:05:27'
+		 Sys_Exported='False' Sys_DTExported='2008-03-15T10:05:27' Description='Productos por grupo' ItemID='FX1-80-07-004'
+		 ItemParent='23D77F77A89743CCA46479ED71E6F02D'/>
+	<z:row Sys_PK='445' Sys_TimeStamp='2008-03-15T11:23:09' Sys_GUID='A35F4C26F18B49C3BEBF1DFD44785124' Sys_DTCreated='2008-03-15T11:23:00'
+		 Sys_Exported='False' Sys_DTExported='2008-03-15T11:23:00' Description='Clientes por tipo' ItemID='FX1-80-07-005'
+		 ItemParent='23D77F77A89743CCA46479ED71E6F02D'/>
+	<z:row Sys_PK='434' Sys_TimeStamp='2008-03-15T11:19:00' Sys_GUID='76E58793B35546E08430F42D47D2F49D' Sys_DTCreated='2008-03-15T09:57:26'
+		 Sys_Exported='False' Sys_DTExported='2008-03-15T09:57:26' Description='Clientes por grupo' ItemID='FX1-80-07-006'
+		 ItemParent='23D77F77A89743CCA46479ED71E6F02D'/>
+	<z:row Sys_PK='446' Sys_TimeStamp='2008-03-15T11:23:30' Sys_GUID='11A1632ADA1548D4AA6772F1C9CFF1B0' Sys_DTCreated='2008-03-15T11:23:18'
+		 Sys_Exported='False' Sys_DTExported='2008-03-15T11:23:18' Description='Clientes por zona' ItemID='FX1-80-07-007'
+		 ItemParent='23D77F77A89743CCA46479ED71E6F02D'/>
+	<z:row Sys_PK='447' Sys_TimeStamp='2008-03-15T11:23:59' Sys_GUID='7A493A35117C4F5CA9CBFF36F72D3643' Sys_DTCreated='2008-03-15T11:23:49'
+		 Sys_Exported='False' Sys_DTExported='2008-03-15T11:23:49' Description='Proveedores por tipo' ItemID='FX1-80-07-008'
+		 ItemParent='23D77F77A89743CCA46479ED71E6F02D'/>
+	<z:row Sys_PK='435' Sys_TimeStamp='2008-03-15T11:19:14' Sys_GUID='F006E1CC8910419A00C5194D66DA2000' Sys_DTCreated='2008-03-15T10:01:25'
+		 Sys_Exported='False' Sys_DTExported='2008-03-15T10:01:25' Description='Proveedores por grupo' ItemID='FX1-80-07-009'
+		 ItemParent='23D77F77A89743CCA46479ED71E6F02D'/>
+	<z:row Sys_PK='448' Sys_TimeStamp='2008-03-15T11:24:14' Sys_GUID='01A828884E9747A7B2CD447F2B6007C1' Sys_DTCreated='2008-03-15T11:24:06'
+		 Sys_Exported='False' Sys_DTExported='2008-03-15T11:24:06' Description='Proveedores por zona' ItemID='FX1-80-07-010'
+		 ItemParent='23D77F77A89743CCA46479ED71E6F02D'/>
+	<z:row Sys_PK='440' Sys_TimeStamp='2008-03-15T10:09:08' Sys_GUID='416D8D3A66274EE296538D6C5B497500' Sys_DTCreated='2008-03-15T10:08:44'
+		 Sys_Exported='False' Sys_DTExported='2008-03-15T10:08:44' Description='Canje de cupón por producto' ItemID='FX1-80-08-001'
+		 ItemParent='AE364A071F8948A2B7A3225124654301'/>
+	<z:row Sys_PK='441' Sys_TimeStamp='2008-03-15T10:09:28' Sys_GUID='3E8A6ED0023A4F67B63512BD91DEAEA6' Sys_DTCreated='2008-03-15T10:09:11'
+		 Sys_Exported='False' Sys_DTExported='2008-03-15T10:09:11' Description='Canje de puntos por producto' ItemID='FX1-80-08-002'
+		 ItemParent='AE364A071F8948A2B7A3225124654301'/>
+	<z:row Sys_PK='461' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='A7389B2B62FB4A7CB1565F7D76794228' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Ejercicios Contables' ItemID='FX1-71-06-000'
+		 ItemParent='19A4F605A3D94625BF7400F0B6C09FC2'/>
+	<z:row Sys_PK='462' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='904DBE0ADD3C48D8A2D90000D512D7DE' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir Configurar Ejercicio' ItemID='FX1-71-06-001'
+		 ItemParent='A7389B2B62FB4A7CB1565F7D76794228'/>
+	<z:row Sys_PK='463' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='EF15B9620F2F44E5AB474F23217FA504' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir Abrir Ejercicio' ItemID='FX1-71-06-002'
+		 ItemParent='A7389B2B62FB4A7CB1565F7D76794228'/>
+	<z:row Sys_PK='464' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='06CC8DEBEE5F4FFFA3D9893682157B1F' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir Crear Ejercicio' ItemID='FX1-71-06-003'
+		 ItemParent='A7389B2B62FB4A7CB1565F7D76794228'/>
+	<z:row Sys_PK='465' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='A182DBEEC4C0413AA3462C2B458B3F5C' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir Borrar Ejercicio' ItemID='FX1-71-06-004'
+		 ItemParent='A7389B2B62FB4A7CB1565F7D76794228'/>
+	<z:row Sys_PK='471' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='DA46F9601A994378A679C2D73798D622' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir Importar Ejercicio' ItemID='FX1-71-06-005'
+		 ItemParent='A7389B2B62FB4A7CB1565F7D76794228'/>
+	<z:row Sys_PK='472' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='BC298A51CE6641D18188649000FD1CB9' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir Exportar Ejercicio' ItemID='FX1-71-06-006'
+		 ItemParent='A7389B2B62FB4A7CB1565F7D76794228'/>
+	<z:row Sys_PK='473' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='3B6D01813EE94D0487FAF85402815F47' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir Actualizar EPosteriores' ItemID='FX1-71-06-007'
+		 ItemParent='A7389B2B62FB4A7CB1565F7D76794228'/>
+	<z:row Sys_PK='474' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='4AEDD5CCE51D446FB3323B5938EDCF9F' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir Actualizar EenCurso' ItemID='FX1-71-06-008'
+		 ItemParent='A7389B2B62FB4A7CB1565F7D76794228'/>		 
+	<z:row Sys_PK='475' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='E427B04CFAB54CCBA74F008591B6C5BE' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Aplicar pólizas pendientes' ItemID='FX1-80-01-004'
+		 ItemParent='556AEBF1A15947659C91B1E9F1177626'/>
+	<z:row Sys_PK='476' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='374F373CC2EF425B8DA71CBC844379F2' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Reiniciar contabilidad' ItemID='FX1-80-01-005'
+		 ItemParent='556AEBF1A15947659C91B1E9F1177626'/>		 
+	<z:row Sys_PK='477' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='992C2A35C8D54C1EAB00B21C15009020' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Aplicar todos los abonos pendientes' ItemID='FX1-50-91-000'
+		 ItemParent='771A008D16B644B4A9197429CB4C2E00'/>
+	<z:row Sys_PK='478' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='D7D3F20E566F4E1983DE06601D65ED79' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Aplicar todos los abonos pendientes' ItemID='FX1-60-91-000'
+		 ItemParent='F9BE14AB23354318A68DCDE459979788'/>
+	<z:row Sys_PK='479' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='06A0C648CC484F32BE50CEB2511C8D1B' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Reprocesar precios y promociones' ItemID='FX1-20-30-800'
+		 ItemParent='A43E1DF1A3CB414083B18274A1D4306E'/>
+	<z:row Sys_PK='480' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='13620161E89840D4B438BFE1FA008714' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Edición de productos' ItemID='FX1-40-70-000'
+		 ItemParent='BB289C41F0D04377AA7868C179354541'/>		 
+	<z:row Sys_PK='481' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='FAD49E9A55B04BC1B1AC1EC50238A7B5' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Todos los datos del producto' ItemID='FX1-40-70-001'
+		 ItemParent='13620161E89840D4B438BFE1FA008714'/>
+	<z:row Sys_PK='482' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='3AA118EC5EE54DF287EFABC009670026' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Lista de precios' ItemID='FX1-40-70-002'
+		 ItemParent='13620161E89840D4B438BFE1FA008714'/>	
+	<z:row Sys_PK='483' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='29F82890007B4CB88B8C23F706439EF9' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Archivos adjuntos' ItemID='FX1-20-20-600'
+		 ItemParent='56144919162B45C79788F62C38E23B32'/>
+	<z:row Sys_PK='484' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='AF980B7726FC4F94A03D235E84D05F4D' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir agregar archivo' ItemID='FX1-20-20-601'
+		 ItemParent='29F82890007B4CB88B8C23F706439EF9'/>
+	<z:row Sys_PK='485' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='B2BF5BE654D04E059F8620A2FF652CC8' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir vincular archivo' ItemID='FX1-20-20-602'
+		 ItemParent='29F82890007B4CB88B8C23F706439EF9'/>
+	<z:row Sys_PK='486' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='BF48526E26934204AB7C00FDA049329B' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir modificar archivo' ItemID='FX1-20-20-603'
+		 ItemParent='29F82890007B4CB88B8C23F706439EF9'/>
+	<z:row Sys_PK='487' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='818F0EF650B5466BB0AADD17817EC31B' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir eliminar archivo' ItemID='FX1-20-20-604'
+		 ItemParent='29F82890007B4CB88B8C23F706439EF9'/>
+	<z:row Sys_PK='488' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='FE81C2C505094BA2AC39EDA920872287' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir eliminar vínculo' ItemID='FX1-20-20-605'
+		 ItemParent='29F82890007B4CB88B8C23F706439EF9'/>		
+	<z:row Sys_PK='489' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='32ACA019A377497A95CBD54E77B5C779' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Gastos' ItemID='FX1-20-20-700'
+		 ItemParent='56144919162B45C79788F62C38E23B32'/>
+	<z:row Sys_PK='490' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='D8C7D282D83E488A9CF559EBC52E7891' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Habilitar Acceso' ItemID='FX1-20-20-701'
+		 ItemParent='32ACA019A377497A95CBD54E77B5C779'/>
+	<z:row Sys_PK='491' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='16CA3E73EECD41CCB7CB25AE78743308' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir Agregar' ItemID='FX1-20-20-702'
+		 ItemParent='32ACA019A377497A95CBD54E77B5C779'/>
+	<z:row Sys_PK='492' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='79D337416DDF456D8FBCB10065170443' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir Editar' ItemID='FX1-20-20-703'
+		 ItemParent='32ACA019A377497A95CBD54E77B5C779'/>
+	<z:row Sys_PK='493' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='2E67F7266D824558888FF06C219F3298' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir Cancelar' ItemID='FX1-20-20-704'
+		 ItemParent='32ACA019A377497A95CBD54E77B5C779'/>		 		 
+	<z:row Sys_PK='494' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='4B0243346FB047009DD0CF63008D071D' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Archivos adjuntos' ItemID='FX1-20-20-705'
+		 ItemParent='32ACA019A377497A95CBD54E77B5C779'/>		 
+	<z:row Sys_PK='495' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='A6AED0EA1827492CB2471EE200E72EC5' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir agregar archivo' ItemID='FX1-20-20-705A'
+		 ItemParent='4B0243346FB047009DD0CF63008D071D'/>
+	<z:row Sys_PK='496' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='F8AA3E72DAD545799DE423E49DA29051' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir vincular archivo' ItemID='FX1-20-20-705B'
+		 ItemParent='4B0243346FB047009DD0CF63008D071D'/>
+	<z:row Sys_PK='497' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='2724680B4DDF4F3E8EF7C200CACC4107' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir modificar archivo ' ItemID='FX1-20-20-705C'
+		 ItemParent='4B0243346FB047009DD0CF63008D071D'/>
+	<z:row Sys_PK='498' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='EF0AF28C19C14230A3092B5CC1B0BA17' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir eliminar archivo' ItemID='FX1-20-20-705D'
+		 ItemParent='4B0243346FB047009DD0CF63008D071D'/>
+	<z:row Sys_PK='499' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='F954BF80C50749C7B74CE01BC699AFAB' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir eliminar vínculo' ItemID='FX1-20-20-705E'
+		 ItemParent='4B0243346FB047009DD0CF63008D071D'/>		 		 
+	<z:row Sys_PK='500' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='6A2EFC08E341448AAB2B809F38DA9BE8' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir facturación masiva de servicios' ItemID='FX1-20-30-900'
+		 ItemParent='A43E1DF1A3CB414083B18274A1D4306E'/>
+	<z:row Sys_PK='501' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='633A62796C554B619534AEAD00123F8D' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Transporte de movimientos de inventario (mvi)' ItemID='FX2-MVI-00-000t'
+		 ItemParent='BB289C41F0D04377AA7868C179354541'/>
+	<z:row Sys_PK='502' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='1DD203F74649479EA98EE4C3F9C10005' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Acceder a la configuración de movimientos MVI' ItemID='FX2-MVI-00-000'
+		 ItemParent='633A62796C554B619534AEAD00123F8D'/>
+	<z:row Sys_PK='503' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='10424DD09F57444C8D8EE756EF36E0CB' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir omitir resultado de conciliación' ItemID='FX2-MVI-00-001'
+		 ItemParent='633A62796C554B619534AEAD00123F8D'/>
+	<z:row Sys_PK='504' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='2E119614DDBF45C18673307EC933947D' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir omitir exportar movimiento a archivo MVI' ItemID='FX2-MVI-00-002'
+		 ItemParent='633A62796C554B619534AEAD00123F8D'/>
+	<z:row Sys_PK='505' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='91122B078DB24D798BD9AA963C176F91' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir omitir conciliar contra archivo MVI' ItemID='FX2-MVI-00-003'
+		 ItemParent='633A62796C554B619534AEAD00123F8D'/>
+	<z:row Sys_PK='506' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='44AB9D093BE944F7AA79ADFFF33FF5FF' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir exportar libremente a archivo MVI' ItemID='FX2-MVI-00-004'
+		 ItemParent='633A62796C554B619534AEAD00123F8D'/>
+	<z:row Sys_PK='507' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='85FC5C2B65FC452D8CACE00700C6006E' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Pemitir importar archivo MVI' ItemID='FX2-MVI-00-005'
+		 ItemParent='633A62796C554B619534AEAD00123F8D'/>	
+	<z:row Sys_PK='508' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='A36CA0500C7340F88249444603ED1745' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Transformaciones' ItemID='FX2-TRA-00-000'
+		 ItemParent='BB289C41F0D04377AA7868C179354541'/>
+	<z:row Sys_PK='509' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='ACF78D81937C4C4A00296691E6AEDDCC' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir configurar transformaciones' ItemID='FX2-TRA-00-001'
+		 ItemParent='A36CA0500C7340F88249444603ED1745'/>
+	<z:row Sys_PK='510' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='6D3584031BE5472CA0DDF8F178F07707' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir realizar transformaciones' ItemID='FX2-TRA-00-002'
+		 ItemParent='A36CA0500C7340F88249444603ED1745'/>
+	<z:row Sys_PK='511' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='6197EF074E4141C5906DC2AFE781BD1E' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Tableros de indicadores' ItemID='FX2-MBI-00-000'
+		 ItemParent='D3823CDD641F4FBB9EA042BD70FBD17F'/>
+	<z:row Sys_PK='512' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='26F034EB77854280A6A62E068B837CBC' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir Agregar tablero' ItemID='FX2-MBI-01-000'
+		 ItemParent='6197EF074E4141C5906DC2AFE781BD1E'/>
+	<z:row Sys_PK='513' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='4BE181401D794BB3A2EEF1F437CA11B8' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir Abrir tablero' ItemID='FX2-MBI-02-000'
+		 ItemParent='6197EF074E4141C5906DC2AFE781BD1E'/>
+	<z:row Sys_PK='514' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='B14C2A60D5BC431AB5E5BB91F4F093CB' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir Modificar tablero' ItemID='FX2-MBI-03-000'
+		 ItemParent='6197EF074E4141C5906DC2AFE781BD1E'/>
+	<z:row Sys_PK='515' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='82F1AE142CD44D469407447C564FD032' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir Eliminar tablero' ItemID='FX2-MBI-04-000'
+		 ItemParent='6197EF074E4141C5906DC2AFE781BD1E'/>
+	<z:row Sys_PK='516' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='BE7A647466A345AAAD31C0AE5750CF50' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Biblioteca de Métricas' ItemID='FX2-MBI-05-000'
+		 ItemParent='6197EF074E4141C5906DC2AFE781BD1E'/>
+	<z:row Sys_PK='517' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='BC3CCB16F9604B1F8E6BC37FCDC793C1' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir Agregar Perspectiva' ItemID='FX2-MBI-05-001'
+		 ItemParent='BE7A647466A345AAAD31C0AE5750CF50'/>
+	<z:row Sys_PK='518' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='F807B4CE60554A95AB0000EF81EC433B' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir Modificar Perspectiva' ItemID='FX2-MBI-05-002'
+		 ItemParent='BE7A647466A345AAAD31C0AE5750CF50'/>
+	<z:row Sys_PK='519' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='79CD4D13D3D34F599010B46432FEACF1' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir Eliminar Perspectiva' ItemID='FX2-MBI-05-003'
+		 ItemParent='BE7A647466A345AAAD31C0AE5750CF50'/>
+	<z:row Sys_PK='520' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='66161B4341FD4239ACE0A527663000AD' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir Agregar Métricas' ItemID='FX2-MBI-05-004'
+		 ItemParent='BE7A647466A345AAAD31C0AE5750CF50'/>
+	<z:row Sys_PK='521' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='00270470BE174ECD8DDE43AEF48C88C4' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir Modificar Métricas' ItemID='FX2-MBI-05-005'
+		 ItemParent='BE7A647466A345AAAD31C0AE5750CF50'/>
+	<z:row Sys_PK='522' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='96840064B48841ADB590D8E561F86097' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir Eliminar Métricas' ItemID='FX2-MBI-05-006'
+		 ItemParent='BE7A647466A345AAAD31C0AE5750CF50'/>		 
+	<z:row Sys_PK='523' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='DC18E8E85B72452F86C7B7092714662E' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Biblioteca de Indicadores' ItemID='FX2-MBI-06-000'
+		 ItemParent='6197EF074E4141C5906DC2AFE781BD1E'/>
+	<z:row Sys_PK='524' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='415242549BDA494AA09CC468CE4D1794' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir Agregar Indicador' ItemID='FX2-MBI-06-001'
+		 ItemParent='DC18E8E85B72452F86C7B7092714662E'/>
+	<z:row Sys_PK='525' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='6F8B94C052A54EE08BF7766593446502' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir Modificar Indicador' ItemID='FX2-MBI-06-002'
+		 ItemParent='DC18E8E85B72452F86C7B7092714662E'/>
+	<z:row Sys_PK='526' Sys_TimeStamp='2010-07-16T10:00:00' Sys_GUID='688F65A589F148FE9F5DEA4196EE916B' Sys_DTCreated='2010-07-16T10:00:00'
+		 Sys_Exported='False' Sys_DTExported='2010-07-16T10:00:00' Description='Permitir Eliminar Indicador' ItemID='FX2-MBI-06-003'
+		 ItemParent='DC18E8E85B72452F86C7B7092714662E'/>
+	<z:row Sys_PK='527' Sys_TimeStamp='2007-10-11T11:11:44' Sys_GUID='4E8506202F21401ABC3C195BFA8B6605' Sys_DTCreated='2007-10-11T11:11:44'
+		 Sys_Exported='False' Sys_DTExported='2007-10-11T11:11:44' Description='Requisiciones' ItemID='FX1-20-40-000'
+		 ItemParent='8EE4C7570EA84719A68DC4955A1B5C80'/>
+	<z:row Sys_PK='528' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='DF18D8514D8311E3AA253444B9D3F657' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Permitir acceso' ItemID='FX1-20-40-001'
+		 ItemParent='4E8506202F21401ABC3C195BFA8B6605'/>
+	<z:row Sys_PK='529' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='FGTREBE38DB44B0FA6F0922997A95039' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Permitir visualizar todas las requisiciones' ItemID='FX1-20-40-002'
+		 ItemParent='4E8506202F21401ABC3C195BFA8B6605'/>
+	<z:row Sys_PK='530' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='76ECF6874D8411E3AA253444B9D3F657' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Control de requisiciones' ItemID='FX1-20-40-100'
+		 ItemParent='4E8506202F21401ABC3C195BFA8B6605'/>
+	<z:row Sys_PK='531' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='8BC00CAFFBBE41A8B43654C5CED96600' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Agregar requisición' ItemID='FX1-20-40-101'
+		 ItemParent='76ECF6874D8411E3AA253444B9D3F657'/>
+	<z:row Sys_PK='532' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='A08BD0212DCE489A83B7FF37006F36A8' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Editar requisición' ItemID='FX1-20-40-102'
+		 ItemParent='76ECF6874D8411E3AA253444B9D3F657'/>
+	<z:row Sys_PK='533' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='46DF78D04CC211E39AE7F84982B0EB8B' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Autorizar requisiciones' ItemID='FX1-20-40-103'
+		 ItemParent='76ECF6874D8411E3AA253444B9D3F657'/>
+	<z:row Sys_PK='534' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='406529084CC211E39AE7F84982B0EB8B' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Cancelar requisiciones' ItemID='FX1-20-40-104'
+		 ItemParent='76ECF6874D8411E3AA253444B9D3F657'/>
+	<z:row Sys_PK='535' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='19ECFC164B4D4AD689B7179E58E4D28F' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Unir requisiciones' ItemID='FX1-20-40-105'
+		 ItemParent='76ECF6874D8411E3AA253444B9D3F657'/>
+	<z:row Sys_PK='536' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='BDE1449EBC5048D5938192A412B76367' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Dividir requisiciones' ItemID='FX1-20-40-106'
+		 ItemParent='76ECF6874D8411E3AA253444B9D3F657'/>
+	<z:row Sys_PK='537' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='9F084AC030F64B22AC6362D122472443' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Generar requisición  a partir de productos debajo del mínimo' ItemID='FX1-20-40-107'
+		 ItemParent='76ECF6874D8411E3AA253444B9D3F657'/>
+	<z:row Sys_PK='538' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='FFE15B4BD2F34833AEB02AAFB7DD35B0' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Generar requisición  a partir de la requisición seleccionada' ItemID='FX1-20-40-108'
+		 ItemParent='76ECF6874D8411E3AA253444B9D3F657'/>
+	<z:row Sys_PK='539' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='B304D96267E54CDB9CA311A83A5C7F1D' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Generar requisición por faltantes' ItemID='FX1-20-40-109'
+		 ItemParent='76ECF6874D8411E3AA253444B9D3F657'/>
+	<z:row Sys_PK='540' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='812C83F44D8E11E3AA253444B9D3F657' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Generar requisición a partir de ingredientes' ItemID='FX1-20-40-110'
+		 ItemParent='76ECF6874D8411E3AA253444B9D3F657'/>
+	<z:row Sys_PK='577' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='66CD319F531011E3B9F9B69EF3E8B1BE' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Generar requisición a partir de pedidos sin surtir' ItemID='FX1-20-40-111' ItemParent='76ECF6874D8411E3AA253444B9D3F657'/>
+	<z:row Sys_PK='541' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='13FB52184D8E11E3AA253444B9D3F657' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Configuraciones' ItemID='FX1-20-40-200'
+		 ItemParent='4E8506202F21401ABC3C195BFA8B6605'/>
+	<z:row Sys_PK='542' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='69DC42FFC09E4333A7837D1885666DFC' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Permitir acceso' ItemID='FX1-20-40-201'
+		 ItemParent='13FB52184D8E11E3AA253444B9D3F657'/>
+	<z:row Sys_PK='543' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='62DD7B824D8A11E3AA253444B9D3F657' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Configurar serie por tipo de requisición' ItemID='FX1-20-40-202'
+		 ItemParent='13FB52184D8E11E3AA253444B9D3F657'/>
+	<z:row Sys_PK='544' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='825ECE4AB1144D4582B6C088BA44BBB0' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Configurar serie por grupo de usuarios' ItemID='FX1-20-40-203'
+		 ItemParent='13FB52184D8E11E3AA253444B9D3F657'/>
+	<z:row Sys_PK='545' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='AEBC9345ECF94614AD4168ED738CF140' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Realizar configuración local' ItemID='FX1-20-40-204'
+		 ItemParent='13FB52184D8E11E3AA253444B9D3F657'/>
+	<z:row Sys_PK='546' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='27B01BE34D8E11E3AA253444B9D3F657' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Seleccionar tipo de requisición' ItemID='FX1-20-40-205'
+		 ItemParent='13FB52184D8E11E3AA253444B9D3F657'/>
+	<z:row Sys_PK='547' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='503B73CE4D8E11E3AA253444B9D3F657' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Seleccionar serie y folio de requisiciones' ItemID='FX1-20-40-206'
+		 ItemParent='13FB52184D8E11E3AA253444B9D3F657'/>
+	<z:row Sys_PK='548' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='652061CF4D8E11E3AA253444B9D3F657' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Seleccionar almacén origen' ItemID='FX1-20-40-207'
+		 ItemParent='13FB52184D8E11E3AA253444B9D3F657'/>
+	<z:row Sys_PK='549' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='C6D54B194D8A11E3AA253444B9D3F657' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Movimientos de inventario para requisiciones' ItemID='FX1-20-40-300'
+		 ItemParent='4E8506202F21401ABC3C195BFA8B6605'/>
+	<z:row Sys_PK='550' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='72AF66D84D5B481BB1A4DF6104CB474B' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Importar requisiciones en entradas de inventario' ItemID='FX1-20-40-301'
+		 ItemParent='C6D54B194D8A11E3AA253444B9D3F657'/>
+	<z:row Sys_PK='551' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='E135E2A722AC4AD2BC8324191C4D1F81' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Importar requisiciones en salidas de inventario' ItemID='FX1-20-40-302'
+		 ItemParent='C6D54B194D8A11E3AA253444B9D3F657'/>
+	<z:row Sys_PK='552' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='2A04465D4C564CD990E9D37F15DB5500' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Importar requisiciones en traspasos de inventario' ItemID='FX1-20-40-303'
+		 ItemParent='C6D54B194D8A11E3AA253444B9D3F657'/>
+	<z:row Sys_PK='553' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='636C1E1D4D8B11E3AA253444B9D3F657' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Catálogo de tipos de requisiciones' ItemID='FX1-20-40-400'
+		 ItemParent='4E8506202F21401ABC3C195BFA8B6605'/>
+	<z:row Sys_PK='554' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='645503FA4D8D11E3AA253444B9D3F657' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Permitir acceso' ItemID='FX1-20-40-401'
+		 ItemParent='636C1E1D4D8B11E3AA253444B9D3F657'/>
+	<z:row Sys_PK='555' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='CA884806A9074589AFF5297092CA71A9' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Agregar tipo de requisición' ItemID='FX1-20-40-402'
+		 ItemParent='636C1E1D4D8B11E3AA253444B9D3F657'/>
+	<z:row Sys_PK='556' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='A7CCB96033B74A9F933F69BA04CA0980' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Editar tipo de requisición' ItemID='FX1-20-40-403'
+		 ItemParent='636C1E1D4D8B11E3AA253444B9D3F657'/>
+	<z:row Sys_PK='557' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='47101B9B2E7D48CCA1C6D59C97A2C616' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Eliminar tipo de requisición' ItemID='FX1-20-40-404'
+		 ItemParent='636C1E1D4D8B11E3AA253444B9D3F657'/>
+	<z:row Sys_PK='558' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='596DA98155384FD79DD0C4FD27BDA5CA' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Imprimir requisiciones en punto de venta' ItemID='FX1-20-40-003'
+		 ItemParent='4E8506202F21401ABC3C195BFA8B6605'/>
+	<z:row Sys_PK='559' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='3E8506202F21401ABC3C195BFA8B6605' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Imprimir diferencia entre cantidad solicitada y cantidad ejercida' ItemID='FX1-20-40-004'
+		 ItemParent='4E8506202F21401ABC3C195BFA8B6605'/>
+	<z:row Sys_PK='560' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='C9D90F72B38344E9827724F47B6B0079' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Realizar producción a partir de la requisición seleccionada' ItemID='FX1-20-40-005'
+		 ItemParent='4E8506202F21401ABC3C195BFA8B6605'/>
+	<z:row Sys_PK='561' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='5948342F65824BAFA421177B8E1C2DFD' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Realizar comparación de costos y pedidos de compra' ItemID='FX1-20-40-006'
+		 ItemParent='4E8506202F21401ABC3C195BFA8B6605'/>
+	<z:row Sys_PK='562' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='B20B1FA35F284510BC4DE8ABF4D2D67A' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Importar requisición a archivo MVI' ItemID='FX1-20-40-007'
+		 ItemParent='4E8506202F21401ABC3C195BFA8B6605'/>
+	<z:row Sys_PK='563' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='A7D05BF5A0A140ED9B75505A0991D34A' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Exportar requisición a archivo MVI' ItemID='FX1-20-40-008'
+		 ItemParent='4E8506202F21401ABC3C195BFA8B6605'/>
+ 	<z:row Sys_PK='564' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='BB3B3C2B4E0F11E3BA6975DAE5EEF70A' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Relación con clientes (CRM)' ItemID='FX3-CRM-00-000'
+		 ItemParent='D3823CDD641F4FBB9EA042BD70FBD17F'/>
+ 	<z:row Sys_PK='565' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='325A4D4E4E1111E3BA6975DAE5EEF70A' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Atención a clientes' ItemID='FX3-CRM-10-000'
+		 ItemParent='BB3B3C2B4E0F11E3BA6975DAE5EEF70A'/>
+ 	<z:row Sys_PK='566' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='D9BC22A84E0F11E3BA6975DAE5EEF70A' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Permitir acceso' ItemID='FX3-CRM-10-001'
+		 ItemParent='325A4D4E4E1111E3BA6975DAE5EEF70A'/>
+ 	<z:row Sys_PK='567' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='1E9DD672F390425D838B3E708F21DA9E' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Tipos de caso' ItemID='FX3-CRM-10-100'
+		 ItemParent='325A4D4E4E1111E3BA6975DAE5EEF70A'/>
+ 	<z:row Sys_PK='568' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='030D20034E1011E3BA6975DAE5EEF70A' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Permitir acceso' ItemID='FX3-CRM-10-101'
+		 ItemParent='1E9DD672F390425D838B3E708F21DA9E'/>
+ 	<z:row Sys_PK='569' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='069352C83DFD4567908D65B03376E43F' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Agregar tipos de caso' ItemID='FX3-CRM-10-102'
+		 ItemParent='1E9DD672F390425D838B3E708F21DA9E'/>
+ 	<z:row Sys_PK='570' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='789352C83DFD4651208D65B03376E43F' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Editar tipos de caso' ItemID='FX3-CRM-10-103'
+		 ItemParent='1E9DD672F390425D838B3E708F21DA9E'/>
+	<z:row Sys_PK='571' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='099352C83DF39814908D65B03376E43F' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Eliminar tipos de caso' ItemID='FX3-CRM-10-104'
+		 ItemParent='1E9DD672F390425D838B3E708F21DA9E'/>
+	<z:row Sys_PK='576' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='1E11D935520311E3A1FB143DF30D67DC' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Permitir asignar permisos (tipos de caso)' ItemID='FX3-CRM-10-105'
+		 ItemParent='1E9DD672F390425D838B3E708F21DA9E'/>
+	<z:row Sys_PK='572' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='A3D59A283B7E11E3BDF283572ACE8C52' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Alertas' ItemID='FX3-CRM-10-200'
+		 ItemParent='325A4D4E4E1111E3BA6975DAE5EEF70A'/>
+	<z:row Sys_PK='573' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='AA55037E3B7E11E3BDF283572ACE8C52' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Crear alertas' ItemID='FX3-CRM-10-201'
+		 ItemParent='A3D59A283B7E11E3BDF283572ACE8C52'/>
+	<z:row Sys_PK='574' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='AD8A2E193B7E11E3BDF283572ACE8C52' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Editar alertas de otros' ItemID='FX3-CRM-10-202'
+		 ItemParent='A3D59A283B7E11E3BDF283572ACE8C52'/>
+	<z:row Sys_PK='575' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='478B99223B7F11E3BDF283572ACE8C52' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Desactivar alertas de otros' ItemID='FX3-CRM-10-203'
+		 ItemParent='A3D59A283B7E11E3BDF283572ACE8C52'/>
+	<z:row Sys_PK='578' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='C5DFB6AD927611E3AF6643C5120AFBCE' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Catálogo de prioridades' ItemID='FX3-CRM-10-300'
+		 ItemParent='325A4D4E4E1111E3BA6975DAE5EEF70A'/>
+	<z:row Sys_PK='579' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='2A644B98927711E3AF6643C5120AFBCE' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Permitir agregar prioridad' ItemID='FX3-CRM-10-301'
+		 ItemParent='C5DFB6AD927611E3AF6643C5120AFBCE'/>
+	<z:row Sys_PK='580' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='2F75D96D927711E3AF6643C5120AFBCE' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Permitir editar prioridad' ItemID='FX3-CRM-10-302'
+		 ItemParent='C5DFB6AD927611E3AF6643C5120AFBCE'/>
+	<z:row Sys_PK='581' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='3441D9B6927711E3AF6643C5120AFBCE' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Permitir eliminar prioridad' ItemID='FX3-CRM-10-303'
+		 ItemParent='C5DFB6AD927611E3AF6643C5120AFBCE'/>
+	<z:row Sys_PK='582' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='C80340EEB06611E397B9E129274AFD18' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Módulo de control de folios' ItemID='FX4-CFL-00-000'
+		 ItemParent='D3823CDD641F4FBB9EA042BD70FBD17F'/>
+	<z:row Sys_PK='583' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='015B815CB06711E397B9E129274AFD18' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Permitir refoliar pólizas' ItemID='FX4-CFL-00-001'
+		 ItemParent='C80340EEB06611E397B9E129274AFD18'/>
+	<z:row Sys_PK='584' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='BAF6F91BB12F11E3BF2A8048EABBEC6D' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Permitir visualizar estádisticas' ItemID='FX3-CRM-20-100'
+		 ItemParent='BB3B3C2B4E0F11E3BA6975DAE5EEF70A'/>
+	<z:row Sys_PK='585' Sys_TimeStamp='2013-11-14T17:00:00' Sys_GUID='BAF6FDFGTY2F11E3BF2A8048EABBEC6D' Sys_DTCreated='2013-11-14T17:00:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-14T17:00:00' Description='Permitir acceso administración de casos' ItemID='FX3-CRM-30-100'
+		 ItemParent='BB3B3C2B4E0F11E3BA6975DAE5EEF70A'/>
+</rs:data>
+</xml>

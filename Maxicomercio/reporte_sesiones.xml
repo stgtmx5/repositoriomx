@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xml>
+  <sql id="consulta1">
+    <![CDATA[
+			SELECT... | UPDATE ... | INSERT ...| DELETE ...
+			@parametro=Marca de par⮥tro con preprocesamiento
+			@{parametro}=Marca de par⮥tro sin preprocesamiento
+		]]>
+  </sql>
+
+  <sql id="qryPrincipal">
+    <![CDATA[select corte,puntovta,cajero from qryReporte WHERE FA = @pFNum @{turnos} @{pWhere} @{pWhere2}; ]]>
+  </sql>
+
+  <sql id="qryPrincipal2">
+    <![CDATA[select corte,puntovta,cajero from qryReporte WHERE ESTADO=0 AND  FA = @pFNum @{turnos} @{pWhere} @{pWhere2}; ]]>
+  </sql>
+
+  <sql id="qryCajeros">
+    <![CDATA[ select sys_pk,nombre,codigo, '[ '+codigo+' ] - '+nombre as CodigoNombre from cajero order by sys_pk; ]]>
+  </sql>
+
+  <sql id="qryCajeros2">
+    <![CDATA[ select sys_pk, nombre from cajero where sys_pk = @pName; ]]>
+  </sql>
+
+  <sql id="qryCaja">
+    <![CDATA[ select sys_pk, codigo, descripcion, '[ '+codigo+' ] - '+descripcion as descripcion2 from caja order by sys_pk; ]]>
+  </sql>
+
+  <sql id="qryCaja2">
+    <![CDATA[ select sys_pk, descripcion from caja where sys_pk= @pName; ]]>
+  </sql>
+
+  <sql id="qryTurnos">
+    <![CDATA[select 1 as id,'Turno 1' as Turno union all select 2 as id,'Turno 2' as Truno union all select 3 as id,'Turno 3' as Truno; ]]>
+  </sql>
+  <sql id="qryTipoVentas">
+    <![CDATA[ select 1 as id,'Todas las ventas' as nombre union all select 2 as id,'Propia' as nombre union all select 3 as id,'Estacionamiento' as nombre union all select 4 as id,'Tiempo Aire' as nombre union all select 5 as id,'Tarjetas Teléfonicas' as nombre; ]]>
+  </sql>
+
+  <!--ventas y demas-->
+
+  <sql id="qryVtaPropia">
+    <![CDATA[ 
+    select isnull(sum(((dventa.cantidad*dventa.precio) +dventa.impuesto1+dventa.impuesto2+dventa.impuesto3+dventa.impuesto4)-(dventa.descuento1+ dventa.Descuento2)),0) as VentaPropia from (venta inner join Corte on venta.icorte=corte.sys_pk) inner join (dventa inner join (producto inner join linea on producto.ilinea= linea.sys_pk) on dventa.iproducto=producto.sys_pk) on venta.sys_pk= dventa.fk_venta_detalle  where corte.sys_pk= @Corte and venta.idivisa=1 and venta.documento=6 and venta.statusadministrativo <> 99 and Linea.Codigo <> '0019' and linea.Codigo <> '0017' and linea.Codigo <> 'RecTAE' and corte.cerrado=1;
+    ]]>
+  </sql>
+
+  <sql id="qryEstacionamiento">
+    <![CDATA[  select ISNULL(convert(decimal(18,2),sum(Importe)),0) as Estacionamiento from ut_relvta_boleto inner join venta on ut_relvta_boleto.iventa = venta.sys_pk where ISNULL(venta.AplicadoA, 0) = 0 AND ut_relvta_boleto.icorte = @Corte;  ]]>
+    <!--<![CDATA[ select isnull(sum(((dventa.cantidad*dventa.precio) +dventa.impuesto1+dventa.impuesto2+dventa.impuesto3+dventa.impuesto4)-(dventa.descuento1+ dventa.Descuento2)),0) as Estacionamiento from (venta inner join corte on venta.icorte = corte.sys_pk) inner join (dventa inner join (producto inner join linea on producto.ilinea=linea.sys_pk) on dventa.iproducto= producto.sys_pk) on venta.sys_pk=dventa.fk_venta_detalle where corte.sys_pk= @Corte and venta.statusadministrativo <> 99 and linea.Codigo='0019' and corte.cerrado=1; ]]>-->
+  </sql>
+
+  <sql id="qryTiempoAire">
+    <![CDATA[ select isnull(sum(((dventa.cantidad*dventa.precio) +dventa.impuesto1+dventa.impuesto2+dventa.impuesto3+dventa.impuesto4)-(dventa.descuento1+ dventa.Descuento2)),0) as TA from (venta inner join corte on venta.icorte= corte.sys_pk) inner join (dventa inner join (producto inner join linea on producto.ilinea= linea.sys_pk) on dventa.iproducto=producto.sys_pk) on venta.sys_pk = dventa.fk_venta_detalle where corte.sys_pk= @Corte and (venta.documento=6) and venta.statusadministrativo <> 99 and linea.Codigo='RecTAE' and corte.cerrado=1; ]]>
+  </sql>
+
+  <sql id="qryTarjetas">
+    <![CDATA[ select isnull(sum(((dventa.cantidad * dventa.precio) +dventa.impuesto1+dventa.impuesto2+dventa.impuesto3+dventa.impuesto4)-(dventa.descuento1+ dventa.Descuento2)),0) as Recargas from (venta inner join corte on venta.icorte= corte.sys_pk) inner join (dventa inner join (producto inner join linea on producto.ilinea= linea.sys_pk) on dventa.iproducto = producto.sys_pk) on venta.sys_pk=dventa.fk_venta_detalle where corte.sys_pk= @Corte and (venta.documento=6) and venta.statusadministrativo <> 99 and linea.Codigo='0017' and corte.cerrado=1; ]]>
+  </sql>
+
+  <sql id="qryEfectivo">
+    <![CDATA[ select isnull(sum(efectivo),0) as efectivo from movcaja where (documento=6 and documento <>'33' and documento <>'34') and icorte=@Corte ]]>
+  </sql>
+  <sql id="qrySobrante">
+    <![CDATA[ select isnull(sum(efectivo),0) as sobrante from movcaja where documento=33 and notas like '%sobrante%' and icorte=@Corte ]]>
+  </sql>
+
+  <sql id="qryFaltante">
+    <![CDATA[ select isnull(sum(Efectivo*-1),0) as Faltante from MovCaja where documento=34 and notas like '%faltante%' and icorte=@Corte ]]>
+  </sql>
+
+</xml>
+
+<!--<formula element="SumTotalVenta" id="SumTotalVenta" type="Decimal">
+        <![CDATA[
+          SumVentaPropia + SumEstacionamiento + SumTA + SumRecargas + SumEfectivo + SumSobrante + SumFaltante
+        ]]>
+      </formula>-->

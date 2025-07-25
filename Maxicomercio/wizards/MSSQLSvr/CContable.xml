@@ -1,0 +1,608 @@
+<xml xmlns:s='uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882'
+	xmlns:dt='uuid:C2F41010-65B3-11d1-A29F-00AA00C14882'
+	xmlns:rs='urn:schemas-microsoft-com:rowset'
+	xmlns:z='#RowsetSchema'>
+<s:Schema id='RowsetSchema'>
+	<s:ElementType name='row' content='eltOnly'>
+		<s:AttributeType name='Sys_PK' rs:number='1' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='10' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_TimeStamp' rs:number='2' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='dateTime' rs:dbtype='variantdate' dt:maxLength='16' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_GUID' rs:number='3' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='32'/>
+		</s:AttributeType>
+		<s:AttributeType name='APAC' rs:number='4' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='boolean' dt:maxLength='2' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Codigo' rs:number='5' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='35'/>
+		</s:AttributeType>
+		<s:AttributeType name='D01' rs:number='6' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='D02' rs:number='7' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='D03' rs:number='8' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='D04' rs:number='9' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='D05' rs:number='10' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='D06' rs:number='11' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='D07' rs:number='12' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='D08' rs:number='13' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='D09' rs:number='14' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='D10' rs:number='15' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='D11' rs:number='16' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='D12' rs:number='17' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Departamental' rs:number='18' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='boolean' dt:maxLength='2' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Descripcion' rs:number='19' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='150'/>
+		</s:AttributeType>
+		<s:AttributeType name='Detalle' rs:number='20' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='boolean' dt:maxLength='2' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='DFinal' rs:number='21' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='H01' rs:number='22' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='H02' rs:number='23' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='H03' rs:number='24' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='H04' rs:number='25' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='H05' rs:number='26' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='H06' rs:number='27' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='H07' rs:number='28' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='H08' rs:number='29' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='H09' rs:number='30' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='H10' rs:number='31' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='H11' rs:number='32' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='H12' rs:number='33' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='HFinal' rs:number='34' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='P_Anual' rs:number='35' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='P01' rs:number='36' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='P02' rs:number='37' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='P03' rs:number='38' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='P04' rs:number='39' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='P05' rs:number='40' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='P06' rs:number='41' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='P07' rs:number='42' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='P08' rs:number='43' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='P09' rs:number='44' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='P10' rs:number='45' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='P11' rs:number='46' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='P12' rs:number='47' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='S01' rs:number='48' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='S02' rs:number='49' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='S03' rs:number='50' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='S04' rs:number='51' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='S05' rs:number='52' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='S06' rs:number='53' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='S07' rs:number='54' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='S08' rs:number='55' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='S09' rs:number='56' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='S10' rs:number='57' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='S11' rs:number='58' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='S12' rs:number='59' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='SFinal' rs:number='60' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='SInicial' rs:number='61' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='number' rs:dbtype='currency' dt:maxLength='8' rs:precision='19' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Tipo' rs:number='62' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='10' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Contrapartida' rs:number='63' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='32'/>
+		</s:AttributeType>
+		<s:AttributeType name='ICuenta' rs:number='64' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='32'/>
+		</s:AttributeType>
+		<s:AttributeType name='IDivisa' rs:number='65' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='32'/>
+		</s:AttributeType>
+		<s:extends type='rs:rowbase'/>
+	</s:ElementType>
+</s:Schema>
+<rs:data>
+	<z:row Sys_PK='167' Sys_TimeStamp='2008-03-29T11:12:04' Sys_GUID='C1FF26A3020E4432AB38D7F3C6707121' APAC='False'
+		 Codigo='2180000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='ANTICIPO DE CLIENTES' Detalle='False' DFinal='0' H01='0' H02='0' H03='0' H04='0'
+		 H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0' P03='0'
+		 P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0' S05='0'
+		 S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='1' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='180' Sys_TimeStamp='2008-03-29T11:08:02' Sys_GUID='6CFFD7BC616E42A3B53F377198FD08A9' APAC='False'
+		 Codigo='1245000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='EQUIPO DE OFICINA' Detalle='True' DFinal='0' H01='0' H02='0' H03='0' H04='0'
+		 H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0' P03='0'
+		 P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0' S05='0'
+		 S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='0' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='179' Sys_TimeStamp='2008-03-29T11:07:58' Sys_GUID='929F25D1482C43D6962D000098A6CB45' APAC='False'
+		 Codigo='1240000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='EQUIPO DE COMPUTO' Detalle='True' DFinal='0' H01='0' H02='0' H03='0' H04='0'
+		 H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0' P03='0'
+		 P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0' S05='0'
+		 S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='0' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='178' Sys_TimeStamp='2008-03-29T11:07:38' Sys_GUID='E12E5B4F20BD49E99F6C04BF8DA5C1CF' APAC='False'
+		 Codigo='1220000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='EDIFICIOS' Detalle='True' DFinal='0' H01='0' H02='0' H03='0' H04='0' H05='0'
+		 H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0' P03='0' P04='0'
+		 P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0' S05='0' S06='0'
+		 S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='0' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='217' Sys_TimeStamp='2008-03-29T10:01:57' Sys_GUID='515524959A7144168735A2D37C3832A8' APAC='False'
+		 Codigo='5300000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='DEVOLUCIONES SOBRE VENTAS' Detalle='True' DFinal='0' H01='0' H02='0' H03='0'
+		 H04='0' H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0'
+		 P03='0' P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0'
+		 S05='0' S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='0' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='176' Sys_TimeStamp='2008-03-29T12:47:17' Sys_GUID='7D808FB410F44C278300584D234FB1DB' APAC='False'
+		 Codigo='2130000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='DOCUMENTOS POR PAGAR' Detalle='False' DFinal='0' H01='0' H02='0' H03='0' H04='0'
+		 H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0' P03='0'
+		 P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0' S05='0'
+		 S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='1' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='144' Sys_TimeStamp='2008-02-09T13:06:44' Sys_GUID='D53FB36D77E84B37BAFCF559B196F422' APAC='False'
+		 Codigo='1150000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='CLIENTES' Detalle='False' DFinal='0' H01='0' H02='0' H03='0' H04='0' H05='0'
+		 H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0' P03='0' P04='0'
+		 P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0' S05='0' S06='0'
+		 S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='0' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='174' Sys_TimeStamp='2008-03-29T12:46:22' Sys_GUID='90F84CF0CFCE43C1844BDDA3B2D71C4B' APAC='False'
+		 Codigo='1252000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='DEPRECIACION EQUIPO DE COMPUTO' Detalle='True' DFinal='0' H01='0' H02='0'
+		 H03='0' H04='0' H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0'
+		 P02='0' P03='0' P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0'
+		 S04='0' S05='0' S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='1' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='173' Sys_TimeStamp='2008-03-29T12:46:19' Sys_GUID='4875C7B22DF14EA8AC10B1D443D40080' APAC='False'
+		 Codigo='1253000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='DEPRECIACION DE MOBILIARIO Y EQ. DE OFNA' Detalle='True' DFinal='0' H01='0'
+		 H02='0' H03='0' H04='0' H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0'
+		 P01='0' P02='0' P03='0' P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0'
+		 S03='0' S04='0' S05='0' S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='1'
+		 IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='172' Sys_TimeStamp='2008-03-29T12:46:34' Sys_GUID='D0046374F29940DBBF1F5820BC96581E' APAC='False'
+		 Codigo='1254000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='DEPRECIACION DE MAQUINARIA' Detalle='True' DFinal='0' H01='0' H02='0' H03='0'
+		 H04='0' H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0'
+		 P03='0' P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0'
+		 S05='0' S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='1' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='171' Sys_TimeStamp='2008-03-29T11:08:19' Sys_GUID='158FA64EA543497C8470EBD34D07EA78' APAC='False'
+		 Codigo='1250000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='DEPRECIACION DE EDIFICIOS' Detalle='True' DFinal='0' H01='0' H02='0' H03='0'
+		 H04='0' H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0'
+		 P03='0' P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0'
+		 S05='0' S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='1' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='181' Sys_TimeStamp='2008-03-29T11:07:51' Sys_GUID='34CFAC1B37DE4D3CA6DA689704B5B39E' APAC='False'
+		 Codigo='1230000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='EQUIPO DE TRANSPORTE' Detalle='True' DFinal='0' H01='0' H02='0' H03='0' H04='0'
+		 H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0' P03='0'
+		 P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0' S05='0'
+		 S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='0' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='169' Sys_TimeStamp='2008-03-29T12:52:58' Sys_GUID='791D766104A3436EBA5E1713EB7FBEFB' APAC='False'
+		 Codigo='2210000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='CREDITOS HIPOTECARIOS' Detalle='False' DFinal='0' H01='0' H02='0' H03='0'
+		 H04='0' H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0'
+		 P03='0' P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0'
+		 S05='0' S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='1' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='177' Sys_TimeStamp='2008-03-29T12:53:05' Sys_GUID='ED13C2E1E2D64DE79990039241CFD229' APAC='False'
+		 Codigo='2220000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='DOCUMENTOS POR PAGAR A L.P.' Detalle='False' DFinal='0' H01='0' H02='0' H03='0'
+		 H04='0' H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0'
+		 P03='0' P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0'
+		 S05='0' S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='1' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='166' Sys_TimeStamp='2008-03-29T11:15:57' Sys_GUID='E7574AA6BA544549A74F56640832601B' APAC='False'
+		 Codigo='3100000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='CAPITAL SOCIAL' Detalle='True' DFinal='0' H01='0' H02='0' H03='0' H04='0'
+		 H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0' P03='0'
+		 P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0' S05='0'
+		 S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='1' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='163' Sys_TimeStamp='2008-03-29T11:09:17' Sys_GUID='2DF9651396BA4286BEA4EDFF00DD0831' APAC='False'
+		 Codigo='1350000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='AMORTIZACION DE GASTOS DE ORG. E INST.' Detalle='True' DFinal='0' H01='0'
+		 H02='0' H03='0' H04='0' H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0'
+		 P01='0' P02='0' P03='0' P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0'
+		 S03='0' S04='0' S05='0' S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='0'
+		 IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='142' Sys_TimeStamp='2008-02-09T12:58:30' Sys_GUID='D730463062244096AE9E001042F84162' APAC='False'
+		 Codigo='1140000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='INVERSIONES EN VALORES' Detalle='False' DFinal='0' H01='0' H02='0' H03='0'
+		 H04='0' H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0'
+		 P03='0' P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0'
+		 S05='0' S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='0' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='140' Sys_TimeStamp='2008-02-09T12:52:32' Sys_GUID='8E14BAF686F04823955E274622D62936' APAC='False'
+		 Codigo='1120000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='BANCOS' Detalle='False' DFinal='0' H01='0' H02='0' H03='0' H04='0' H05='0'
+		 H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0' P03='0' P04='0'
+		 P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0' S05='0' S06='0'
+		 S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='0' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='138' Sys_TimeStamp='2008-02-09T12:49:39' Sys_GUID='8C947BE3F62E44B7A09C13509204002C' APAC='False'
+		 Codigo='1110000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='CAJA' Detalle='False' DFinal='0' H01='0' H02='0' H03='0' H04='0' H05='0' H06='0'
+		 H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0' P03='0' P04='0' P05='0'
+		 P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0' S05='0' S06='0' S07='0'
+		 S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='0' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='162' Sys_TimeStamp='2008-03-29T11:11:28' Sys_GUID='DD30F4E53CD14E1C9BCF9F1983614551' APAC='False'
+		 Codigo='2120000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='ACREEDORES DIVERSOS' Detalle='False' DFinal='0' H01='0' H02='0' H03='0' H04='0'
+		 H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0' P03='0'
+		 P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0' S05='0'
+		 S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='1' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='155' Sys_TimeStamp='2008-03-31T10:16:12' Sys_GUID='10966191994C443BB162B28EAC15F4E6' APAC='False'
+		 Codigo='1190000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='I.V.A. ACREDITABLE' Detalle='True' DFinal='0' H01='0' H02='0' H03='0' H04='0'
+		 H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0' P03='0'
+		 P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0' S05='0'
+		 S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='0' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='154' Sys_TimeStamp='2008-03-29T11:06:54' Sys_GUID='8CF463AF995A467195F4303268A7982F' APAC='False'
+		 Codigo='1180000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='DOCUMENTOS POR COBRAR' Detalle='False' DFinal='0' H01='0' H02='0' H03='0'
+		 H04='0' H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0'
+		 P03='0' P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0'
+		 S05='0' S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='0' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='153' Sys_TimeStamp='2008-03-29T12:42:58' Sys_GUID='A61F25662962402AB8B0B3E901265D2B' APAC='False'
+		 Codigo='1171000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='FUNCIONARIOS Y EMPLEADOS' Detalle='False' DFinal='0' H01='0' H02='0' H03='0'
+		 H04='0' H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0'
+		 P03='0' P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0'
+		 S05='0' S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='0' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='152' Sys_TimeStamp='2008-03-29T11:06:43' Sys_GUID='1BACE8BA6CF14B03BDE0AF20698147B0' APAC='False'
+		 Codigo='1170000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='DEUDORES DIVERSOS' Detalle='False' DFinal='0' H01='0' H02='0' H03='0' H04='0'
+		 H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0' P03='0'
+		 P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0' S05='0'
+		 S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='0' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='147' Sys_TimeStamp='2008-02-09T13:11:45' Sys_GUID='E7B430E8E0DC4D6EB9B30064E1DB6D51' APAC='False'
+		 Codigo='1160000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='ALMACEN' Detalle='False' DFinal='0' H01='0' H02='0' H03='0' H04='0' H05='0'
+		 H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0' P03='0' P04='0'
+		 P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0' S05='0' S06='0'
+		 S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='0' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='170' Sys_TimeStamp='2008-03-29T11:08:46' Sys_GUID='128D3472FEF64DF0BD43B985EDD3EEBE' APAC='False'
+		 Codigo='1320000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='DEPOSITOS EN GARANTIA' Detalle='False' DFinal='0' H01='0' H02='0' H03='0'
+		 H04='0' H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0'
+		 P03='0' P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0'
+		 S05='0' S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='0' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='204' Sys_TimeStamp='2008-03-29T11:07:31' Sys_GUID='8BECB8999DEA4F3791DA06D7FE57EB4B' APAC='False'
+		 Codigo='1210000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='TERRENOS' Detalle='True' DFinal='0' H01='0' H02='0' H03='0' H04='0' H05='0'
+		 H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0' P03='0' P04='0'
+		 P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0' S05='0' S06='0'
+		 S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='0' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='215' Sys_TimeStamp='2008-03-29T11:43:33' Sys_GUID='F7307D5905D74737B6915300B6ED0853' APAC='False'
+		 Codigo='5400000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='OTROS PRODUCTOS CXP' Detalle='False' DFinal='0' H01='0' H02='0' H03='0' H04='0'
+		 H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0' P03='0'
+		 P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0' S05='0'
+		 S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='0' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='214' Sys_TimeStamp='2008-03-29T10:00:54' Sys_GUID='7C781A5F037441E4855BE55CB6996C35' APAC='False'
+		 Codigo='5100000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='COSTO DE VENTAS' Detalle='True' DFinal='0' H01='0' H02='0' H03='0' H04='0'
+		 H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0' P03='0'
+		 P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0' S05='0'
+		 S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='0' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='212' Sys_TimeStamp='2008-03-29T10:05:29' Sys_GUID='ECB9E340B3C644A682DBE0AB11AAEC00' APAC='False'
+		 Codigo='4300000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='DEVOLUCIONES SOBRE COMPRAS' Detalle='True' DFinal='0' H01='0' H02='0' H03='0'
+		 H04='0' H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0'
+		 P03='0' P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0'
+		 S05='0' S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='1' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='211' Sys_TimeStamp='2008-03-29T10:05:21' Sys_GUID='DB1B7965D7C1440680A0013CA6918239' APAC='False'
+		 Codigo='4200000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='BONIFICACIONES SOBRE COMPRAS' Detalle='True' DFinal='0' H01='0' H02='0' H03='0'
+		 H04='0' H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0'
+		 P03='0' P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0'
+		 S05='0' S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='1' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='207' Sys_TimeStamp='2008-03-29T10:04:51' Sys_GUID='79C6F9FE797B4AA881A09D813D68E343' APAC='False'
+		 Codigo='4100000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='VENTAS' Detalle='True' DFinal='0' H01='0' H02='0' H03='0' H04='0' H05='0'
+		 H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0' P03='0' P04='0'
+		 P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0' S05='0' S06='0'
+		 S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='1' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='175' Sys_TimeStamp='2008-03-29T12:44:18' Sys_GUID='2DD0B324853C47769D2F82B6F5DB525D' APAC='False'
+		 Codigo='1251000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='DEPRECIACION EQUIPO DE TRANSPORTE' Detalle='True' DFinal='0' H01='0' H02='0'
+		 H03='0' H04='0' H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0'
+		 P02='0' P03='0' P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0'
+		 S04='0' S05='0' S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='0' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='216' Sys_TimeStamp='2008-03-29T10:01:45' Sys_GUID='0CDF3662803043639E042E29BAF0D402' APAC='False'
+		 Codigo='5200000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='BONIFICACIONES SOBRE VENTAS' Detalle='True' DFinal='0' H01='0' H02='0' H03='0'
+		 H04='0' H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0'
+		 P03='0' P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0'
+		 S05='0' S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='0' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='182' Sys_TimeStamp='2008-03-29T11:09:10' Sys_GUID='29710D2C4267433B9882736B103F21AA' APAC='False'
+		 Codigo='1340000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='GASTOS DE INSTALACION' Detalle='True' DFinal='0' H01='0' H02='0' H03='0' H04='0'
+		 H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0' P03='0'
+		 P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0' S05='0'
+		 S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='0' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='203' Sys_TimeStamp='2008-03-29T11:16:22' Sys_GUID='0048DF675F5E421D8EF5A12C419602FF' APAC='False'
+		 Codigo='3300000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='SUPERAVIT POR ACTUALIZACION DE ACT. DIJJO' Detalle='True' DFinal='0' H01='0'
+		 H02='0' H03='0' H04='0' H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0'
+		 P01='0' P02='0' P03='0' P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0'
+		 S03='0' S04='0' S05='0' S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='1'
+		 IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='202' Sys_TimeStamp='2008-03-29T12:50:42' Sys_GUID='6AA0B89439A644C5A8A705481121CFCA' APAC='False'
+		 Codigo='2140000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='SUELDOS POR PAGAR' Detalle='True' DFinal='0' H01='0' H02='0' H03='0' H04='0'
+		 H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0' P03='0'
+		 P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0' S05='0'
+		 S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='1' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='201' Sys_TimeStamp='2008-03-29T11:16:26' Sys_GUID='C08E7DB720CC4DF2BC14E33D1F76AF35' APAC='False'
+		 Codigo='3400000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='RESULTADO DE EJERCICIOS ANTERIORES' Detalle='False' DFinal='0' H01='0' H02='0'
+		 H03='0' H04='0' H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0'
+		 P02='0' P03='0' P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0'
+		 S04='0' S05='0' S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='1' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='199' Sys_TimeStamp='2008-03-29T11:16:07' Sys_GUID='1DDCA8F2237A4FD1B462CC89E3AD451E' APAC='False'
+		 Codigo='3200000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='RESERVA LEGAL' Detalle='True' DFinal='0' H01='0' H02='0' H03='0' H04='0' H05='0'
+		 H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0' P03='0' P04='0'
+		 P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0' S05='0' S06='0'
+		 S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='1' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='198' Sys_TimeStamp='2008-03-29T11:22:24' Sys_GUID='A5FCA4270F1A45AC93037B8376BEE420' APAC='False'
+		 Codigo='2110000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='PROVEEDORES' Detalle='False' DFinal='0' H01='0' H02='0' H03='0' H04='0' H05='0'
+		 H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0' P03='0' P04='0'
+		 P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0' S05='0' S06='0'
+		 S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='1' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='196' Sys_TimeStamp='2008-03-29T11:08:41' Sys_GUID='D9FA078AE435474CB139DB7053E06CD2' APAC='False'
+		 Codigo='1310000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='PAGOS ANTICIPADOS' Detalle='False' DFinal='0' H01='0' H02='0' H03='0' H04='0'
+		 H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0' P03='0'
+		 P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0' S05='0'
+		 S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='0' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='183' Sys_TimeStamp='2008-03-29T10:47:45' Sys_GUID='06300EB2D0CD4F1BBECC8CA95600CD97' APAC='False'
+		 Codigo='6000000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='GASTOS DE OPERACION' Detalle='False' DFinal='0' H01='0' H02='0' H03='0' H04='0'
+		 H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0' P03='0'
+		 P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0' S05='0'
+		 S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='0' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='195' Sys_TimeStamp='2008-03-29T11:42:57' Sys_GUID='6417A36D95F04E52B6CC5D9792F9B2E7' APAC='False'
+		 Codigo='4400000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='OTROS PRODUCTOS CXC' Detalle='False' DFinal='0' H01='0' H02='0' H03='0' H04='0'
+		 H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0' P03='0'
+		 P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0' S05='0'
+		 S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='1' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='193' Sys_TimeStamp='2008-03-29T11:08:07' Sys_GUID='BDBEF1261F454AC9934265407890D6A7' APAC='False'
+		 Codigo='1246000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='MAQUINARIA' Detalle='True' DFinal='0' H01='0' H02='0' H03='0' H04='0' H05='0'
+		 H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0' P03='0' P04='0'
+		 P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0' S05='0' S06='0'
+		 S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='0' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='184' Sys_TimeStamp='2008-03-29T11:09:05' Sys_GUID='3133BB7086C44F8B8BAA10CBDF4FF5F4' APAC='False'
+		 Codigo='1330000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='GASTOS DE ORGANIZACION' Detalle='True' DFinal='0' H01='0' H02='0' H03='0'
+		 H04='0' H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0'
+		 P03='0' P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0'
+		 S05='0' S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='0' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='191' Sys_TimeStamp='2008-03-31T10:16:38' Sys_GUID='4B4F637839D94C0783225D602D1ED329' APAC='False'
+		 Codigo='2150000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='I.V.A. TRASLADADO' Detalle='False' DFinal='0' H01='0' H02='0' H03='0' H04='0'
+		 H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0' P03='0'
+		 P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0' S05='0'
+		 S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='1' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='190' Sys_TimeStamp='2008-03-31T10:16:45' Sys_GUID='316B4479AD404E799E89C8F2F46E0896' APAC='False'
+		 Codigo='2160000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='I.V.A. POR TRASLADAR' Detalle='False' DFinal='0' H01='0' H02='0' H03='0' H04='0'
+		 H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0' P03='0'
+		 P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0' S05='0'
+		 S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='1' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='200' Sys_TimeStamp='2008-03-29T11:16:17' Sys_GUID='86FD878BA080406FB7B2FD75C8C63682' APAC='False'
+		 Codigo='3210000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='RESERVA PARA REINVERSION' Detalle='True' DFinal='0' H01='0' H02='0' H03='0'
+		 H04='0' H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0'
+		 P03='0' P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0'
+		 S05='0' S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='1' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='186' Sys_TimeStamp='2008-03-29T11:24:29' Sys_GUID='D9B47769D5F0414B9568B8C2F89D1575' APAC='False'
+		 Codigo='2170000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='I.V.A. REPERCUTIDO' Detalle='True' DFinal='0' H01='0' H02='0' H03='0' H04='0'
+		 H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0' P03='0'
+		 P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0' S05='0'
+		 S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='1' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='188' Sys_TimeStamp='2008-03-29T12:54:02' Sys_GUID='23C4349F1FAB49AAA9BD463D6834ADC6' APAC='False'
+		 Codigo='7000000000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='ISR Y PTU' Detalle='True' DFinal='0' H01='0' H02='0' H03='0' H04='0' H05='0'
+		 H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0' P03='0' P04='0'
+		 P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0' S05='0' S06='0'
+		 S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='1' IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='139' Sys_TimeStamp='2008-02-09T12:50:18' Sys_GUID='4B8D91D175DE4F31ADC081BB766BBAFB' APAC='False'
+		 Codigo='1110001000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='FONDO FIJO' Detalle='True' DFinal='0' H01='0' H02='0' H03='0' H04='0' H05='0'
+		 H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0' P03='0' P04='0'
+		 P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0' S05='0' S06='0'
+		 S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='0' ICuenta='8C947BE3F62E44B7A09C13509204002C'
+		 IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='141' Sys_TimeStamp='2008-02-09T12:57:29' Sys_GUID='810E615596DF4CDFB68252CB167F2340' APAC='False'
+		 Codigo='1120001000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='CUENTA BANCARIA #' Detalle='True' DFinal='0' H01='0' H02='0' H03='0' H04='0'
+		 H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0' P03='0'
+		 P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0' S05='0'
+		 S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='0' ICuenta='8E14BAF686F04823955E274622D62936'
+		 IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='143' Sys_TimeStamp='2008-02-09T12:59:34' Sys_GUID='587310430752409391626776438D6582' APAC='False'
+		 Codigo='1140001000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='INVERSIONES EN CUENTA #' Detalle='True' DFinal='0' H01='0' H02='0' H03='0'
+		 H04='0' H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0'
+		 P03='0' P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0'
+		 S05='0' S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='0' ICuenta='D730463062244096AE9E001042F84162'
+		 IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='145' Sys_TimeStamp='2008-02-09T13:08:21' Sys_GUID='E4812A862A5C4F62BE6566D9DA5796DE' APAC='False'
+		 Codigo='1150001000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='CONTADO' Detalle='True' DFinal='0' H01='0' H02='0' H03='0' H04='0' H05='0'
+		 H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0' P03='0' P04='0'
+		 P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0' S05='0' S06='0'
+		 S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='0' ICuenta='D53FB36D77E84B37BAFCF559B196F422'
+		 IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='146' Sys_TimeStamp='2008-02-09T13:09:22' Sys_GUID='C0DA0F3AF2874083B1664F19D1E8F72D' APAC='False'
+		 Codigo='1150002000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='CREDITO' Detalle='True' DFinal='0' H01='0' H02='0' H03='0' H04='0' H05='0'
+		 H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0' P03='0' P04='0'
+		 P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0' S05='0' S06='0'
+		 S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='0' ICuenta='D53FB36D77E84B37BAFCF559B196F422'
+		 IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='151' Sys_TimeStamp='2008-02-09T13:25:02' Sys_GUID='15F078C1438D4FE4A95E876588091109' APAC='False'
+		 Codigo='1160003000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='ALMACEN DE PROD. TERMINADOS' Detalle='True' DFinal='0' H01='0' H02='0' H03='0'
+		 H04='0' H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0'
+		 P03='0' P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0'
+		 S05='0' S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='0' ICuenta='E7B430E8E0DC4D6EB9B30064E1DB6D51'
+		 IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='150' Sys_TimeStamp='2008-02-09T13:18:23' Sys_GUID='1B2251C717F64BB19EAA4D792DD0F812' APAC='False'
+		 Codigo='1160002000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='ALMACEN DE PROD. EN PROCESO' Detalle='True' DFinal='0' H01='0' H02='0' H03='0'
+		 H04='0' H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0'
+		 P03='0' P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0'
+		 S05='0' S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='0' ICuenta='E7B430E8E0DC4D6EB9B30064E1DB6D51'
+		 IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='148' Sys_TimeStamp='2008-02-09T13:12:36' Sys_GUID='FE3A0CBC47094150BE5F00349B0953B9' APAC='False'
+		 Codigo='1160001000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='ALMACEN DE MATERIALES' Detalle='True' DFinal='0' H01='0' H02='0' H03='0' H04='0'
+		 H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0' P03='0'
+		 P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0' S05='0'
+		 S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='0' ICuenta='E7B430E8E0DC4D6EB9B30064E1DB6D51'
+		 IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='209' Sys_TimeStamp='2008-03-29T11:42:47' Sys_GUID='23A3578E401B451D973C19945DFCA911' APAC='False'
+		 Codigo='4400002000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='INTERESES FINANCIEROS (CLIENTES)' Detalle='True' DFinal='0' H01='0' H02='0'
+		 H03='0' H04='0' H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0'
+		 P02='0' P03='0' P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0'
+		 S04='0' S05='0' S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='1' ICuenta='6417A36D95F04E52B6CC5D9792F9B2E7'
+		 IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='210' Sys_TimeStamp='2008-03-29T11:42:25' Sys_GUID='29358989A60B460ABCB2C5000086401F' APAC='False'
+		 Codigo='4400003000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='OTROS CARGOS (CLIENTES)' Detalle='True' DFinal='0' H01='0' H02='0' H03='0'
+		 H04='0' H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0'
+		 P03='0' P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0'
+		 S05='0' S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='1' ICuenta='6417A36D95F04E52B6CC5D9792F9B2E7'
+		 IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='208' Sys_TimeStamp='2008-03-29T11:42:52' Sys_GUID='EDECE7F237364E0DA0AF1856E3399F3F' APAC='False'
+		 Codigo='4400001000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='INTERESES MORATORIOS (CLIENTES)' Detalle='True' DFinal='0' H01='0' H02='0'
+		 H03='0' H04='0' H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0'
+		 P02='0' P03='0' P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0'
+		 S04='0' S05='0' S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='1' ICuenta='6417A36D95F04E52B6CC5D9792F9B2E7'
+		 IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='220' Sys_TimeStamp='2008-03-29T11:43:25' Sys_GUID='66CB08AD51464006B83F8BF6A9DD16B1' APAC='False'
+		 Codigo='5400002000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='INTERESES FINANCIEROS (PROVEEDORES)' Detalle='True' DFinal='0' H01='0' H02='0'
+		 H03='0' H04='0' H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0'
+		 P02='0' P03='0' P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0'
+		 S04='0' S05='0' S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='0' ICuenta='F7307D5905D74737B6915300B6ED0853'
+		 IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='221' Sys_TimeStamp='2008-03-29T11:43:20' Sys_GUID='C337408D1E3D42A5912D766878EC0127' APAC='False'
+		 Codigo='5400003000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='OTROS CARGOS (PROVEEDORES)' Detalle='True' DFinal='0' H01='0' H02='0' H03='0'
+		 H04='0' H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0' P02='0'
+		 P03='0' P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0' S04='0'
+		 S05='0' S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='0' ICuenta='F7307D5905D74737B6915300B6ED0853'
+		 IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+	<z:row Sys_PK='219' Sys_TimeStamp='2008-03-29T11:43:30' Sys_GUID='C307188AB3454337A67DDEFC486E6172' APAC='False'
+		 Codigo='5400001000' D01='0' D02='0' D03='0' D04='0' D05='0' D06='0' D07='0' D08='0' D09='0' D10='0' D11='0' D12='0'
+		 Departamental='False' Descripcion='INTERESES MORATORIOS (PROVEEDORES)' Detalle='True' DFinal='0' H01='0' H02='0'
+		 H03='0' H04='0' H05='0' H06='0' H07='0' H08='0' H09='0' H10='0' H11='0' H12='0' HFinal='0' P_Anual='0' P01='0'
+		 P02='0' P03='0' P04='0' P05='0' P06='0' P07='0' P08='0' P09='0' P10='0' P11='0' P12='0' S01='0' S02='0' S03='0'
+		 S04='0' S05='0' S06='0' S07='0' S08='0' S09='0' S10='0' S11='0' S12='0' SFinal='0' SInicial='0' Tipo='0' ICuenta='F7307D5905D74737B6915300B6ED0853'
+		 IDivisa='411657CCFB32427A9C56D5D06C29FB55'/>
+</rs:data>
+</xml>

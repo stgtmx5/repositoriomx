@@ -1,0 +1,51 @@
+3.0
+FXConfig.js: Nuevos botones para acceder a la configuración de comprobantes fiscales digitales y para comprobantes con código de barras bidimensional. Acceso al nuevo asistente de configuración de facturación electrónica.
+
+UIVentas.js: Manejo de eventos para cancelación automática por internet en el caso de que el comprobante sea de tipo CFDI, se implementa la funcionalidad para el módulo de productos similares.
+
+cfd.js: Actualización de métodos para generación de comprobantes para notas de cargo y crédito en cuentas por cobrar.
+Actualización para cumplir con requerimientos del Anexo 20 de la RMF 2012.
+
+cfdi.js: Nuevo script para gestión de comprobantes fiscales digitales por internet (CFDI). Actualización para validación de límite de longitud de cadena original y xml en tabla ut_CFD.
+Actualización del método de cancelación de CFDI.
+Actualización para cumplir con requerimientos del Anexo 20 de la RMF 2012.
+
+pos.js: Activación de método de impresión de factura en papel simple cuando la facturación electrónica esté desactivada.
+Nuevos eventos al recuperar venta(actualizar base de datos antes de cobrar), al cancelar un ticket totalmente y al cancelar parcialmente un ticket.
+Se implementa funcionalidad para cargar script necesarios para módulo de requisiciones.
+
+pos_events.js: Capura de los eventos del script pos.js, al recuperar venta(actualizar base de datos antes de cobrar), al cancelar un ticket totalmente y al cancelar parcialmente un ticket.
+
+UICXC.js: Permitir la cancelación de comprobanes fiscales relacionados a cuentas por cobrar. Llamada a la generación automática del comprobante fiscal cuando se cobre un pagaré por parcialidad relacionada a una factura.
+
+us_brw_aduana.js: Script para el manejo del catálogo de aduanas.
+
+UICompras.js: Nuevos botones para la funcionalidad de productos similares, implementación de la DIOT.
+
+UIEjercido.js: Se implementa la funcionalidad para el control de folios a pólizas, refoliar pólizas de ejercicios anteriores.
+
+UIFinanzas.js: Se implementa la funcionalidad para el control de folios a pólizas y refoliar pólizas.
+
+UIGastos.js: Nuevo botón para la generación de la DIOT.
+
+UIInventario.js: Nuevo botón para importar requisiciones.
+
+ImportarProductosTxt.js: Permite asociar un producto a un grupo de productos leyendo un archivo de texto plano.
+
+Generar DIOT - SAT México.js: Inicializa la ventana para exportar un archivo de texto plano para generar la DIOT.
+
+Cambiar contraseña.js: Inicializa la ventana para permitirle al usuario modificar la contraseña.
+
+Configurar conexión NET: Inicializa la ventana para configurar la conexión .NET requerida para el módulo de requisiciones, no disponible en motor de base de datos Access.
+
+Remover mensaje de advertencia inicial.js: Permite eliminar el mensaje de advertencia que en ocasiones se muestra al iniciar el sistema.
+
+pos_requisiciones.js: Realiza el manejo del módulo de requisiciones para el punto de venta, implementa métodos de impresión de requisiciones.
+
+UICRM.js: Realiza el manejo del módulo de atención a clientes, implementa métodos para mostrar el control e interactuar con el BackOffice, no disponible en versión pequeños negocios.
+
+UICrm_Aux.js	Raíz	Interactúa con el script UICRM.js, permite dibujar la información de los clientes en el módulo de atención a clientes leyendo plantillas HTML. 
+
+UIFoliosPolizas.js: Muestra el catálogo de tipos de pólizas, además inicializa los objetos para el control de folios de pólizas. 
+
+UIRequisiciones.js: Realiza el manejo del módulo  de requisiciones, implementa métodos para interactuar desde el BackOffice, crea los objetos necesarios al iniciar el sistema.

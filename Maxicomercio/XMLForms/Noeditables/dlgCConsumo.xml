@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eForm Caption="Centro de Consumo" Name="dlgCConsumo" state ="2" DataClassName="" Heigth="4875" Width="4515" Style="1" LockHeight="450" LockWidth="0">
+	<eCtrl Name="ctrlCodigo" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="2550">
+		<DataLink ClassField="Codigo" ClassType="1" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Codigo:"/>
+			<Property Name="TitleWidthP" Value="45"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="TitleAligment" Value="0"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="ForeColor" Value="0"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;0;0;0;0"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlDescripcion" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3750">
+		<DataLink ClassField="Descripcion" ClassType="1" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Descripci&#243;n:"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="ForeColor" Value="0"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;0;0;0;0"/>
+			<Property Name="TitleStyle" Value="2"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlIAlmacen" ClassID="GExecomCtrls.eOptionLstField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3750">
+		<DataLink ClassField="IAlmacen" ClassType="6" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Almacen:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;0;0;0;0"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlPrecio" ClassID="GExecomCtrls.eOptionLstField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3750">
+		<DataLink ClassField="Precio" ClassType="3" DefaultVal="1" NoNull="False"/>
+			<Property Name="Caption" Value="Precio:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;0;0;0;0"/>
+	</eCtrl>
+
+	<eTab Name="Tab1" Caption="Notas"/>
+
+	<eCtrl Name="ctrlNotas" ClassID="GexecomCtrls.eMemoField" External="False" Visible="True" NameValue="Value" Heigth="2250" Width="3750">
+		<DataLink ClassField="Notas" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Notas:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;0;0;0;0"/>
+			<Property Name="TitleWidthP" Value="20"/>
+			<Property Name="TitleAligment" Value="0"/>
+	</eCtrl>
+
+</eForm>

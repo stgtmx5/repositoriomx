@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<command element="Reporte" id="cmd">
+	<parameter id="pFNum" type="Int" default="0" />
+	<parameter id="turnos" type="String"/>
+	<parameter id="pWhere" type="String" default="0" />
+	<parameter id="pWhere2" type="String" default="0" />
+	<parameter id="pCampos" type="String" default="0" />
+	<parameter id="pUnion" type="String" default="0" />
+	<parameter id="pFechaActual" type="String" />
+	<parameter id="pHoraActual" type="String" />
+	<parameter id="pUser" type="String" />
+	<parameter id="pTurno" type="String" />
+	<parameter id="pFechaSel" type="String" />
+	<parameter id="pTitulo" type="String" />
+	<execute element="Cabecera" return="rowset" sql="sqlCabecera" id="e2" itemElement="Datos">
+
+	</execute>
+	<execute element="Cajero" return="rowset" sql="sqlPrincipal" id="e1" itemElement="puntovta">
+		<formula element="TotalVenta" id="TotalVenta" output="true" type="Decimal">
+			<![CDATA[
+        VentaPropia + Estacionamiento + TA + Recargas
+      ]]>
+		</formula>
+
+		<formula element="EfectivoX" id="EfectivoX" output="true" type="Decimal">
+			<![CDATA[
+				VentaPropia + Estacionamiento + TA + Recargas + Sobrante - Faltante
+			]]>
+		</formula>
+		<group by="puntovta" element="PuntoVenta" id="pventa">
+			<col colname="puntovta" element="Descripcion" id="cDescripcion"/>
+			<summary id="sum1">
+				<sum column="VentaPropia" element="SVentaPropia" type="Decimal"/>
+				<sum column="Estacionamiento" element="SEstacionamiento" type="Decimal"/>
+				<sum column="TA" element="STA" type="Decimal"/>
+				<sum column="Recargas" element="SRecargas" type="Decimal"/>
+				<sum column="Efectivo" element="SEfectivo" type="Decimal"/>
+				<sum column="Sobrante" element="SSobrante" type="Decimal"/>
+				<sum column="Faltante" element="SFaltante" type="Decimal"/>
+				<sum column="TotalVenta" element="STotalVenta" type="Decimal"/>
+				<sum column="EfectivoX" element="SEfectivoX" type="Decimal"/>
+				<count column="cajero" element="SSesiones" type="Int"/>
+
+			</summary>
+		</group>
+		<summary id="sum2">
+			<sum column="VentaPropia" element="SumVentaPropia" type="Decimal"/>
+			<sum column="Estacionamiento" element="SumEstacionamiento" type="Decimal"/>
+			<sum column="TA" element="SumTA" type="Decimal"/>
+			<sum column="Recargas" element="SumRecargas" type="Decimal"/>
+			<sum column="Efectivo" element="SumEfectivo" type="Decimal"/>
+			<sum column="Sobrante" element="SumSobrante" type="Decimal"/>
+			<sum column="Faltante" element="SumFaltante" type="Decimal"/>
+			<formula element="SumTotalVenta" id="SumTotalVenta" type="Decimal">
+				<![CDATA[
+					SumVentaPropia + SumEstacionamiento + SumTA + SumRecargas
+				]]>
+			</formula>
+			<formula element="SumEfectivoX" id="SumEfectivoX" type="Decimal">
+				<![CDATA[
+					SumVentaPropia + SumEstacionamiento + SumTA + SumRecargas + SumSobrante - SumFaltante
+				]]>
+			</formula>
+			
+		</summary>
+	</execute>
+	<implementation engine="SQL_SERVER" name="sqlPrincipal" id="sqlPrincipal" parameter-mode="send">
+		<sql>
+			<![CDATA[
+					select qryReporte.corte,qryReporte.puntovta,qryReporte.cajero  @{pCampos} from qryReporte @{pUnion} WHERE FA = @pFNum @{turnos} @{pWhere} @{pWhere2} order by qryReporte.puntovta;
+			]]>
+		</sql>
+	</implementation>
+
+	<implementation engine="SQL_SERVER" name="sqlCabecera" id="sqlCabecera" parameter-mode="send">
+		<sql>
+			<![CDATA[
+					select A.VarValue AS Nombre, B.VarValue AS RFC, c.VarValue AS Direccion, @pFechaActual as FechaActual, @pHoraActual as HoraActual, @pUser as Usuario, @pTurno as Turno, @pFechaSel as FechaSel, @pTitulo as Titulo from GlobalVar A , Globalvar B, GlobalVar C where A.VarName='FXCA100' AND B.VarName='FXCA101' AND C.VarName = 'FXCA102';
+			]]>
+		</sql>
+	</implementation>
+</command>

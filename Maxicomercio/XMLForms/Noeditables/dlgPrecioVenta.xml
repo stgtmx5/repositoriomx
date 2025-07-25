@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eForm Caption="Precios de Venta" Name="dlgPrecioVenta" state ="2" DataClassName="" Heigth="3900" Width="5265" Style="1" LockHeight="450" LockWidth="0">
+	<eCtrl Name="ctrlProducto" ClassID="GexecomCtrls.eFKField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="4500">
+		<DataLink ClassField="Producto" ClassType="6" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Producto:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="ForeColor" Value="0"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;0;0;0;0"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="TitleWidthP" Value="20"/>
+	</eCtrl>
+
+	<eCtrl Name="ca2" ClassID="VB.Label" External="True" Visible="True" NameValue="" Heigth="150" Width="4500">
+		<DataLink ClassField="" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ca3" ClassID="VB.Label" External="True" Visible="True" NameValue="" Heigth="375" Width="750">
+		<DataLink ClassField="" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlPrecio" ClassID="GexecomCtrls.eNumberField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="2250">
+		<DataLink ClassField="Precio" ClassType="2" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Precio:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;0;0;0;0"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleWidthP" Value="25"/>
+	</eCtrl>
+
+	<eCtrl Name="ca1" ClassID="VB.Label" External="True" Visible="True" NameValue="" Heigth="150" Width="4500">
+		<DataLink ClassField="" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ca4" ClassID="VB.Label" External="True" Visible="True" NameValue="" Heigth="375" Width="750">
+		<DataLink ClassField="" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlLimite" ClassID="GexecomCtrls.eNumberField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="2250">
+		<DataLink ClassField="Limite" ClassType="2" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Limite:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;0;0;0;0"/>
+			<Property Name="TitleWidthP" Value="25"/>
+	</eCtrl>
+
+</eForm>

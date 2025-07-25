@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eForm Caption="" Name="uform_Poliza" state ="2" DataClassName="ctipospolizas" Heigth="3675" Width="5505" Style="0" LockHeight="525" LockWidth="0">
+	<eCtrl Name="cConst1" ClassID="GexecomCtrls.eTextField" External="True" Visible="True" NameValue="Value" Heigth="375" Width="4500">
+		<DataLink ClassField="Const" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Const:"/>
+			<Property Name="FieldSize" Value="255"/>
+	</eCtrl>
+
+</eForm>

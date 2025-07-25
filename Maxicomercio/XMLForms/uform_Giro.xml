@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eForm Caption="Giros" Name="uform_Giro" state ="2" DataClassName="ut_Giro" Heigth="3500" Width="5505" Style="0" LockHeight="525" LockWidth="0">
+	<eCtrl Name="cuf_Codigo1" ClassID="GexecomCtrls.eTextField" External="True" Visible="True" NameValue="Value" Heigth="300" Width="4800">
+		<DataLink ClassField="uf_Codigo" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="C&#243;digo:"/>
+			<Property Name="FieldSize" Value="20"/>
+			<Property Name="ForeColor" Value="16711680"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;-1;0;0;0"/>
+	</eCtrl>
+
+	<eCtrl Name="cuf_Descripcion1" ClassID="GexecomCtrls.eTextField" External="True" Visible="True" NameValue="Value" Heigth="300" Width="4800">
+		<DataLink ClassField="uf_Descripcion" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Descripci&#243;n:"/>
+			<Property Name="FieldSize" Value="50"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="ForeColor" Value="16711680"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;-1;0;0;0"/>
+	</eCtrl>
+
+	<eTab Name="Tab1" Caption="Notas"/>
+
+	<eCtrl Name="cuf_Notas1" ClassID="GexecomCtrls.eMemoField" External="True" Visible="True" NameValue="Value" Heigth="1500" Width="4800">
+		<DataLink ClassField="uf_Notas" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Notas:"/>
+			<Property Name="FieldSize" Value="100"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+</eForm>

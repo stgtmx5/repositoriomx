@@ -1,0 +1,3 @@
+	<eCtrl Name="@ControlName" ClassID="GexecomCtrls.eNumberField" External="True" Visible="False" NameValue="Value" Heigth="300" Width="900">
+		<DataLink ClassField="@FieldName" ClassType="2" DefaultVal="" NoNull="False"/>
+	</eCtrl>

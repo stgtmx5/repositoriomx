@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eForm Caption="Aduana" Name="uform_Aduana" state ="2" DataClassName="ut_Aduana" Heigth="4290" Width="4815" Style="1" LockHeight="525" LockWidth="0">
+	<eCtrl Name="cuf_Codigo1" ClassID="GexecomCtrls.eTextField" External="True" Visible="True" NameValue="Value" Heigth="300" Width="2250">
+		<DataLink ClassField="uf_Codigo" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="C&#243;digo:"/>
+			<Property Name="FieldSize" Value="35"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="ForeColor" Value="13382400"/>
+	</eCtrl>
+
+	<eCtrl Name="cuf_Nombre1" ClassID="GexecomCtrls.eTextField" External="True" Visible="True" NameValue="Value" Heigth="300" Width="4275">
+		<DataLink ClassField="uf_Nombre" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Nombre:"/>
+			<Property Name="FieldSize" Value="500"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="TitleWidthP" Value="16"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="ForeColor" Value="13382400"/>
+	</eCtrl>
+
+	<eCtrl Name="cuf_Ciudad1" ClassID="GexecomCtrls.eTextField" External="True" Visible="True" NameValue="Value" Heigth="300" Width="4275">
+		<DataLink ClassField="uf_Ciudad" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Ciudad:"/>
+			<Property Name="FieldSize" Value="100"/>
+			<Property Name="TitleWidthP" Value="16"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="cuf_Notas1" ClassID="GexecomCtrls.eMemoField" External="True" Visible="True" NameValue="Value" Heigth="1275" Width="4275">
+		<DataLink ClassField="uf_Notas" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Notas:"/>
+			<Property Name="FieldSize" Value="500"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+</eForm>

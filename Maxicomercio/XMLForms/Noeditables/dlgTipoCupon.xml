@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eForm Caption="Tipos de Cupon" Name="dlgTipoCupon" state ="2" DataClassName="" Heigth="6495" Width="6900" Style="0" LockHeight="450" LockWidth="0">
+	<eCtrl Name="ctrlNombre" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="6000">
+		<DataLink ClassField="Nombre" ClassType="1" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Nombre:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;0;0;0;0"/>
+			<Property Name="TitleWidthP" Value="20"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlTipo" ClassID="GExecomCtrls.eOptionLstField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="6000">
+		<DataLink ClassField="Tipo" ClassType="6" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Tipo:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleWidthP" Value="20"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlIProducto" ClassID="GexecomCtrls.eFKField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="6000">
+		<DataLink ClassField="IProducto" ClassType="6" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Producto:"/>
+			<Property Name="ForeColor" Value="0"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleWidthP" Value="20"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlIDivisa" ClassID="GexecomCtrls.eFKField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="6000">
+		<DataLink ClassField="IDivisa" ClassType="6" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Divisa:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleWidthP" Value="20"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlCaducidad" ClassID="GexecomCtrls.eNumberField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="6000">
+		<DataLink ClassField="Caducidad" ClassType="3" DefaultVal="0" NoNull="False"/>
+			<Property Name="Caption" Value="Caducidad:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleWidthP" Value="20"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlValor" ClassID="GexecomCtrls.eNumberField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="6000">
+		<DataLink ClassField="Valor" ClassType="2" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Valor:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleWidthP" Value="20"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlUsoIlimitado" ClassID="VB.CheckBox" External="False" Visible="True" NameValue="Value" Heigth="375" Width="6000">
+		<DataLink ClassField="UsoIlimitado" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Uso Ilimitado:"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="TitleWidthP" Value="20"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlNotas" ClassID="GexecomCtrls.eMemoField" External="False" Visible="True" NameValue="Value" Heigth="1200" Width="6000">
+		<DataLink ClassField="Notas" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Notas"/>
+			<Property Name="FullWidth" Value="False"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eTab Name="Tab1" Caption="Otros"/>
+
+</eForm>

@@ -1,0 +1,1 @@
+CREATE TABLE @TableName (Sys_PK Int  NOT NULL IDENTITY(1,1) CONSTRAINT IDX_@TableName_PK PRIMARY KEY , Sys_TimeStamp Datetime  NOT NULL , Sys_GUID VARCHAR(32) NOT NULL  UNIQUE , Sys_DTCreated Datetime , Sys_User VARCHAR(5), Sys_LastUser VARCHAR(5), Sys_Exported Bit , Sys_DTExported Datetime , Sys_Info VARCHAR(32),@FieldsList);

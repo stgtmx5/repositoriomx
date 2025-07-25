@@ -1,0 +1,17 @@
+EDOFx.Pais: Paises.xml
+EDOFx.EdoProv: Estados.xml
+EDOFx.Ciudad: Ciudades.xml
+EDOFx.Divisa: Divisas.xml
+EDOFx.Categoria: Categorias.xml
+EDOFx.Almacen: Almacenes.xml
+EDOFx.CConsumo: CConsumo.xml
+EDOFx.Caja: Caja.xml
+EDOFx.Cajero: Cajero.xml
+EDOFx.TipoCliente: TiposClientes.xml
+EDOFx.Cliente: Clientes.xml
+EDOFx.cfgImpuesto: Impuestos.xml
+EDOFx.BlockDocumentos: BlockDocumentos.xml
+EDOFx.Linea: Lineas.xml
+EDOFx.TipoProveedor: TipoProveedor.xml
+EDOConta.CRubro: CRubro.xml
+EDOConta.CContable: CContable.xml

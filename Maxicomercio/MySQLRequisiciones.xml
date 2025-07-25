@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xml>
+  <sql id="consulta1">
+    <![CDATA[
+			SELECT... | UPDATE ... | INSERT ...| DELETE ...
+			@parametro=Marca de parametro con preprocesamiento
+			@{parametro}=Marca de parametro sin preprocesamiento
+		]]>
+  </sql>
+
+   <sql id="qryProveedores">
+ <![CDATA[ select Proveedor.Sys_PK, Proveedor.Codigo, Proveedor.Nombre, Proveedor.RFC from Proveedor order by Nombre ]]> 
+ </sql>
+  
+  <sql id="qryBuscarProveedores">
+ <![CDATA[ select Proveedor.Sys_PK,Proveedor.Codigo,Proveedor.Nombre,Proveedor.RFC from Proveedor where Proveedor.Codigo like @Codigo or Proveedor.Nombre like @Nombre or Proveedor.RFC like @RFC order by Proveedor.Nombre ]]> 
+ </sql>
+  
+<sql id="qryTipoProveedor">
+	<![CDATA[ select Descripcion from TipoProveedor where Sys_PK=@pTipoProveedor ]]> 
+</sql>
+
+<sql id="qryFacturas">
+	<![CDATA[select DCxP.Sys_PK, DCxP.Fecha, (DCxP.Haber+DCxP.IntMoratorios-DCxP.Bonificaciones-DCxP.Pagos)*DCxP.TipoCambio as Saldo, DCxP.Referencia, cDocumentos.Const, DCxP.Notas from (DCxP inner join cDocumentos on DCxP.Documento=cDocumentos.ID) left join (ut_DContrarrecibo inner join (ut_Contrarrecibo inner join ut_cStatusContrarrecibo on ut_Contrarrecibo.IStatus=ut_cStatusContrarrecibo.sys_pk) on ut_DContrarrecibo.FK_Contrarrecibo=ut_Contrarrecibo.sys_pk) on DCxP.Sys_PK=ut_DContrarrecibo.IDCxP where DCxP.Aplicable=1 and DCxP.IProveedor=@PKProveedor and ((DCxP.Haber+DCxP.IntMoratorios-DCxP.Bonificaciones-DCxP.Pagos)*DCxP.TipoCambio)>0.01 and DCxP.Sys_PK not in (SELECT IDCxP FROM ut_DContrarrecibo INNER JOIN (ut_Contrarrecibo INNER JOIN ut_cStatusContrarrecibo ON ut_Contrarrecibo.IStatus = ut_cStatusContrarrecibo.sys_pk) ON ut_DContrarrecibo.FK_Contrarrecibo = ut_Contrarrecibo.sys_pk  WHERE ut_cStatusContrarrecibo.ID <>99) ]]> 
+</sql>
+
+<sql id="qryDireccionProveedor">
+ <![CDATA[ select LTRIM(RTRIM(Domicilio.Direccion)) as Direccion from Proveedor inner join Domicilio on Proveedor.Domicilio1=Domicilio.Sys_PK where Proveedor.Sys_PK=@PKProveedor ]]> 
+</sql>
+
+<sql id="qryGetVar">
+	<![CDATA[ select varvalue from GlobalVar where VarName=@Name ]]>
+ </sql>
+ 
+<sql id="qryDiasCreditoProveedor">
+	<![CDATA[ select DiasCredito from Proveedor where Sys_PK=@PKProveedor ]]>
+</sql>
+
+<sql id="qryBlockDocumentos">
+	<![CDATA[ select Sys_PK, Serie from BlockDocumentos WHERE BlockDocumentos.Documento = 80 order by Serie ]]>
+</sql>
+ 
+<sql id="cmdGVCRVar">
+	<![CDATA[ update GlobalVar set VarValue=@pValor where VarName=@Name ]]>
+</sql>
+ 
+ <sql id="qryCargarChequeras">
+	<![CDATA[SELECT Sys_PK, Nombre FROM Chequera ORDER BY Nombre;]]>
+ </sql>
+ 
+<sql id="qryCargarCategorias">
+<![CDATA[SELECT Sys_PK, Descripcion FROM Categoria WHERE Tipo = 2;]]>
+</sql>
+ 
+<sql id="qryDocFlujo_ListaTipos">
+<![CDATA[ SELECT docf_tipo.sys_pk, docf_tipo.ID, docf_tipo.Descripcion FROM docf_tipo  ORDER BY docf_tipo.ID;]]>
+</sql>
+ 
+<sql id="qryDocFlujo_LoadUsuario">
+<![CDATA[ SELECT tuser.sys_pk, tuser.userid, tuser.username FROM tuser;]]>
+</sql>
+
+<sql id="qryDocFlujo_LoadUsuario2">
+<![CDATA[ SELECT tuser.sys_pk, tuser.userid, tuser.username FROM tuser where tuser.sys_pk <> @pkuservalidate;]]>
+</sql>
+
+<sql id="Validate_Type_User">
+<![CDATA[ SELECT u.groups from tuser t inner join user_usergroup_ u on t.sys_pk = u.users where t.sys_pk = @pkuservalidate;]]>
+</sql>
+ 
+<sql id="qryDocFlujo_CargarDivisa">
+<![CDATA[ SELECT divisa.sys_pk, divisa.codigo, divisa.Descripcion, divisa.TCambio FROM Divisa; ]]>
+</sql>
+ 
+<sql id="qryDocFlujo_CargarAlmacen">
+<![CDATA[ SELECT Almacen.sys_pk, Almacen.Codigo, Almacen.Descripcion FROM Almacen  WHERE uf_inhabilitado<>1; ]]>
+</sql>
+ 
+<sql id="qryDocFlujo_SearchProducts">
+<![CDATA[ SELECT producto.Sys_PK, producto.Codigo, Producto.Descripcion, Producto.Unidad, Producto.UnidadB, Producto.UnidadC, Producto.UnidadD, Producto.UnidadE, Producto.FactorB, Producto.FactorC, Producto.FactorD, Producto.FactorE, Producto.CostoUltimo, Producto.Precio1, IFNULL(Existencias.Existencia, 0) as existenciaalmacen, Producto.existencia as existenciaglobal,Divisa.TCambio FROM (Producto INNER JOIN Divisa ON Producto.IDivisa=Divisa.Sys_PK) LEFT JOIN (Almacen LEFT JOIN Existencias ON Almacen.Sys_PK = Existencias.IAlmacen AND Almacen.Sys_PK = @pkalmacen) ON Existencias.FK_Producto_IExistencias = Producto.Sys_PK WHERE Producto.Sys_PK = @pkproducto; ]]>
+</sql>
+ 
+<sql id="cmdDocFlujo_UpdateBlockDocumentos_bl">
+<![CDATA[ UPDATE BLOCKDOCUMENTOS SET FULTIMO = @Folio WHERE SYS_PK = @BlockPK AND FULTIMO < @FolioF; ]]>
+</sql>
+  
+<sql id="qryDocFlujo_ExistenciasDebajoMinimoXAlmacen_bl">
+<![CDATA[ select Producto.Sys_PK as producto_sys_pk, producto.unidad, producto.precio1, producto.costoultimo, producto.existencia as existenciaglobal, (ut_maxmin.uf_maximo-Existencias.Existencia) AS ExistDiferencia, (ut_maxmin.uf_minimo-Existencias.Existencia) as Existmin, Existencias.Existencia from (Producto INNER JOIN (ut_MaxMin INNER JOIN Almacen  ON ut_MaxMin.IAlmacen=Almacen.Sys_PK) ON Producto.Sys_PK=ut_MaxMin.IProducto) inner join Existencias on Producto.Sys_PK=Existencias.FK_Producto_IExistencias where (Almacen.sys_pk=@pA) and (existencias.existencia<ut_MaxMin.uf_Minimo) and Existencias.IAlmacen=Almacen.Sys_PK; ]]>
+</sql>
+ 
+<sql id="qryDocFlujo_CambioStatusincluidoactual"> 
+<![CDATA[select docf_Status.sys_pk, docf_Status.ID, docf_Status.Descripcion  from docf_Status left join docf_CambioEstado on docf_Status.sys_pk=docf_CambioEstado.INuevo  where docf_CambioEstado.IActual=@pStatusActual OR docf_Status.sys_pk = @pStatusActual GROUP BY docf_Status.Descripcion, docf_Status.sys_pk, docf_Status.ID ORDER BY docf_Status.ID;]]>
+</sql>
+
+<sql id="qryDocFlujo_LoadBlock">
+<![CDATA[ select BlockDocumentos.Sys_PK, cDocumentos.ID as Documento, BlockDocumentos.Serie from ((((((BlockDocumentos inner join cDocumentos on BlockDocumentos.Documento = cDocumentos.ID) inner join docf_BlockXGrupoUsuarios on BlockDocumentos.Sys_PK = docf_BlockXGrupoUsuarios.IBlock) inner join UserGroup on docf_BlockXGrupoUsuarios.IGrupo = UserGroup.Sys_PK) inner join User_UserGroup_ on UserGroup.Sys_PK = User_UserGroup_.Groups) inner join TUser on User_UserGroup_.Users = TUser.Sys_PK) inner join docf_Tipo on docf_BlockXGrupoUsuarios.ITipo = docf_Tipo.sys_pk) WHERE cDocumentos.ID = @documento AND TUser.Sys_PK = @user AND docf_Tipo.sys_pk = @tipo;]]>
+</sql>
+ 
+<sql id="qryDocFlujo_LoadBlockXDocumento">
+<![CDATA[ select BlockDocumentos.Sys_PK, cDocumentos.ID as Documento, BlockDocumentos.Serie from (BlockDocumentos inner join cDocumentos on BlockDocumentos.Documento = cDocumentos.ID) WHERE cDocumentos.ID = @documento;]]>
+</sql>
+ 
+<sql id="qryDocFlujo_CargarStatus">
+<![CDATA[ SELECT docf_status.sys_pk, docf_status.ID, docf_status.Descripcion FROM docf_status WHERE docf_status.ID = 101; ]]>
+</sql>
+ 
+<sql id="qryDocFlujo_CargarStatusXTipo">
+<![CDATA[ SELECT docf_status.sys_pk, docf_status.ID, docf_status.Descripcion FROM docf_status; ]]>
+</sql>
+ 
+<sql id="qryDocFlujo_BuscarCliente"> 
+<![CDATA[ SELECT cliente.sys_pk,Cliente.Codigo,Cliente.Nombre,Domicilio.Direccion FROM Cliente LEFT JOIN Domicilio ON Cliente.Domicilio1=Domicilio.Sys_PK WHERE Cliente.Codigo LIKE @busqueda OR Cliente.Nombre LIKE @busqueda; ]]>
+</sql>
+ 
+<sql id="qryDocFlujo_CargarProveedor">
+<![CDATA[ SELECT proveedor.sys_pk, CONCAT(proveedor.codigo, ' - ' , proveedor.Nombre) as descripcion FROM Proveedor WHERE proveedor.status=1; ]]>
+</sql>
+ 
+<sql id="qryDocFlujo_CargarBlockXTipo">
+<![CDATA[ SELECT docf_BlockxTipo.itipo, docf_BlockxTipo.IBlock FROM docf_BlockxTipo WHERE itipo= @itip ;]]>
+</sql>
+ 
+<sql id="qryDocFlujo_BuscarProducto">
+<![CDATA[ select Producto.Sys_PK, Producto.Codigo as Codigo, Producto.Descripcion as Descripcion, Linea.Descripcion as Linea, Marca.Descripcion as Marca, cClaseProducto.Const as Clase from (((Producto INNER JOIN Linea ON Producto.ILinea = Linea.Sys_PK) LEFT join Marca on Producto.IMarca = Marca.Sys_PK) LEFT join cClaseProducto on Producto.IClase = cClaseProducto.ID) WHERE (Producto.Codigo LIKE @busqueda OR Producto.Descripcion LIKE @busqueda OR Producto.CodBar1 LIKE @busqueda OR Producto.CodBar2 LIKE @busqueda OR Producto.CodBar3 LIKE @busqueda) AND Producto.IClase <> 999 AND uf_inhabilitado<>1;]]>
+</sql>
+ 
+<sql id="qryDocFlujo_BuscarProductoXGrupo">
+<![CDATA[select Producto.Sys_PK, Producto.Codigo as Codigo, Producto.Descripcion as Descripcion, Linea.Descripcion as Linea, Marca.Descripcion as Marca, cClaseProducto.Const as Clase from ((((((Producto INNER JOIN Linea ON Producto.ILinea = Linea.Sys_PK) LEFT join Marca on Producto.IMarca = Marca.Sys_PK) LEFT join cClaseProducto on Producto.IClase = cClaseProducto.ID) left join GrupoProductos_Producto_ on Producto.Sys_PK = GrupoProductos_Producto_.IProductos) left join GrupoProductos on GrupoProductos_Producto_.IGrupos = GrupoProductos.Sys_PK) left join CConsumo on GrupoProductos.Sys_PK = CConsumo.uf_grupoprod) left join Almacen on CConsumo.IAlmacen = Almacen.Sys_PK  WHERE (Producto.Codigo LIKE @busqueda OR Producto.Descripcion LIKE @busqueda OR Producto.CodBar1 LIKE @busqueda OR Producto.CodBar2 LIKE @busqueda OR Producto.CodBar3 LIKE @busqueda) AND Producto.IClase <> 999 AND Producto.uf_inhabilitado<>1 AND Almacen.Sys_PK = @pkalmacen;]]>
+</sql>
+
+<sql id="qryDocFlujo_ExisDebMinXAlm">
+<![CDATA[ select Almacen.Descripcion AS ADescripcion, Producto.codigo,producto.Descripcion, Existencias.Existencia, ut_maxmin.uf_maximo AS Maximo, (ut_maxmin.uf_maximo-Existencias.Existencia) AS ExistDiferencia from (Producto INNER JOIN (ut_MaxMin INNER JOIN Almacen  ON ut_MaxMin.IAlmacen=Almacen.Sys_PK) ON Producto.Sys_PK=ut_MaxMin.IProducto) inner join Existencias on Producto.Sys_PK=Existencias.FK_Producto_IExistencias where (Almacen.sys_pk=@pAlmacen) and (existencias.existencia<ut_MaxMin.uf_Minimo) and Existencias.IAlmacen=Almacen.Sys_PK; ]]> 
+</sql>
+
+<sql id="qryDocFlujo_LoadUserGroup">
+<![CDATA[ SELECT UserGroup.GroupID, UserGroup.sys_pk  FROM UserGroup;]]>
+</sql>
+
+<sql id="qryDocFlujo_CargarPermiso">
+<![CDATA[ SELECT docf_Permiso.IuserGroup, docf_Permiso.IStatus FROM docf_Permiso WHERE IUserGroup= @iUsGroup ;]]>
+</sql>
+
+<sql id="cmdDocFlujo_DeleteUXS">
+<![CDATA[ delete from docf_Permiso where IUserGroup=@GUsuario ;]]>
+</sql>
+
+<sql id="qryDocFlujo_NvaRequisicionDeIngredientesAPartirDeRecetas_bl">
+<![CDATA[select qryNvaRequisicionDeIngredientesAPartirDeRecetas.sys_pk, qryNvaRequisicionDeIngredientesAPartirDeRecetas.IClase, qryNvaRequisicionDeIngredientesAPartirDeRecetas.idocumento, sum(qryNvaRequisicionDeIngredientesAPartirDeRecetas.cantidad) as cantidad, qryNvaRequisicionDeIngredientesAPartirDeRecetas.unidad, qryNvaRequisicionDeIngredientesAPartirDeRecetas.factorB, qryNvaRequisicionDeIngredientesAPartirDeRecetas.costoultimo, qryNvaRequisicionDeIngredientesAPartirDeRecetas.precio1, qryNvaRequisicionDeIngredientesAPartirDeRecetas.existenciaglobal, existencias.existencia as existenciaalmacen from qryNvaRequisicionDeIngredientesAPartirDeRecetas left join Existencias on qryNvaRequisicionDeIngredientesAPartirDeRecetas.sys_pk=Existencias.FK_Producto_IExistencias and qryNvaRequisicionDeIngredientesAPartirDeRecetas.almacen=existencias.ialmacen where qryNvaRequisicionDeIngredientesAPartirDeRecetas.idocumento=@pDocumento group by qryNvaRequisicionDeIngredientesAPartirDeRecetas.sys_pk, qryNvaRequisicionDeIngredientesAPartirDeRecetas.IClase, qryNvaRequisicionDeIngredientesAPartirDeRecetas.idocumento, qryNvaRequisicionDeIngredientesAPartirDeRecetas.unidad, qryNvaRequisicionDeIngredientesAPartirDeRecetas.factorB, qryNvaRequisicionDeIngredientesAPartirDeRecetas.costoultimo, qryNvaRequisicionDeIngredientesAPartirDeRecetas.precio1, qryNvaRequisicionDeIngredientesAPartirDeRecetas.existenciaglobal, existencias.existencia;]]>
+</sql>
+
+<sql id="qryDocFlujo_IngredientesDeRecetas">
+<![CDATA[ select P2.Sys_PK, P2.IClase,IEnsamble.Cantidad as CantidadNecesaria, P2.Unidad, P2.FactorB, P2.CostoUltimo, P2.Precio1, P2.Existencia as existenciaglobal from Producto inner join (IEnsamble inner join Producto P2  on IEnsamble.Elemento=P2.Sys_PK) on Producto.Sys_PK=IEnsamble.FK_Producto_Elementos where Producto.Sys_PK=@PKProducto AND  uf_inhabilitado<>1]]>
+</sql>
+
+<sql id="qryDocFlujo_ExistenciaProducto">
+<![CDATA[ select Existencias.Existencia as existenciaAlmacen from Producto left join (Existencias inner join Almacen on Existencias.IAlmacen=Almacen.Sys_PK) on Producto.Sys_PK=Existencias.FK_Producto_IExistencias WHERE Producto.Sys_PK=@PKProducto and Almacen.Sys_PK=@PKAlmacen  AND  uf_inhabilitado<>1]]>
+</sql>
+
+<sql id="qryDocFlujo_AllDocuments">
+<![CDATA[ SELECT docf_Documento.sys_PK, docf_Documento.sys_dtcreated as Fecha, docf_Status.Sys_PK as StatusPK, docf_Status.ID as IDStatus, docf_Status.Descripcion as Status, BlockDocumentos.Serie, FoliosDocumentos.Folio, TUser.UserName as Remitente, t2.UserName as Destinatario, docf_Documento.Asunto, ALmacen.Descripcion as almaceno, a2.Descripcion as almacend, docf_Documento.Notas, docf_Tipo.Descripcion as Tipo FROM (((((((docf_Documento INNER JOIN docf_Status on docf_Documento.IStatus = docf_Status.sys_pk) INNER JOIN FoliosDocumentos on docf_Documento.IFolio = FoliosDocumentos.Sys_PK) INNER JOIN BlockDocumentos on FoliosDocumentos.Block = BlockDocumentos.Sys_PK) LEFT JOIN TUser on docf_documento.IUsuario = TUser.Sys_PK) LEFT JOIN TUser t2 on docf_Documento.IDestinatario = t2.Sys_PK)LEFT JOIN Almacen on (docf_Documento.IAlmacen = Almacen.Sys_PK) LEFT JOIN Almacen a2 on docf_Documento.IAlmacen_Destino = a2.Sys_PK) LEFT JOIN docf_Tipo on docf_Documento.ITipo = docf_Tipo.sys_pk) LEFT JOIN docf_DDocumento on docf_Documento.sys_pk = docf_DDocumento.IDocumento WHERE docf_Documento.ITipo = @pPKTipo AND (YEAR(docf_Documento.sys_dtcreated)) = @pAnio AND (MONTH(docf_Documento.sys_dtcreated)) = @pMes AND (IFNULL(docf_Documento.sys_deleted, 0) <> @pEliminado) @{pOtrosFiltros} @{pcantejercido}   AND (TUser.Sys_PK = @useractual OR t2.Sys_Pk = @destinatarioactual) GROUP BY docf_Documento.sys_PK, docf_Documento.sys_dtcreated, docf_Status.Sys_PK, docf_Status.ID, docf_Status.Descripcion, BlockDocumentos.Serie, FoliosDocumentos.Folio, TUser.UserName, t2.UserName, docf_Documento.Asunto, ALmacen.Descripcion, a2.Descripcion, docf_Documento.Notas, docf_Tipo.Descripcion ORDER BY Fecha;]]>
+</sql>
+
+<sql id="qryDocFlujo_ObtenerRequisiciones">
+<![CDATA[ SELECT  docf_Documento.Sys_PK, BlockDocumentos.Serie, FoliosDocumentos.Folio, docf_Status.Descripcion AS Status, docf_Documento.Asunto, TUser.UserID, T2.UserID, docf_documento.Notas FROM ((((docf_Documento INNER JOIN docf_Status ON docf_Documento.IStatus = docf_Status.sys_pk) INNER JOIN TUser ON TUser.Sys_PK = docf_Documento.IUsuario) INNER JOIN TUSER T2 ON T2.Sys_PK = docf_documento.IDestinatario)INNER JOIN FoliosDocumentos ON docf_Documento.IFolio=FoliosDocumentos.Sys_PK) INNER JOIN BlockDocumentos on FoliosDocumentos.Block = BlockDocumentos.Sys_PK WHERE (docf_Documento.IDestinatario = @usuario OR docf_documento.IUsuario = @remitente)  AND (docf_Status.ID=101 OR docf_Status.ID=102 OR docf_Status.ID=103 OR docf_Status.ID=104) AND (docf_Documento.Sys_Deleted IS NULL OR docf_Documento.sys_deleted = 0 ) ; ]]>
+</sql>
+
+<sql id="cmdDocFlujo_UpdateDDParent">
+<![CDATA[ UPDATE docf_DDocumento SET IDocumento = @pkParent WHERE sys_pk = @pkDD; ]]>
+</sql>
+  
+<sql id="qryDocFlujo_StatusConcatenado">
+<![CDATA[ SELECT CONCAT(CAST(docf_status.ID AS Char), "  ", docf_status.Descripcion) AS Descripcion, docf_status.sys_pk FROM docf_status;]]>
+</sql>
+
+<sql id="cmdDocFlujo_DeleteBlockXGrupo">
+<![CDATA[ delete from docf_BlockXGrupoUsuarios where docf_BlockXGrupoUsuarios.ITipo=@PKTipo and docf_BlockXGrupoUsuarios.IGrupo=@PKGrupo;]]>
+</sql>
+
+<sql id="qryDocFlujo_Load_BlockXGrupoUsuarios">
+<![CDATA[ select BlockDocumentos.serie, BlockDocumentos.sys_pk from docf_BlockXGrupoUsuarios Inner join BlockDocumentos ON docf_BlockXGrupoUsuarios.Iblock=BlockDocumentos.sys_pk where docf_BlockXGrupoUsuarios.Itipo=@PKTipo AND docf_BlockXGrupoUsuarios.Igrupo=@PKGrupo;]]>
+</sql>
+
+<sql id="qryDocFlujo_LoadSerieONBlockDocumentos">
+<![CDATA[ select BlockDocumentos.serie, BlockDocumentos.sys_pk from docf_blockXtipo INNER JOIN  BlockDocumentos ON docf_blockXtipo.Iblock=BlockDocumentos.Sys_pk where docf_blockXtipo.Itipo=@PKTipo;]]>
+</sql>
+
+<sql id="cmdDocFlujo_DeleteBXT">
+<![CDATA[ delete from docf_BlockXTipo where itipo=@itip ;]]>
+</sql>
+
+<sql id="qryDocFlujo_PermisosXGpoUsers">
+<![CDATA[ select docf_Permiso.sys_pk from ((((docf_permiso inner join UserGroup on docf_Permiso.IUserGroup = UserGroup.Sys_PK) inner join User_UserGroup_ on UserGroup.Sys_PK = User_UserGroup_.Groups) inner join TUser on User_UserGroup_.Users = TUser.Sys_PK) inner join docf_Status on docf_Permiso.IStatus = docf_Status.sys_pk) where TUser.Sys_PK = @user AND docf_Status.sys_pk = @status;]]> 
+</sql>
+
+<sql id="qryDocFlujo_PKStatus">
+<![CDATA[ select Sys_PK from docf_Status where docf_Status.ID = @IDStatus LIMIT 1;]]> 
+</sql>
+
+<sql id="qryDocFlujo_ExistXProducto">
+<![CDATA[ select Existencias.Existencia from ((Existencias inner join Almacen on Existencias.IAlmacen = almacen.Sys_PK) inner join Producto on Existencias.FK_Producto_IExistencias = Producto.Sys_PK) where Producto.Sys_PK = @pkproducto AND Almacen.Sys_PK = @pkalmacen ;]]>
+</sql>
+
+<sql id="qryDocFlujo_ExistDocuments">
+<![CDATA[ select docf_Documento.Sys_PK from ((docf_Documento inner join docf_Tipo on docf_Documento.ITipo = docf_Tipo.sys_pk) inner join FoliosDocumentos on docf_Documento.IFolio = FoliosDocumentos.Sys_PK) inner join BlockDocumentos on FoliosDocumentos.Block = BlockDocumentos.Sys_PK  where docf_Tipo.sys_pk = @pktipo and BlockDocumentos.Sys_PK = @pkblock AND (docf_Documento.Sys_Deleted IS NULL OR docf_Documento.Sys_Deleted = 0);]]> 
+</sql>
+
+<sql id="LstProveedores">
+<![CDATA[ select Proveedor.sys_pk, Proveedor.Nombre, Proveedor.RFC, Ciudad.Nombre as nombre_ciudad, Proveedor.Telefonos, Domicilio.Direccion, max(Compra.Sys_DTCreated) as fecha from (Proveedor left join Compra on Proveedor.Sys_PK=Compra.IProveedor) left join (Domicilio left join Ciudad on Domicilio.ICiudad=Ciudad.Sys_PK) on Proveedor.Domicilio1=Domicilio.Sys_PK WHERE proveedor.uf_Sys_baja is null group by Proveedor.Sys_PK, Proveedor.Nombre, Proveedor.RFC, Ciudad.Nombre, Proveedor.Telefonos, Domicilio.Direccion; ]]> 
+</sql>
+
+<sql id="Proveedores">
+<![CDATA[ select Proveedor.Nombre, Proveedor.sys_PK from Proveedor where Proveedor.Sys_PK= @PKProveedor]]> 
+</sql>
+
+<sql id="ProductoDeRequisicion">
+<![CDATA[ SELECT docf_DDocumento.IProducto, Producto.Descripcion, docf_DDocumento.Cantidad, docf_ddocumento.factor, docf_ddocumento.unidad, docf_Documento.TCambio, Producto.Ilinea from (docf_DDocumento inner join docf_Documento on docf_DDocumento.IDocumento=docf_Documento.sys_pk) INNER join Producto on docf_DDocumento.IProducto=Producto.Sys_PK where IDocumento=@PKDocumento]]> 
+</sql>
+
+<sql id="PrecioUnitarioXProveedor">
+<![CDATA[ select factor, if(factor<>1, (((DCompra.Precio*DCompra.Cantidad-DCompra.Descuento1)/DCompra.Cantidad)/dcompra.factor)*COMPRA.TipoCambio, ((DCompra.Precio*DCompra.Cantidad-DCompra.Descuento1)/DCompra.Cantidad)) as precio_unitario from (DCompra inner join Producto on DCompra.IProducto=Producto.Sys_PK) inner join Compra on DCompra.FK_Compra_Detalle=Compra.Sys_PK where DCompra.IProducto=@PKProducto and Compra.IProveedor=@PKProveedor order by Compra.Sys_DTCreated desc limit 1;]]> 
+</sql>
+
+<sql id="Lineas">
+<![CDATA[ select Sys_PK, Descripcion from linea]]> 
+</sql>
+
+<sql id="ProductoXLinea">
+<![CDATA[SELECT docf_DDocumento.IProducto, Producto.Descripcion, docf_DDocumento.Cantidad, docf_ddocumento.factor, docf_ddocumento.unidad, docf_Documento.TCambio from (docf_DDocumento inner join docf_Documento on docf_DDocumento.IDocumento=docf_Documento.sys_pk) INNER join Producto on docf_DDocumento.IProducto=Producto.Sys_PK where IDocumento=@PKDocumento AND Producto.ILinea=@PKLinea]]> 
+</sql>
+
+<sql id="cmbUnidad">
+<![CDATA[select Unidad,UnidadB,UnidadC,UnidadD,UnidadE,factorB,factorC,factorD,factorE from Producto where Sys_PK=@PKProducto]]> 
+</sql>
+
+<sql id="getNProducto">
+<![CDATA[select descripcion from Producto where Sys_PK=@PKProducto]]> 
+</sql>
+
+<sql id="getImpuesto">
+<![CDATA[select cfgImpuesto.I1Compra, cfgImpuesto.I2Compra, cfgImpuesto.I3Compra, cfgImpuesto.I4Compra from Producto inner join cfgImpuesto on Producto.Impuestos=cfgImpuesto.Sys_PK where Producto.Sys_PK=@PKProducto]]> 
+</sql>
+
+<sql id="qry_DiasEntregaProveedor">
+<![CDATA[select DiasEntrega from Proveedor where Sys_PK=@PKProveedor]]> 
+</sql>
+
+<sql id="PCUpdateFVencCompra" >
+ <![CDATA[ UPDATE Compra SET vencimiento = @FechaVenc , Sys_Info = @UserName WHERE Sys_PK= @CompraSysPK; ]]>
+</sql>
+
+<sql id="qryDocFlujo_TiposReq" >
+ <![CDATA[ Select Sys_PK, Descripcion, case when activo = 0 then 0 else 1 end as activo from docf_Tipo; ]]>
+</sql>
+
+<sql id="qryDocFlujo_BajaTipo" >
+ <![CDATA[ Select ifnull(activo,1) as activo from docf_Tipo where sys_Pk = @PKTipo; ]]>
+</sql>
+
+<sql id="qryDocFlujo_Movimientos" >
+ <![CDATA[ Select docf_tipomovimiento.ID from docf_tipo_tipomov INNER JOIN docf_tipomovimiento on docf_tipo_tipomov.ITipo_Mov = docf_tipomovimiento.sys_pk inner join docf_Tipo on docf_tipo_tipomov.ITipo = docf_Tipo.sys_pk where docf_Tipo.sys_pk = @PKTipo; ]]>
+</sql>
+
+<sql id="qryDocFlujo_ClearMovimientos" >
+ <![CDATA[ DELETE FROM docf_tipo_tipomov WHERE docf_tipo_tipomov.ITipo = @PKTipo; ]]>
+</sql>
+
+<sql id="qryDocFlujo_ObtenerRequisicionesCompleto">
+<![CDATA[ SELECT DISTINCT docf_Documento.Sys_PK, BlockDocumentos.Serie, FoliosDocumentos.Folio, docf_Status.Descripcion AS Status, docf_Documento.Asunto, TUser.UserID, T2.UserID, docf_documento.Notas FROM (((((docf_Documento INNER JOIN docf_DDocumento ON docf_DDocumento.IDocumento = docf_Documento.sys_pk inner join docf_Status ON docf_Documento.IStatus = docf_Status.sys_pk) INNER JOIN TUser ON TUser.Sys_PK = docf_Documento.IUsuario) INNER JOIN TUSER T2 ON T2.Sys_PK = docf_documento.IDestinatario) INNER JOIN FoliosDocumentos ON docf_Documento.IFolio=FoliosDocumentos.Sys_PK) INNER JOIN BlockDocumentos on FoliosDocumentos.Block = BlockDocumentos.Sys_PK) INNER JOIN docf_tipo on docf_documento.itipo = docf_tipo.sys_pk WHERE (docf_Documento.IDestinatario = @PKUsuario OR docf_documento.IUsuario = @PKUsuario)  AND docf_Status.ID=105 AND IFNULL(docf_Documento.Sys_Deleted, 0) <> 1 AND docf_tipo.sys_Pk = @PKTipo AND (docf_ddocumento.cantidad * docf_ddocumento.factor) <> docf_ddocumento.ejercido; ]]>
+</sql>
+
+<sql id="qryDocFlujo_ProductoFaltante">
+<![CDATA[ Select Producto.Sys_PK as pkproducto, Producto.Codigo, producto.Descripcion, docf_ddocumento.cantidad * docf_ddocumento.factor as Cantidad, docf_DDocumento.Unidad, linea.Descripcion as Linea from docf_ddocumento inner join producto on docf_ddocumento.IProducto = Producto.Sys_PK inner join Linea on Producto.ILinea = linea.Sys_PK where docf_DDocumento.IDocumento = @Documento ; ]]>
+</sql>
+
+<sql id="qryDocFlujo_ExistenciasDebajoMinimo_bl">
+<![CDATA[ select Producto.Sys_PK as producto_sys_pk, producto.unidad, producto.precio1, producto.costoultimo, producto.existencia as existenciaglobal, (producto.maximo-Producto.Existencia) AS ExistDiferencia, (Producto.Minimo-Producto.Existencia) as Existmin, Producto.Existencia from Producto where producto.existencia < producto.minimo AND  uf_inhabilitado<>1; ]]> 
+</sql>
+
+<sql id="qryDocFlujo_UpdateCampo">
+<![CDATA[ UPDATE docf_documento set @{Campo} = 1 where sys_pk = @PKDocumento; ]]> 
+</sql>
+
+<sql id="qryDocFlujo_UpdateStatus">
+<![CDATA[ UPDATE docf_documento set docf_documento.istatus = (Select docf_status.Sys_PK from docf_status where docf_status.ID = @ID) where docf_Documento.sys_pk = @PKDocumento; ]]> 
+</sql>
+
+<sql id="qryDocFlujo_GrupoClientes">
+<![CDATA[ SELECT sys_pk, nombre FROM grupoclientes; ]]> 
+</sql>
+
+<sql id="qryDocFlujo_BuscarPedidos">
+<![CDATA[ SELECT venta.sys_pk, DATE_FORMAT(venta.fecha, '%d/%m/%Y') as Fecha, venta.referencia, ((venta.descuento1 - venta.descuento2 + venta.importeadicional + venta.impuesto1 + venta.impuesto2 + venta.impuesto3 + venta.impuesto4 + venta.subtotal)) as importe from venta inner join cliente on venta.icliente = cliente.sys_pk left join cliente_grupoclientes_ on cliente.sys_pk = cliente_grupoclientes_.iclientes left join grupoclientes on cliente_grupoclientes_.igrupos = grupoclientes.sys_pk where venta.statusentrega = 1 and venta.documento = 2 AND venta.statusadministrativo <> 99 @{pWhere} ORDER BY cliente.sys_pk; ]]> 
+</sql>
+
+<sql id="qryDocFlujo_ProductosPedidos">
+<![CDATA[ Select Producto.Sys_PK as pkproducto, Producto.Codigo, producto.Descripcion, dventa.cantidad * dventa.factor as Cantidad, dventa.Unidad, linea.Descripcion as Linea from dventa inner join producto on dventa.iproducto = producto.sys_pk inner join Linea on Producto.ILinea = linea.Sys_PK where dventa.fk_venta_detalle = @PKVenta; ]]> 
+</sql>
+
+<sql id="qryDocFlujo_SearchCliente">
+<![CDATA[ Select sys_pk, codigo as Codigo, nombre as Nombre from cliente where codigo like @busqueda or nombre like @busqueda; ]]> 
+</sql>
+
+<sql id="qryDocFlujo_ObtenerMinimo">
+<![CDATA[ select ifnull(uf_minimo,0) as minimo from ut_maxmin where iproducto = @PKProducto and ialmacen = @PKAlmacen; ]]> 
+</sql>
+
+<sql id="qryLastIDTipo">
+<![CDATA[ select MAX(ID) as ID from docf_tipo; ]]> 
+</sql>
+
+<sql id="qryDocFlujo_BuscarProveedor"> 
+<![CDATA[ SELECT proveedor.sys_pk,proveedor.Codigo,proveedor.Nombre FROM proveedor WHERE proveedor.Codigo LIKE @busqueda OR proveedor.Nombre LIKE @busqueda; ]]>
+</sql>
+
+<sql id="qryDocf_DeleteTipo" >
+ <![CDATA[ DELETE FROM docf_tipo WHERE Sys_PK = @PKTipo; ]]>
+</sql>
+
+<sql id="qryDocFlujo_Delete"> 
+<![CDATA[ delete from docf_documento where sys_pk = @Documento; ]]>
+</sql>
+
+<sql id="qryDocFlujo_DeleteDet"> 
+<![CDATA[ delete from docf_ddocumento where idocumento = @Documento; ]]>
+</sql>
+
+ <sql id="ComparativaVentas"> 
+	<![CDATA[ SELECT  @{QueryFields}  SUM(Z.Ventas) AS Cantidad, SUM(Z.Devoluciones) AS Devoluciones, SUM(Z.Importe) AS VentaSubtotal, SUM(Z.ImpuestosV) AS VentaImpuestos, SUM(Z.Importe+Z.ImpuestosV) AS VentaTotal, SUM(Z.ImpDev) AS DevSubtotal, SUM(Z.DevImpuestos) AS DevImpuestos, SUM(Z.ImpDev+Z.DevImpuestos) AS DevTotal, Z.ICConsumo as icconsumo FROM ( qryRepCostoVentas Z INNER JOIN Cliente ON Cliente.Sys_PK = Z.ICliente INNER JOIN cconsumo cconsumo ON Z.icconsumo=cconsumo.sys_pk ) INNER JOIN Producto ON z.PKProducto = Producto.Sys_PK @{QueryProductoJoins} @{QueryWhere} @{QueryGroupBy} @{QueryOrderBy}; ]]>
+</sql>
+
+<sql id="CVObtenerRangoAnios"> 
+	<![CDATA[ SELECT DISTINCT FiltroFecha.Anio As Anio FROM (SELECT YEAR(Fecha) As Anio FROM Venta) As FiltroFecha ORDER BY FiltroFecha.Anio; ]]>
+</sql>
+
+<sql id="CVObtenerCConsumo"> 
+	<![CDATA[ SELECT Sys_PK, Codigo, Descripcion, porcentaje_esperado FROM CConsumo; ]]>
+</sql>	
+
+<sql id="CVUpdateCConsumo"> 
+	<![CDATA[ UPDATE CConsumo SET porcentaje_esperado = @Porcentaje WHERE Sys_PK= @Sys_PK ; ]]>
+</sql>	
+
+</xml>

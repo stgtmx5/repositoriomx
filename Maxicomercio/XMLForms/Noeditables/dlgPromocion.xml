@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eForm Caption="dlgPromocion" Name="dlgPromocion" state ="2" DataClassName="" Heigth="8865" Width="7305" Style="1" LockHeight="450" LockWidth="0">
+	<eCtrl Name="ctrlCodigo" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3000">
+		<DataLink ClassField="Codigo" ClassType="1" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Codigo."/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlNombre" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="6000">
+		<DataLink ClassField="Nombre" ClassType="1" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Nombre:"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlTipo" ClassID="GExecomCtrls.eOptionLstField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3000">
+		<DataLink ClassField="Tipo" ClassType="6" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Tipo:"/>
+			<Property Name="TitleAligment" Value="0"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlVigencia" ClassID="GExecomCtrls.eOptionLstField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3000">
+		<DataLink ClassField="Vigencia" ClassType="6" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Vigencia:"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlAmbito" ClassID="GExecomCtrls.eOptionLstField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3000">
+		<DataLink ClassField="Ambito" ClassType="6" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Ambito"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlItemAmbito" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3000">
+		<DataLink ClassField="ItemAmbito" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Item ambito:"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlCantidadVigencia" ClassID="GexecomCtrls.eNumberField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="4500">
+		<DataLink ClassField="CantidadVigencia" ClassType="2" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Cantidad/Vigencia"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlFechaInicio" ClassID="GexecomCtrls.eDateField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="4500">
+		<DataLink ClassField="FechaInicio" ClassType="4" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Fecha Inicio:"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlFechaVigencia" ClassID="GexecomCtrls.eDateField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="4500">
+		<DataLink ClassField="FechaVigencia" ClassType="4" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="FechaVigencia"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlRestriccion" ClassID="GExecomCtrls.eOptionLstField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3000">
+		<DataLink ClassField="Restriccion" ClassType="6" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Restricci&#243;n:"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlItemRestriccion" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3000">
+		<DataLink ClassField="ItemRestriccion" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Item Restriccion:"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlExcepcion" ClassID="GExecomCtrls.eOptionLstField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3000">
+		<DataLink ClassField="Excepcion" ClassType="6" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Excepcion:"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlItemExcepcion" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3000">
+		<DataLink ClassField="ItemExcepcion" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="ItemExcepcion:"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlVar1" ClassID="GexecomCtrls.eNumberField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3000">
+		<DataLink ClassField="Var1" ClassType="2" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Var1"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlVar2" ClassID="GexecomCtrls.eNumberField" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3000">
+		<DataLink ClassField="Var2" ClassType="2" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Var2"/>
+			<Property Name="TitleStyle" Value="2"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlLibreEleccion" ClassID="VB.CheckBox" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3000">
+		<DataLink ClassField="LibreEleccion" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Libre elecci&#243;n:"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlExcluyente" ClassID="VB.CheckBox" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3000">
+		<DataLink ClassField="Excluyente" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Excluyente:"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlActiva" ClassID="VB.CheckBox" External="False" Visible="True" NameValue="Value" Heigth="375" Width="3000">
+		<DataLink ClassField="Activa" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Activa:"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eTab Name="Tab1" Caption="+"/>
+
+	<eTab Name="sTbDiasdepromoci&#243;n" Caption="Dias de promoci&#243;n"/>
+
+	<eCtrl Name="ctrlDomingo" ClassID="VB.CheckBox" External="False" Visible="True" NameValue="Value" Heigth="450" Width="3000">
+		<DataLink ClassField="Domingo" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Domingo:"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlDomingoInicio" ClassID="GexecomCtrls.eDateField" External="False" Visible="True" NameValue="Value" Heigth="450" Width="3000">
+		<DataLink ClassField="DomingoInicio" ClassType="4" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Inicio"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlDomingoFinal" ClassID="GexecomCtrls.eDateField" External="False" Visible="True" NameValue="Value" Heigth="450" Width="3000">
+		<DataLink ClassField="DomingoFinal" ClassType="4" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Final"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlLunes" ClassID="VB.CheckBox" External="False" Visible="True" NameValue="Value" Heigth="450" Width="3000">
+		<DataLink ClassField="Lunes" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Lunes"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlLunesInicio" ClassID="GexecomCtrls.eDateField" External="False" Visible="True" NameValue="Value" Heigth="450" Width="3000">
+		<DataLink ClassField="LunesInicio" ClassType="4" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Inicio"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlLunesFinal" ClassID="GexecomCtrls.eDateField" External="False" Visible="True" NameValue="Value" Heigth="450" Width="3000">
+		<DataLink ClassField="LunesFinal" ClassType="4" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Final"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlMartes" ClassID="VB.CheckBox" External="False" Visible="True" NameValue="Value" Heigth="450" Width="3000">
+		<DataLink ClassField="Martes" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Martes"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlMartesInicio" ClassID="GexecomCtrls.eDateField" External="False" Visible="True" NameValue="Value" Heigth="450" Width="3000">
+		<DataLink ClassField="MartesInicio" ClassType="4" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Inicio"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlMartesFinal" ClassID="GexecomCtrls.eDateField" External="False" Visible="True" NameValue="Value" Heigth="450" Width="3000">
+		<DataLink ClassField="MartesFinal" ClassType="4" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Final"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlMiercoles" ClassID="VB.CheckBox" External="False" Visible="True" NameValue="Value" Heigth="450" Width="3000">
+		<DataLink ClassField="Miercoles" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Miercoles"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlMiercolesInicio" ClassID="GexecomCtrls.eDateField" External="False" Visible="True" NameValue="Value" Heigth="450" Width="3000">
+		<DataLink ClassField="MiercolesInicio" ClassType="4" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Inicio"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlMiercolesFinal" ClassID="GexecomCtrls.eDateField" External="False" Visible="True" NameValue="Value" Heigth="450" Width="3000">
+		<DataLink ClassField="MiercolesFinal" ClassType="4" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Final"/>
+	</eCtrl>
+
+	<eTab Name="Tab2" Caption="Dias de promocion"/>
+
+	<eCtrl Name="ctrlJueves" ClassID="VB.CheckBox" External="False" Visible="True" NameValue="Value" Heigth="520" Width="960">
+		<DataLink ClassField="Jueves" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Jueves"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlJuevesInicio" ClassID="GexecomCtrls.eDateField" External="False" Visible="True" NameValue="Value" Heigth="520" Width="960">
+		<DataLink ClassField="JuevesInicio" ClassType="4" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Inicio"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlJuevesFinal" ClassID="GexecomCtrls.eDateField" External="False" Visible="True" NameValue="Value" Heigth="520" Width="960">
+		<DataLink ClassField="JuevesFinal" ClassType="4" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Final"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlViernes" ClassID="VB.CheckBox" External="False" Visible="True" NameValue="Value" Heigth="520" Width="960">
+		<DataLink ClassField="Viernes" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Viernes"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlViernesInicio" ClassID="GexecomCtrls.eDateField" External="False" Visible="True" NameValue="Value" Heigth="520" Width="960">
+		<DataLink ClassField="ViernesInicio" ClassType="4" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Inicio"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlViernesFinal" ClassID="GexecomCtrls.eDateField" External="False" Visible="True" NameValue="Value" Heigth="520" Width="960">
+		<DataLink ClassField="ViernesFinal" ClassType="4" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Final"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlSabado" ClassID="VB.CheckBox" External="False" Visible="True" NameValue="Value" Heigth="520" Width="960">
+		<DataLink ClassField="Sabado" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Sabado"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlSabadoInicio" ClassID="GexecomCtrls.eDateField" External="False" Visible="True" NameValue="Value" Heigth="520" Width="960">
+		<DataLink ClassField="SabadoInicio" ClassType="4" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Inicio"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlSabadoFinal" ClassID="GexecomCtrls.eDateField" External="False" Visible="True" NameValue="Value" Heigth="520" Width="960">
+		<DataLink ClassField="SabadoFinal" ClassType="4" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Final"/>
+	</eCtrl>
+
+</eForm>

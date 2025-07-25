@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eForm Caption="Tipo de Actividad" Name="uform_frmTActividad" state ="2" DataClassName="mdtpactividad" Heigth="6000" Width="5505" Style="0" LockHeight="525" LockWidth="0">
+	<eCtrl Name="cNombre1" ClassID="GexecomCtrls.eTextField" External="True" Visible="True" NameValue="Value" Heigth="525" Width="4500">
+		<DataLink ClassField="Nombre" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Tipo de actividad:"/>
+			<Property Name="FieldSize" Value="50"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="cAplProyectos1" ClassID="VB.CheckBox" External="True" Visible="True" NameValue="Value" Heigth="300" Width="900">
+		<DataLink ClassField="AplProyectos" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Proyectos"/>
+	</eCtrl>
+
+	<eCtrl Name="cAplPersonas1" ClassID="VB.CheckBox" External="True" Visible="True" NameValue="Value" Heigth="300" Width="900">
+		<DataLink ClassField="AplPersonas" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Personas"/>
+	</eCtrl>
+
+	<eCtrl Name="cAplOrganizaciones1" ClassID="VB.CheckBox" External="True" Visible="True" NameValue="Value" Heigth="300" Width="900">
+		<DataLink ClassField="AplOrganizaciones" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Organizaciones"/>
+	</eCtrl>
+
+</eForm>

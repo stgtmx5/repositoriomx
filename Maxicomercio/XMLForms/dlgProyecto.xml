@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eForm Caption="dlgProyecto" Name="dlgProyecto" state ="2" DataClassName="Proyecto" Heigth="4995" Width="8730" Style="1" LockHeight="0" LockWidth="0">
+	<eCtrl Name="ctrlIEjecutivo" ClassID="GexecomCtrls.eOptionLstField" External="False" Visible="True" NameValue="Value" Heigth="520" Width="3375">
+		<DataLink ClassField="IEjecutivo" ClassType="6" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Ejecutivo:"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="cUF_Status11" ClassID="GexecomCtrls.eOptionLstField" External="True" Visible="True" NameValue="Value" Heigth="525" Width="2700">
+		<DataLink ClassField="UF_Status1" ClassType="3" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Status:"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="cUF_Color1" ClassID="GexecomCtrls.eOptionLstField" External="True" Visible="True" NameValue="Value" Heigth="525" Width="1500">
+		<DataLink ClassField="UF_Color" ClassType="3" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Color:"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlIOrganizacion" ClassID="GexecomCtrls.eOptionLstField" External="False" Visible="True" NameValue="Value" Heigth="520" Width="4875">
+		<DataLink ClassField="IOrganizacion" ClassType="6" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Organizaci&#243;n:"/>
+	</eCtrl>
+
+	<eCtrl Name="cBoton1" ClassID="VB.CommandButton" External="True" Visible="True" NameValue="" Heigth="525" Width="900">
+		<DataLink ClassField="" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Agregar"/>
+	</eCtrl>
+
+	<eCtrl Name="cBoton2" ClassID="VB.CommandButton" External="True" Visible="True" NameValue="" Heigth="525" Width="900">
+		<DataLink ClassField="" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Modificar"/>
+	</eCtrl>
+
+	<eCtrl Name="cBoton6" ClassID="VB.CommandButton" External="True" Visible="True" NameValue="" Heigth="525" Width="900">
+		<DataLink ClassField="" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Buscar"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlIContacto" ClassID="GexecomCtrls.eOptionLstField" External="False" Visible="True" NameValue="Value" Heigth="520" Width="4875">
+		<DataLink ClassField="IContacto" ClassType="6" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Contacto principal:"/>
+	</eCtrl>
+
+	<eCtrl Name="cBoton3" ClassID="VB.CommandButton" External="True" Visible="True" NameValue="" Heigth="525" Width="900">
+		<DataLink ClassField="" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Agregar"/>
+	</eCtrl>
+
+	<eCtrl Name="cBoton4" ClassID="VB.CommandButton" External="True" Visible="True" NameValue="" Heigth="525" Width="900">
+		<DataLink ClassField="" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Modificar"/>
+	</eCtrl>
+
+	<eCtrl Name="cBoton5" ClassID="VB.CommandButton" External="True" Visible="True" NameValue="" Heigth="525" Width="900">
+		<DataLink ClassField="" ClassType="0" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Relacionar"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlIMeta" ClassID="GexecomCtrls.eOptionLstField" External="False" Visible="True" NameValue="Value" Heigth="520" Width="3375">
+		<DataLink ClassField="IMeta" ClassType="6" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Meta:"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlDescripcion" ClassID="GexecomCtrls.eTextField" External="False" Visible="True" NameValue="Value" Heigth="520" Width="4200">
+		<DataLink ClassField="Descripcion" ClassType="1" DefaultVal="" NoNull="True"/>
+			<Property Name="Caption" Value="Descripci&#243;n:"/>
+	</eCtrl>
+
+	<eCtrl Name="cUF_Requerimientos1" ClassID="GexecomCtrls.eTextField" External="True" Visible="True" NameValue="Value" Heigth="525" Width="3750">
+		<DataLink ClassField="UF_Requerimientos" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Principales requerimientos:"/>
+			<Property Name="FieldSize" Value="1024"/>
+			<Property Name="BackColor" Value="16777215"/>
+			<Property Name="ForeColor" Value="13260"/>
+			<Property Name="cFont" Value="MS Sans Serif;8.25;-1;0;0;0"/>
+	</eCtrl>
+
+	<eCtrl Name="cUF_Usuarios1" ClassID="GexecomCtrls.eOptionLstField" External="True" Visible="True" NameValue="Value" Heigth="525" Width="1920">
+		<DataLink ClassField="UF_Usuarios" ClassType="3" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Usuarios:"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="cUF_monto1" ClassID="GexecomCtrls.eTextField" External="True" Visible="True" NameValue="Value" Heigth="525" Width="1905">
+		<DataLink ClassField="UF_monto" ClassType="2" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Valor en pesos:"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="cUF_objeciones1" ClassID="GexecomCtrls.eTextField" External="True" Visible="True" NameValue="Value" Heigth="525" Width="3750">
+		<DataLink ClassField="UF_objeciones" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Objeciones por resolver:"/>
+			<Property Name="FieldSize" Value="50"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="cUF_fase1" ClassID="GexecomCtrls.eOptionLstField" External="True" Visible="True" NameValue="Value" Heigth="525" Width="1875">
+		<DataLink ClassField="UF_fase" ClassType="3" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Fase:"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlFTPrevista" ClassID="GexecomCtrls.eDateField" External="False" Visible="True" NameValue="Value" Heigth="520" Width="1920">
+		<DataLink ClassField="FTPrevista" ClassType="4" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Cierre previsto:"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eTab Name="Tab1" Caption="Notas"/>
+
+	<eCtrl Name="ctrlFInicio" ClassID="GexecomCtrls.eDateField" External="False" Visible="True" NameValue="Value" Heigth="520" Width="2550">
+		<DataLink ClassField="FInicio" ClassType="4" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Inicio:"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlFTReal" ClassID="GexecomCtrls.eDateField" External="False" Visible="True" NameValue="Value" Heigth="520" Width="2400">
+		<DataLink ClassField="FTReal" ClassType="4" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Conclusi&#243;n (real):"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlCodigo" ClassID="GexecomCtrls.eTextField" External="False" Visible="False" NameValue="Value" Heigth="520" Width="2175">
+		<DataLink ClassField="Codigo" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Factura:"/>
+	</eCtrl>
+
+	<eCtrl Name="ctrlNotas" ClassID="GexecomCtrls.eMemoField" External="False" Visible="True" NameValue="Value" Heigth="2250" Width="6750">
+		<DataLink ClassField="Notas" ClassType="1" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="Notas:"/>
+			<Property Name="BackColor" Value="16777215"/>
+	</eCtrl>
+
+	<eCtrl Name="cUF_PKFactura1" ClassID="GexecomCtrls.eNumberField" External="True" Visible="False" NameValue="Value" Heigth="525" Width="1500">
+		<DataLink ClassField="UF_PKFactura" ClassType="2" DefaultVal="" NoNull="False"/>
+			<Property Name="Caption" Value="UF_PKFactura:"/>
+	</eCtrl>
+
+</eForm>

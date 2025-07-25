@@ -1,0 +1,28 @@
+function ModuleLoaded(OName)
+{
+var col;
+
+col=Application.MainForm.Engine.Modules;
+
+for (var i=1; i<=col.Count;i++)
+{
+	if (col.Item(i).Name=="mdl"+OName) return true;
+}
+
+return false;
+}
+
+function shortCut()
+{
+	if (!ModuleLoaded("@ScriptName"))
+	{
+		if (!Application.LoadScript("@ScriptFile")) 
+		{
+			eBasic.eMsgbox("El sub-programa no pudo cargarse");
+			return 0;
+		}
+	}
+	Application.Eval("@ScriptName.@FunctionName()");
+}
+
+shortCut();

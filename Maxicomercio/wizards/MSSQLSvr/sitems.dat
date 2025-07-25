@@ -1,0 +1,501 @@
+Item,Description,ItemParent
+FX1-00-00-000,Operaciones ERP,
+FX1-10-00-000,Catálogos,FX1-00-00-000
+FX1-20-00-000,Transacciones,FX1-00-00-000
+FX1-30-00-000,Aplicación,FX1-00-00-000
+FX1-40-00-000,Inventario,FX1-00-00-000
+FX1-50-00-000,Clientes y Cuentas por cobrar,FX1-00-00-000
+FX1-60-00-000,Proveedores y Cuentas por pagar,FX1-00-00-000
+FX1-70-00-000,Contabilidad y finanzas,FX1-00-00-000
+FX1-80-00-000,Herramientas,FX1-00-00-000
+FX1-90-00-000,Fuerza de ventas,FX1-00-00-000
+FX2-MBI-00-000,Tableros de indicadores,FX1-00-00-000
+FX3-CRM-00-000,Relación con clientes (CRM),FX1-00-00-000
+FX4-CFL-00-000,Módulo de control de folios,FX1-00-00-000
+FX1-10-10-000,Agente,FX1-10-00-000
+FX1-10-100-000,Cliente,FX1-10-00-000
+FX1-10-110-000,Contacto,FX1-10-00-000
+FX1-10-120-000,Centros de Produccion,FX1-10-00-000
+FX1-10-130-000,Departamentos,FX1-10-00-000
+FX1-10-140-000,Divisa,FX1-10-00-000
+FX1-10-160-000,Grupo de Clientes,FX1-10-00-000
+FX1-10-170-000,Grupo de Productos,FX1-10-00-000
+FX1-10-180-000,Grupo de Proveedores,FX1-10-00-000
+FX1-10-20-000,Almacen,FX1-10-00-000
+FX1-10-200-000,Lineas,FX1-10-00-000
+FX1-10-210-000,Marcas,FX1-10-00-000
+FX1-10-220-000,Porteador,FX1-10-00-000
+FX1-10-230-000,Precio de venta,FX1-10-00-000
+FX1-10-240-000,Productos,FX1-10-00-000
+FX1-10-250-000,Promociones,FX1-10-00-000
+FX1-10-260-000,Proveedores,FX1-10-00-000
+FX1-10-270-000,Repartidor,FX1-10-00-000
+FX1-10-280-000,Tablas,FX1-10-00-000
+FX1-10-290-000,Tarjetas de Credito,FX1-10-00-000
+FX1-10-30-000,Banco,FX1-10-00-000
+FX1-10-300-000,Tasa Fija,FX1-10-00-000
+FX1-10-310-000,Tasa Variable,FX1-10-00-000
+FX1-10-320-000,Tipos de clientes,FX1-10-00-000
+FX1-10-330-000,Tipos de Cupon,FX1-10-00-000
+FX1-10-340-000,Tipos de Proveedor,FX1-10-00-000
+FX1-10-350-000,Zonas,FX1-10-00-000
+FX1-10-40-000,Caja,FX1-10-00-000
+FX1-10-50-000,Cajero,FX1-10-00-000
+FX1-10-60-000,Categoria,FX1-10-00-000
+FX1-10-70-000,Centros de Consumo,FX1-10-00-000
+FX1-10-80-000,Configuracion de Impuestos,FX1-10-00-000
+FX1-10-90-000,Chequera,FX1-10-00-000
+FX1-20-10-000,Punto de venta,FX1-20-00-000
+FX1-20-20-000,Compras,FX1-20-00-000
+FX1-20-30-000,Ventas y distribución,FX1-20-00-000
+FX1-20-40-000,Requisiciones,FX1-20-00-000
+FX1-30-01-000,Panel de Control,FX1-30-00-000
+FX1-30-02-000,Permitir Intercambiar datos(ejecución de subprogramas),FX1-30-00-000
+FX1-30-03-000,Permitir exportar,FX1-30-00-000
+FX1-30-04-000,Comandos SQL,FX1-30-00-000
+FX1-30-05-000,Permitir Ejecutar reportes,FX1-30-00-000
+FX1-40-01-000,Habilitar Acceso,FX1-40-00-000
+FX1-40-02-000,Permitir Abrir cardex de productos,FX1-40-00-000
+FX1-40-10-000,Permitir Ensamble de productos,FX1-40-00-000
+FX1-40-20-000,Permitir Desensamble de productos,FX1-40-00-000
+FX1-40-30-000,Permitir Salidas de inventario,FX1-40-00-000
+FX1-40-40-000,Permitir Entradas de inventario,FX1-40-00-000
+FX1-40-50-000,Permitir Traspasos entre almacenes,FX1-40-00-000
+FX1-40-70-000,Edición de productos,FX1-40-00-000
+FX2-MVI-00-000t,Transporte de movimientos de inventario (mvi),FX1-40-00-000
+FX2-TRA-00-000,Transformaciones,FX1-40-00-000
+FX1-50-01-000,Habilitar Acceso,FX1-50-00-000
+FX1-50-10-000,Permitir Crear nueva cuenta por cobrar,FX1-50-00-000
+FX1-50-20-000,Permitir Cobrar documento,FX1-50-00-000
+FX1-50-30-000,Permitir Bonificar documento,FX1-50-00-000
+FX1-50-40-000,Permitir Aplicar abonos,FX1-50-00-000
+FX1-50-50-000,Permitir Crear recibo,FX1-50-00-000
+FX1-50-60-000,Financiar,FX1-50-00-000
+FX1-50-70-000,Permitir Crear nota de cargo,FX1-50-00-000
+FX1-50-80-000,Permitir Crear nota de crédito,FX1-50-00-000
+FX1-50-90-000,Permitir Generar intereses moratorios,FX1-50-00-000
+FX1-50-91-000,Aplicar todos los abonos pendientes,FX1-50-00-000
+FX1-60-01-000,Habilitar Acceso,FX1-60-00-000
+FX1-60-10-000,Permitir Crear nueva cuenta por pagar,FX1-60-00-000
+FX1-60-20-000,Permitir Pagar documento,FX1-60-00-000
+FX1-60-30-000,Permitir Bonificar documento,FX1-60-00-000
+FX1-60-40-000,Permitir Aplicar abonos,FX1-60-00-000
+FX1-60-50-000,Permitir Crear recibo,FX1-60-00-000
+FX1-60-60-000,Financiar,FX1-60-00-000
+FX1-60-70-000,Permitir Crear nota de cargo,FX1-60-00-000
+FX1-60-80-000,Permitir Crear nota de crédito,FX1-60-00-000
+FX1-60-90-000,Permitir Generar intereses moratorios,FX1-60-00-000
+FX1-60-91-000,Aplicar todos los abonos pendientes,FX1-60-00-000
+FX1-71-00-000,Contabilidad,FX1-70-00-000
+FX1-72-00-000,Cuentas de cheque,FX1-70-00-000
+FX1-73-00-000,Cajas de efectivo,FX1-70-00-000
+FX1-80-01-000,Procesos contables,FX1-80-00-000
+FX1-80-02-000,Permitir Modificar el historial de tipos de cambio,FX1-80-00-000
+FX1-80-03-000,Permitir Facturación global,FX1-80-00-000
+FX1-80-04-000,Permitir Procesar ventas por salir,FX1-80-00-000
+FX1-80-05-000,Permitir Valuar salidas con números de serie,FX1-80-00-000
+FX1-80-06-000,Permitir Cambio masivo de precios,FX1-80-00-000
+FX1-80-07-000,Organizar,FX1-80-00-000
+FX1-80-08-000,Promociones,FX1-80-00-000
+FX1-80-09-000,Ajustar lotes,FX1-80-00-000
+FX1-80-10-000,Entrega de series,FX1-80-00-000
+FX1-90-10-001,Permitir asignar contactos,FX1-90-00-000
+FX1-10-10-001,Solo lectura,FX1-10-10-000
+FX1-10-10-002,Permitir agregar Agente,FX1-10-10-000
+FX1-10-10-003,Permitir modificar Agente,FX1-10-10-000
+FX1-10-10-004,Permitir Eliminar Agente,FX1-10-10-000
+FX1-10-100-001,Solo lectura,FX1-10-100-000
+FX1-10-100-002,Permitir Agregar Cliente,FX1-10-100-000
+FX1-10-100-003,Permitir Modificar Cliente,FX1-10-100-000
+FX1-10-100-004,Permitir Eliminar Cliente,FX1-10-100-000
+FX1-10-100-005,Expediente,FX1-10-100-000
+FX1-10-110-001,Solo lectura,FX1-10-110-000
+FX1-10-110-002,Permitir Agregar Contacto,FX1-10-110-000
+FX1-10-110-003,Permitir Modificar Contacto,FX1-10-110-000
+FX1-10-110-004,Permitir Eliminar Contacto,FX1-10-110-000
+FX1-10-120-001,Solo lectura,FX1-10-120-000
+FX1-10-120-002,Permitir Agregar Centro de Produccion,FX1-10-120-000
+FX1-10-120-003,Permitir Modificar Centro de Produccion,FX1-10-120-000
+FX1-10-120-004,Permitir Eliminar Centro de Produccion,FX1-10-120-000
+FX1-10-130-001,Solo lectura,FX1-10-130-000
+FX1-10-130-002,Permitir Agregar Departamento,FX1-10-130-000
+FX1-10-130-003,Permitir Modificar Departamento,FX1-10-130-000
+FX1-10-130-004,Permitir Eliminar Departamento,FX1-10-130-000
+FX1-10-140-001,Solo lectura,FX1-10-140-000
+FX1-10-140-002,Permitir Agregar Divisa,FX1-10-140-000
+FX1-10-140-003,Permitir Modificar Divisa,FX1-10-140-000
+FX1-10-140-004,Permitir Eliminar Divisa,FX1-10-140-000
+FX1-10-160-001,Solo lectura,FX1-10-160-000
+FX1-10-160-002,Permitir Agregar Grupo de Clientes,FX1-10-160-000
+FX1-10-160-003,Permitir Modificar Grupo de Clientes,FX1-10-160-000
+FX1-10-160-004,Permitir Eliminar Grupo de Clientes,FX1-10-160-000
+FX1-10-170-001,Solo lectura,FX1-10-170-000
+FX1-10-170-002,Permitir Agregar Grupo de Productos,FX1-10-170-000
+FX1-10-170-003,Permitir Modificar Grupo de Productos,FX1-10-170-000
+FX1-10-170-004,Permitir Eliminar Grupo de Productos,FX1-10-170-000
+FX1-10-180-001,Solo lectura,FX1-10-180-000
+FX1-10-180-002,Permitir Agregar Grupo de Proveedores,FX1-10-180-000
+FX1-10-180-003,Permitir Modificar Grupo de Proveedores,FX1-10-180-000
+FX1-10-180-004,Permitir Eliminar Grupo de Proveedores,FX1-10-180-000
+FX1-10-20-001,Solo lectura,FX1-10-20-000
+FX1-10-20-002,Permitir Agregar Almacen,FX1-10-20-000
+FX1-10-20-003,Permitir Modificar Almacen,FX1-10-20-000
+FX1-10-20-004,Permitir Eliminar almacen,FX1-10-20-000
+FX1-10-200-001,Solo lectura,FX1-10-200-000
+FX1-10-200-002,Permitir Agregar Lineas,FX1-10-200-000
+FX1-10-200-003,Permitir Modificar Lineas,FX1-10-200-000
+FX1-10-200-004,Permitir Eliminar Lineas,FX1-10-200-000
+FX1-10-210-001,Solo lectura,FX1-10-210-000
+FX1-10-210-002,Permitir Agregar Marcas,FX1-10-210-000
+FX1-10-210-003,Permitir Modificar MArcas,FX1-10-210-000
+FX1-10-210-004,Permitir Eliminar Marcas,FX1-10-210-000
+FX1-10-220-001,Solo lectura,FX1-10-220-000
+FX1-10-220-002,Permitir Agregar Porteador,FX1-10-220-000
+FX1-10-220-003,Permitir Modificar Porteador,FX1-10-220-000
+FX1-10-220-004,Permitir Eliminar Porteador,FX1-10-220-000
+FX1-10-230-001,Solo lectura,FX1-10-230-000
+FX1-10-230-002,Permitir Agregar Precios de Venta,FX1-10-230-000
+FX1-10-230-003,Permitir Modificar Precios de Venta,FX1-10-230-000
+FX1-10-230-004,Permitir Eliminar Precios de Venta,FX1-10-230-000
+FX1-10-240-001,Solo lectura,FX1-10-240-000
+FX1-10-240-002,Permitir Agregar Productos,FX1-10-240-000
+FX1-10-240-003,Permitir Modificar Productos,FX1-10-240-000
+FX1-10-240-004,Permitir Eliminar Productos,FX1-10-240-000
+FX1-10-250-001,Solo lectura,FX1-10-250-000
+FX1-10-250-002,Permitir Agregar Promocion,FX1-10-250-000
+FX1-10-250-003,Permitir Modificar Promocion,FX1-10-250-000
+FX1-10-250-004,Permitir Eliminar Promocion,FX1-10-250-000
+FX1-10-260-001,Solo lectura,FX1-10-260-000
+FX1-10-260-002,Permitir Agregar Proveedor,FX1-10-260-000
+FX1-10-260-003,Permitir Modificar Proveedor,FX1-10-260-000
+FX1-10-260-004,Permitir Eliminar Proveedor,FX1-10-260-000
+FX1-10-260-005,Expediente,FX1-10-260-000
+FX1-10-270-001,Solo lectura,FX1-10-270-000
+FX1-10-270-002,Permitir Agregar Repartidor,FX1-10-270-000
+FX1-10-270-003,Permitir Modificar Repartidor,FX1-10-270-000
+FX1-10-270-004,Permitir Eliminar Repartidor,FX1-10-270-000
+FX1-10-280-001,Solo lectura,FX1-10-280-000
+FX1-10-280-002,Permitir Agregar Tablas,FX1-10-280-000
+FX1-10-280-003,Permitir Modificar Tablas,FX1-10-280-000
+FX1-10-280-004,Permitir Eliminar Tablas,FX1-10-280-000
+FX1-10-290-001,Solo lectura,FX1-10-290-000
+FX1-10-290-002,Permitir Agregar Tarjetas de Credito,FX1-10-290-000
+FX1-10-290-003,Permitir Modificar Tarjetas de Credito,FX1-10-290-000
+FX1-10-290-004,Permitir Eliminar Tarjetas de Credito,FX1-10-290-000
+FX1-10-30-001,Solo lectura,FX1-10-30-000
+FX1-10-30-002,Permitir Agregar Banco,FX1-10-30-000
+FX1-10-30-003,Permitir Modificar Banco,FX1-10-30-000
+FX1-10-30-004,Permitir Eliminar Banco,FX1-10-30-000
+FX1-10-300-001,Solo lectura,FX1-10-300-000
+FX1-10-300-002,Permitir Agregar Tasa Fija,FX1-10-300-000
+FX1-10-300-003,Permitir Modificar Tasa Fija,FX1-10-300-000
+FX1-10-300-004,Permitir Eliminar Tasa Fija,FX1-10-300-000
+FX1-10-310-001,Solo lectura,FX1-10-310-000
+FX1-10-310-002,Permitir Agregar Tasa Variable,FX1-10-310-000
+FX1-10-310-003,Permitir Modificar Tasa Variable,FX1-10-310-000
+FX1-10-310-004,Permitir Eliminar Tasa Variable,FX1-10-310-000
+FX1-10-320-001,Solo lectura,FX1-10-320-000
+FX1-10-320-002,Permitir Agregar Tipos de Clientes,FX1-10-320-000
+FX1-10-320-003,Permitir Modificar Tipos de Clientes,FX1-10-320-000
+FX1-10-320-004,Permitir  Eliminar Tipos de Clientes,FX1-10-320-000
+FX1-10-330-001,Solo lectura,FX1-10-330-000
+FX1-10-330-002,Permitir Agregar Tipos de Cupon,FX1-10-330-000
+FX1-10-330-003,Permitir Modificar Tipos de Cupon,FX1-10-330-000
+FX1-10-330-004,Permitir Eliminar Tipos de Cupon,FX1-10-330-000
+FX1-10-340-001,Solo lectura,FX1-10-340-000
+FX1-10-340-002,Permitir Agregar Tipos de Proveedor,FX1-10-340-000
+FX1-10-340-003,Permitir Modificar Tipos de Proveedor,FX1-10-340-000
+FX1-10-340-004,Permitir Eliminar Tipos de Proveedor,FX1-10-340-000
+FX1-10-350-001,Solo lectura,FX1-10-350-000
+FX1-10-350-002,Permitir Agregar Zonas,FX1-10-350-000
+FX1-10-350-003,Permitir Modificar Zonas,FX1-10-350-000
+FX1-10-350-004,Permitir Eliminar Zonas,FX1-10-350-000
+FX1-10-40-001,Solo lectura,FX1-10-40-000
+FX1-10-40-002,Permitir Agregar Caja,FX1-10-40-000
+FX1-10-40-003,Permitir Modificar Caja,FX1-10-40-000
+FX1-10-40-004,Permitir Eliminar Caja,FX1-10-40-000
+FX1-10-50-001,Solo lectura,FX1-10-50-000
+FX1-10-50-002,Permitir Agregar Cajero,FX1-10-50-000
+FX1-10-50-003,Permitir Modificar Cajero,FX1-10-50-000
+FX1-10-50-004,Permitir Eliminar Cajero,FX1-10-50-000
+FX1-10-60-001,Solo lectura,FX1-10-60-000
+FX1-10-60-002,Permitir Agregar Categoria,FX1-10-60-000
+FX1-10-60-003,Permitir Modificar Categoria,FX1-10-60-000
+FX1-10-60-004,Permitir Eliminar Categoria,FX1-10-60-000
+FX1-10-70-001,Solo lectura,FX1-10-70-000
+FX1-10-70-002,Permitir Agregar Centro de Consumo,FX1-10-70-000
+FX1-10-70-003,Permitir Modificar Centro de Consumo,FX1-10-70-000
+FX1-10-70-004,Permitir Eliminar Centro de Consumo,FX1-10-70-000
+FX1-10-80-001,Solo lectura,FX1-10-80-000
+FX1-10-80-002,Permitir Agregar Configuracion de Impuestos,FX1-10-80-000
+FX1-10-80-003,Permitir Modificar configuracion de Impuestos,FX1-10-80-000
+FX1-10-80-004,Permitir Eliminar configuracion de Impuestos,FX1-10-80-000
+FX1-10-90-001,Solo lectura,FX1-10-90-000
+FX1-10-90-002,Permitir Agregar Chequera,FX1-10-90-000
+FX1-10-90-003,Permitir Modificar Chequera,FX1-10-90-000
+FX1-10-90-004,Permitir Eliminar Chequera,FX1-10-90-000
+FX1-10-100-005-A,Permitir agregar documento,FX1-10-100-005
+FX1-10-100-005-B,Permitir vincular documento,FX1-10-100-005
+FX1-10-100-005-C,Permitir modificar vinculos,FX1-10-100-005
+FX1-10-100-005-D,Pemitir eliminar vinculos,FX1-10-100-005
+FX1-10-100-005-E,Permitir eliminar documentos,FX1-10-100-005
+FX1-10-260-005-A,Permitir agregar documento,FX1-10-260-005
+FX1-10-260-005-B,Permitir vincular documento,FX1-10-260-005
+FX1-10-260-005-C,Permitir modificar vinculos,FX1-10-260-005
+FX1-10-260-005-D,Pemitir eliminar vinculos,FX1-10-260-005
+FX1-10-260-005-E,Permitir eliminar documentos,FX1-10-260-005
+FX1-20-10-001,Autorizar venta de productos con lote y/o Serie,FX1-20-10-000
+FX1-20-10-002,Permitir descuento global en venta,FX1-20-10-000
+FX1-20-10-003,Permitir cambio de precio,FX1-20-10-000
+FX1-20-10-004,Permitir descuento a precio,FX1-20-10-000
+FX1-20-10-005,Permitir introducir importe,FX1-20-10-000
+FX1-20-10-006,Permitir configurar punto de venta,FX1-20-10-000
+FX1-20-10-007,Permitir Ingresos,FX1-20-10-000
+FX1-20-10-008,Permitir Recepción de Cobros,FX1-20-10-000
+FX1-20-10-009,Permitir Pagos,FX1-20-10-000
+FX1-20-10-010,Permitir Retiros,FX1-20-10-000
+FX1-20-10-011,Permitir Arqueo,FX1-20-10-000
+FX1-20-10-012,Permitir Corte de caja,FX1-20-10-000
+FX1-20-10-013,Permitir abrir cajón sin cobrar,FX1-20-10-000
+FX1-20-10-014,Permitir quitar producto,FX1-20-10-000
+FX1-20-10-015,Permitir Cancelar ticket,FX1-20-10-000
+FX1-20-10-016,Permitir cambiar a cotización,FX1-20-10-000
+FX1-20-20-001,Habilitar Acceso,FX1-20-20-000
+FX1-20-20-100,Pedidos,FX1-20-20-000
+FX1-20-20-200,Remisiones,FX1-20-20-000
+FX1-20-20-300,Facturas,FX1-20-20-000
+FX1-20-20-400,Notas de Credito,FX1-20-20-000
+FX1-20-20-500,Pagos,FX1-20-20-000
+FX1-20-20-600,Archivos adjuntos,FX1-20-20-000
+FX1-20-20-700,Gastos,FX1-20-20-000
+FX1-20-30-001,Habilitar Acceso,FX1-20-30-000
+FX1-20-30-100,Cotizaciones,FX1-20-30-000
+FX1-20-30-200,Pedidos,FX1-20-30-000
+FX1-20-30-300,Remisiones,FX1-20-30-000
+FX1-20-30-400,Facturas,FX1-20-30-000
+FX1-20-30-500,Notas de Credito,FX1-20-30-000
+FX1-20-30-600,Cobros,FX1-20-30-000
+FX1-20-30-700,Permitir cambio de precio en documentos de venta,FX1-20-30-000
+FX1-20-30-800,Reprocesar precios y promociones,FX1-20-30-000
+FX1-20-30-900,Permitir facturación masiva de servicios,FX1-20-30-000
+FX1-20-20-101,Sólo Lectura,FX1-20-20-100
+FX1-20-20-102,Permitir Realizar Pedido,FX1-20-20-100
+FX1-20-20-103,Permitir Modificar Pedido,FX1-20-20-100
+FX1-20-20-104,Permitir Cancelar Pedido,FX1-20-20-100
+FX1-20-20-201,Sólo Lectura,FX1-20-20-200
+FX1-20-20-202,Permitir Realizar Remisión,FX1-20-20-200
+FX1-20-20-203,Permitir Modificar Remisión,FX1-20-20-200
+FX1-20-20-204,Permitir Cancelar Remisión,FX1-20-20-200
+FX1-20-20-205,Permitir Realizar Anticipos (Remisión en Credito Comercial),FX1-20-20-200
+FX1-20-20-206,Permitir Bonificar Documento ( Remisión a Credito Comercial),FX1-20-20-200
+FX1-20-20-207,Permitir Liquidar Documento (Remisión a Credito Comercial),FX1-20-20-200
+FX1-20-20-301,Sólo Lectura,FX1-20-20-300
+FX1-20-20-302,Permitir Realizar Factura,FX1-20-20-300
+FX1-20-20-303,Permitir Modificar Factura,FX1-20-20-300
+FX1-20-20-304,Permitir Cancelar Pedido,FX1-20-20-300
+FX1-20-20-401,Sólo Lectura,FX1-20-20-400
+FX1-20-20-402,Permitir Realizar Nota de Credito,FX1-20-20-400
+FX1-20-20-403,Permitir Modificar Nota de Credito,FX1-20-20-400
+FX1-20-20-501,Permitir Pago de Contado,FX1-20-20-500
+FX1-20-20-502,Permitir Credito Comercial,FX1-20-20-500
+FX1-20-20-503,Permitir Consignación de Mercancía,FX1-20-20-500
+FX1-20-20-504,Permitir Realizar Financiamiento,FX1-20-20-500
+FX1-20-20-502A,Autorizar Limite de Credito Excedido,FX1-20-20-502
+FX1-20-30-101,Sólo Lectura,FX1-20-30-100
+FX1-20-30-102,Permitir Realizar Cotización,FX1-20-30-100
+FX1-20-30-103,Permitir Modificar Cotización,FX1-20-30-100
+FX1-20-30-104,Permitir Cancelar Cotización,FX1-20-30-100
+FX1-20-30-201,Sólo Lectura,FX1-20-30-200
+FX1-20-30-202,Permitir Realizar Pedido,FX1-20-30-200
+FX1-20-30-203,Permitir Modificar Pedido,FX1-20-30-200
+FX1-20-30-204,Permitir Cancelar Pedido,FX1-20-30-200
+FX1-20-30-301,Sólo Lectura,FX1-20-30-300
+FX1-20-30-302,Permitir Realizar Remisión,FX1-20-30-300
+FX1-20-30-303,Permitir Modificar Remisión,FX1-20-30-300
+FX1-20-30-304,Permitir Cancelar Remisión,FX1-20-30-300
+FX1-20-30-305,Permitir Realizar Anticipo (Remisión a Credito Comercial),FX1-20-30-300
+FX1-20-30-306,Permitir Bonificar Documento (Remisión a Credito Comercial),FX1-20-30-300
+FX1-20-30-307,Permitir Liquidar Documento (Remisión a Credito Comercial),FX1-20-30-300
+FX1-20-30-401,Sólo Lectura,FX1-20-30-400
+FX1-20-30-402,Permitir Realizar Factura,FX1-20-30-400
+FX1-20-30-403,Perimitir Modificar Factura,FX1-20-30-400
+FX1-20-30-404,Permitir Cancelar Factura,FX1-20-30-400
+FX1-20-30-501,Sólo Lectura,FX1-20-30-500
+FX1-20-30-502,Pemitir Realizar Nota de Credito,FX1-20-30-500
+FX1-20-30-503,Permitir Modificar Nota de Credito,FX1-20-30-500
+FX1-20-30-601,Permitir Cobro de  Contado,FX1-20-30-600
+FX1-20-30-602,Permitir Credito Comercial,FX1-20-30-600
+FX1-20-30-603,Permitir Consignación de Mercancías,FX1-20-30-600
+FX1-20-30-604,Permitir Realizar Financiamiento,FX1-20-30-600
+FX1-20-30-602A,Autorizar Limite de Credito Excedido,FX1-20-30-602
+FX1-30-04-001,Permitir Ejecutar consultas,FX1-30-04-000
+FX1-30-04-002,Permitir comandos de actualización y eliminación,FX1-30-04-000
+FX1-50-60-001,Permitir Financiar documento,FX1-50-60-000
+FX1-50-60-002,Permitir Financiar capital,FX1-50-60-000
+FX1-60-60-001,Permitir Financiar documento,FX1-60-60-000
+FX1-60-60-002,Permitir Financiar capital,FX1-60-60-000
+FX1-71-00-001,Habilitar Acceso,FX1-71-00-000
+FX1-71-01-000,Concepto de poliza,FX1-71-00-000
+FX1-71-02-000,Departamento,FX1-71-00-000
+FX1-71-03-000,Rubro,FX1-71-00-000
+FX1-71-04-000,Cuenta,FX1-71-00-000
+FX1-71-05-000,Póliza,FX1-71-00-000
+FX1-71-06-000,Ejercicios Contables,FX1-71-00-000
+FX1-72-00-001,Habilitar Acceso,FX1-72-00-000
+FX1-72-01-000,Permitir Realizar Retiro,FX1-72-00-000
+FX1-72-02-000,Permitir Realizar Cheque,FX1-72-00-000
+FX1-72-03-000,Permitir Realizar Depósito,FX1-72-00-000
+FX1-72-04-000,Permitir Realizar Transferencia,FX1-72-00-000
+FX1-72-05-000,Permitir Realizar Cobro,FX1-72-00-000
+FX1-72-06-000,Permitir Realizar Recibo,FX1-72-00-000
+FX1-72-07-000,Permitir Realizar Vale de ingreso,FX1-72-00-000
+FX1-72-08-000,Permitir Realizar Vale de egreso,FX1-72-00-000
+FX1-72-09-000,Permitir Realizar Pago,FX1-72-00-000
+FX1-72-10-000,Permitir Conciliar Movimiento de cuenta,FX1-72-00-000
+FX1-72-11-000,Permitir Cancelar Movimiento de cuenta,FX1-72-00-000
+FX1-73-00-001,Habilitar Acceso a sesiones de caja,FX1-73-00-000
+FX1-73-01-000,Permitir Abrir sesión de caja,FX1-73-00-000
+FX1-73-02-000,Permitir Cerrar corte,FX1-73-00-000
+FX1-73-03-000,Permitir Cancelar corte,FX1-73-00-000
+FX1-71-01-001,Permitir Agregar concepto de poliza,FX1-71-01-000
+FX1-71-01-002,Permitir Modificar concepto de poliza,FX1-71-01-000
+FX1-71-01-003,Permitir Eliminar concepto de poliza,FX1-71-01-000
+FX1-71-02-001,Permitir Agregar departamento,FX1-71-02-000
+FX1-71-02-002,Permitir Modificar departamento,FX1-71-02-000
+FX1-71-02-003,Permitir Eliminar departamento,FX1-71-02-000
+FX1-71-03-001,Permitir Agregar rubro,FX1-71-03-000
+FX1-71-03-002,Permitir Modificar rubro,FX1-71-03-000
+FX1-71-03-003,Permitir Eliminar rubro,FX1-71-03-000
+FX1-71-04-001,Permitir Agregar cuenta,FX1-71-04-000
+FX1-71-04-002,Permitir Modificar cuenta,FX1-71-04-000
+FX1-71-04-003,Permitir Eliminar cuenta,FX1-71-04-000
+FX1-71-04-004,Relacionar Cuentas Contables,FX1-71-04-000
+FX1-71-05-001,Permitir Guardar póliza,FX1-71-05-000
+FX1-71-05-002,Permitir Aplicar póliza,FX1-71-05-000
+FX1-71-05-003,Permitir Desaplicar póliza,FX1-71-05-000
+FX1-71-05-004,Permitir Eliminar póliza,FX1-71-05-000
+FX1-71-05-005,Permitir Auditar póliza,FX1-71-05-000
+FX1-71-05-006,Habilitar Acceso,FX1-71-05-000
+FX1-80-01-001,Permitir Archivar ejercicio,FX1-80-01-000
+FX1-80-01-002,Permitir Crear póliza de cierre,FX1-80-01-000
+FX1-80-01-003,Permitir Crear póliza de ajuste cambiario,FX1-80-01-000
+FX1-80-01-004,Aplicar pólizas pendientes,FX1-80-01-000
+FX1-80-01-005,Reiniciar contabilidad,FX1-80-01-000
+FX1-80-07-001,Productos por línea,FX1-80-07-000
+FX1-80-07-002,Productos por departamento,FX1-80-07-000
+FX1-80-07-003,Productos por marca,FX1-80-07-000
+FX1-80-07-004,Productos por grupo,FX1-80-07-000
+FX1-80-07-005,Clientes por tipo,FX1-80-07-000
+FX1-80-07-006,Clientes por grupo,FX1-80-07-000
+FX1-80-07-007,Clientes por zona,FX1-80-07-000
+FX1-80-07-008,Proveedores por tipo,FX1-80-07-000
+FX1-80-07-009,Proveedores por grupo,FX1-80-07-000
+FX1-80-07-010,Proveedores por zona,FX1-80-07-000
+FX1-80-08-001,Canje de cupón por producto,FX1-80-08-000
+FX1-80-08-002,Canje de puntos por producto,FX1-80-08-000
+FX1-71-06-001,Permitir Configurar Ejercicio,FX1-71-06-000
+FX1-71-06-002,Permitir Abrir Ejercicio,FX1-71-06-000
+FX1-71-06-003,Permitir Crear Ejercicio,FX1-71-06-000
+FX1-71-06-004,Permitir Borrar Ejercicio,FX1-71-06-000
+FX1-71-06-005,Permitir Importar Ejercicio,FX1-71-06-000
+FX1-71-06-006,Permitir Exportar Ejercicio,FX1-71-06-000
+FX1-71-06-007,Permitir Actualizar EPosteriores,FX1-71-06-000
+FX1-71-06-008,Permitir Actualizar EenCurso,FX1-71-06-000
+FX1-40-70-001,Todos los datos del producto,FX1-40-70-000
+FX1-40-70-002,Lista de precios,FX1-40-70-000
+FX1-20-20-601,Permitir agregar archivo,FX1-20-20-600
+FX1-20-20-602,Permitir vincular archivo,FX1-20-20-600
+FX1-20-20-603,Permitir modificar archivo,FX1-20-20-600
+FX1-20-20-604,Permitir eliminar archivo,FX1-20-20-600
+FX1-20-20-605,Permitir eliminar vínculo,FX1-20-20-600
+FX1-20-20-701,Habilitar Acceso,FX1-20-20-700
+FX1-20-20-702,Permitir Agregar,FX1-20-20-700
+FX1-20-20-703,Permitir Editar,FX1-20-20-700
+FX1-20-20-704,Permitir Cancelar,FX1-20-20-700
+FX1-20-20-705,Archivos adjuntos,FX1-20-20-700
+FX1-20-20-705A,Permitir agregar archivo,FX1-20-20-705
+FX1-20-20-705B,Permitir vincular archivo,FX1-20-20-705
+FX1-20-20-705C,Permitir modificar archivo ,FX1-20-20-705
+FX1-20-20-705D,Permitir eliminar archivo,FX1-20-20-705
+FX1-20-20-705E,Permitir eliminar vínculo,FX1-20-20-705
+FX2-MVI-00-000,Acceder a la configuración de movimientos MVI,FX2-MVI-00-000t
+FX2-MVI-00-001,Permitir omitir resultado de conciliación,FX2-MVI-00-000t
+FX2-MVI-00-002,Permitir omitir exportar movimiento a archivo MVI,FX2-MVI-00-000t
+FX2-MVI-00-003,Permitir omitir conciliar contra archivo MVI,FX2-MVI-00-000t
+FX2-MVI-00-004,Permitir exportar libremente a archivo MVI,FX2-MVI-00-000t
+FX2-MVI-00-005,Pemitir importar archivo MVI,FX2-MVI-00-000t
+FX2-TRA-00-001,Permitir configurar transformaciones,FX2-TRA-00-000
+FX2-TRA-00-002,Permitir realizar transformaciones,FX2-TRA-00-000
+FX2-MBI-01-000,Permitir Agregar tablero,FX2-MBI-00-000
+FX2-MBI-02-000,Permitir Abrir tablero,FX2-MBI-00-000
+FX2-MBI-03-000,Permitir Modificar tablero,FX2-MBI-00-000
+FX2-MBI-04-000,Permitir Eliminar tablero,FX2-MBI-00-000
+FX2-MBI-05-000,Biblioteca de Métricas,FX2-MBI-00-000
+FX2-MBI-06-000,Biblioteca de Indicadores,FX2-MBI-00-000
+FX2-MBI-05-001,Permitir Agregar Perspectiva,FX2-MBI-05-000
+FX2-MBI-05-002,Permitir Modificar Perspectiva,FX2-MBI-05-000
+FX2-MBI-05-003,Permitir Eliminar Perspectiva,FX2-MBI-05-000
+FX2-MBI-05-004,Permitir Agregar Métricas,FX2-MBI-05-000
+FX2-MBI-05-005,Permitir Modificar Métricas,FX2-MBI-05-000
+FX2-MBI-05-006,Permitir Eliminar Métricas,FX2-MBI-05-000
+FX2-MBI-06-001,Permitir Agregar Indicador,FX2-MBI-06-000
+FX2-MBI-06-002,Permitir Modificar Indicador,FX2-MBI-06-000
+FX2-MBI-06-003,Permitir Eliminar Indicador,FX2-MBI-06-000
+FX1-20-40-001,Permitir acceso,FX1-20-40-000
+FX1-20-40-002,Permitir visualizar todas las requisiciones,FX1-20-40-000
+FX1-20-40-100,Control de requisiciones,FX1-20-40-000
+FX1-20-40-200,Configuraciones,FX1-20-40-000
+FX1-20-40-300,Movimientos de inventario para requisiciones,FX1-20-40-000
+FX1-20-40-400,Catálogo de tipos de requisiciones,FX1-20-40-000
+FX1-20-40-003,Imprimir requisiciones en punto de venta,FX1-20-40-000
+FX1-20-40-004,Imprimir diferencia entre cantidad solicitada y cantidad ejercida,FX1-20-40-000
+FX1-20-40-005,Realizar producción a partir de la requisición seleccionada,FX1-20-40-000
+FX1-20-40-006,Realizar comparación de costos y pedidos de compra,FX1-20-40-000
+FX1-20-40-007,Importar requisición a archivo MVI,FX1-20-40-000
+FX1-20-40-008,Exportar requisición a archivo MVI,FX1-20-40-000
+FX1-20-40-101,Agregar requisición,FX1-20-40-100
+FX1-20-40-102,Editar requisición,FX1-20-40-100
+FX1-20-40-103,Autorizar requisiciones,FX1-20-40-100
+FX1-20-40-104,Cancelar requisiciones,FX1-20-40-100
+FX1-20-40-105,Unir requisiciones,FX1-20-40-100
+FX1-20-40-106,Dividir requisiciones,FX1-20-40-100
+FX1-20-40-107,Generar requisición  a partir de productos debajo del mínimo,FX1-20-40-100
+FX1-20-40-108,Generar requisición  a partir de la requisición seleccionada,FX1-20-40-100
+FX1-20-40-109,Generar requisición por faltantes,FX1-20-40-100
+FX1-20-40-110,Generar requisición a partir de ingredientes,FX1-20-40-100
+FX1-20-40-111,Generar requisición a partir de pedidos sin surtir,FX1-20-40-100
+DFJ-00-00-003,Permitir Eliminar Requisiciones,FX1-20-40-100
+DFJ-00-00-006,Permitir Establecer Permisos por Status,FX1-20-40-100
+FX1-20-40-201,Permitir acceso,FX1-20-40-200
+FX1-20-40-202,Configurar serie por tipo de requisición,FX1-20-40-200
+FX1-20-40-203,Configurar serie por grupo de usuarios,FX1-20-40-200
+FX1-20-40-204,Realizar configuración local,FX1-20-40-200
+FX1-20-40-205,Seleccionar tipo de requisición,FX1-20-40-200
+FX1-20-40-206,Seleccionar serie y folio de requisiciones,FX1-20-40-200
+FX1-20-40-207,Seleccionar almacén origen,FX1-20-40-200
+FX1-20-40-301,Importar requisiciones en entradas de inventario,FX1-20-40-300
+FX1-20-40-302,Importar requisiciones en salidas de inventario,FX1-20-40-300
+FX1-20-40-303,Importar requisiciones en traspasos de inventario,FX1-20-40-300
+FX1-20-40-401,Permitir acceso,FX1-20-40-400
+FX1-20-40-402,Agregar tipo de requisición,FX1-20-40-400
+FX1-20-40-403,Editar tipo de requisición,FX1-20-40-400
+FX1-20-40-404,Eliminar tipo de requisición,FX1-20-40-400
+FX3-CRM-10-000,Atención a clientes,FX3-CRM-00-000
+FX3-CRM-20-100,Permitir visualizar estádisticas,FX3-CRM-00-000
+FX3-CRM-30-100,Permitir acceso administración de casos,FX3-CRM-00-000
+FX3-CRM-10-001,Permitir acceso,FX3-CRM-10-000
+FX3-CRM-10-100,Tipos de caso,FX3-CRM-10-000
+FX3-CRM-10-200,Alertas,FX3-CRM-10-000
+FX3-CRM-10-300,Catálogo de prioridades,FX3-CRM-10-000
+FX3-CRM-10-101,Permitir acceso,FX3-CRM-10-100
+FX3-CRM-10-102,Agregar tipos de caso,FX3-CRM-10-100
+FX3-CRM-10-103,Editar tipos de caso,FX3-CRM-10-100
+FX3-CRM-10-104,Eliminar tipos de caso,FX3-CRM-10-100
+FX3-CRM-10-105,Permitir asignar permisos (tipos de caso),FX3-CRM-10-100
+FX3-CRM-10-201,Crear alertas,FX3-CRM-10-200
+FX3-CRM-10-202,Editar alertas de otros,FX3-CRM-10-200
+FX3-CRM-10-203,Desactivar alertas de otros,FX3-CRM-10-200
+FX3-CRM-10-301,Permitir agregar prioridad,FX3-CRM-10-300
+FX3-CRM-10-302,Permitir editar prioridad,FX3-CRM-10-300
+FX3-CRM-10-303,Permitir eliminar prioridad,FX3-CRM-10-300
+FX4-CFL-00-001,Permitir refoliar pólizas,FX4-CFL-00-000

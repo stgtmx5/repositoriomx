@@ -1,0 +1,114 @@
+<xml xmlns:s='uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882'
+	xmlns:dt='uuid:C2F41010-65B3-11d1-A29F-00AA00C14882'
+	xmlns:rs='urn:schemas-microsoft-com:rowset'
+	xmlns:z='#RowsetSchema'>
+<s:Schema id='RowsetSchema'>
+	<s:ElementType name='row' content='eltOnly'>
+		<s:AttributeType name='Sys_PK' rs:number='1' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='10' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_TimeStamp' rs:number='2' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='dateTime' rs:dbtype='variantdate' dt:maxLength='16' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_GUID' rs:number='3' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='32'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_DTCreated' rs:number='4' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='dateTime' rs:dbtype='variantdate' dt:maxLength='16' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_User' rs:number='5' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='5'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_LastUser' rs:number='6' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='5'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_Exported' rs:number='7' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='boolean' dt:maxLength='2' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_DTExported' rs:number='8' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='dateTime' rs:dbtype='variantdate' dt:maxLength='16' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_Info' rs:number='9' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='32'/>
+		</s:AttributeType>
+		<s:AttributeType name='Codigo' rs:number='10' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='8'/>
+		</s:AttributeType>
+		<s:AttributeType name='Nombre' rs:number='11' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='50'/>
+		</s:AttributeType>
+		<s:AttributeType name='IPais' rs:number='12' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='32'/>
+		</s:AttributeType>
+		<s:extends type='rs:rowbase'/>
+	</s:ElementType>
+</s:Schema>
+<rs:data>
+	<z:row Sys_PK='9' Sys_TimeStamp='2007-10-23T10:31:23' Sys_GUID='9CD6285AA254482080F609948CA0473C' Sys_DTCreated='2007-10-23T10:31:17'
+		 Sys_Exported='False' Sys_DTExported='2007-10-23T10:31:17' Codigo='000' Nombre='(Desconocido)' IPais='8FBBCEAB3A7C4E078D6F667DA97900CA'/>
+	<z:row Sys_PK='76' Sys_TimeStamp='2008-01-30T12:47:25' Sys_GUID='44A66C0EC400460C9FCA00C46D2F47F9' Sys_DTCreated='2008-01-30T12:47:25'
+		 Sys_Exported='False' Sys_DTExported='2008-01-30T12:47:25' Codigo='MXAgs' Nombre='Aguascalientes' IPais='2345F0ABC9AB418F00DE01DAF3A361E1'/>
+	<z:row Sys_PK='77' Sys_TimeStamp='2008-01-30T12:47:25' Sys_GUID='8B0E0FEAE8284BC38552E8C3E8F8B272' Sys_DTCreated='2008-01-30T12:47:25'
+		 Sys_Exported='False' Sys_DTExported='2008-01-30T12:47:25' Codigo='MXB.C' Nombre='Baja California' IPais='2345F0ABC9AB418F00DE01DAF3A361E1'/>
+	<z:row Sys_PK='78' Sys_TimeStamp='2008-01-30T12:47:25' Sys_GUID='B11451F5F30C42DA8066470054F892A6' Sys_DTCreated='2008-01-30T12:47:25'
+		 Sys_Exported='False' Sys_DTExported='2008-01-30T12:47:25' Codigo='MXB.C.S' Nombre='Baja California del Sur' IPais='2345F0ABC9AB418F00DE01DAF3A361E1'/>
+	<z:row Sys_PK='79' Sys_TimeStamp='2008-01-30T12:47:25' Sys_GUID='F765F189D39B4AE7B9A197D6F2E2FB91' Sys_DTCreated='2008-01-30T12:47:25'
+		 Sys_Exported='False' Sys_DTExported='2008-01-30T12:47:25' Codigo='MXCamp' Nombre='Campeche' IPais='2345F0ABC9AB418F00DE01DAF3A361E1'/>
+	<z:row Sys_PK='80' Sys_TimeStamp='2008-01-30T12:47:25' Sys_GUID='079D1E174DFA4F199DA7D6B7A727FC79' Sys_DTCreated='2008-01-30T12:47:25'
+		 Sys_Exported='False' Sys_DTExported='2008-01-30T12:47:25' Codigo='MXChih' Nombre='Chihuahua' IPais='2345F0ABC9AB418F00DE01DAF3A361E1'/>
+	<z:row Sys_PK='81' Sys_TimeStamp='2008-01-30T12:47:25' Sys_GUID='E3946ADE116D4619A46643FC32C118F3' Sys_DTCreated='2008-01-30T12:47:25'
+		 Sys_Exported='False' Sys_DTExported='2008-01-30T12:47:25' Codigo='MXChis' Nombre='Chiapas' IPais='2345F0ABC9AB418F00DE01DAF3A361E1'/>
+	<z:row Sys_PK='82' Sys_TimeStamp='2008-01-30T12:47:25' Sys_GUID='2D131E81761B4969B73EC14B44277DD4' Sys_DTCreated='2008-01-30T12:47:25'
+		 Sys_Exported='False' Sys_DTExported='2008-01-30T12:47:25' Codigo='MXCoah' Nombre='Coahuila' IPais='2345F0ABC9AB418F00DE01DAF3A361E1'/>
+	<z:row Sys_PK='83' Sys_TimeStamp='2008-01-30T12:47:25' Sys_GUID='3EFB05AD389840E0BC4CD26716C28B00' Sys_DTCreated='2008-01-30T12:47:25'
+		 Sys_Exported='False' Sys_DTExported='2008-01-30T12:47:25' Codigo='MXCol' Nombre='Colima' IPais='2345F0ABC9AB418F00DE01DAF3A361E1'/>
+	<z:row Sys_PK='84' Sys_TimeStamp='2008-01-30T12:47:25' Sys_GUID='13E662CE9B1046819566ADD273BCCEB2' Sys_DTCreated='2008-01-30T12:47:25'
+		 Sys_Exported='False' Sys_DTExported='2008-01-30T12:47:25' Codigo='MXD.F' Nombre='Distrito Federal' IPais='2345F0ABC9AB418F00DE01DAF3A361E1'/>
+	<z:row Sys_PK='85' Sys_TimeStamp='2008-01-30T12:47:25' Sys_GUID='40820EAAE6A047C29641A74CB71451A7' Sys_DTCreated='2008-01-30T12:47:25'
+		 Sys_Exported='False' Sys_DTExported='2008-01-30T12:47:25' Codigo='MXDgo' Nombre='Durango' IPais='2345F0ABC9AB418F00DE01DAF3A361E1'/>
+	<z:row Sys_PK='86' Sys_TimeStamp='2008-01-30T12:47:25' Sys_GUID='712309E3E0104420834F6CFBFF239896' Sys_DTCreated='2008-01-30T12:47:25'
+		 Sys_Exported='False' Sys_DTExported='2008-01-30T12:47:25' Codigo='MXGro' Nombre='Guerrero' IPais='2345F0ABC9AB418F00DE01DAF3A361E1'/>
+	<z:row Sys_PK='87' Sys_TimeStamp='2008-01-30T12:47:26' Sys_GUID='F63E955D98D3497E90D42EFDCA084F84' Sys_DTCreated='2008-01-30T12:47:25'
+		 Sys_Exported='False' Sys_DTExported='2008-01-30T12:47:25' Codigo='MXGto' Nombre='Guanajuato' IPais='2345F0ABC9AB418F00DE01DAF3A361E1'/>
+	<z:row Sys_PK='88' Sys_TimeStamp='2008-01-30T12:47:26' Sys_GUID='2C397FEF26EE49BF9FD9B992D71D9DDD' Sys_DTCreated='2008-01-30T12:47:25'
+		 Sys_Exported='False' Sys_DTExported='2008-01-30T12:47:25' Codigo='MXHgo' Nombre='Hidalgo' IPais='2345F0ABC9AB418F00DE01DAF3A361E1'/>
+	<z:row Sys_PK='89' Sys_TimeStamp='2008-01-30T12:47:26' Sys_GUID='66EC671F130849F287BEE550D000285C' Sys_DTCreated='2008-01-30T12:47:25'
+		 Sys_Exported='False' Sys_DTExported='2008-01-30T12:47:25' Codigo='MXJal' Nombre='Jalisco' IPais='2345F0ABC9AB418F00DE01DAF3A361E1'/>
+	<z:row Sys_PK='90' Sys_TimeStamp='2008-01-30T12:47:26' Sys_GUID='D36D028DB76A48E382F97CE7004345A8' Sys_DTCreated='2008-01-30T12:47:25'
+		 Sys_Exported='False' Sys_DTExported='2008-01-30T12:47:25' Codigo='MXMéx' Nombre='México' IPais='2345F0ABC9AB418F00DE01DAF3A361E1'/>
+	<z:row Sys_PK='91' Sys_TimeStamp='2008-01-30T12:47:26' Sys_GUID='D2F24AC87396420585A7C3F16D0629C2' Sys_DTCreated='2008-01-30T12:47:25'
+		 Sys_Exported='False' Sys_DTExported='2008-01-30T12:47:25' Codigo='MXMich' Nombre='Michoacan' IPais='2345F0ABC9AB418F00DE01DAF3A361E1'/>
+	<z:row Sys_PK='92' Sys_TimeStamp='2008-01-30T12:47:26' Sys_GUID='CA64B5A8C6BF4AF9BD16D5352EEC8BC3' Sys_DTCreated='2008-01-30T12:47:25'
+		 Sys_Exported='False' Sys_DTExported='2008-01-30T12:47:25' Codigo='MXMor' Nombre='Morelos' IPais='2345F0ABC9AB418F00DE01DAF3A361E1'/>
+	<z:row Sys_PK='93' Sys_TimeStamp='2008-01-30T12:47:26' Sys_GUID='A98E6D0C2C93491685CE64412F122E90' Sys_DTCreated='2008-01-30T12:47:25'
+		 Sys_Exported='False' Sys_DTExported='2008-01-30T12:47:25' Codigo='MXN.L' Nombre='Nuevo Leon' IPais='2345F0ABC9AB418F00DE01DAF3A361E1'/>
+	<z:row Sys_PK='94' Sys_TimeStamp='2008-01-30T12:47:26' Sys_GUID='5E6C7DC23FB1428B8C9B115D9D2EC62E' Sys_DTCreated='2008-01-30T12:47:25'
+		 Sys_Exported='False' Sys_DTExported='2008-01-30T12:47:25' Codigo='MXNay' Nombre='Nayarit' IPais='2345F0ABC9AB418F00DE01DAF3A361E1'/>
+	<z:row Sys_PK='95' Sys_TimeStamp='2008-01-30T12:47:26' Sys_GUID='F71F9A01AA474F35A2698D6370D514DC' Sys_DTCreated='2008-01-30T12:47:25'
+		 Sys_Exported='False' Sys_DTExported='2008-01-30T12:47:25' Codigo='MXOax' Nombre='Oaxaca' IPais='2345F0ABC9AB418F00DE01DAF3A361E1'/>
+	<z:row Sys_PK='96' Sys_TimeStamp='2008-01-30T12:47:26' Sys_GUID='32D4FB5D4FAD4CC5BE9CE3C07DCC8C00' Sys_DTCreated='2008-01-30T12:47:25'
+		 Sys_Exported='False' Sys_DTExported='2008-01-30T12:47:25' Codigo='MXPue' Nombre='Puebla' IPais='2345F0ABC9AB418F00DE01DAF3A361E1'/>
+	<z:row Sys_PK='97' Sys_TimeStamp='2008-01-30T12:47:26' Sys_GUID='7D861E0ADF114034A84663AEF614FC60' Sys_DTCreated='2008-01-30T12:47:25'
+		 Sys_Exported='False' Sys_DTExported='2008-01-30T12:47:25' Codigo='MXQ.Ro' Nombre='Quintana Roo' IPais='2345F0ABC9AB418F00DE01DAF3A361E1'/>
+	<z:row Sys_PK='98' Sys_TimeStamp='2008-01-30T12:47:26' Sys_GUID='ABC148CE0A604D0D00A4EA09D0AAD300' Sys_DTCreated='2008-01-30T12:47:25'
+		 Sys_Exported='False' Sys_DTExported='2008-01-30T12:47:25' Codigo='MXQro' Nombre='Queretaro' IPais='2345F0ABC9AB418F00DE01DAF3A361E1'/>
+	<z:row Sys_PK='99' Sys_TimeStamp='2008-01-30T12:47:26' Sys_GUID='1D684710342B418199705D331508A864' Sys_DTCreated='2008-01-30T12:47:25'
+		 Sys_Exported='False' Sys_DTExported='2008-01-30T12:47:25' Codigo='MXS.L.P' Nombre='San Luis Potosí' IPais='2345F0ABC9AB418F00DE01DAF3A361E1'/>
+	<z:row Sys_PK='100' Sys_TimeStamp='2008-01-30T12:47:26' Sys_GUID='A13FE23EE89E4073B5969C3BA3138323' Sys_DTCreated='2008-01-30T12:47:25'
+		 Sys_Exported='False' Sys_DTExported='2008-01-30T12:47:25' Codigo='MXSin' Nombre='Sinaloa' IPais='2345F0ABC9AB418F00DE01DAF3A361E1'/>
+	<z:row Sys_PK='101' Sys_TimeStamp='2008-01-30T12:47:26' Sys_GUID='620880CC81F6419B8316705CD184C288' Sys_DTCreated='2008-01-30T12:47:25'
+		 Sys_Exported='False' Sys_DTExported='2008-01-30T12:47:25' Codigo='MXSon' Nombre='Sonora' IPais='2345F0ABC9AB418F00DE01DAF3A361E1'/>
+	<z:row Sys_PK='102' Sys_TimeStamp='2008-01-30T12:47:26' Sys_GUID='5A5FCEF5F8D24DD9966932BA67BC8CFF' Sys_DTCreated='2008-01-30T12:47:25'
+		 Sys_Exported='False' Sys_DTExported='2008-01-30T12:47:25' Codigo='MXTab' Nombre='Tabasco' IPais='2345F0ABC9AB418F00DE01DAF3A361E1'/>
+	<z:row Sys_PK='103' Sys_TimeStamp='2008-01-30T12:47:26' Sys_GUID='ABCA6D7279F34A94A69377000496A685' Sys_DTCreated='2008-01-30T12:47:25'
+		 Sys_Exported='False' Sys_DTExported='2008-01-30T12:47:25' Codigo='MXTamps' Nombre='Tamaulipas' IPais='2345F0ABC9AB418F00DE01DAF3A361E1'/>
+	<z:row Sys_PK='104' Sys_TimeStamp='2008-01-30T12:47:26' Sys_GUID='228D36B5EFEF42CC888696D8FC742E41' Sys_DTCreated='2008-01-30T12:47:25'
+		 Sys_Exported='False' Sys_DTExported='2008-01-30T12:47:25' Codigo='MXTlax' Nombre='Tlaxcala' IPais='2345F0ABC9AB418F00DE01DAF3A361E1'/>
+	<z:row Sys_PK='105' Sys_TimeStamp='2008-01-30T12:47:26' Sys_GUID='B1A398288B084B4DA46DB3D811C79EC0' Sys_DTCreated='2008-01-30T12:47:25'
+		 Sys_Exported='False' Sys_DTExported='2008-01-30T12:47:25' Codigo='MXVer' Nombre='Veracruz' IPais='2345F0ABC9AB418F00DE01DAF3A361E1'/>
+	<z:row Sys_PK='106' Sys_TimeStamp='2008-01-30T12:47:26' Sys_GUID='F2F96B0618354734A7F964C2C26FBCE2' Sys_DTCreated='2008-01-30T12:47:25'
+		 Sys_Exported='False' Sys_DTExported='2008-01-30T12:47:25' Codigo='MXYuc' Nombre='Yucatan' IPais='2345F0ABC9AB418F00DE01DAF3A361E1'/>
+	<z:row Sys_PK='107' Sys_TimeStamp='2008-01-30T12:47:26' Sys_GUID='7C629B60A9164AE7937887720111D8A5' Sys_DTCreated='2008-01-30T12:47:25'
+		 Sys_Exported='False' Sys_DTExported='2008-01-30T12:47:25' Codigo='MXZac' Nombre='Zacatecas' IPais='2345F0ABC9AB418F00DE01DAF3A361E1'/>
+</rs:data>
+</xml>

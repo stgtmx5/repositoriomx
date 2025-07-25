@@ -1,0 +1,111 @@
+<xml xmlns:s='uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882'
+	xmlns:dt='uuid:C2F41010-65B3-11d1-A29F-00AA00C14882'
+	xmlns:rs='urn:schemas-microsoft-com:rowset'
+	xmlns:z='#RowsetSchema'>
+<s:Schema id='RowsetSchema'>
+	<s:ElementType name='row' content='eltOnly'>
+		<s:AttributeType name='Sys_PK' rs:number='1' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='10' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_TimeStamp' rs:number='2' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='dateTime' rs:dbtype='variantdate' dt:maxLength='16' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_GUID' rs:number='3' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='32'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_DTCreated' rs:number='4' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='dateTime' rs:dbtype='variantdate' dt:maxLength='16' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_User' rs:number='5' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='5'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_LastUser' rs:number='6' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='5'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_Exported' rs:number='7' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='boolean' dt:maxLength='2' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_DTExported' rs:number='8' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='dateTime' rs:dbtype='variantdate' dt:maxLength='16' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Sys_Info' rs:number='9' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='32'/>
+		</s:AttributeType>
+		<s:AttributeType name='Activo' rs:number='10' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='boolean' dt:maxLength='2' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Datos' rs:number='11' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='255'/>
+		</s:AttributeType>
+		<s:AttributeType name='Documento' rs:number='12' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='10' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='FInicial' rs:number='13' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='10' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Fiscal' rs:number='14' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='boolean' dt:maxLength='2' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='FUltimo' rs:number='15' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='10' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='IDControl' rs:number='16' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='32'/>
+		</s:AttributeType>
+		<s:AttributeType name='NumControl' rs:number='17' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='int' dt:maxLength='4' rs:precision='10' rs:fixedlength='true'/>
+		</s:AttributeType>
+		<s:AttributeType name='Serie' rs:number='18' rs:nullable='true' rs:maydefer='true' rs:writeunknown='true'>
+			<s:datatype dt:type='string' dt:maxLength='3'/>
+		</s:AttributeType>
+		<s:extends type='rs:rowbase'/>
+	</s:ElementType>
+</s:Schema>
+<rs:data>
+	<z:row Sys_PK='1' Sys_TimeStamp='2008-05-01T13:19:16' Sys_GUID='D04E2DE1BF244388896654A045007B26' Sys_DTCreated='2008-03-24T17:58:46'
+		 Sys_Exported='False' Sys_DTExported='2008-03-24T17:58:46' Activo='True' Documento='1' FInicial='1' Fiscal='False'
+		 FUltimo='0' NumControl='0' Serie='C'/>
+	<z:row Sys_PK='2' Sys_TimeStamp='2008-05-01T13:19:16' Sys_GUID='C3260B7343434618B2BE9FB919869329' Sys_DTCreated='2008-03-24T17:58:59'
+		 Sys_Exported='False' Sys_DTExported='2008-03-24T17:58:59' Activo='True' Documento='2' FInicial='1' Fiscal='False'
+		 FUltimo='0' NumControl='0' Serie='P'/>
+	<z:row Sys_PK='3' Sys_TimeStamp='2008-05-01T13:19:16' Sys_GUID='C6E85965225E4CB586E703C38D809DEB' Sys_DTCreated='2008-03-24T17:59:07'
+		 Sys_Exported='False' Sys_DTExported='2008-03-24T17:59:07' Activo='True' Documento='3' FInicial='1' Fiscal='False'
+		 FUltimo='0' NumControl='0' Serie='R'/>
+	<z:row Sys_PK='4' Sys_TimeStamp='2008-05-01T13:19:16' Sys_GUID='D9C29780EE7D405CB929C896D8B70006' Sys_DTCreated='2008-03-24T17:59:13'
+		 Sys_Exported='False' Sys_DTExported='2008-03-24T17:59:13' Activo='True' Documento='4' FInicial='1' Fiscal='False'
+		 FUltimo='0' NumControl='0' Serie='F'/>
+	<z:row Sys_PK='5' Sys_TimeStamp='2008-05-01T13:19:16' Sys_GUID='8D7177E6783F4B3999444BE5993781E3' Sys_DTCreated='2008-03-24T17:59:18'
+		 Sys_Exported='False' Sys_DTExported='2008-03-24T17:59:18' Activo='True' Documento='5' FInicial='1' Fiscal='False'
+		 FUltimo='0' NumControl='0' Serie='N'/>
+	<z:row Sys_PK='6' Sys_TimeStamp='2008-05-01T13:19:16' Sys_GUID='D91B56AEB4D14592AB3415316E65B300' Sys_DTCreated='2008-03-24T17:59:24'
+		 Sys_Exported='False' Sys_DTExported='2008-03-24T17:59:24' Activo='True' Documento='6' FInicial='1' Fiscal='False'
+		 FUltimo='0' NumControl='0' Serie='A'/>
+	<z:row Sys_PK='7' Sys_TimeStamp='2008-05-01T13:19:16' Sys_GUID='88BDE146AD4945B7AD11E89FBCCEE59E' Sys_DTCreated='2008-03-24T17:59:34'
+		 Sys_Exported='False' Sys_DTExported='2008-03-24T17:59:34' Activo='True' Documento='17' FInicial='1' Fiscal='False'
+		 FUltimo='0' NumControl='0' Serie='G'/>
+	<z:row Sys_PK='8' Sys_TimeStamp='2008-05-01T13:19:16' Sys_GUID='B8B0C4A444F048F89E729081CFE958D7' Sys_DTCreated='2008-03-24T17:59:49'
+		 Sys_Exported='False' Sys_DTExported='2008-03-24T17:59:49' Activo='True' Documento='18' FInicial='1' Fiscal='False'
+		 FUltimo='0' NumControl='0' Serie='B'/>
+	<z:row Sys_PK='9' Sys_TimeStamp='2008-05-01T13:19:16' Sys_GUID='7C6631111E8D4816873154A19F61A7C7' Sys_DTCreated='2008-03-24T17:59:54'
+		 Sys_Exported='False' Sys_DTExported='2008-03-24T17:59:54' Activo='True' Documento='19' FInicial='1' Fiscal='False'
+		 FUltimo='0' NumControl='0' Serie='H'/>
+	<z:row Sys_PK='10' Sys_TimeStamp='2008-05-01T13:19:16' Sys_GUID='B4EFA1C2E4804A28A6D500F78DF312E3' Sys_DTCreated='2008-03-24T18:00:00'
+		 Sys_Exported='False' Sys_DTExported='2008-03-24T18:00:00' Activo='True' Documento='33' FInicial='1' Fiscal='False'
+		 FUltimo='0' NumControl='0' Serie='I'/>
+	<z:row Sys_PK='11' Sys_TimeStamp='2008-05-01T13:19:16' Sys_GUID='32D64F126DA242778EF53F9487B0A0CF' Sys_DTCreated='2008-03-24T18:00:05'
+		 Sys_Exported='False' Sys_DTExported='2008-03-24T18:00:05' Activo='True' Documento='34' FInicial='1' Fiscal='False'
+		 FUltimo='0' NumControl='0' Serie='E'/>
+	<z:row Sys_PK='12' Sys_TimeStamp='2008-05-01T13:19:16' Sys_GUID='C2BFC328FBA04361AECBA05145401326' Sys_DTCreated='2008-03-24T18:00:11'
+		 Sys_Exported='False' Sys_DTExported='2008-03-24T18:00:11' Activo='True' Documento='65' FInicial='1' Fiscal='False'
+		 FUltimo='0' NumControl='0' Serie='D'/>
+	<z:row Sys_PK='13' Sys_TimeStamp='2008-05-01T13:19:16' Sys_GUID='F6BBC69A2A4D4D2997B46B878E5EFBCE' Sys_DTCreated='2008-03-24T18:00:17'
+		 Sys_Exported='False' Sys_DTExported='2008-03-24T18:00:17' Activo='True' Documento='66' FInicial='1' Fiscal='False'
+		 FUltimo='0' NumControl='0' Serie='J'/>
+	<z:row Sys_PK='14' Sys_TimeStamp='2008-05-01T13:19:16' Sys_GUID='292601AB46F64E7E9B75DFFC4C8664EA' Sys_DTCreated='2008-03-24T18:00:35'
+		 Sys_Exported='False' Sys_DTExported='2008-03-24T18:00:35' Activo='True' Documento='67' FInicial='1' Fiscal='False'
+		 FUltimo='0' NumControl='0' Serie='K'/>
+	<z:row Sys_PK='15' Sys_TimeStamp='2013-11-16T12:48:00' Sys_GUID='09C705B9065B448E888FB9DBC0B2EA86' Sys_DTCreated='2013-11-16T12:48:00'
+		 Sys_Exported='False' Sys_DTExported='2013-11-16T12:48:00' Activo='True' Documento='5' FInicial='1' Fiscal='False'
+		 FUltimo='0' NumControl='0' Serie='NX'/>
+</rs:data>
+</xml>
