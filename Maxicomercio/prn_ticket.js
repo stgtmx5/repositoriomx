@@ -340,7 +340,7 @@ function PrintCodeKiosco(Ticket) {
 					Impresora.Texto(" ");
 					//Printer.DrawImage("qr_facturacion_csp.bmp");
 					//ShellExecute("cmd.exe", "/C copy /b c:\\comercial\\maxicomercio\\qr_facturacion_escpos.bin > PRN", "", "", 0);
-					Application.MainForm.ExecInConsole("cmd.exe /C copy /b C:\comercial\qr_facturacion_escpos.bin > PRN");
+					//Application.MainForm.ExecInConsole("cmd.exe /C copy /b C:\comercial\qr_facturacion_escpos.bin > PRN");
 
 
 					//var datosQR = gFunciones.LeerArchivoBinario("qr_facturacion_escpos.bin");
