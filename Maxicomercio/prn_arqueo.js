@@ -223,7 +223,7 @@ function arqueo(PKCorte)
 	
 	if (DepSales) ImprimirDDepartamentos(PKCorte);
 	
-	if (cPrintSeller) ImprimirDVendedores(PKCorte);
+	//if (cPrintSeller) ImprimirDVendedores(PKCorte);
 	
 	if (cAvSales || cNoSales) ImprimirVNTPromedioOper(PKCorte);
 	
@@ -683,10 +683,12 @@ function SaldoInicial(PKCorte,PKCaja,Divisa,ErrDesc)
 	}
 	
 	if(!(R.EOF && R.BOF)){			
-		S=Impresora.AligTextInStr(" SALDO INICIAL",16,0," ");
+		
 		if(R("Saldo").Value==null){
 			sImporte=Impresora.FormatoDinero(0);
-		}else{
+		}else
+		{
+			S=Impresora.AligTextInStr(" SALDO INICIAL",16,0," ");
 			Saldo=Impresora.Redondear(R("Saldo").Value);
 			sImporte=Impresora.FormatoDinero(Saldo);
 		}

@@ -338,13 +338,8 @@ function PrintCodeKiosco(Ticket) {
 					Impresora.Texto("Folio de Facturacion");
 					Impresora.Texto("# " + sCode);
 					Impresora.Texto(" ");
-					//Printer.DrawImage("qr_facturacion_csp.bmp");
-					//ShellExecute("cmd.exe", "/C copy /b c:\\comercial\\maxicomercio\\qr_facturacion_escpos.bin > PRN", "", "", 0);
-					//Application.MainForm.ExecInConsole("cmd.exe /C copy /b C:\comercial\qr_facturacion_escpos.bin > PRN");
+					//Application.MainForm.ExecInConsole("cmd.exe /C copy  C:\comercial\qr_facturacion_escpos.bin > PRN");
 
-
-					//var datosQR = gFunciones.LeerArchivoBinario("qr_facturacion_escpos.bin");
-					//Impresora.EnviarBinario(datosQR);
 				}
 			}
 		}
@@ -364,7 +359,7 @@ function ImprimirPie() {
 	stCad = eBasic.ReplaceStrChars(stCad, String.fromCharCode(10), "");
 	Impresora.Texto(" ");
 	Impresora.MTexto(stCad, String.fromCharCode(13), 30, 2);
-	Impresora.Texto(Impresora.AligTextInStr("STGT 2025", 30, 2, " "));
+	Impresora.Texto(Impresora.AligTextInStr("Maxicomercio", 30, 2, " "));
 	Impresora.Texto(" ");
 	return 0;
 }
