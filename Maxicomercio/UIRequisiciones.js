@@ -219,7 +219,7 @@ function createObjects() {
         uiDocFlujo.setObjects(blDocFlujo.obDriver, blDocFlujo, procesosCompras);
         uiDocFlujo.setCOMobjects(Application.UIUsers);
         uiDocFlujo.filtrarProductosXGrupo = false;
-        uiDocFlujo.applicationName = "Deminus";
+        uiDocFlujo.applicationName = "MaxiComercio";
         uiComVentasBI.setObjects(blDocFlujo.obDriver);
 
 /**        // ?? Validar si dlgDocumentZosFlujo existe
