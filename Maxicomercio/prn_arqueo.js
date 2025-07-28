@@ -691,9 +691,10 @@ function SaldoInicial(PKCorte,PKCaja,Divisa,ErrDesc)
 			S=Impresora.AligTextInStr(" SALDO INICIAL",16,0," ");
 			Saldo=Impresora.Redondear(R("Saldo").Value);
 			sImporte=Impresora.FormatoDinero(Saldo);
+			sImporte=Impresora.AligTextInStr(sImporte,14,1," ");		
+			Impresora.Texto(S+sImporte);	
 		}
-		sImporte=Impresora.AligTextInStr(sImporte,14,1," ");		
-		Impresora.Texto(S+sImporte);		
+	
 	}
 	R.Close();
 	return Saldo;
