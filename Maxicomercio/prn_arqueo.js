@@ -817,26 +817,31 @@ function ImprimirIngresosXFormaPago(PKCorte,Divisa,TCambio,DivisaPred,ErrDesc){
 		ErrDesc="";
 	
 //	R=ThisCnn.execute("SELECT SUM(MovCaja.Cheques) AS Cheques, SUM(MovCaja.Depositos) AS Depositos, SUM(MovCaja.Efectivo) AS Efectivo, SUM(MovCaja.Tarjetas) AS Tarjetas, SUM( MovCaja.Vales) AS Vales FROM MovCaja WHERE MovCaja.ICorte="+PKCorte+" AND MovCaja.IDivisa="+Divisa+" AND (MovCaja.Cheques>=0 AND  MovCaja.Depositos>=0 AND MovCaja.Efectivo>=0 AND MovCaja.Tarjetas>=0 AND MovCaja.Vales>=0) AND MovCaja.ICategoria != (SELECT Categoria.Sys_PK FROM Categoria WHERE Categoria.Descripcion LIKE '%sobrante%' LIMIT 1)");
-	consulta = "SELECT " +
-		"SUM(MovCaja.Cheques) AS Cheques, " +
-		"SUM(MovCaja.Depositos) AS Depositos, " +
-		"SUM(MovCaja.Efectivo) AS Efectivo, " +
-		"SUM(MovCaja.Tarjetas) AS Tarjetas, " +
-		"SUM(MovCaja.Vales) AS Vales " +
-		"FROM MovCaja " +
-		"INNER JOIN categoria c ON c.Sys_PK = MovCaja.ICategoria " +
-		"WHERE MovCaja.ICorte = " + PKCorte + " " +
-		"AND MovCaja.IDivisa = " + Divisa + " " +
-		"AND (" +
-			"MovCaja.Cheques > 0 OR " +
-			"MovCaja.Depositos > 0 OR " +
-			"MovCaja.Efectivo > 0 OR " +
-			"MovCaja.Tarjetas > 0 OR " +
-			"MovCaja.Vales > 0" +
-		") " +
-		"AND c.descripcion NOT LIKE '%fondo%' " +
-		"AND c.descripcion NOT LIKE '%Sobrante%'";
+consulta = "SELECT " +
+	"SUM(MovCaja.Cheques) AS Cheques, " +
+	"SUM(MovCaja.Depositos) AS Depositos, " +
+	"SUM(MovCaja.Efectivo) AS Efectivo, " +
+	"SUM(MovCaja.Tarjetas) AS Tarjetas, " +
+	"SUM(MovCaja.Vales) AS Vales " +
+	"FROM MovCaja " +
+	"INNER JOIN categoria c ON c.Sys_PK = MovCaja.ICategoria " +
+	"INNER JOIN venta v ON v.IMovCaja = MovCaja.Sys_PK " +
+	"WHERE MovCaja.ICorte = " + PKCorte + " " +
+	"AND MovCaja.IDivisa = " + Divisa + " " +
+	"AND (" +
+		"MovCaja.Cheques > 0 OR " +
+		"MovCaja.Depositos > 0 OR " +
+		"MovCaja.Efectivo > 0 OR " +
+		"MovCaja.Tarjetas > 0 OR " +
+		"MovCaja.Vales > 0" +
+	") " +
+	"AND v.StatusAdministrativo NOT IN (1, 99) " +
+	"AND v.documento = 6";
 
+//	"AND c.descripcion NOT LIKE '%fondo%' " +
+// "AND c.descripcion NOT LIKE '%Sobrante%' " +
+	
+	
 	R = ThisCnn.execute(consulta);
 	if(R==null){
 		eBasic.eMsgbox(ErrDesc + "(Error al obtener ingresos por tipo del corte)");
@@ -862,7 +867,7 @@ function ImprimirIngresosXFormaPago(PKCorte,Divisa,TCambio,DivisaPred,ErrDesc){
 
 			if (Val > 0) {
 				if (!hayFormaPago) {
-					Impresora.Texto(Impresora.AligTextInStr("- FORMAS DE CONTADO -", 30, 2, " "));
+					Impresora.Texto(Impresora.AligTextInStr("- FORMA DE CONTADO -", 30, 2, " "));
 					Impresora.Texto("------------------------------");
 					hayFormaPago = true;
 				}
