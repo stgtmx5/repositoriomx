@@ -130,13 +130,13 @@ function createObjects() {
         if (created) {
             try {
                 if (uiDocFlujo && uiDocFlujo.ping()) {
-                    Log("Ping exitoso, objetos ya creados.");
+                    //Log("Ping exitoso, objetos ya creados.");
                     return;
                 } else {
-                    Log("Ping falló, intentando reconectar.");
+                    //Log("Ping falló, intentando reconectar.");
                 }
             } catch (pingErr) {
-                Log("Error en ping(): " + pingErr.message + " - intentando reconectar.");
+                //Log("Error en ping(): " + pingErr.message + " - intentando reconectar.");
             }
         }
 
