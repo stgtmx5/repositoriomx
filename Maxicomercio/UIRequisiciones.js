@@ -240,7 +240,7 @@ function createObjects() {
 		*/
 
         created = true;
-        Log("Objetos creados e inicializados correctamente.");
+        //Log("Objetos creados e inicializados correctamente.");
     } catch (e) {
         Log("Error al acceder a componentes de requisiciones: " + e.message);
     }
