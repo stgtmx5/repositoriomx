@@ -7,6 +7,38 @@ var tipoCambioDivisaPago;
 
 function ticket(SysTicket, Referencia, Cambio, Efectivo, Cheque, Tarjeta, Vale, Deposito, Credito, IsReprint) {
 	//	if (eBasic.eMsgbox("�Imprimir ticket?",4)==7)return 0;
+	
+	if (Cambio == null) Cambio = 0;
+	if (Efectivo == null) Efectivo = 0;
+	if (Cheque == null) Cheque = 0;
+	if (Tarjeta == null) Tarjeta = 0;
+	if (Vale == null) Vale = 0;
+	if (Deposito == null) Deposito = 0;
+	if (Credito == null) Credito = 0;
+	
+	if (Efectivo+Cheque+Tarjeta+Vale+Deposito+Credito+Cambio==0)
+	{
+		
+		LogAuditoria('Reimpresion', 'Venta', Referencia)
+		return 0;
+		
+/*		var usuario_app = Application.UIUsers.CurrentUser.Sys_PK;
+	    var sql = "SELECT t.username FROM tuser t WHERE t.sys_pk = " + usuario_app;
+		var rstUsuario = Application.ADOCnn.Execute(sql);
+
+		var username = "";
+		if (!rstUsuario.EOF) {
+        username = rstUsuario("username");
+		}
+		sql = "INSERT INTO log_auditoria (operacion, tabla, fecha, usuario, log) " +
+		"VALUES ('REIMPRESION', 'Venta', NOW(), " + usuario_app + ", 'IMPRESION DE COTIZACION')";
+  
+		Application.ADOCnn.Execute(sql);
+        eBasic.eMsgbox("Accion inhabilitada " + username,6);
+  */      
+		
+        }
+
 	if (SysTicket == null) return 0;
 
 	pos_support.ConfigImpresora();
@@ -496,4 +528,37 @@ function NumeroALetras(numero) {
     var textoFinal = textoCentavos + "/100 M.N.";
 
     return (resultado + textoMoneda + textoFinal).toUpperCase();
+}
+
+
+function LogAuditoria(operacion, tabla, referencia) {
+    try {
+        var usuario_app = Application.UIUsers.CurrentUser.Sys_PK;
+        var sqlUsuario = "SELECT t.username FROM tuser t WHERE t.sys_pk = " + usuario_app;
+        var rstUsuario = Application.ADOCnn.Execute(sqlUsuario);
+
+        var username = "";
+        if (!rstUsuario.EOF) {
+            username = rstUsuario("username");
+        }
+
+        var logJson = "{\n" +
+                      "  \"Accion\": \"" + operacion + "\",\n" +
+                      "  \"Usuario\": \"" + username + "\",\n" +
+                      "  \"Referencia\": \"" + referencia + "\"\n" +
+                      "}";
+
+
+        var sqlInsert = "INSERT INTO stgt_log_auditoria (operacion, tabla, fecha, usuario, log) " +
+                        "VALUES ('" + operacion + "', '" + tabla + "', NOW(), " + usuario_app + ", '" + logJson + "')";
+        
+        Application.ADOCnn.Execute(sqlInsert);
+
+
+        // eBasic.eMsgbox("Acción registrada en log: " + logJson, 6);
+
+    } catch (err) {
+        eBasic.eMsgbox("Error al insertar log: " + err.message, 6);
+        return 0;
+    }
 }
