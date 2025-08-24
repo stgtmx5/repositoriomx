@@ -200,7 +200,8 @@ function ImprimirDetalle(SysPK, Cambio, Efectivo, Cheque, Tarjeta, Vale, Deposit
 
 	//Rst = pos_support.OpenRecordset(sql, Application.Adocnn);
 	// La vista se convierte a procedimiento para reducir tiempo
-	Rst = ThisCnn.execute("CALL stgt_sp_detalle_ticket(" + SysPK + ")");
+	//Rst = ThisCnn.execute("CALL stgt_sp_detalle_ticket(" + SysPK + ")");
+	Rst = pos_support.OpenRecordset("CALL stgt_sp_detalle_ticket(" + SysPK + ")",Application.Adocnn);
 
 	if (Rst == null) return 0;
 
