@@ -250,9 +250,19 @@ var TotalDetalle;
 		Impresora.Texto(cStr);
 		Impresora.Texto("");
 	
-	sql = "Select Linea.Descripcion as Linea,Sum((DVenta.Precio*DVenta.cantidad)-DVenta.Descuento1-DVenta.Descuento2+DVenta.Impuesto1+DVenta.Impuesto2+DVenta.Impuesto3+DVenta.Impuesto4) as Monto FROM  (DVenta INNER JOIN (PRODUCTO INNER JOIN Linea ON Producto.ILinea=Linea.Sys_PK) ON DVenta.IProducto=Producto.Sys_PK) INNER JOIN  VENTA ON DVenta.FK_Venta_Detalle=Venta.Sys_PK Where Venta.Documento=6 AND Venta.StatusAdministrativo=3 AND Venta.ICorte =" + PKCorte + " Group BY Linea.Descripcion";
+	//sql = "Select Linea.Descripcion as Linea,Sum((DVenta.Precio*DVenta.cantidad)-DVenta.Descuento1-DVenta.Descuento2+DVenta.Impuesto1+DVenta.Impuesto2+DVenta.Impuesto3+DVenta.Impuesto4) as Monto FROM  (DVenta INNER JOIN (PRODUCTO INNER JOIN Linea ON Producto.ILinea=Linea.Sys_PK) ON DVenta.IProducto=Producto.Sys_PK) INNER JOIN  VENTA ON DVenta.FK_Venta_Detalle=Venta.Sys_PK Where Venta.Documento=6 AND Venta.StatusAdministrativo=3 AND Venta.ICorte =" + PKCorte + " Group BY Linea.Descripcion";
 	
-	R=ThisCnn.execute(sql);
+	sql = "SELECT Linea.Descripcion AS Linea, " +
+          "SUM((DVenta.Precio * DVenta.Cantidad) - DVenta.Descuento1 - DVenta.Descuento2 + DVenta.Impuesto1 + DVenta.Impuesto2 + DVenta.Impuesto3 + DVenta.Impuesto4) AS Monto " +
+          "FROM DVenta INNER JOIN Venta ON DVenta.FK_Venta_Detalle = Venta.Sys_PK " +
+          "INNER JOIN Producto ON DVenta.IProducto = Producto.Sys_PK " +
+          "INNER JOIN Linea ON Producto.ILinea = Linea.Sys_PK " +
+          "WHERE Venta.Documento = 6 AND Venta.StatusAdministrativo = 3 AND Venta.ICorte = " + PKCorte + " " +
+          "GROUP BY Linea.Descripcion";
+
+	
+	//R=ThisCnn.execute(sql);
+	R = pos_support.OpenRecordset(sql,Application.ADOCnn);
 
 	if(R==null){
 		eBasic.eMsgbox(ErrDesc + "(Error al acceder a la base de datos no se obtuvieron los productos del corte)");
@@ -287,7 +297,7 @@ var TotalDetalle;
 		Impresora.Texto(cStr);
 		Impresora.Texto("");
 
-
+	R.Close();
 }
 
 
@@ -681,20 +691,20 @@ function SaldoInicial(PKCorte,PKCaja,Divisa,ErrDesc)
 		eBasic.eMsgbox(ErrDesc + "(Error al obtener saldo inicial del corte)");
 		return 0;
 	}
-	
+	S=Impresora.AligTextInStr(" SALDO INICIAL",16,0," ");
 	if(!(R.EOF && R.BOF)){			
 		
 		if(R("Saldo").Value==null){
 			sImporte=Impresora.FormatoDinero(0);
 		}else
 		{
-			S=Impresora.AligTextInStr(" SALDO INICIAL",16,0," ");
+			
 			Saldo=Impresora.Redondear(R("Saldo").Value);
 			sImporte=Impresora.FormatoDinero(Saldo);
 			sImporte=Impresora.AligTextInStr(sImporte,14,1," ");		
-			Impresora.Texto(S+sImporte);	
+			Impresora.Texto(S+sImporte);
 		}
-	
+				
 	}
 	R.Close();
 	return Saldo;
@@ -1031,11 +1041,24 @@ function ImprimirTicketsDelCorte(PKCorte,ErrDesc)
 	
 	if(ErrDesc==null)
 		ErrDesc="";
-
+/**
 	sql = "SELECT Venta.Referencia, Venta.FormaPago,Venta.StatusFacturacion,Venta.StatusAdministrativo,";
 	sql = sql + " ((Venta.Subtotal-Venta.Descuento1-Venta.Descuento2)+Venta.Impuesto1+ Venta.Impuesto2+ Venta.Impuesto3+ Venta.Impuesto4) AS Total ";
 	sql = sql + " FROM Venta WHERE Venta.Documento=6 AND Venta.ICorte=" + PKCorte + " ORDER BY Venta.Sys_PK";
-	
+**/
+sql = "SELECT " +
+      "Venta.Referencia, " +
+      "Venta.FormaPago, " +
+      "Venta.StatusFacturacion, " +
+      "Venta.StatusAdministrativo, " +
+      "((Venta.Subtotal - Venta.Descuento1 - Venta.Descuento2) + " +
+      "Venta.Impuesto1 + Venta.Impuesto2 + Venta.Impuesto3 + Venta.Impuesto4) AS Total2, " +
+      "m.efectivo + m.tarjetas AS total " +
+      "FROM Venta INNER JOIN movcaja m ON venta.IMovCaja = m.Sys_PK " +
+      "WHERE Venta.Documento = 6 " +
+      "AND m.ICorte = " + PKCorte + " " +
+      "ORDER BY Venta.Sys_PK";
+		  
 	R=pos_support.OpenRecordset(sql,Application.Adocnn);
 	
 	if(R==null)

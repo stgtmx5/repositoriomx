@@ -6,7 +6,7 @@ var divisaPago;
 var tipoCambioDivisaPago;
 
 function ticket(SysTicket, Referencia, Cambio, Efectivo, Cheque, Tarjeta, Vale, Deposito, Credito, IsReprint) {
-	//	if (eBasic.eMsgbox("ï¿½Imprimir ticket?",4)==7)return 0;
+	//	if (eBasic.eMsgbox("?Imprimir ticket?",4)==7)return 0;
 	
 	if (Cambio == null) Cambio = 0;
 	if (Efectivo == null) Efectivo = 0;
@@ -21,23 +21,9 @@ function ticket(SysTicket, Referencia, Cambio, Efectivo, Cheque, Tarjeta, Vale, 
 		
 		LogAuditoria('Reimpresion', 'Venta', Referencia)
 		return 0;
+	
 		
-/*		var usuario_app = Application.UIUsers.CurrentUser.Sys_PK;
-	    var sql = "SELECT t.username FROM tuser t WHERE t.sys_pk = " + usuario_app;
-		var rstUsuario = Application.ADOCnn.Execute(sql);
-
-		var username = "";
-		if (!rstUsuario.EOF) {
-        username = rstUsuario("username");
-		}
-		sql = "INSERT INTO log_auditoria (operacion, tabla, fecha, usuario, log) " +
-		"VALUES ('REIMPRESION', 'Venta', NOW(), " + usuario_app + ", 'IMPRESION DE COTIZACION')";
-  
-		Application.ADOCnn.Execute(sql);
-        eBasic.eMsgbox("Accion inhabilitada " + username,6);
-  */      
-		
-        }
+       }
 
 	if (SysTicket == null) return 0;
 
@@ -315,7 +301,7 @@ function ImprimirDetalle(SysPK, Cambio, Efectivo, Cheque, Tarjeta, Vale, Deposit
 	Letras = Impresora.getTextMultiLine(Letras, 30, 0);
 	Impresora.Texto(Letras);
 
-	// Si el ticket se trata de una reimpresiÃ³n, se omite el detalle de pago
+	// Si el ticket se trata de una reimpresión, se omite el detalle de pago
 	if (IsReprint) return 0;
 
 	// Detalle de pago
@@ -342,9 +328,9 @@ function ImprimirDetalle(SysPK, Cambio, Efectivo, Cheque, Tarjeta, Vale, Deposit
 
 	if (Cheque > 0) Impresora.Texto(Impresora.AligTextInStr("Cheque:", 18, 1, " ") + Impresora.AligTextInStr(Impresora.FormatoDinero(Cheque), 12, 1, " "));
 
-	if (Deposito > 0) Impresora.Texto(Impresora.AligTextInStr("Depï¿½sito:", 18, 1, " ") + Impresora.AligTextInStr(Impresora.FormatoDinero(Deposito), 12, 1, " "));
+	if (Deposito > 0) Impresora.Texto(Impresora.AligTextInStr("Dep?sito:", 18, 1, " ") + Impresora.AligTextInStr(Impresora.FormatoDinero(Deposito), 12, 1, " "));
 
-	if (Credito > 0) Impresora.Texto(Impresora.AligTextInStr("Crï¿½dito:", 18, 1, " ") + Impresora.AligTextInStr(Impresora.FormatoDinero(Credito), 12, 1, " "));
+	if (Credito > 0) Impresora.Texto(Impresora.AligTextInStr("Cr?dito:", 18, 1, " ") + Impresora.AligTextInStr(Impresora.FormatoDinero(Credito), 12, 1, " "));
 
 	if (Cambio != 0) {
 		if (divisaPago != "MXN") {
@@ -428,9 +414,9 @@ function ImprimirPromociones(PKTicket) {
 		contendor = "";
 		nombre = Rst("Nombre").Value;
 		salida = Rst("Salidas").Value;
-		stCad = "-PRODUCTO EN PROMOCIï¿½N -";
+		stCad = "-PRODUCTO EN PROMOCI?N -";
 		stnombre = "Del producto : " + nombre;
-		stSalida = "Cantidad entregada por la promociï¿½n :" + salida;
+		stSalida = "Cantidad entregada por la promoci?n :" + salida;
 
 		contenedor = stCad + "\r\n" + stnombre + "\r\n" + stSalida;
 		contenedor = Impresora.getTextMultiLine(contenedor, 26, 2);
@@ -490,7 +476,7 @@ function NumeroALetras(numero) {
         return quitarEspacios(letras);
     }
 
-    // Tomar parte entera y los dos dÃ­gitos despuÃ©s del punto como texto
+    // Tomar parte entera y los dos dígitos después del punto como texto
     var strNumero = numero.toString();
     var partes = strNumero.split(".");
     var parteEntera = parseInt(partes[0], 10);
@@ -511,7 +497,7 @@ function NumeroALetras(numero) {
         resultado = "cero";
     } else {
         if (parteEntera >= 1000000)
-            resultado += seccion(parteEntera, 1000000, "millÃ³n");
+            resultado += seccion(parteEntera, 1000000, "millón");
         else if (parteEntera >= 1000)
             resultado += seccion(parteEntera, 1000, "mil");
         else
@@ -556,7 +542,7 @@ function LogAuditoria(operacion, tabla, referencia) {
         Application.ADOCnn.Execute(sqlInsert);
 
 
-        // eBasic.eMsgbox("AcciÃ³n registrada en log: " + logJson, 6);
+        // eBasic.eMsgbox("Acción registrada en log: " + logJson, 6);
 
     } catch (err) {
         eBasic.eMsgbox("Error al insertar log: " + err.message, 6);
