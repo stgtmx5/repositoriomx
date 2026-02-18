@@ -454,7 +454,7 @@ function evAlRealizarCorte(PKCorte) {
 	}
 	caja = R("PKCaja").Value;
 //	sql = "Update venta set statusAdministrativo=99 where statusfinanciero=0 AND Formapago=0 AND Subtotal=0 AND statusAdministrativo=1 AND Icorte is null AND ICaja=" + caja;
-	sql= "Update venta set statusAdministrativo=99 where statusfinanciero=0 AND Formapago=0 AND Subtotal=0 AND statusAdministrativo=1 AND Icorte = "+PKCorte+" AND ICaja="+caja;
+	sql= "Update venta set statusAdministrativo=99 where statusAdministrativo=1 AND Icorte is null AND ICaja="+caja;
 	Application.ADOCnn.Execute(sql);
 
 
